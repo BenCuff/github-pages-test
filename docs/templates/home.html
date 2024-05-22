@@ -1,0 +1,60 @@
+
+<!--https://www.boia.org/blog/are-hamburger-menus-bad-for-accessibility-->
+<!--https://uxdesign.cc/create-an-accessible-hamburger-menu-869b0301cfd7-->
+
+
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UKHSA statistics production hub</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav-icon_styles.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#nav-icon').click(function(){
+          $(this).toggleClass('open');
+          $('#menu-container').toggleClass('open');
+        });
+      });
+    </script>
+    
+  </head>
+  <body>
+    
+    <div id="big-banner">
+      <div id="big-banner-content">
+        <p>UKHSA statistics production hub</p>
+      
+        <div id="nav-icon-container">
+          <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>  
+          
+          <div id="menu-container">
+            A menu could go here!
+          </div>
+          
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    <div id="little-banner"></div>
+    
+    <div class="main">
+      <h1>Content goes here</h1>
+    </div>
+    
+  </body>
+</html>
