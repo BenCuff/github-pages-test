@@ -24,7 +24,9 @@ This is some text.
 </div>
 
 <div class="code-block">
-  <p>This is a block of code</p>
+  <p>#This is a block of code</p>
+  <p>var <- filter(hello, x==1)</p>
+  <p>print(var)</p>
 </div>
 
 
