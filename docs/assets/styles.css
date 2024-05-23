@@ -79,8 +79,8 @@ p, h1, h2, h3, h4, h5{
 }
 
 .collapsible::before{
-  content:'<i style="font-size:24px" class="fa">&#xf067;</i>';
-  display: inline-block;
+  content: "\f067";
+  font-family: FontAwesome;
 }
 
 .collapsible p{
