@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: index
 title: Homepage
 ---
 
@@ -20,3 +20,6 @@ This is some text.
 <div class="block-quote">This is a block quote</div>
 
 <div class="collapsible">This is a collapsible section</div>
+
+
+{% include footer.html %}
