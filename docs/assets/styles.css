@@ -64,10 +64,22 @@ p, h1, h2, h3, h4, h5{
 
 .block-quote{
   width: fit-content;
+  margin: 1em 0 2em 0;
   padding: 10px;
   border: 1pt solid grey;
   border-radius: 10px;
   background:#F0FDFF;
+}
+
+.collapsible{
+  margin: 1em 0 2em 0;
+  padding: 0px 10px;
+  border: 1pt solid grey;
+  border-radius: 10px;
+}
+
+.collapsible::before{
+  content:'<i class="fa fa-plus"></i>'
 }
 
 .code-block{
