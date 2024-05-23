@@ -79,7 +79,12 @@ p, h1, h2, h3, h4, h5{
 }
 
 .collapsible::before{
-  content:'<i class="fa fa-plus"></i>'
+  content:"<i class='fa fa-plus'></i>"
+  display: inline-block;
+}
+
+.collapsible p{
+  display: inline-block;
 }
 
 .code-block{
