@@ -20,7 +20,11 @@ This is some text.
 </div>
 
 <div class="collapsible">
-  <p>This is a collapsible section</p>
+  <p>This is a collapsible section (to do)</p>
+</div>
+
+<div class="code">
+  <p>This is a block of code (to do)</p>
 </div>
 
 
