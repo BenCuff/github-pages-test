@@ -67,12 +67,14 @@ p, h1, h2, h3, h4, h5{
   padding: 10px;
   border: 1pt solid grey;
   border-radius: 10px;
+  background:azure;
 }
 
 .code-block{
   background: #582C83;
   color: white;
-  padding: 1px 0 1px 12px;
+  padding: 1px 12px 1px 12px;
+  width: fit-content;
 }
 
 .code-block p{

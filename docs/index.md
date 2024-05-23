@@ -16,7 +16,7 @@ This is some text.
 
 
 <div class="block-quote">
-  <p>This is a block quote</p>
+  <p>This is a block quote or highlight section</p>
 </div>
 
 <div class="collapsible">
