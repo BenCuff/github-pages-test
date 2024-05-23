@@ -28,4 +28,4 @@ This is some text.
 </div>
 
 
-{% include footer.md %}
+{% include footer.html %}

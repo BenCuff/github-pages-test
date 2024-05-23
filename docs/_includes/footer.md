@@ -1,2 +1,0 @@
-<br>
-<p>This is generated from _config.yml (global site variable): [{{ site.email }}](mailto:{{ site.email }})
