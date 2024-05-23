@@ -68,5 +68,13 @@ p, h1, h2, h3, h4, h5{
   border: 1pt solid grey;
   border-radius: 10px;
 }
+
+.code-block{
+  background: #582C83;
+  color: white;
+  padding: 1px 0 1px 12px;
 }
 
+.code-block p{
+  font-family:monospace;
+}

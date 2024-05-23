@@ -23,7 +23,7 @@ This is some text.
   <p>This is a collapsible section (to do)</p>
 </div>
 
-<div class="code">
+<div class="code-block">
   <p>This is a block of code (to do)</p>
 </div>
 
