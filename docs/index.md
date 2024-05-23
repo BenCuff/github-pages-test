@@ -3,8 +3,6 @@ layout: index
 title: Homepage
 ---
 
-# This is an L1 heading
-
 ## This is an L2 heading
 
 ### This is an L3 heading
@@ -17,9 +15,13 @@ title: Homepage
 This is some text. 
 
 
-<div class="block-quote">This is a block quote</div>
+<div class="block-quote">
+  <p>This is a block quote</p>
+</div>
 
-<div class="collapsible">This is a collapsible section</div>
+<div class="collapsible">
+  <p>This is a collapsible section</p>
+</div>
 
 
 {% include footer.html %}

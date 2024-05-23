@@ -53,11 +53,20 @@ body{
   margin: 0;
 }
 
-p, h1, h2, h3, h4, h5{
-  font-family: sans-serif;
-}
-
 .main{
   max-width: var(--main-width);
   margin: 0 auto 0 auto;
 }
+
+p, h1, h2, h3, h4, h5{
+  font-family: sans-serif;
+}
+
+.blockquote{
+  width: fit-content;
+  padding: 10px;
+  border: 1pt solid grey;
+  border-radius: 10px;
+}
+}
+
