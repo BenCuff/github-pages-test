@@ -78,5 +78,6 @@ p, h1, h2, h3, h4, h5{
 }
 
 .code-block p{
-  font-family:monospace;
+  font-family: monospace;
+  line-height: 0px;
 }
