@@ -76,7 +76,7 @@ p, h1, h2, h3, h4, h5, button{
   background:#F0FDFF;
 }
 
-.expandable{
+.expandable-header{
   margin: 1em 0 2em 0;
   width: 100%;
   text-align: left;
@@ -88,22 +88,22 @@ p, h1, h2, h3, h4, h5, button{
 }
 
 
-[data-expandable]:focus {
+.expandable-header:focus {
   outline: 1px solid;
   outline-offset: 1px;
 }
 
-[data-expandable][aria-expanded="false"]::before{
+.expandable-header[aria-expanded="false"]::before{
   content: "\f067";
   font-family: FontAwesome;
 }
 
-[data-expandable][aria-expanded="true"]::before{
+.expandable-header[aria-expanded="true"]::before{
   content: "\f068";
   font-family: FontAwesome;
 }
 
-.expandable[aria-hidden="true"] {
+.expandable-contents[aria-hidden="true"] {
   display:none;
 }
 
