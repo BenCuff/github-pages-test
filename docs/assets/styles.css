@@ -91,7 +91,7 @@ p, h1, h2, h3, h4, h5, button{
   background:#F0FDFF;
 }
 
-.expandable-header{
+.expandable{
   margin: 1em 0 2em 0;
   width: 100%;
   text-align: left;
@@ -102,10 +102,6 @@ p, h1, h2, h3, h4, h5, button{
   background: #F8F6ED;
 }
 
-
-[data-expandable] {
-  padding: 0;
-}
 
 [data-expandable]:focus {
   outline: 1px solid;
