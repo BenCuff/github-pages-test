@@ -32,6 +32,17 @@
   margin: 0 auto 30px auto;
 }
 
+#site-nav{
+  max-width: var(--main-width); 
+  margin: 0 auto 0 auto;
+  display: flex;
+  border-bottom: 1pt solid grey;
+}
+
+#site-nav p{
+  margin: 0;
+}
+
 #nav-icon-container {
   margin: 10px 10px 0px auto;
 }
