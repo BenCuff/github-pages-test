@@ -19,11 +19,13 @@ This is some text.
   <p>This is a block quote or highlight section</p>
 </div>
 
-<button aria-controls="section1" aria-expanded="false" class="expandable-header">
+
+
+<button id="expanded-header-1" aria-controls="expanded-content-1" aria-expanded="false" class="expandable-header" data-expandable>
   An example of a collapsible section
 </button>
 
-<div id="section1" class="expandable-contents" aria-hidden="true">
+<div id="expanded-content-1" class="expandable-contents" aria-hidden="true">
   <p>
     Hello!
   </p>
