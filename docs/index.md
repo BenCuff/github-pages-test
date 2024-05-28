@@ -33,6 +33,26 @@ This is some text.
 
 
 
+<h3>
+  <button id="accordion-header-1"
+          aria-expanded="false"
+          aria-controls="accordion-panel-1"
+          data-accordion-header>
+    Item 1
+    <svg aria-hidden="true">...</svg>
+  </button>
+</h3>
+<section id="accordion-panel-1"
+          aria-labelledby="accordion-header-1"
+          hidden>
+  <p>Lorem ipsum dolor sit amet...</p>
+</section>
+
+
+
+
+
+
 <div class="code-block">
   <p>#This is a block of code</p>
   <p>var <- filter(hello, x==1)</p>
