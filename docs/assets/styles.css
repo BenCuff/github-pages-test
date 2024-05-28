@@ -52,21 +52,6 @@
   margin: 15px 18px 15px 0;
 }
 
-#nav-icon-container {
-  margin: 10px 10px 0px auto;
-}
-
-#menu-container{
-  display:none;
-  position:relative;
-  right:50px;
-  top:-24px;
-}
-
-#menu-container.open{
-  display:block;
-}
-
 
 /*Main body content*/
 body{
