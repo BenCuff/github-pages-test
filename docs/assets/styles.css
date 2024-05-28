@@ -29,18 +29,27 @@
   background-color: #003B5C;
   height: 10px;
   max-width: var(--main-width);
-  margin: 0 auto 30px auto;
+  margin: 0 auto 0 auto;
 }
 
 #site-nav{
   max-width: var(--main-width); 
-  margin: 0 auto 0 auto;
+  margin: 0 auto 35px auto;
   display: flex;
   border-bottom: 1pt solid grey;
 }
 
+#site-nav a{
+  text-decoration: none;
+  color: unset;
+}
+
+#site-nav a:hover{
+  text-decoration: underline;
+}
+
 #site-nav p{
-  margin: 0;
+  margin: 15px 18px 15px 0;
 }
 
 #nav-icon-container {
