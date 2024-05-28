@@ -21,7 +21,7 @@ This is some text.
 
 
 
-<button id="expanded-header-1" aria-controls="expanded-content-1" aria-expanded="false" class="expandable-header" data-expandable>
+<button id="expanded-header-1" aria-controls="expanded-content-1" aria-expanded="false" class="expandable-header">
   An example of a collapsible section
 </button>
 
@@ -30,26 +30,6 @@ This is some text.
     Hello!
   </p>
 </div>
-
-
-
-<h3>
-  <button id="accordion-header-1"
-          aria-expanded="false"
-          aria-controls="accordion-panel-1"
-          data-accordion-header>
-    Item 1
-    <svg aria-hidden="true">...</svg>
-  </button>
-</h3>
-<section id="accordion-panel-1"
-          aria-labelledby="accordion-header-1"
-          hidden>
-  <p>Lorem ipsum dolor sit amet...</p>
-</section>
-
-
-
 
 
 
