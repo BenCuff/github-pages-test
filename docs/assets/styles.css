@@ -78,7 +78,7 @@ body{
   margin: 0 auto 0 auto;
 }
 
-p, h1, h2, h3, h4, h5{
+p, h1, h2, h3, h4, h5, button{
   font-family: sans-serif;
 }
 
@@ -91,22 +91,41 @@ p, h1, h2, h3, h4, h5{
   background:#F0FDFF;
 }
 
-.collapsible{
+.expandable-header{
   margin: 1em 0 2em 0;
-  padding: 0px 10px;
+  width: 100%;
+  text-align: left;
+  padding: 15px 10px;
   border: 1pt solid grey;
   border-radius: 10px;
+  font-size: medium;
   background: #F8F6ED;
 }
 
-.collapsible::before{
+
+[data-expandable] {
+  padding: 0;
+}
+
+[data-expandable]:focus {
+  outline: 1px solid;
+  outline-offset: 1px;
+}
+
+[data-expandable][aria-expanded="false"]::before{
   content: "\f067";
   font-family: FontAwesome;
 }
 
-.collapsible p{
-  display: inline-block;
+[data-expandable][aria-expanded="true"]::before{
+  content: "\f068";
+  font-family: FontAwesome;
 }
+
+.expandable[aria-hidden="true"] {
+  display:none;
+}
+
 
 .code-block{
   background: #582C83;

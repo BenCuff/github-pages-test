@@ -19,15 +19,16 @@ This is some text.
   <p>This is a block quote or highlight section</p>
 </div>
 
-<div class="collapsible">
-  <p>This will be a collapsible section (to do)</p>
-</div>
+<button class="expandable-header" data-expandable="section-name">
+  An example of a collapsible section
+</button>
+
+<p id="section-name">
+  Hello!
+</p>
 
 <div class="code-block">
   <p>#This is a block of code</p>
   <p>var <- filter(hello, x==1)</p>
   <p>print(var)</p>
 </div>
-
-
-{% include footer.html %}
