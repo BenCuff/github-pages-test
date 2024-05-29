@@ -16,7 +16,3 @@ const expand = function(){
     this.setAttribute("aria-expanded", true);
   }
 }
-  
-for (var i = 0; i < expandables.length; i++) {
-  expandables[i].addEventListener('click', expand);
-}

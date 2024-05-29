@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <script defer> {% include expandable-sections.js %} </script>
+    <script> {% include expandable-sections.js %} </script>
     
   </head>
   <body>
@@ -29,5 +29,8 @@
       {% include footer.html %}
     </div>
     
+  <script>for (var i = 0; i < expandables.length; i++) {expandables[i].addEventListener('click', expand);}</script>
+  
   </body>
+  
 </html>
