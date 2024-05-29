@@ -103,11 +103,15 @@ p, h1, h2, h3, h4, h5, button{
   font-family: FontAwesome;
 }
 
-.expandable-contents[aria-hidden="true"] {
-  display:none;
+
+.expandable-contents{
   margin-top: -25px;
   margin-bottom: 30px;
   border-bottom: 1pt solid lightgrey;
+}
+
+.expandable-contents[aria-hidden="true"] {
+  display:none;
 }
 
 
