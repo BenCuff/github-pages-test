@@ -5,6 +5,9 @@
     <title>UKHSA analytical hub</title>
     
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script> {% include expandable-sections.js %} </script>
     
   </head>
   <body>
@@ -22,11 +25,11 @@
     
     <div class="main">
       <h1>{{ page.title }}</h1>
-      
-      This needs to be added. For now, just use the navigation links above (only QA is currently active).
-      
-      
+      {{ content }}
+      {% include footer.html %}
     </div>
+    
+  <script>for (var i = 0; i < expandables.length; i++) {expandables[i].addEventListener('click', expand);}</script>
   
   </body>
   
