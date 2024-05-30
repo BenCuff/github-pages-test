@@ -34,7 +34,7 @@ The `_includes` folder is used to store .html/.js snippets to be inserted into o
 
 The `_layouts` folder is used to store larger template files. 
 
-The `assets` folder is used to store .css stylesheets. 
+The `assets` folder is used to store .css stylesheets and images. 
 
 The `_config.yml` file can be used to store sitewide values. These are then inserted to other pages via Liquid commands (for example, `{{ site.email }}`). 
 
