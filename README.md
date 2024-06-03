@@ -78,3 +78,12 @@ You will need to edit the following elements:
 ```
 
 Note that each row of the code should be contained within `<p> </p>` tags.
+
+
+### Images
+
+To add images to a page, first add the file to the `docs/assets/img/` folder.
+
+Then link using the following code, adding the correct filepath and alt-text:
+
+`<img src="assets/img/laptophands.jpg" alt="A picture of a person working at a laptop">`
