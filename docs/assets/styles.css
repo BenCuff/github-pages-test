@@ -63,7 +63,7 @@ body{
   margin: 0 auto 0 auto;
 }
 
-p, h1, h2, h3, h4, h5, button{
+p, h1, h2, h3, h4, h5, button, ul, ol{
   font-family: sans-serif;
 }
 
@@ -76,7 +76,7 @@ blockquote{
   background:#F0FDFF;
 }
 
-blockquote + h2, blockquote + h3, blockquote + h4, blockquote + h5{
+blockquote+h2, blockquote+h3, blockquote+h4, blockquote+h5{
   margin-top: 5px;
 }
 
