@@ -114,24 +114,11 @@ blockquote{
   display:none;
 }
 
-
-.code-block{
-  background: #582C83;
-  color: white;
-  padding: 1px 12px 1px 12px;
-  width: fit-content;
-}
-
-.code-block p{
-  font-family: monospace;
-  line-height: 5px;
-}
-
 code{
   background: #582C83;
   color: white;
-  padding: 1px 12px 1px 12px;
+  font-size: larger;
+  display: block;
   width: fit-content;
-  font-family: monospace;
-  line-height: 5px;
+  padding: 10px;
 }
