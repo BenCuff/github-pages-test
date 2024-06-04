@@ -76,6 +76,10 @@ blockquote{
   background:#F0FDFF;
 }
 
+blockquote + h2, blockquote + h3, blockquote + h4, blockquote + h5{
+  margin-top: 5px;
+}
+
 .expandable-header{
   margin: 1em 0 2em 0;
   width: 100%;
