@@ -76,7 +76,7 @@ blockquote{
   background:#F0FDFF;
 }
 
-blockquote+h2, blockquote+h3, blockquote+h4, blockquote+h5{
+blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of-type, blockquote>h5:first-of-type{
   margin-top: 5px;
 }
 
