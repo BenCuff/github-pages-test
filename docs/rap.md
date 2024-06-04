@@ -6,6 +6,6 @@ layout: guidance-page
 ## Summary
 
 
-{% include blocks/block-quote.html content="## Main messages" %}
+{% include blocks/block-quote.html h2="Main messages" %}
 
 More text.
