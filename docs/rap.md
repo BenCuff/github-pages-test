@@ -18,3 +18,10 @@ layout: guidance-page
 {% include blocks/block-quote.html h2="Main messages" content = main_messages %}
 
 More text.
+
+
+> ## Main messages
+>
+> - Message 1
+> - Message 2
+> - Message 3
