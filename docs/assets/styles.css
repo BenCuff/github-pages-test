@@ -67,7 +67,7 @@ p, h1, h2, h3, h4, h5, button{
   font-family: sans-serif;
 }
 
-.block-quote{
+.block-quote blockquote{
   width: fit-content;
   margin: 1em 0 2em 0;
   padding: 10px;
