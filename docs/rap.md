@@ -5,23 +5,15 @@ layout: guidance-page
 
 ## Summary
 
-
-{% capture main_messages %}
-  ## Hello
-  
-  - 1
-  - 2
-  - 3
-
-{% endcapture %}
-
-{% include blocks/block-quote.html h2="Main messages" content = main_messages %}
-
-More text.
-
-
 > ## Main messages
 >
 > - Message 1
 > - Message 2
 > - Message 3
+
+
+```
+Code block
+line 2
+line 3
+```

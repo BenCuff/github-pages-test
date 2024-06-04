@@ -43,9 +43,11 @@ Most of what goes into the .md files will be standard markdown. Some other code 
 
 ### Block quotes
 ```
-<div class="block-quote">
-  <p>This is a block quote or highlight section</p>
-</div>
+> ## Main messages
+>
+> - Message 1
+> - Message 2
+> - Message 3
 ```
 
 ### Expandable sections
