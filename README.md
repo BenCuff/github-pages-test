@@ -42,6 +42,9 @@ The `_config.yml` file can be used to store sitewide values. These are then inse
 Most of what goes into the .md files will be standard markdown. Some other code can be used as follows.
 
 ### Block quotes
+
+Add an arrow (">") to the start of each line. You can use other markdown tags (headers, bullets) within this. 
+
 ```
 > ## Main messages
 >
@@ -71,15 +74,13 @@ You will need to edit the following elements:
 5. The explandable contents text, contained within the `<p> </p>` tags.
 
 ### Code blocks
+````
 ```
-<div class="code-block">
-  <p>#This is a block of code</p>
-  <p>var <- filter(hello, x==1)</p>
-  <p>print(var)</p>
-</div>
+Code block
+line 2
+line 3
 ```
-
-Note that each row of the code should be contained within `<p> </p>` tags.
+````
 
 
 ### Images
