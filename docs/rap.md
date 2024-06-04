@@ -5,8 +5,13 @@ layout: guidance-page
 
 ## Summary
 
-<div class="block-quote">
+
+{% include blocks/block-quote-open.html %}
 
  ## Main messages
+ 
+ - 1
+ - 2
+ - 3
 
-</div>
+{% include blocks/block-close.html %}
