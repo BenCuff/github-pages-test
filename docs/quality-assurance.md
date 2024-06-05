@@ -79,7 +79,7 @@ Click on the tabs below to find about more about each of the dimensions.
 <li>Are the statistics consistent over time and comparable between regions and countries? </li>
 <li>Is it possible to combine and make joint use of related data from different data sources? </li>
 <li>Are your results going to be used in combination with other data on the same topic? </li>
-<li>Do you use harmonised concepts and definitions wherever they are available? </li>
+<li>Do you use <a href = "https://analysisfunction.civilservice.gov.uk/policy-store/?keyword=&area=&doctype=harmonisation-guidance-and-principles&submit=Go" target="_blank">harmonised concepts and definitions</a> wherever they are available? </li>
 </ul> 
   </p>
 </div>
