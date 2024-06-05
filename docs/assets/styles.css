@@ -63,17 +63,21 @@ body{
   margin: 0 auto 0 auto;
 }
 
-p, h1, h2, h3, h4, h5, button{
+p, h1, h2, h3, h4, h5, button, ul, ol{
   font-family: sans-serif;
 }
 
-.block-quote{
+blockquote{
   width: fit-content;
   margin: 1em 0 2em 0;
   padding: 10px;
   border: 1pt solid grey;
   border-radius: 10px;
   background:#F0FDFF;
+}
+
+blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of-type, blockquote>h5:first-of-type{
+  margin-top: 5px;
 }
 
 .expandable-header{
@@ -114,15 +118,11 @@ p, h1, h2, h3, h4, h5, button{
   display:none;
 }
 
-
-.code-block{
+code{
   background: #582C83;
   color: white;
-  padding: 1px 12px 1px 12px;
+  font-size: larger;
+  display: block;
   width: fit-content;
-}
-
-.code-block p{
-  font-family: monospace;
-  line-height: 5px;
+  padding: 10px;
 }
