@@ -96,6 +96,8 @@ Click on the tabs below to find about more about each of the dimensions.
   </p>
 </div>
 
+How can we do this so the expandable headers are closer together?
+
 ## Quality trade-off
 
 
