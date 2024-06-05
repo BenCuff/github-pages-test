@@ -26,10 +26,34 @@ The quality of an analytical output may be thought of in simple terms as its “
 - Comparability and Coherence
 - Accessibility and Clarity
 
-All quality assessments of official statistics should be conducted in line with these dimensions and both our  QA review conversation tool and QA log template sets out these dimensions for you to consider.
+All quality assessments of official statistics should be conducted in line with these dimensions and both our [QA review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) and [QA log template](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20log%20template%20v1.2.xlsx?version=1&modificationDate=1716383298406&api=v2) sets out these dimensions for you to consider.
+
+Click on the tabs below to find about more about each of the dimensions.
+
+<details>
+  <summary>Relevance</summary>
+  
+- Who are the current and potential users of the output?
+- What are the needs of your users?
+- How well does the output suit user needs?
+</details>
+
+<button id="expanded-header-1" aria-controls="expanded-content-1" aria-expanded="false" class="expandable-header">
+  Relevance
+</button>
+- Who are the current and potential users of the output?
+- What are the needs of your users?
+- How well does the output suit user needs?
+<div id="expanded-content-1" class="expandable-contents" aria-hidden="true">
+  <p>
+    
+  </p>
+</div>
+
 
 
 ## Quality trade-off
+
 
 ## What do we mean by quality assurance?
 
@@ -41,15 +65,6 @@ All quality assessments of official statistics should be conducted in line with 
 
 
 
-<button id="expanded-header-1" aria-controls="expanded-content-1" aria-expanded="false" class="expandable-header">
-  An example of a collapsible section
-</button>
-
-<div id="expanded-content-1" class="expandable-contents" aria-hidden="true">
-  <p>
-    Does this work?!
-  </p>
-</div>
 
 
 
