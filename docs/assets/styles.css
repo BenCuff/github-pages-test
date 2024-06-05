@@ -81,8 +81,12 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   margin-top: 5px;
 }
 
+.expandables-block{
+  margin-bottom: 2em;
+}
+
 .expandable-header{
-  margin: 1em 0 2em 0;
+  margin: 1em 0 0 0;
   width: 100%;
   text-align: left;
   padding: 15px 10px;
@@ -110,7 +114,7 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
 
 
 .expandable-contents{
-  margin-top: -25px;
+  margin-top: 24px;
   margin-bottom: 30px;
   border-bottom: 1pt solid lightgrey;
 }
@@ -119,17 +123,7 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   display:none;
 }
 
-.expandables-block{
-  margin-bottom: 2em;
-}
 
-.expandables-block button{
-  margin: 1em 0 0 0;
-}
-
-.expandables-block .expandable-contents{
-  margin-top: 24px;
-}
 
 code{
   background: #582C83;
