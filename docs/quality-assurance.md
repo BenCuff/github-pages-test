@@ -30,14 +30,6 @@ All quality assessments of official statistics should be conducted in line with 
 
 Click on the tabs below to find about more about each of the dimensions.
 
-<details>
-  <summary>Relevance</summary>
-  
-- Who are the current and potential users of the output?
-- What are the needs of your users?
-- How well does the output suit user needs?
-</details>
-
 <button id="expanded-header-1" aria-controls="expanded-content-1" aria-expanded="false" class="expandable-header">
   Relevance
 </button>
@@ -51,7 +43,6 @@ Click on the tabs below to find about more about each of the dimensions.
 </ul> 
   </p>
 </div>
-
 <button id="expanded-header-2" aria-controls="expanded-content-2" aria-expanded="false" class="expandable-header">
   Accuracy and Reliability
 </button>
@@ -66,7 +57,44 @@ Click on the tabs below to find about more about each of the dimensions.
 </ul> 
   </p>
 </div>
+<button id="expanded-header-3" aria-controls="expanded-content-3" aria-expanded="false" class="expandable-header">
+  Timeliness and Punctuality
+</button>
 
+<div id="expanded-content-3" class="expandable-contents" aria-hidden="true">
+  <p>
+  <ul style="list-style-type:disc;">
+<li>Is the release of results sufficiently soon after the release of data? </li>
+<li>Is all data available in a timely manner?</li>
+</ul> 
+  </p>
+</div>
+<button id="expanded-header-4" aria-controls="expanded-content-4" aria-expanded="false" class="expandable-header">
+  Comparability and Coherence
+</button>
+
+<div id="expanded-content-4" class="expandable-contents" aria-hidden="true">
+  <p>
+  <ul style="list-style-type:disc;">
+<li>Are the statistics consistent over time and comparable between regions and countries? </li>
+<li>Is it possible to combine and make joint use of related data from different data sources? </li>
+<li>Are your results going to be used in combination with other data on the same topic? </li>
+<li>Do you use harmonised concepts and definitions wherever they are available? </li>
+</ul> 
+  </p>
+</div>
+<button id="expanded-header-5" aria-controls="expanded-content-5" aria-expanded="false" class="expandable-header">
+  Accessibility and Clarity
+</button>
+
+<div id="expanded-content-5" class="expandable-contents" aria-hidden="true">
+  <p>
+  <ul style="list-style-type:disc;">
+<li>Are charts, tables, and formatting compliant with accessibility laws? </li>
+<li>Has quality and methodology information been provided? </li>
+</ul> 
+  </p>
+</div>
 
 ## Quality trade-off
 
