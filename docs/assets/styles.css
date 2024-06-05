@@ -119,6 +119,10 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   display:none;
 }
 
+.multiple-expandables{
+  background:white;
+}
+
 code{
   background: #582C83;
   color: white;

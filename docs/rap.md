@@ -34,34 +34,38 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<button id="expanded-header-2" aria-controls="expanded-content-2" aria-expanded="false" class="expandable-header">
-  An example of a multiple collapsible sections in a row
-</button>
+<div class="multiple-expandables">
 
-<div id="expanded-content-2" class="expandable-contents" aria-hidden="true">
-  <p>
-    Hello!
-  </p>
-</div>
-
-<button id="expanded-header-3" aria-controls="expanded-content-3" aria-expanded="false" class="expandable-header">
-  An example of a multiple collapsible sections in a row
-</button>
-
-<div id="expanded-content-3" class="expandable-contents" aria-hidden="true">
-  <p>
-    Hello!
-  </p>
-</div>
-
-<button id="expanded-header-4" aria-controls="expanded-content-4" aria-expanded="false" class="expandable-header">
-  An example of a multiple collapsible sections in a row
-</button>
-
-<div id="expanded-content-4" class="expandable-contents" aria-hidden="true">
-  <p>
-    Hello!
-  </p>
+  <button id="expanded-header-2" aria-controls="expanded-content-2" aria-expanded="false" class="expandable-header">
+    An example of a multiple collapsible sections in a row
+  </button>
+  
+  <div id="expanded-content-2" class="expandable-contents" aria-hidden="true">
+    <p>
+      Hello!
+    </p>
+  </div>
+  
+  <button id="expanded-header-3" aria-controls="expanded-content-3" aria-expanded="false" class="expandable-header">
+    An example of a multiple collapsible sections in a row
+  </button>
+  
+  <div id="expanded-content-3" class="expandable-contents" aria-hidden="true">
+    <p>
+      Hello!
+    </p>
+  </div>
+  
+  <button id="expanded-header-4" aria-controls="expanded-content-4" aria-expanded="false" class="expandable-header">
+    An example of a multiple collapsible sections in a row
+  </button>
+  
+  <div id="expanded-content-4" class="expandable-contents" aria-hidden="true">
+    <p>
+      Hello!
+    </p>
+  </div>
+  
 </div>
 
 
