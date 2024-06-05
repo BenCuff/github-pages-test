@@ -119,8 +119,12 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   display:none;
 }
 
-.multiple-expandables{
-  background:white;
+.multiple-expandables button{
+  margin: 1em 0 0 0;
+}
+
+.multiple-expandables .expandable-contents{
+  margin-top: 25px;
 }
 
 code{
