@@ -5,7 +5,7 @@ layout: "guidance-page"
 
 ## Summary
 <div class="block-quote">
-  <p> ### Main messages
+  <p> Main messages - hello!
   - In high quality analysis, quality assurance operates throughout the data journey and isn’t something that can just be added at the end of production
   - Quality assurance should be planned in advance, with roles, responsibilities, and the extent of assurance activities understood fully by the entire team.
   - Quality assurance should be appropriate and proportionate to the scope, risks, methodology, and data source of a piece of analysis.
