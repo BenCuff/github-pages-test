@@ -41,12 +41,12 @@ Click on the tabs below to find about more about each of the dimensions.
 <button id="expanded-header-1" aria-controls="expanded-content-1" aria-expanded="false" class="expandable-header">
   Relevance
 </button>
-- Who are the current and potential users of the output?
-- What are the needs of your users?
-- How well does the output suit user needs?
+
 <div id="expanded-content-1" class="expandable-contents" aria-hidden="true">
   <p>
-    
+- Who are the current and potential users of the output?
+- What are the needs of your users?
+- How well does the output suit user needs? 
   </p>
 </div>
 
