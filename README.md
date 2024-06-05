@@ -55,14 +55,16 @@ Add an arrow (">") to the start of each line. You can use other markdown tags (h
 
 ### Expandable sections
 ```
-<button id="expanded-header-1" aria-controls="expanded-content-1" aria-expanded="false" class="expandable-header">
-  An example of a collapsible section
-</button>
-
-<div id="expanded-content-1" class="expandable-contents" aria-hidden="true">
-  <p>
-    Hello!
-  </p>
+<div class="expandables-block">
+  <button id="expanded-header-1" aria-controls="expanded-content-1" aria-expanded="false" class="expandable-header">
+    An example of a collapsible section
+  </button>
+  
+  <div id="expanded-content-1" class="expandable-contents" aria-hidden="true">
+    <p>
+      Hello!
+    </p>
+  </div>
 </div>
 ```
 
@@ -71,7 +73,9 @@ You will need to edit the following elements:
 2. The button aria-controls attribute - ensure this is unique in the page and matches the id of the expandable contents.
 3. The button text.
 4. The expandable contents id - ensure this is unique in the page and matches the button aria-controls attribute.
-5. The explandable contents text, contained within the `<p> </p>` tags.
+5. The expandable contents text, contained within the `<p> </p>` tags.
+
+If you wish to have multiple expandable sections, simply include more header and content blocks within the "expandables-block" div.
 
 ### Code blocks
 ````

@@ -119,15 +119,15 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   display:none;
 }
 
-.multiple-expandables{
+.expandables-block{
   margin-bottom: 2em;
 }
 
-.multiple-expandables button{
+.expandables-block button{
   margin: 1em 0 0 0;
 }
 
-.multiple-expandables .expandable-contents{
+.expandables-block .expandable-contents{
   margin-top: 24px;
 }
 
