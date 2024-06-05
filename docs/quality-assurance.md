@@ -44,12 +44,28 @@ Click on the tabs below to find about more about each of the dimensions.
 
 <div id="expanded-content-1" class="expandable-contents" aria-hidden="true">
   <p>
-- Who are the current and potential users of the output?
-- What are the needs of your users?
-- How well does the output suit user needs? 
+  <ul style="list-style-type:disc;">
+<li> Who are the current and potential users of the output? </li>
+<li> What are the needs of your users? </li>
+<li> How well does the output suit user needs? </li>
+</ul> 
   </p>
 </div>
 
+<button id="expanded-header-2" aria-controls="expanded-content-2" aria-expanded="false" class="expandable-header">
+  Accuracy and Reliability
+</button>
+
+<div id="expanded-content-2" class="expandable-contents" aria-hidden="true">
+  <p>
+  <ul style="list-style-type:disc;">
+<li> Has every step of the code been tested? </li>
+<li> Do charts and tables agree with the text? </li>
+<li> Are outputs realistic? </li>
+<li> Have manual steps been double checked? </li>
+</ul> 
+  </p>
+</div>
 
 
 ## Quality trade-off
