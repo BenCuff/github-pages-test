@@ -81,6 +81,15 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   margin-top: 5px;
 }
 
+.index-link{
+    border: 1pt solid grey;
+    border-radius: 10px;
+    background-color: #007C91;
+    color: white;
+    padding: 0 10px;
+    width: fit-content;
+}
+
 .expandables-block{
   margin-bottom: 2em;
 }
