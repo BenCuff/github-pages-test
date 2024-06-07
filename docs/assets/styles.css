@@ -98,15 +98,15 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   display:flex;
 }
 
-#index-tile-block:not(:last-child){
-  margin-right: 10px;
-}
-
 .index-tile{
   flex: 1;
   background-color: #007C91;
   color: white;
   padding: 10px;
+}
+
+#index-tile-block .index-tile:not(:last-child){
+  margin-right: 10px;
 }
 
 .index-tile h3{
