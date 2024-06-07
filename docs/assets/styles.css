@@ -94,8 +94,9 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
 }
 
 #index-tile-block{
-  margin-top: 35px;
   display:flex;
+  margin-top: 25px;
+  margin-left: -10px;
 }
 
 .index-tile{
@@ -109,10 +110,8 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   text-align: center;
   text-decoration: none;
   color: white;
-}
-
-#index-tile-block .index-tile-a:not(:last-child){
-  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .index-tile h3{
