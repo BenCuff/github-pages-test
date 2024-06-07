@@ -132,7 +132,6 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   background: #dbdbda;
 }
 
-
 .expandable-header:focus {
   outline: 1px solid;
   outline-offset: 1px;
@@ -148,7 +147,6 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   font-family: FontAwesome;
 }
 
-
 .expandable-contents{
   margin-top: 24px;
   margin-bottom: 30px;
@@ -159,8 +157,6 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   display:none;
 }
 
-
-
 code{
   background: #582C83;
   color: white;
@@ -168,4 +164,15 @@ code{
   display: block;
   width: fit-content;
   padding: 10px;
+}
+
+#footer{
+  background-color: #007C91;
+  color: white;
+  padding: 3px 10px;
+}
+
+#footer-container{
+  max-width: var(--main-width);
+  margin: 0 auto 0 auto;
 }
