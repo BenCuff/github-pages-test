@@ -103,7 +103,14 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   padding: 10px;
 }
 
-#index-tile-block .index-tile:not(:last-child){
+.index-tile-a{
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+#index-tile-block .index-tile-a:not(:last-child){
   margin-right: 10px;
 }
 
