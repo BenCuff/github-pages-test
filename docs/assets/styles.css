@@ -82,15 +82,29 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
 }
 
 .index-link{
-    display: inline-block;
-    border: 1pt solid grey;
-    border-radius: 10px;
-    background-color: #007C91;
-    color: white;
-    padding: 0 10px;
-    margin-top: 40px;
-    margin-right: 10px;
-    width: fit-content;
+  display: inline-block;
+  border: 1pt solid grey;
+  border-radius: 10px;
+  background-color: #007C91;
+  color: white;
+  padding: 0 10px;
+  margin-top: 40px;
+  margin-right: 10px;
+  width: fit-content;
+}
+
+.index-tile{
+  background-color: #007C91;
+  color: white;
+  padding: 10px;
+}
+
+.index-tile h3{
+  margin-top: 0;
+}
+
+.index-tile p{
+  margin-bottom: 0;
 }
 
 .expandables-block{
