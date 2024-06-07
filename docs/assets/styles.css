@@ -41,8 +41,9 @@
 }
 
 #page-nav{
-  margin-top: -35px;
+  margin-top: -25px;
   background-color: #F0FDFF;
+  border-top: 1pt solid grey;
 }
 
 #site-nav a, #page-nav a{
