@@ -99,9 +99,7 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
 }
 
 .index-tile{
-  flex: 1;
   background-color: #007C91;
-  color: white;
   padding: 10px;
 }
 
