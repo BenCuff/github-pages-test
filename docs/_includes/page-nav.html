@@ -1,13 +1,13 @@
 <div id="page-nav">
     <p style="font-weight:bold">{{ page.title}}:</p>
     
-    <a href="#"><p>{{ page.page1.url }}</p></a>
+    <a href="{{ page.page1.url }}"><p>{{ page.page1.name }}</p></a>
     
     {% if page.page2 %}
-      <a href="#"><p>{{ page.page2.url }}</p></a>
+      <a href="{{ page.page2.url }}"><p>{{ page.page2.name }}</p></a>
     {% endif %}
     
     {% if page.page3 %}
-      <a href="#"><p>{{ page.page3.url }}</p></a>
+      <a href="{{ page.page3.url }}"><p>{{ page.page3.name }}</p></a>
     {% endif %}
 </div>
