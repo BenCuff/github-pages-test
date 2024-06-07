@@ -1,6 +1,8 @@
 ---
-title: Reproducible Analytical Pipelines
+title: Reproducible Analytical Pipelines (RAP)
 layout: guidance-page
+page1: rap
+page2: rap-framework
 ---
 
 ## Summary

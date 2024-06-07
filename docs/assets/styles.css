@@ -33,23 +33,23 @@
   margin: 0 auto 0 auto;
 }
 
-#site-nav{
+#site-nav, #page-nav{
   max-width: var(--main-width); 
   margin: 0 auto 35px auto;
   display: flex;
   border-bottom: 1pt solid grey;
 }
 
-#site-nav a{
+#site-nav a, #page-nav a{
   text-decoration: none;
   color: unset;
 }
 
-#site-nav a:hover{
+#site-nav a:hover, #page-nav a:hover{
   text-decoration: underline;
 }
 
-#site-nav p{
+#site-nav p, #page-nav p{
   margin: 15px 18px 15px 0;
 }
 
