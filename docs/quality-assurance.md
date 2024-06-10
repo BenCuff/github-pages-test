@@ -100,7 +100,7 @@ Click on the tabs below to find about more about each of the dimensions.
         <img src="assets/img/Quality_trade_off.png" alt="A pentagon showing the 5 Dimensions of Quality of the European Statistical System (ESS) Code of Practice: Relevance, Accuracy and Reliability, Timeliness and Punctuality, Comparability and Coherence and Accessibility and Clarity">
      </div>
     <div class="text">
-The 5 dimensions of statistical output quality are not mutually exclusive. There are relationships between them and there are instances where improvements in one dimension would lead to deterioration in another dimension. Statistics should always be produced to a level of quality that meets users’ needs, and quality assurance should be proportionate to the nature of the quality issues and the importance of the statistics in serving the public good [2].
+The 5 dimensions of statistical output quality are not mutually exclusive. There are relationships between them and there are instances where improvements in one dimension would lead to deterioration in another dimension. Statistics should always be produced to a level of quality that meets users’ needs, and quality assurance should be proportionate to the nature of the quality issues and the importance of the statistics in serving the public good.
 
 Understanding user needs is really important when measuring the quality of your data. Perfect data quality may not always be achievable and therefore focus should be given to ensuring the data is as fit for purpose as it can be.
      </div>
@@ -130,7 +130,7 @@ It is important for statistical producers to be curious about data and not take 
 
 There are 4 key areas of a QA mindset to consider when embarking on an analytical project:
 
-**ADD HERE **
+**ADD HERE - need to think about how best to do this section **
 
 
 These key stages along the data journey, alongside the 5 Dimensions of Quality of the European Statistical System (ESS), form the basis of the [QA review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) and [QA log template](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20log%20template%20v1.2.xlsx?version=1&modificationDate=1716383298406&api=v2).
@@ -146,10 +146,10 @@ In practice, the exact nature of roles required may differ based on project scop
 1. QA review conversation tool
 2. QA log template
 
-<button onclick="location.href='http://www.google.com'" type="button">
+<button onclick="location.href='https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Ensuring+good+quality+assurance?preview=%2F353007964%2F357508814%2FQA+review+conversation+tool.xlsx'" type="button">
          Download QA review conversation tool</button>
          
-<button onclick="location.href='http://www.google.com'" type="button">
+<button onclick="location.href='https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Ensuring+good+quality+assurance?preview=%2F353007964%2F357508813%2FQA+log+template+v1.2.xlsx'" type="button">
          Download QA log template</button>        
 
 ### What is the QA review conversation tool?
@@ -231,5 +231,5 @@ Add content in here
   </p>
 </div>
 
-##FAQs
+## FAQs
 Our FAQs page is designed to address the most common queries we receive about quality assurance. Please get in touch with us if there's anything missing that you would like to see.
