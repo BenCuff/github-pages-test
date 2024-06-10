@@ -152,6 +152,7 @@ code{
   padding: 10px;
 }
 
+/*Images and text side-by-side*/
 .container {
  display: grid;
  align-items: center; 
@@ -167,3 +168,17 @@ img {
 .text {
   font-size: 70px;
 }
+
+/*Clickable buttons*/
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: #007C91;}
