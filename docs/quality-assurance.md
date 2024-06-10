@@ -3,9 +3,7 @@ title: "Ensuring good quality assurance"
 layout: "guidance-page"
 ---
 
-## Summary
-
-> ### Main messages
+> ## Main messages
 > - In high quality analysis, quality assurance operates throughout the data journey and isn’t something that can just be added at the end of production
 > - Quality assurance should be planned in advance, with roles, responsibilities, and the extent of assurance activities understood fully by the entire team.
 > - Quality assurance should be appropriate and proportionate to the scope, risks, methodology, and data source of a piece of analysis.
@@ -96,26 +94,142 @@ Click on the tabs below to find about more about each of the dimensions.
   </p>
 </div>
 
-How can we do this so the expandable headers are closer together?
-
 ## Quality trade-off
+The 5 dimensions of statistical output quality are not mutually exclusive. There are relationships between them and there are instances where improvements in one dimension would lead to deterioration in another dimension. Statistics should always be produced to a level of quality that meets users’ needs, and quality assurance should be proportionate to the nature of the quality issues and the importance of the statistics in serving the public good [2].
 
+Understanding user needs is really important when measuring the quality of your data. Perfect data quality may not always be achievable and therefore focus should be given to ensuring the data is as fit for purpose as it can be.
+
+This may result in trade-offs between different dimensions of data quality, depending on the needs and priorities of your users. You should prioritise the data quality dimensions that align with your user and business needs. For example, if the timeliness of a data set is the most important dimension for the user, this may come at the expense of the data set’s accuracy, and vice versa. It is important to communicate these trade-offs to the users of your data to avoid ambiguity and misuse of the data.
+
+In practice, the nature and extent of quality assurance activities that are carried out for each project should depend on what is considered appropriate and proportionate:
+
+- **Appropriate**: fit for purpose for the analysis depending on its complexity, timeframe of delivery, available resources, and other factors
+
+- **Proportionate**: relative to the level of risk entailed by the project
+
+<img src="assets/img/Quality_trade_off.png" alt="A pentagon showing the 5 Dimensions of Quality of the European Statistical System (ESS) Code of Practice: Relevance, Accuracy and Reliability, Timeliness and Punctuality, Comparability and Coherence and Accessibility and Clarity ">
+
+<div class="container">
+    <div class="image">
+        <img src="assets/img/Quality_trade_off.png">
+     </div>
+    <div class="text">
+      <h1>This is a beautiful picture.</h1>
+     </div>
+  </div>
 
 ## What do we mean by quality assurance?
+Quality assurance (QA) plays an essential part in any analytical project to ensure high quality analysis - it is so much more than just ‘getting the numbers right'. Effective QA ensures that decisions are made with an appropriate understanding of evidence and risks, and helps analysts ensure the integrity of the analytical output. It therefore forms a crucial part of the UKHSA's strategic priority to ["improve action on health security through data and insight"](https://www.gov.uk/government/publications/ukhsa-strategic-plan-2023-to-2026/ukhsa-strategic-plan-2023-to-2026-executive-summary).
+
+<img src="assets/img/high_quality_analysis.png" alt="In high quality analysis: You can transfer knowledge about the data, your calculations are correct, your methods are appropriate, others can test and replicate your analysis and your data and assumptions are fit for purpose. These can be summarised as 5 key areas: documentation and planning, verification, validation, project reproducibility and communication and outputs.">
+<p>&nbsp;</p>
+
+The Data Science QA team in UKHSA have created an [Analytical QA Framework](https://confluence.collab.test-and-trace.nhs.uk/display/QA/UKHSA+Analytics+QA+Framework) to provide a structured approach to this: ensuring that all our analytical work meets the desired level of quality. It aims to support QA activities for all those who work on analytical projects that support a specific decision making process. You can find out more about the framework, as well as more information on the quality assurance of models on their [Confluence page](https://confluence.collab.test-and-trace.nhs.uk/display/QA/UKHSA+Analytics+QA+Framework). The remainder of this guidance will focus solely on the quality assurance of data and statistical outputs.
 
 ## The 'QA mindset'
 
+In high quality analysis, we should know how data got from the initial input to a statistical publication. We refer to this as the **data journey**. QA should operate throughout the  entire data journey and is not something that can be added at the end of production. This means that we should be thinking about QA at each stage of our analytical project, from project governance and planning to producing outputs and communicating findings. We need to be thinking about the data sources and their appropriateness, whether our methods are sound and if the interpretation of results is robust, communicating any caveats that need sharing with users. This is known as having a 'QA mindset'. 
+
+It is important for statistical producers to be curious about data and not take it at face-value. If there are values that look inaccurate or unusual they should be investigated and verified. Producers should understand the full data journey and be able to identify steps that are vulnerable and could introduce errors.
+
+There are 4 key areas of a QA mindset to consider when embarking on an analytical project:
+
+**ADD HERE **
+
+
+These key stages along the data journey, alongside the 5 Dimensions of Quality of the European Statistical System (ESS), form the basis of the [QA review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) and [QA log template](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20log%20template%20v1.2.xlsx?version=1&modificationDate=1716383298406&api=v2).
+
 ## Roles and responsibilities
+The AQUA Book defines 3 key roles for QA of analysis: the commissioner, the analyst, and the assurer. These roles are used by many teams to delegate responsibility during QA. In addition, the AQUA Book and [Macpherson Review](https://www.gov.uk/government/publications/review-of-quality-assurance-of-government-models) state that analysis which is business critical should have a single senior responsible officer (SRO).
 
-## FAQs
+In practice, the exact nature of roles required may differ based on project scope and needs, but these roles provide a useful framework for considering the different ways QA should be built into the life cycle of a project. The roles are summarised below.
+
+## How can I adopt a QA mindset?
+ We have created two tools to help teams discuss, plan, record and sign off on quality:
+
+1. QA review conversation tool
+2. QA log template
+
+**Add buttons here**
+
+### What is the QA review conversation tool?
+Our [QA review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) was created to provide a useful starting point for thinking about the QA of statistical outputs in line with the five European Statistical System (ESS) Quality Dimensions. It has been designed to facilitate team discussions about quality at either the start of a new project or at regular intervals for cyclical releases to help teams plan QA, identifying gaps in current procedures. We have compiled discussion questions that teams can use to reflect on the quality of their statistics, identify areas for improvement, and consider how to communicate quality to users. The outcomes of these discussions should inform QA plans and QA logs which teams should be using during QA activities. 
+
+### What is the QA log template?
+To help teams record and sign off on quality, we have also created a [QA log template](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20log%20template%20v1.2.xlsx?version=1&modificationDate=1716383298406&api=v2). This approach is standard practice across government statistics and should ensure that a QA mindset is present when conducting analytical projects. A QA log should be used every time you are producing a publication.
+
+A QA log will:
+
+- provide a consistent, more standardised approach to QA across our statistical publications and analyses
+
+- give the analyst ideas on what to look out for when conducting QA and help discussion within teams
+
+- gives the assurer clearer sight of what exactly has been checked 
+
+- provide an audit trail of everything that was checked and what the outcomes and actions were
+
+An audit trail can be particularly helpful if something goes wrong. You can go back and review your process to see what might have gone wrong and if you need to make any changes to the checks you are doing for next time.
+
+## Utilising these tools
+In both templates, there are sheets on the different stages of the QA process as outlined in the 'QA mindset' that relate to the ESS quality dimensions.
+
+Each sheet in the review conversation tool contains space for the assurer to comment on how well they meet requirements and note any outstanding issues or actions to improve quality or how they communicate quality to users. There is also space for the assurer to provide their sign off that they’re satisfied with the QA process at each stage.
+
+In the QA log template, suggested criteria is given in order to attain a high level of quality. Each criterion is given one row, with space for an assurer to describe whether the criterion has been met, the steps they have taken to assess the project against that criterion, and any outstanding work that may need to be completed. This template was created with the intention that teams can adapt and customise it dependent on their needs to create a comprehensive overview. While it is not a complete list of QA concerns, the template provides a starting point for thinking about the assurance process.
+
+The remainder of this guidance will look in more detail at the five main stages of a traditional publication cycle , give guiding questions to consider. Links and resources available to you will also be shown to customise your QA log based on your project and user needs.
+
+<button id="expanded-header-6" aria-controls="expanded-content-6" aria-expanded="false" class="expandable-header">
+1\. Project governance
+</button>
+
+<div id="expanded-content-6" class="expandable-contents" aria-hidden="true">
+  <p>
+Add content in here
+  </p>
+</div>
 
 
+<button id="expanded-header-7" aria-controls="expanded-content-7" aria-expanded="false" class="expandable-header">
+2\. Project planning
+</button>
+
+<div id="expanded-content-7" class="expandable-contents" aria-hidden="true">
+  <p>
+Add content in here
+  </p>
+</div>
+
+<button id="expanded-header-8" aria-controls="expanded-content-8" aria-expanded="false" class="expandable-header">
+3\. Verification and validation
+</button>
+
+<div id="expanded-content-8" class="expandable-contents" aria-hidden="true">
+  <p>
+Add content in here
+  </p>
+</div>
+
+<button id="expanded-header-9" aria-controls="expanded-content-9" aria-expanded="false" class="expandable-header">
+4\. Project reproducibility
+</button>
+
+<div id="expanded-content-9" class="expandable-contents" aria-hidden="true">
+  <p>
+Add content in here
+  </p>
+</div>
 
 
+<button id="expanded-header-10" aria-controls="expanded-content-10" aria-expanded="false" class="expandable-header">
+5\. Communication and outputs
+</button>
 
+<div id="expanded-content-10" class="expandable-contents" aria-hidden="true">
+  <p>
+Add content in here
+  </p>
+</div>
 
-```
-#This is a block of code
-var <- filter(hello, x==1)
-print(var)</p>
-```
+##FAQs
+Our FAQs page is designed to address the most common queries we receive about quality assurance. Please get in touch with us if there's anything missing that you would like to see.
