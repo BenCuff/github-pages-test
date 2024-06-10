@@ -103,16 +103,16 @@ Click on the tabs below to find about more about each of the dimensions.
 The 5 dimensions of statistical output quality are not mutually exclusive. There are relationships between them and there are instances where improvements in one dimension would lead to deterioration in another dimension. Statistics should always be produced to a level of quality that meets users’ needs, and quality assurance should be proportionate to the nature of the quality issues and the importance of the statistics in serving the public good [2].
 
 Understanding user needs is really important when measuring the quality of your data. Perfect data quality may not always be achievable and therefore focus should be given to ensuring the data is as fit for purpose as it can be.
+     </div>
+  </div>
 
 This may result in trade-offs between different dimensions of data quality, depending on the needs and priorities of your users. You should prioritise the data quality dimensions that align with your user and business needs. For example, if the timeliness of a data set is the most important dimension for the user, this may come at the expense of the data set’s accuracy, and vice versa. It is important to communicate these trade-offs to the users of your data to avoid ambiguity and misuse of the data.
 
 In practice, the nature and extent of quality assurance activities that are carried out for each project should depend on what is considered appropriate and proportionate:
 <ul style="list-style-type:disc;">
-<li>**Appropriate**: fit for purpose for the analysis depending on its complexity, timeframe of delivery, available resources, and other factors</li>
-<li>**Proportionate**: relative to the level of risk entailed by the project</li>
+<li><b>Appropriate</b>: fit for purpose for the analysis depending on its complexity, timeframe of delivery, available resources, and other factors</li>
+<li><b>Proportionate</b>: relative to the level of risk entailed by the project</li>
 </ul> 
-     </div>
-  </div>
 
 ## What do we mean by quality assurance?
 Quality assurance (QA) plays an essential part in any analytical project to ensure high quality analysis - it is so much more than just ‘getting the numbers right'. Effective QA ensures that decisions are made with an appropriate understanding of evidence and risks, and helps analysts ensure the integrity of the analytical output. It therefore forms a crucial part of the UKHSA's strategic priority to ["improve action on health security through data and insight"](https://www.gov.uk/government/publications/ukhsa-strategic-plan-2023-to-2026/ukhsa-strategic-plan-2023-to-2026-executive-summary).
