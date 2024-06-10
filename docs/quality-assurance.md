@@ -95,18 +95,6 @@ Click on the tabs below to find about more about each of the dimensions.
 </div>
 
 ## Quality trade-off
-The 5 dimensions of statistical output quality are not mutually exclusive. There are relationships between them and there are instances where improvements in one dimension would lead to deterioration in another dimension. Statistics should always be produced to a level of quality that meets users’ needs, and quality assurance should be proportionate to the nature of the quality issues and the importance of the statistics in serving the public good [2].
-
-Understanding user needs is really important when measuring the quality of your data. Perfect data quality may not always be achievable and therefore focus should be given to ensuring the data is as fit for purpose as it can be.
-
-This may result in trade-offs between different dimensions of data quality, depending on the needs and priorities of your users. You should prioritise the data quality dimensions that align with your user and business needs. For example, if the timeliness of a data set is the most important dimension for the user, this may come at the expense of the data set’s accuracy, and vice versa. It is important to communicate these trade-offs to the users of your data to avoid ambiguity and misuse of the data.
-
-In practice, the nature and extent of quality assurance activities that are carried out for each project should depend on what is considered appropriate and proportionate:
-
-- **Appropriate**: fit for purpose for the analysis depending on its complexity, timeframe of delivery, available resources, and other factors
-
-- **Proportionate**: relative to the level of risk entailed by the project
-
 <div class="container">
     <div class="image">
         <img src="assets/img/Quality_trade_off.png" alt="A pentagon showing the 5 Dimensions of Quality of the European Statistical System (ESS) Code of Practice: Relevance, Accuracy and Reliability, Timeliness and Punctuality, Comparability and Coherence and Accessibility and Clarity">
@@ -119,10 +107,9 @@ Understanding user needs is really important when measuring the quality of your 
 This may result in trade-offs between different dimensions of data quality, depending on the needs and priorities of your users. You should prioritise the data quality dimensions that align with your user and business needs. For example, if the timeliness of a data set is the most important dimension for the user, this may come at the expense of the data set’s accuracy, and vice versa. It is important to communicate these trade-offs to the users of your data to avoid ambiguity and misuse of the data.
 
 In practice, the nature and extent of quality assurance activities that are carried out for each project should depend on what is considered appropriate and proportionate:
-
-- **Appropriate**: fit for purpose for the analysis depending on its complexity, timeframe of delivery, available resources, and other factors
-
-- **Proportionate**: relative to the level of risk entailed by the project
+<ul style="list-style-type:disc;">
+<li>**Appropriate**: fit for purpose for the analysis depending on its complexity, timeframe of delivery, available resources, and other factors</li>
+<li>**Proportionate**: relative to the level of risk entailed by the project</li>
      </div>
   </div>
 
@@ -160,8 +147,6 @@ In practice, the exact nature of roles required may differ based on project scop
 
 <button onclick="location.href='http://www.google.com'" type="button">
          Download QA review conversation tool</button>
-
-<button class="button button1"> Download here</button>
 
 ### What is the QA review conversation tool?
 Our [QA review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) was created to provide a useful starting point for thinking about the QA of statistical outputs in line with the five European Statistical System (ESS) Quality Dimensions. It has been designed to facilitate team discussions about quality at either the start of a new project or at regular intervals for cyclical releases to help teams plan QA, identifying gaps in current procedures. We have compiled discussion questions that teams can use to reflect on the quality of their statistics, identify areas for improvement, and consider how to communicate quality to users. The outcomes of these discussions should inform QA plans and QA logs which teams should be using during QA activities. 

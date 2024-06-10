@@ -166,12 +166,13 @@ img {
 }
 
 .text {
-  font-size: 70px;
+  font-size: 20pt;
 }
 
 /*Clickable buttons*/
 .button {
   border: none;
+  background-color: #007c91; /* Green */
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -181,4 +182,4 @@ img {
   margin: 4px 2px;
   cursor: pointer;
 }
-.button1 {background-color: #007C91;}
+
