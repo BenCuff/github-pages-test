@@ -110,6 +110,7 @@ In practice, the nature and extent of quality assurance activities that are carr
 <ul style="list-style-type:disc;">
 <li>**Appropriate**: fit for purpose for the analysis depending on its complexity, timeframe of delivery, available resources, and other factors</li>
 <li>**Proportionate**: relative to the level of risk entailed by the project</li>
+</ul> 
      </div>
   </div>
 
@@ -147,6 +148,9 @@ In practice, the exact nature of roles required may differ based on project scop
 
 <button onclick="location.href='http://www.google.com'" type="button">
          Download QA review conversation tool</button>
+         
+<button onclick="location.href='http://www.google.com'" type="button">
+         Download QA log template</button>        
 
 ### What is the QA review conversation tool?
 Our [QA review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) was created to provide a useful starting point for thinking about the QA of statistical outputs in line with the five European Statistical System (ESS) Quality Dimensions. It has been designed to facilitate team discussions about quality at either the start of a new project or at regular intervals for cyclical releases to help teams plan QA, identifying gaps in current procedures. We have compiled discussion questions that teams can use to reflect on the quality of their statistics, identify areas for improvement, and consider how to communicate quality to users. The outcomes of these discussions should inform QA plans and QA logs which teams should be using during QA activities. 
