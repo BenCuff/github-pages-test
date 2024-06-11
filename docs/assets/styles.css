@@ -185,3 +185,21 @@ img {
   cursor: pointer;
 }
 
+/* Table styling*/
+<style>
+table {
+  border-collapse: collapse;
+  font-family: "Roboto", sans-serif;
+}
+th, td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+}
+th {
+  background-color: #007c91;
+  color: #fff;
+}
+td:first-child {
+  background-color: #f8f9fa;
+}
+</style>

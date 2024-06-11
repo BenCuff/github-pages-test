@@ -185,7 +185,18 @@ The remainder of this guidance will look in more detail at the five main stages 
 
 <div id="expanded-content-6" class="expandable-contents" aria-hidden="true">
   <p>
-Add content in here
+## Project governance
+Project governance is the most preliminary stage of analysis and focuses on deciding the guiding question, scope, and context of the planned analysis. While there will be few outputs at this step to QA, the decisions made will define the level of QA necessary at later stages. It’s important at this stage that everyone knows and understands their responsibilities, and there is a clear reason for the analysis being conducted. For recurring publications, this stage may not be needed for each release, but the topics covered should still remain under regular review to continually ensure that project needs are met. 
+
+The table below gives some considerations when completing this section of the review conversation & QA log.
+
+
+| Guiding questions                                                  | Specific considerations                                                                                                                                                                                                                                                                                                       | Why do I need to know the answer to this?                                                                                                                                                                                                                                                                                                                                                                                                               | What help is available?                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| What is the need for this analysis or statistical release?         | Does the output contribute something new that cannot be found in existing research or literature?<br><br>Has there been a clear user need for this analysis shown through user consultation?                                                                                                                                  | Understanding why the analysis/statistical release is needed and what it will be used for is critical for understanding whether what you have done is fit for purpose.<br><br>If you are responsible for part of an analytical/statistical process, understanding the end use will help you to make sure that your part does what is needed to meet user needs.                                                                                         | [Guidance: The AQUA Book](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/416478/aqua_book_final_web.pdf)<br><br><br>[Guidance: Analysis Functional Standard](https://www.gov.uk/government/publications/government-analysis-functional-standard--2)                                                                                                                                           |
+| Who uses your analysis or statistical release?                     | Does the work meet user needs appropriately?<br><br>Have you addressed feedback obtained from recent user consultations?<br><br>What are the expectations of my users?<br><br>Are the length and content of the publication appropriate for its users?<br><br>Are terms defined for your less-technical users?                | Understanding who uses your analysis/statistical release will help you to make sure that it meets their needs.<br><br>It also helps you to tailor your outputs to make sure all your users are fully supported in using the outputs effectively.                                                                                                                                                                                                        | [Guidance: User engagement top tips](https://analysisfunction.civilservice.gov.uk/policy-store/user-engagement-top-tips/)                                                                                                                                                                                                                                                                                                                      |
+| What analytical question you are addressing?                       | Are questions suitably explicit and do they clearly reflect the evidence gaps the analysis is intended to fill?<br><br>Will the output align with overarching departmental/programme goals?                                                                                                                                   | Having a clear understanding of the problem your team is trying to solve ensures that the analysis you design is fit for purpose.<br><br>If you do not know how your work is contributing to answering an analytical need, you may be unaware of important requirements or limitations for your part of the work.                                                                                                                                       | [Guidance: The AQUA Book ](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/416478/aqua_book_final_web.pdf)<br><br><br>[Guidance: Analysis Functional Standard](https://www.gov.uk/government/publications/government-analysis-functional-standard--2)<br><br><br>[UKHSA Data Strategy](https://intranet.ukhsa.gov.uk/sites/data-analytics-and-surveillance/SitePageModern/49668/data-strategy) |
+| Is everyone aware of their role and responsibility in the process? | Is a Senior Responsible Officer (SRO) required as the analysis is business critical?<br><br>What is the role of the commissioner in your project? Are there any key changes to the publications that need flagging?<br><br>Does the assurer understand the analytical methods used in the project? Are there any skills gaps? | For effective quality assurance, you need to be clear on roles and responsibilities throughout the chain of production. It is not enough to say that an individual will carry out some QA.<br><br>Assigning the roles set out in the AQUA book provide a useful framework for considering the different ways QA should be built into the life cycle of a project.<br><br>For more information, see Roles and responsibilities section of this guidance. | [Guidance: The AQUA Book](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/416478/aqua_book_final_web.pdf)                                                                                                                                                                                                                                                                                      |
   </p>
 </div>
 
@@ -196,7 +207,11 @@ Add content in here
 
 <div id="expanded-content-7" class="expandable-contents" aria-hidden="true">
   <p>
-Add content in here
+## Project planning
+
+Effective project planning serves as the roadmap that guides any analytical project from conception to completion. It ensures that the correct documentation is available, risks are mitigated, and deadlines are met. There should be a clear, proportionate QA plan and a consistent project structure with version control.
+
+The table below gives some considerations when completing this section of the review conversation & QA log.
   </p>
 </div>
 
@@ -206,7 +221,11 @@ Add content in here
 
 <div id="expanded-content-8" class="expandable-contents" aria-hidden="true">
   <p>
-Add content in here
+## Verification and validation
+
+Whilst verification focuses on confirming that the analysis is being developed correctly according to the specified requirements, validation ensures that the final product meets user needs and answers the defined research question. Both processes are essential for ensuring the quality and reliability of our analytical projects. The key output from the verification process concerns the extent to which the agreed work has been conducted appropriately. The key output from the validation process is a judgment, based on evidence, concerning the extent to which the work is 'fit for purpose'
+
+The tables below gives some considerations when completing this section of the review conversation & QA log.
   </p>
 </div>
 
@@ -216,7 +235,11 @@ Add content in here
 
 <div id="expanded-content-9" class="expandable-contents" aria-hidden="true">
   <p>
-Add content in here
+## Project reproducibility
+
+When we produce analysis or an analytical output, we need to produce it using the most robust method to remove any question around how it was created. The focus is then directed to what the report is showing. [RAP (Reproducible Analytical Pipelines)](https://confluence.collab.test-and-trace.nhs.uk/pages/viewpage.action?pageId=352277347) is a set of principles and working practices that help you create faster, more robust, and more transparent analytical processes. By making our analysis reproducible, we make it easier for others to quality assure, assess, critique and re-use our methods and results, and for colleagues to assure what we have done.
+
+The tables below gives some considerations when completing this section of the review conversation & QA log.
   </p>
 </div>
 
@@ -227,9 +250,17 @@ Add content in here
 
 <div id="expanded-content-10" class="expandable-contents" aria-hidden="true">
   <p>
-Add content in here
+## Communication and outputs
+
+In this context, the output is defined broadly as the analysis that is officially published, or one that is used for further research or analysis. Quality at this stage refers to how well your ‘final’ outputs meet your users’ needs. Strengths and limitations of your analysis should be communicated clearly to users so that they can understand the data and use it appropriately. For each statistical output, information on quality and methods should be communicated to users both within the main statistical release and in a Quality and Methodology Information (QMI) report.
+
+The tables below gives some considerations when completing this section of the review conversation & QA log.
   </p>
 </div>
 
 ## FAQs
 Our FAQs page is designed to address the most common queries we receive about quality assurance. Please get in touch with us if there's anything missing that you would like to see.
+
+
+> knitr::kable(mtcars)
+
