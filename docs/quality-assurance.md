@@ -179,7 +179,7 @@ In the QA log template, suggested criteria is given in order to attain a high le
 
 The remainder of this guidance will look in more detail at the five main stages of a traditional publication cycle , give guiding questions to consider. Links and resources available to you will also be shown to customise your QA log based on your project and user needs.
 
-**Test if table works outside expandable header **
+<style>
 
 | Guiding questions                                                  | Specific considerations                                                                                                                                                                                                                                                                                                       | Why do I need to know the answer to this?                                                                                                                                                                                                                                                                                                                                                                                                               | What help is available?                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -259,7 +259,6 @@ The tables below gives some considerations when completing this section of the r
 
 <div id="expanded-content-10" class="expandable-contents" aria-hidden="true">
   <p>
-## Communication and outputs
 <h2>Communication and outputs</h2>
 In this context, the output is defined broadly as the analysis that is officially published, or one that is used for further research or analysis. Quality at this stage refers to how well your ‘final’ outputs meet your users’ needs. Strengths and limitations of your analysis should be communicated clearly to users so that they can understand the data and use it appropriately. For each statistical output, information on quality and methods should be communicated to users both within the main statistical release and in a Quality and Methodology Information (QMI) report.
 
@@ -270,6 +269,30 @@ The tables below gives some considerations when completing this section of the r
 ## FAQs
 Our FAQs page is designed to address the most common queries we receive about quality assurance. Please get in touch with us if there's anything missing that you would like to see.
 
+<button id="expanded-header-11" aria-controls="expanded-content-11" aria-expanded="false" class="expandable-header">
+How often should I be performing QA checks?
+</button>
 
-> knitr::kable(mtcars)
+<div id="expanded-content-11" class="expandable-contents" aria-hidden="true">
+  <p>
+  </p>
+</div>
 
+<button id="expanded-header-12" aria-controls="expanded-content-12" aria-expanded="false" class="expandable-header">
+How do I document that my QA is appropriate and proportionate?
+</button>
+
+<div id="expanded-content-12" class="expandable-contents" aria-hidden="true">
+  <p>
+  </p>
+</div>
+
+
+<button id="expanded-header-13" aria-controls="expanded-content-13" aria-expanded="false" class="expandable-header">
+What guidance has the government released regarding QA?
+</button>
+
+<div id="expanded-content-13" class="expandable-contents" aria-hidden="true">
+  <p>
+  </p>
+</div>
