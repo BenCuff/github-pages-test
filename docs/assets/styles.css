@@ -186,7 +186,6 @@ img {
 }
 
 /* Table styling*/
-<style>
 table {
   border-collapse: collapse;
   font-family: sans-serif;
@@ -202,4 +201,3 @@ th {
 td:first-child {
   background-color: #f8f9fa;
 }
-</style>
