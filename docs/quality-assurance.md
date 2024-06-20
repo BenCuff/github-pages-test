@@ -146,10 +146,10 @@ In practice, the exact nature of roles required may differ based on project scop
 1. QA review conversation tool
 2. QA log template
 
-<button onclick="location.href='https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Ensuring+good+quality+assurance?preview=%2F353007964%2F357508814%2FQA+review+conversation+tool.xlsx'" type="button">
+<button class="download-button" onclick="location.href='https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Ensuring+good+quality+assurance?preview=%2F353007964%2F357508814%2FQA+review+conversation+tool.xlsx'" type="button">
          Download QA review conversation tool</button>
          
-<button onclick="location.href='https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Ensuring+good+quality+assurance?preview=%2F353007964%2F357508813%2FQA+log+template+v1.2.xlsx'" type="button">
+<button class="download-button" onclick="location.href='https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Ensuring+good+quality+assurance?preview=%2F353007964%2F357508813%2FQA+log+template+v1.2.xlsx'" type="button">
          Download QA log template</button>        
 
 ### What is the QA review conversation tool?
