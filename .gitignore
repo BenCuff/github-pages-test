@@ -33,3 +33,4 @@
 # Packing-only formats
 *.iso
 *.tar
+.Rproj.user

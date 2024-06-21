@@ -28,6 +28,7 @@ All quality assessments of official statistics should be conducted in line with 
 
 Click on the tabs below to find about more about each of the dimensions.
 
+<div class="expandables-block">
 <button id="expanded-header-1" aria-controls="expanded-content-1" aria-expanded="false" class="expandable-header">
   Relevance
 </button>
@@ -92,6 +93,7 @@ Click on the tabs below to find about more about each of the dimensions.
 <li>Has quality and methodology information been provided? </li>
 </ul> 
   </p>
+</div>
 </div>
 
 ## Quality trade-off
@@ -187,7 +189,7 @@ The remainder of this guidance will look in more detail at the five main stages 
 | What analytical question you are addressing?                       | Are questions suitably explicit and do they clearly reflect the evidence gaps the analysis is intended to fill?<br><br>Will the output align with overarching departmental/programme goals?                                                                                                                                   | Having a clear understanding of the problem your team is trying to solve ensures that the analysis you design is fit for purpose.<br><br>If you do not know how your work is contributing to answering an analytical need, you may be unaware of important requirements or limitations for your part of the work.                                                                                                                                       | [Guidance: The AQUA Book ](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/416478/aqua_book_final_web.pdf)<br><br><br>[Guidance: Analysis Functional Standard](https://www.gov.uk/government/publications/government-analysis-functional-standard--2)<br><br><br>[UKHSA Data Strategy](https://intranet.ukhsa.gov.uk/sites/data-analytics-and-surveillance/SitePageModern/49668/data-strategy) |
 | Is everyone aware of their role and responsibility in the process? | Is a Senior Responsible Officer (SRO) required as the analysis is business critical?<br><br>What is the role of the commissioner in your project? Are there any key changes to the publications that need flagging?<br><br>Does the assurer understand the analytical methods used in the project? Are there any skills gaps? | For effective quality assurance, you need to be clear on roles and responsibilities throughout the chain of production. It is not enough to say that an individual will carry out some QA.<br><br>Assigning the roles set out in the AQUA book provide a useful framework for considering the different ways QA should be built into the life cycle of a project.<br><br>For more information, see Roles and responsibilities section of this guidance. | [Guidance: The AQUA Book](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/416478/aqua_book_final_web.pdf)                                                                                                                                                                                                                                                                                      |
  
-
+<div class="expandables-block">
 <button id="expanded-header-6" aria-controls="expanded-content-6" aria-expanded="false" class="expandable-header">
 1\. Project governance
 </button>
@@ -264,10 +266,14 @@ In this context, the output is defined broadly as the analysis that is officiall
 The tables below gives some considerations when completing this section of the review conversation & QA log.
   </p>
 </div>
+</div>
+
+
 
 ## FAQs
 Our FAQs page is designed to address the most common queries we receive about quality assurance. Please get in touch with us if there's anything missing that you would like to see.
 
+<div class="expandables-block">
 <button id="expanded-header-11" aria-controls="expanded-content-11" aria-expanded="false" class="expandable-header">
 How often should I be performing QA checks?
 </button>
@@ -294,4 +300,5 @@ What guidance has the government released regarding QA?
 <div id="expanded-content-13" class="expandable-contents" aria-hidden="true">
   <p>
   </p>
+</div>
 </div>
