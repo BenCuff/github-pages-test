@@ -124,13 +124,15 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
 }
 
 .expandable-header[aria-expanded="false"]::before{
-  content: "<i class='fa fa-plus' aria-hidden='true'></i>";
-  font-family: sans-serif;
+  content: "\f067";
+  font-family: FontAwesome;
+  font-weight: 900;
 }
 
 .expandable-header[aria-expanded="true"]::before{
-  content: "<i class='fa fa-minus' aria-hidden='true'></i>";
-  font-family: sans-serif;
+  content: "\f068";
+  font-family: FontAwesome;
+  font-weight: 900;
 }
 
 .expandable-contents{
@@ -153,21 +155,18 @@ code{
 }
 
 /*Images and text side-by-side*/
-.container {
- display: grid;
- align-items: center; 
- grid-template-columns: 1fr 1fr 1fr;
- column-gap: 5px;
+.image-text-container {
+  display: flex;
+  column-gap: 10px;
 }
 
-img {
-  max-width: 100%;
-  max-height:100%;
+.image-text-container img {
+  flex: 1;
+  max-width: 450px;
 }
 
-.text {
-  font-family: sans-serif;
-  font-size: 16pt;
+.image-text-container p {
+  flex 1;
 }
 
 /*Clickable buttons*/
