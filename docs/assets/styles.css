@@ -124,12 +124,12 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
 }
 
 .expandable-header[aria-expanded="false"]::before{
-  content: "\f067";
+  content: "<i class='fa fa-plus' aria-hidden='true'></i>";
   font-family: sans-serif;
 }
 
 .expandable-header[aria-expanded="true"]::before{
-  content: "\f068";
+  content: "<i class='fa fa-minus' aria-hidden='true'></i>";
   font-family: sans-serif;
 }
 
