@@ -299,3 +299,7 @@ Our FAQs page is designed to address the most common queries we receive about qu
     </p>
   </div>
 </div>
+
+
+
+{% include expandable-section.html number="14" title="Test title" content="Hello"}

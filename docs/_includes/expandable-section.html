@@ -1,0 +1,9 @@
+<button id="expanded-header-{{ include.number }}" aria-controls="expanded-content-{{ include.number }}" aria-expanded="false" class="expandable-header">
+  {{ include.title }}
+</button>
+  
+  <div id="expanded-content-{{ include.number }}" class="expandable-contents" aria-hidden="true">
+    <p>
+      {{ include.content }}
+    </p>
+</div>
