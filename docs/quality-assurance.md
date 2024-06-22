@@ -301,5 +301,18 @@ Our FAQs page is designed to address the most common queries we receive about qu
 </div>
 
 
+{% capture expandable-content-14 %}
 
-{% include expandable-section.html number="14" title="Test title" content="Hello"}
+Hello. 
+
+Testing this table: 
+
+| Title | Content |
+|-------|---------|
+| 1     | 2       |
+| 3     | 4       |
+
+{% endcapture %}
+
+
+{% include expandable-section.html number="14" title="Test title" content="Hello" %}
