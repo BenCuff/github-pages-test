@@ -209,7 +209,7 @@ The remainder of this guidance will look in more detail at the five main stages 
   
   
   <button id="expanded-header-7" aria-controls="expanded-content-7" aria-expanded="false" class="expandable-header">
-  2&#46; Project planning
+  2. Project planning
   </button>
   
   <div id="expanded-content-7" class="expandable-contents" aria-hidden="true">
@@ -223,7 +223,7 @@ The remainder of this guidance will look in more detail at the five main stages 
   </div>
   
   <button id="expanded-header-8" aria-controls="expanded-content-8" aria-expanded="false" class="expandable-header">
-  3\. Verification and validation
+  3. Verification and validation
   </button>
   
   <div id="expanded-content-8" class="expandable-contents" aria-hidden="true">
@@ -237,7 +237,7 @@ The remainder of this guidance will look in more detail at the five main stages 
   </div>
   
   <button id="expanded-header-9" aria-controls="expanded-content-9" aria-expanded="false" class="expandable-header">
-  4\. Project reproducibility
+  4. Project reproducibility
   </button>
   
   <div id="expanded-content-9" class="expandable-contents" aria-hidden="true">
@@ -252,7 +252,7 @@ The remainder of this guidance will look in more detail at the five main stages 
   
   
   <button id="expanded-header-10" aria-controls="expanded-content-10" aria-expanded="false" class="expandable-header">
-  5\. Communication and outputs
+  5. Communication and outputs
   </button>
   
   <div id="expanded-content-10" class="expandable-contents" aria-hidden="true">
