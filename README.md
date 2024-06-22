@@ -54,28 +54,37 @@ Add an arrow (">") to the start of each line. You can use other markdown tags (h
 ```
 
 ### Expandable sections
+
+First include the hidden content within a 'capture' block like below. 
+
+Make sure to add a unique number to the end of each block title. 
+
 ```
-<div class="expandables-block">
-  <button id="expanded-header-1" aria-controls="expanded-content-1" aria-expanded="false" class="expandable-header">
-    An example of a collapsible section
-  </button>
-  
-  <div id="expanded-content-1" class="expandable-contents" aria-hidden="true">
-    <p>
-      Hello!
-    </p>
-  </div>
-</div>
+{% capture expandable_content_1 %}
+Content goes here, written in normal markdown.
+{% endcapture %}
+
+{% capture expandable_content_2 %}
+This is a second expandable section.
+{% endcapture %}
 ```
 
-You will need to edit the following elements: 
-1. The button id.
-2. The button aria-controls attribute - ensure this is unique in the page and matches the id of the expandable contents.
-3. The button text.
-4. The expandable contents id - ensure this is unique in the page and matches the button aria-controls attribute.
-5. The expandable contents text, contained within the `<p> </p>` tags.
+Then you can use the following code to include expandable sections with the appropriate titles. 
 
-If you wish to have multiple expandable sections, simply include more header and content blocks within the "expandables-block" div.
+The 'block-start' and 'block-end' lines are needed for styling. 
+
+The parameter given in 'content' should match the title of the relevant capture block declared above. 
+
+Be careful to use a unique number in each line (numbers should also be unique within the entire markdown file). The title will display within the button used to expand the section. 
+
+```
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="1" content=expandable_content_1 title="This is the first title" %}
+  {% include expandable-section.html number="2"  content=expandable_content_2 title="This is the second title" %}
+{% include expandable-block-end.html %}
+
+```
+
 
 ### Code blocks
 ````

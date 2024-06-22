@@ -26,75 +26,47 @@ The quality of an analytical output may be thought of in simple terms as its “
 
 All quality assessments of official statistics should be conducted in line with these dimensions and both our [QA review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) and [QA log template](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20log%20template%20v1.2.xlsx?version=1&modificationDate=1716383298406&api=v2) sets out these dimensions for you to consider.
 
-Click on the tabs below to find about more about each of the dimensions.
+Click on the buttons below to find about more about each of the dimensions.
 
-<div class="expandables-block">
-  <button id="expanded-header-1" aria-controls="expanded-content-1" aria-expanded="false" class="expandable-header">
-    Relevance
-  </button>
-  
-  <div id="expanded-content-1" class="expandable-contents" aria-hidden="true">
-    <p>
-    <ul style="list-style-type:disc;">
-  <li> Who are the current and potential users of the output? </li>
-  <li> What are the needs of your users? </li>
-  <li> How well does the output suit user needs? </li>
-  </ul> 
-    </p>
-  </div>
-  <button id="expanded-header-2" aria-controls="expanded-content-2" aria-expanded="false" class="expandable-header">
-    Accuracy and Reliability
-  </button>
-  
-  <div id="expanded-content-2" class="expandable-contents" aria-hidden="true">
-    <p>
-    <ul style="list-style-type:disc;">
-  <li> Has every step of the code been tested? </li>
-  <li> Do charts and tables agree with the text? </li>
-  <li> Are outputs realistic? </li>
-  <li> Have manual steps been double checked? </li>
-  </ul> 
-    </p>
-  </div>
-  <button id="expanded-header-3" aria-controls="expanded-content-3" aria-expanded="false" class="expandable-header">
-    Timeliness and Punctuality
-  </button>
-  
-  <div id="expanded-content-3" class="expandable-contents" aria-hidden="true">
-    <p>
-    <ul style="list-style-type:disc;">
-  <li>Is the release of results sufficiently soon after the release of data? </li>
-  <li>Is all data available in a timely manner?</li>
-  </ul> 
-    </p>
-  </div>
-  <button id="expanded-header-4" aria-controls="expanded-content-4" aria-expanded="false" class="expandable-header">
-    Comparability and Coherence
-  </button>
-  
-  <div id="expanded-content-4" class="expandable-contents" aria-hidden="true">
-    <p>
-    <ul style="list-style-type:disc;">
-  <li>Are the statistics consistent over time and comparable between regions and countries? </li>
-  <li>Is it possible to combine and make joint use of related data from different data sources? </li>
-  <li>Are your results going to be used in combination with other data on the same topic? </li>
-  <li>Do you use <a href = "https://analysisfunction.civilservice.gov.uk/policy-store/?keyword=&area=&doctype=harmonisation-guidance-and-principles&submit=Go" target="_blank">harmonised concepts and definitions</a> wherever they are available? </li>
-  </ul> 
-    </p>
-  </div>
-  <button id="expanded-header-5" aria-controls="expanded-content-5" aria-expanded="false" class="expandable-header">
-    Accessibility and Clarity
-  </button>
-  
-  <div id="expanded-content-5" class="expandable-contents" aria-hidden="true">
-    <p>
-    <ul style="list-style-type:disc;">
-  <li>Are charts, tables, and formatting compliant with accessibility laws? </li>
-  <li>Has quality and methodology information been provided? </li>
-  </ul> 
-    </p>
-  </div>
-</div>
+
+{% capture expandable_content_1 %}
+- Who are the current and potential users of the output?
+- What are the needs of your users?
+- How well does the output suit user needs?
+{% endcapture %}
+
+{% capture expandable_content_2 %}
+- Has every step of the code been tested?
+- Do charts and tables agree with the text?
+- Are outputs realistic?
+- Have manual steps been double checked?
+{% endcapture %}
+
+{% capture expandable_content_3 %}
+- Is the release of results sufficiently soon after the release of data?
+- Is all data available in a timely manner?
+{% endcapture %}
+
+{% capture expandable_content_4 %}
+- Are the statistics consistent over time and comparable between regions and countries?
+- Is it possible to combine and make joint use of related data from different data sources?
+- Are your results going to be used in combination with other data on the same topic?
+- Do you use [harmonised concepts and definitions](https://analysisfunction.civilservice.gov.uk/policy-store/?keyword=&area=&doctype=harmonisation-guidance-and-principles&submit=Go) wherever they are available?
+{% endcapture %}
+
+{% capture expandable_content_5 %}
+- Are charts, tables, and formatting compliant with accessibility laws?
+- Has quality and methodology information been provided?
+{% endcapture %}
+
+
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="1" content=expandable_content_1 title="Relevance" %}
+  {% include expandable-section.html number="2" content=expandable_content_2 title="Accuracy and reliability" %}
+  {% include expandable-section.html number="3" content=expandable_content_3 title="Timeliness and punctuality" %}
+  {% include expandable-section.html number="4" content=expandable_content_4 title="Comparability and coherence" %}
+  {% include expandable-section.html number="5" content=expandable_content_5 title="Accessibility and clarity" %}
+{% include expandable-block-end.html %}
 
 ## Quality trade-off
 <div class="image-text-container">
