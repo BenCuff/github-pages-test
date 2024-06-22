@@ -238,7 +238,9 @@ The tables below gives some considerations when completing this section of the r
 {% endcapture %}
 
 
-{% capture sidebar %}{% include expandable_content_6 %}{% endcapture %}
+{% capture sidebar %}
+  {% include expandable-section.html number="6" content=expandable_content_6 title="1. Project governance" %}
+{% endcapture %}
 {{ sidebar | markdownify }}
 
 
