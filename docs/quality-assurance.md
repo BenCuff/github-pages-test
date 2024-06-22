@@ -189,7 +189,7 @@ The remainder of this guidance will look in more detail at the five main stages 
 
 
 
-{% capture expandable-content-6 %}
+{% capture expandable_content_6 %}
 ## Project governance
 
 Project governance is the most preliminary stage of analysis and focuses on deciding the guiding question, scope, and context of the planned analysis. While there will be few outputs at this step to QA, the decisions made will define the level of QA necessary at later stages. It’s important at this stage that everyone knows and understands their responsibilities, and there is a clear reason for the analysis being conducted. For recurring publications, this stage may not be needed for each release, but the topics covered should still remain under regular review to continually ensure that project needs are met. 
@@ -205,7 +205,7 @@ The table below gives some considerations when completing this section of the re
 {% endcapture %}
 
 
-{% capture expandable-content-7 %}
+{% capture expandable_content_7 %}
 ## Project planning
   
 Effective project planning serves as the roadmap that guides any analytical project from conception to completion. It ensures that the correct documentation is available, risks are mitigated, and deadlines are met. There should be a clear, proportionate QA plan and a consistent project structure with version control.
@@ -213,7 +213,7 @@ Effective project planning serves as the roadmap that guides any analytical proj
 The table below gives some considerations when completing this section of the review conversation & QA log.
 {% endcapture %}
 
-{% capture expandable-content-8 %}
+{% capture expandable_content_8 %}
 ## Verification and validation
     
 Whilst verification focuses on confirming that the analysis is being developed correctly according to the specified requirements, validation ensures that the final product meets user needs and answers the defined research question. Both processes are essential for ensuring the quality and reliability of our analytical projects. The key output from the verification process concerns the extent to which the agreed work has been conducted appropriately. The key output from the validation process is a judgment, based on evidence, concerning the extent to which the work is 'fit for purpose'
@@ -221,7 +221,7 @@ Whilst verification focuses on confirming that the analysis is being developed c
 The tables below gives some considerations when completing this section of the review conversation & QA log.
 {% endcapture %}
 
-{% capture expandable-content-9 %}
+{% capture expandable_content_9 %}
 ## Project reproducibility
     
 When we produce analysis or an analytical output, we need to produce it using the most robust method to remove any question around how it was created. The focus is then directed to what the report is showing. [RAP (Reproducible Analytical Pipelines)](https://confluence.collab.test-and-trace.nhs.uk/pages/viewpage.action?pageId=352277347) is a set of principles and working practices that help you create faster, more robust, and more transparent analytical processes. By making our analysis reproducible, we make it easier for others to quality assure, assess, critique and re-use our methods and results, and for colleagues to assure what we have done.
@@ -229,7 +229,7 @@ When we produce analysis or an analytical output, we need to produce it using th
 The tables below gives some considerations when completing this section of the review conversation & QA log.
 {% endcapture %}
 
-{% capture expandable-content-10 %}
+{% capture expandable_content_10 %}
 ## Communication and outputs
   
 In this context, the output is defined broadly as the analysis that is officially published, or one that is used for further research or analysis. Quality at this stage refers to how well your ‘final’ outputs meet your users’ needs. Strengths and limitations of your analysis should be communicated clearly to users so that they can understand the data and use it appropriately. For each statistical output, information on quality and methods should be communicated to users both within the main statistical release and in a Quality and Methodology Information (QMI) report.
@@ -239,11 +239,11 @@ The tables below gives some considerations when completing this section of the r
 
 
 {% include expandable-block-start.html %}
-  {% include expandable-section.html number="6" content=expandable-content-6 title="1. Project governance" %}
-  {% include expandable-section.html number="7" content=expandable-content-7 title="2. Project planning" %}
-  {% include expandable-section.html number="8" content=expandable-content-8 title="3. Verification and validation" %}
-  {% include expandable-section.html number="9" content=expandable-content-9 title="4. Project reproducibility" %}
-  {% include expandable-section.html number="10" content=expandable-content-10 title="5. Communication and outputs" %}
+  {% include expandable-section.html number="6" content={{ expandable_content_6 | markdownify }} title="1. Project governance" %}
+  {% include expandable-section.html number="7" content={{ expandable_content_7 | markdownify }} title="2. Project planning" %}
+  {% include expandable-section.html number="8" content={{ expandable_content_8 | markdownify }} title="3. Verification and validation" %}
+  {% include expandable-section.html number="9" content={{ expandable_content_9 | markdownify }} title="4. Project reproducibility" %}
+  {% include expandable-section.html number="10" content={{ expandable_content_10 | markdownify }} title="5. Communication and outputs" %}
 {% include expandable-block-end.html %}
 
 
