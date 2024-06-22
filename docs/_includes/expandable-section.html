@@ -2,8 +2,6 @@
   {{ include.title }}
 </button>
   
-  <div id="expanded-content-{{ include.number }}" class="expandable-contents" aria-hidden="true">
-    <p>
-      {{ include.content }}
-    </p>
+<div id="expanded-content-{{ include.number }}" class="expandable-contents" aria-hidden="true">
+  {{ include.content }}
 </div>
