@@ -74,6 +74,10 @@ p, h1, h2, h3, h4, h5, ul, ol{
   font-family: sans-serif;
 }
 
+img{
+  max-width:100%;
+}
+
 #footer{
   background-color: #007C91;
   color: white;
