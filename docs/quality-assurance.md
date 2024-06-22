@@ -270,49 +270,17 @@ The remainder of this guidance will look in more detail at the five main stages 
 ## FAQs
 Our FAQs page is designed to address the most common queries we receive about quality assurance. Please get in touch with us if there's anything missing that you would like to see.
 
-<div class="expandables-block">
-  <button id="expanded-header-11" aria-controls="expanded-content-11" aria-expanded="false" class="expandable-header">
-  How often should I be performing QA checks?
-  </button>
-  
-  <div id="expanded-content-11" class="expandable-contents" aria-hidden="true">
-    <p>
-    </p>
-  </div>
-  
-  <button id="expanded-header-12" aria-controls="expanded-content-12" aria-expanded="false" class="expandable-header">
-  How do I document that my QA is appropriate and proportionate?
-  </button>
-  
-  <div id="expanded-content-12" class="expandable-contents" aria-hidden="true">
-    <p>
-    </p>
-  </div>
-  
-  
-  <button id="expanded-header-13" aria-controls="expanded-content-13" aria-expanded="false" class="expandable-header">
-  What guidance has the government released regarding QA?
-  </button>
-  
-  <div id="expanded-content-13" class="expandable-contents" aria-hidden="true">
-    <p>
-    </p>
-  </div>
-</div>
-
-
-{% capture expandable-content-14 %}
-
-Hello. 
-
-Testing this table: 
-
-| Title | Content |
-|-------|---------|
-| 1     | 2       |
-| 3     | 4       |
-
+{% capture expandable-content-11 %}
 {% endcapture %}
 
+{% capture expandable-content-12 %}
+{% endcapture %}
 
-{% include expandable-section.html number="14" title="Test title" content="Hello" %}
+{% capture expandable-content-13 %}
+{% endcapture %}
+
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="11" content=expandable-content-11 title="How often should I be performing QA checks?" %}
+  {% include expandable-section.html number="12"  content=expandable-content-12 title="How do I document that my QA is appropriate and proportionate?" %}
+  {% include expandable-section.html number="13"  content=expandable-content-13 title="What guidance has the government released regarding QA?" %}
+{% include expandable-block-end.html %}
