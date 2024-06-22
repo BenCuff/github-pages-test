@@ -8,6 +8,7 @@
 #big-banner{
   background-color: #007C91;
   height: 50px;
+  padding: 0 10px;
 }
 
 #big-banner p{
@@ -38,6 +39,7 @@
   margin: 0 auto 35px auto;
   display: flex;
   border-bottom: 1pt solid grey;
+  padding: 0 10px;
 }
 
 #page-nav{
@@ -68,6 +70,7 @@ body{
 .main{
   max-width: var(--main-width);
   margin: 0 auto 0 auto;
+  padding: 0 10px;
 }
 
 p, h1, h2, h3, h4, h5, ul, ol{
