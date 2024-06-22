@@ -239,11 +239,11 @@ The tables below gives some considerations when completing this section of the r
 
 
 {% include expandable-block-start.html %}
-  {% include expandable-section.html number="6" content={{ expandable_content_6 | markdownify }} title="1. Project governance" %}
-  {% include expandable-section.html number="7" content={{ expandable_content_7 | markdownify }} title="2. Project planning" %}
-  {% include expandable-section.html number="8" content={{ expandable_content_8 | markdownify }} title="3. Verification and validation" %}
-  {% include expandable-section.html number="9" content={{ expandable_content_9 | markdownify }} title="4. Project reproducibility" %}
-  {% include expandable-section.html number="10" content={{ expandable_content_10 | markdownify }} title="5. Communication and outputs" %}
+  {% include expandable-section.html number="6" content=expandable_content_6 title="1. Project governance" %}
+  {% include expandable-section.html number="7" content=expandable_content_7 title="2. Project planning" %}
+  {% include expandable-section.html number="8" content=expandable_content_8 title="3. Verification and validation" %}
+  {% include expandable-section.html number="9" content=expandable_content_9 title="4. Project reproducibility" %}
+  {% include expandable-section.html number="10" content=expandable_content_10 title="5. Communication and outputs" %}
 {% include expandable-block-end.html %}
 
 
@@ -251,17 +251,17 @@ The tables below gives some considerations when completing this section of the r
 ## FAQs
 Our FAQs page is designed to address the most common queries we receive about quality assurance. Please get in touch with us if there's anything missing that you would like to see.
 
-{% capture expandable-content-11 %}
+{% capture expandable_content_11 %}
 {% endcapture %}
 
-{% capture expandable-content-12 %}
+{% capture expandable_content_12 %}
 {% endcapture %}
 
-{% capture expandable-content-13 %}
+{% capture expandable_content_13 %}
 {% endcapture %}
 
 {% include expandable-block-start.html %}
-  {% include expandable-section.html number="11" content=expandable-content-11 title="How often should I be performing QA checks?" %}
-  {% include expandable-section.html number="12"  content=expandable-content-12 title="How do I document that my QA is appropriate and proportionate?" %}
-  {% include expandable-section.html number="13"  content=expandable-content-13 title="What guidance has the government released regarding QA?" %}
+  {% include expandable-section.html number="11" content=expandable_content_11 title="How often should I be performing QA checks?" %}
+  {% include expandable-section.html number="12"  content=expandable_content_12 title="How do I document that my QA is appropriate and proportionate?" %}
+  {% include expandable-section.html number="13"  content=expandable_content_13 title="What guidance has the government released regarding QA?" %}
 {% include expandable-block-end.html %}
