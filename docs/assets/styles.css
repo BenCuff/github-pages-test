@@ -160,13 +160,8 @@ code{
   column-gap: 10px;
 }
 
-.image-text-container img {
-  flex: 1;
-  max-width: 450px;
-}
-
 .image-text-container p {
-  flex 1;
+  flex: 1;
 }
 
 /*Clickable buttons*/
