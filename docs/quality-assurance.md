@@ -238,12 +238,6 @@ The tables below gives some considerations when completing this section of the r
 {% endcapture %}
 
 
-{% capture sidebar %}
-  {% include expandable-section.html number="6" content=expandable_content_6 title="1. Project governance" %}
-{% endcapture %}
-{{ sidebar | markdownify }}
-
-
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="6" content=expandable_content_6 title="1. Project governance" %}
   {% include expandable-section.html number="7" content=expandable_content_7 title="2. Project planning" %}

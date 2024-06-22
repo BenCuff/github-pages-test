@@ -3,5 +3,5 @@
 </button>
   
 <div id="expanded-content-{{ include.number }}" class="expandable-contents" aria-hidden="true">
-  {{ include.content }}
+  {{ include.content | markdownify }}
 </div>
