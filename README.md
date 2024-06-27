@@ -103,3 +103,16 @@ To add images to a page, first add the file to the `docs/assets/img/` folder.
 Then link using the following code, adding the correct filepath and alt-text:
 
 `<img src="assets/img/laptophands.jpg" alt="A picture of a person working at a laptop">`
+
+#### Image and text side-by-side
+If you want to have an image next to some text, you can do that using the code below. 
+
+Note that you should specify the image width and height. 
+
+```
+<div class="image-text-container">
+    <img src="assets/img/image.png" width="460px" height="318px" alt="provide some alternative text here">
+    <p>The text goes here</p>
+</div>
+```
+
