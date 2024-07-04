@@ -8,7 +8,7 @@ page1:
   name: "Introduction to RAP"
 page2: 
   url: rap-framework
-  name: "Bronze-silver-gold framework"
+  name: ">Bronze-silver-gold framework<"
 ---
 
 <style>
