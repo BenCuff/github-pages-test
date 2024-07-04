@@ -1,8 +1,7 @@
 ---
-title: "Ensuring good quality assurance"
+title: "Reproducible Analytical Pipelines (RAP): an introduction"
 layout: "guidance-page"
 ---
-
 
 > ## Main messages
 > - All analysts should aim towards “RAP by default” ways of working, as part of broader Government aims.
