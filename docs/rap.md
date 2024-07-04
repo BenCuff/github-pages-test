@@ -1,6 +1,6 @@
 ---
-title: Reproducible Analytical Pipelines (RAP): an introduction
-layout: guidance-page
+title: "Ensuring good quality assurance"
+layout: "guidance-page"
 ---
 
 
