@@ -1,11 +1,17 @@
 ---
 title: "Reproducible Analytical Pipelines (RAP): an introduction"
-layout: "guidance-page"
+layout: guidance-page
+page1: 
+  url: rap
+  name: Introduction to RAP
+page2: 
+  url: rap-framework
+  name: Bronze-silver-gold framework
 ---
 
 > ## Main messages
 > - All analysts should aim towards “RAP by default” ways of working, as part of broader Government aims.
-> - Iterative improvements should be made according to our [bronze, silver and gold standards of RAP](/rap-framework), recognising that RAP is not an all-or-nothing exercise.
+> - Iterative improvements should be made according to our [bronze, silver and gold standards of RAP](rap-framework), recognising that RAP is not an all-or-nothing exercise.
 > - A cultural change should be supported at all levels in the organisation to encourage the enhanced roll-out of RAP, ensuring that analysts have the tools, time and resources needed to develop and implement the necessary skills.
 
 UKHSA colleagues are encouraged to join our internal RAP network to seek support and share knowledge. To do so, or for any other queries related to RAP, please contact <UKHSA.RAP@ukhsa.gov.uk>.
@@ -92,7 +98,7 @@ Note: Figure taken from the Analysis Function Reproducible Analytical Pipelines 
 
 ### Standards of RAP
 
-We have developed [bronze, silver and gold standards of RAP](/rap-framework) to provide major benchmarks for analytical teams to work towards, based upon the “Minimum” and “further” standards of RAP developed by the Government Analysis Function [2].
+We have developed [bronze, silver and gold standards of RAP](rap-framework) to provide major benchmarks for analytical teams to work towards, based upon the “Minimum” and “further” standards of RAP developed by the Government Analysis Function [2].
 
 We would like all analytical teams within UKHSA to start working towards these standards. However, it is important to stress that RAP does not need to be an all or nothing exercise. Even implementing just some of these principles will bring about improvements to processes and outputs [8][11]. Trying to achieve all of these standards in one go may be too daunting a task and so incremental improvements are the suggested way to go.
 
