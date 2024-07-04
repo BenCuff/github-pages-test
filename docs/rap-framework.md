@@ -11,6 +11,17 @@ page2:
   name: "Bronze-silver-gold framework"
 ---
 
+<style>
+  td, th{
+    width: 30%;
+  }
+  
+  td:first-child{
+    background-colour:unset;
+  }
+</style>
+
+
 
 The purpose of this document is to outline a number of standards to work towards when developing and improving upon a Reproducible Analytical Pipeline (RAP). For an introduction on what RAP is, and what benefits it can bring, please see our other guidance: “[RAP: An introduction](rap)”.
 
@@ -37,3 +48,6 @@ The following table gives a quick overview of the principles that form each stan
 | Use version control | - | Log data and analysis checks |
 | Use peer review to ensure reproducibility (checking whether pipelines meet these standards) | - | Implement continuous integration |
 | - | - | Implement dependency management |
+
+
+
