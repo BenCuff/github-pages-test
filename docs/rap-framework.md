@@ -17,7 +17,7 @@ page2:
   }
   
   td:first-child{
-    background-colour:unset;
+    background-color:unset;
   }
 </style>
 
