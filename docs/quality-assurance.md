@@ -1,6 +1,6 @@
 ---
 title: "Ensuring good quality assurance"
-layout: "guidance-page"
+layout: guidance-page
 ---
 
 > ## Main messages
