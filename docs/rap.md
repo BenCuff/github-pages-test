@@ -41,7 +41,7 @@ Legacy analytical pipelines tend to look like the one presented in Figure 1. Her
 
 #### Figure 1: Legacy processes tend to have limited quality assurance and several manual steps
 
-<img src="assets/img/rap/legacy_pipeline.svg" alt="An image showing a largely manual process of data extraction and analysis, with manual production of outputs and quality assurance focussing on outputs rather than earlier steps.">
+<img width="900px" src="assets/img/rap/legacy_pipeline.svg" alt="An image showing a largely manual process of data extraction and analysis, with manual production of outputs and quality assurance focussing on outputs rather than earlier steps.">
 
 
 There are a number of potential issues and sources of error with this kind of pipeline, such as:
@@ -66,7 +66,7 @@ Figure 2 shows that when using RAP, open source software such as R or Python is 
 
 #### Figure 2: RAP projects are automated and quality assurance and version control is integrated
 
-<img src="assets/img/rap/rap_pipeline.svg" alt="An image showing a more automated pipeline where quality assurance and version control is integrated throughout.">
+<img width="900px" src="assets/img/rap/rap_pipeline.svg" alt="An image showing a more automated pipeline where quality assurance and version control is integrated throughout.">
 
 The benefits of RAP are well documented [2][4][7][8][9][11][12][13]. A number of case studies lauding the successes of RAP across government have also been published [11][12][14][15].
 
@@ -93,7 +93,7 @@ RAP also does require more time at the start of an analytical project to write t
 
 #### Figure 3: Reproducible practices makes analysis faster
 
-<img src="assets/img/rap/rap_efficiency.svg" alt="An diagram showing that although RAP might take more time than more manual approaches initially, it can save time in the long run, particularly when the pipeline needs to be repeated several times.">
+<img width="900px" src="assets/img/rap/rap_efficiency.svg" alt="An diagram showing that although RAP might take more time than more manual approaches initially, it can save time in the long run, particularly when the pipeline needs to be repeated several times.">
 
 Note: Figure taken from the Analysis Function Reproducible Analytical Pipelines (RAP) strategy [2]
 
