@@ -1,13 +1,8 @@
 ---
-title: "Reproducible Analytical Pipelines (RAP): an introduction""
-layout: "guidance-page"
-page1: 
-  url: rap
-  name: Introduction to RAP
-page2: 
-  url: rap-framework
-  name: Bronze-silver-gold framework
+title: Reproducible Analytical Pipelines (RAP): an introduction
+layout: guidance-page
 ---
+
 
 > ## Main messages
 > - All analysts should aim towards “RAP by default” ways of working, as part of broader Government aims.
