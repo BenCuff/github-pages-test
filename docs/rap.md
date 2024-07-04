@@ -1,6 +1,7 @@
 ---
 title: "Reproducible Analytical Pipelines (RAP): an introduction"
 layout: guidance-page
+
 page-group-title: "Reproducible Analytical Pipelines (RAP)"
 page1: 
   url: rap

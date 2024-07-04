@@ -1,6 +1,7 @@
 ---
 title: "Reproducible Analytical Pipelines (RAP): bronze-silver-gold framework"
 layout: guidance-page
+
 page-group-title: "Reproducible Analytical Pipelines (RAP)"
 page1: 
   url: rap
@@ -27,7 +28,7 @@ For more support on how to meet these standards, including information on how to
 The following table gives a quick overview of the principles that form each standard. More detailed explanations are given in the sections to follow.
 
 | The Bronze standard 🥉 | The Silver standard 🥈 | The Gold standard 🥇 |
-| ------- | ------- | ------- |
+|:------- |:------- |:------- |
 | Use open source analytical software | Meet the Bronze standard | Meet the Silver standard |
 | Have minimal manual steps for data extraction and analysis | Have minimal manual steps for the production of outputs | Have unit testing for functions |
 | Follow good practice for quality assurance, integrating quality assurance checks throughout the pipeline | Use functions as reusable blocks of code | Have error handling for functions |
