@@ -169,21 +169,44 @@ To meet the silver standard for RAP, your project should:
 
 
 {% capture silver_1 %}
+Automating the production of outputs, such as reports, spreadsheets or dashboards, further reduces the risk of human error.
+
+Note that this does not mean your outputs should necessarily be entirely automated. In some cases, this might be appropriate; in other cases, manual input may be needed for providing narrative in a report, for example. 
+
+There are packages available to help produce reports automatically, such as [RMarkdown](https://rmarkdown.rstudio.com/), [Python-Markdown](https://pypi.org/project/Markdown/) and [Quarto](https://quarto.org/).
+
+Spreadsheet workbooks can similarly be produced using the [a11ytables package for R](https://github.com/co-analysis/a11ytables) or [gptables for Python](https://github.com/best-practice-and-impact/gptables), for example.
+
+Producing outputs in these ways means that you know all elements of the output are in sync, as everything is produced from that single pipeline [8]. With more manual approaches, forgetting to update the charts, for example, will mean that they are no longer in sync with what is presented in the text. A good test for how automated your pipeline is might be to think whether or not your outputs are deletable without worry. If you would not want to delete your outputs, because it would take time and energy to re-make them, then your end-to-end pipeline is not fully automated [12].
 {% endcapture %}
+
 
 {% capture silver_2 %}
+Functions are particularly useful when you are repeating the same operations at multiple points in your code. Rather than writing out the same code each time you need to carry out an operation, you can create a function and call that each time instead.
+
+This lessens the risk of error because if you need to change that operation, you only need to change the function definition, not each place in the code where it is run (some of which may otherwise be missed, causing inconsistencies). Functions also lend themselves nicely to sharing snippets of functional code with others [5].
 {% endcapture %}
+
 
 {% capture silver_3 %}
+Working to a common code style makes it easier for other analysts to pick up your code as they will be able to interpret and understand it more quickly. For R users, the [tidyverse style guide](https://style.tidyverse.org/) is the most commonly used style in the global community. "[PEP 8](https://peps.python.org/pep-0008/)" is an alternative for Python users. 
+
+You should also consult the [Duck Book](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html) [12] for guidance on coding standards (which also includes some [handy checklists for quality assuring your code](https://best-practice-and-impact.github.io/qa-of-code-guidance/checklists.html)). 
 {% endcapture %}
 
+
 {% capture silver_4 %}
+Validating your input data is important as the quality of your outputs will necessarily depend on the quality of the inputs. Remember: “[garbage in, garbage out](https://dictionary.apa.org/garbage-in-garbage-out)”.
+
+This principle is intended to build upon the bronze standard quality assurance principle, introducing a more thorough interrogation of your input data. 
+
+Validating inputs in an automated way at the very start of the pipeline allows you to quickly identify and address any quality issues early. You might produce code to check, for example, for missing data, incorrect data types, extreme or outlier values, and whether there have been any unexpectedly large changes in the latest iteration of a longitudinal dataset. Other sense checks can also be performed, depending on the nature of the project. You could have your code produce a markdown document which flags any rows that may warrant further exploration - this may be particularly useful for any reports which are run on a regular basis.
 {% endcapture %}
 
 
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="8" content=silver_1 title="Have minimal manual steps for the production of outputs" %}
-  {% include expandable-section.html number="9"  content=silver_2 title="Use functions as reusable blocks of code %}
+  {% include expandable-section.html number="9"  content=silver_2 title="Use functions as reusable blocks of code" %}
   {% include expandable-section.html number="10"  content=silver_3 title="Adhere to a common code style" %}
   {% include expandable-section.html number="11"  content=silver_4 title="Have automated input data validation" %}
 {% include expandable-block-end.html %}
