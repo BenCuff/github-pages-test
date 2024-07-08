@@ -27,11 +27,6 @@
   display: flex;
 }
 
-@media only screen and (max-width: 475px) {
-  #big-banner{height:auto;}
-  #site-nav{display:block;}
-}
-
 #git-icon{
   margin-left:auto;
   padding:10px;
@@ -66,10 +61,6 @@
   margin-top: -25px;
   background-color: #F0FDFF;
   border-top: 1pt solid grey;
-}
-
-@media only screen and (max-width: 350px) {
-  .page-nav{display:block;}
 }
 
 .footer-page-nav > .page-nav{
@@ -246,4 +237,15 @@ th {
 }
 td:first-child {
   background-color: #f8f9fa;
+}
+
+
+/*Small screen declarations*/
+@media only screen and (max-width: 475px) {
+  #big-banner{height:auto;}
+  #site-nav{display:block;}
+}
+
+@media only screen and (max-width: 350px) {
+  .page-nav{display:block;}
 }
