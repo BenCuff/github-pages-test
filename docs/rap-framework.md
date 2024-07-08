@@ -27,7 +27,7 @@ This page outlines a number of standards to work towards when developing and imp
 
 In our framework, we present bronze, silver and gold standards, offering major benchmarks to work towards, with each subsequent standard reflecting a more transparent, reproducible and robust pipeline. You do not need to aim for gold for every project; instead, the standard you should aim for depends on the needs of the project. 
 
-These standards are largely based upon the “Minimum” and “further” standards of RAP developed by the Government Analysis Function [1]. For an explanation of how our standards differ from theirs, please see the [appendix](##appendix). Our standards also align with those presented within the [Health RAP playbook](https://nhsengland.github.io/Health-RAP-Playbook-Alpha/). 
+These standards are largely based upon the “Minimum” and “further” standards of RAP developed by the Government Analysis Function [1]. For an explanation of how our standards differ from theirs, please see the [appendix](#appendix). Our standards also align with those presented within the [Health RAP playbook](https://nhsengland.github.io/Health-RAP-Playbook-Alpha/). 
 
 While we would like all analytical pipelines to eventually meet one of these standards, it is important to stress that RAP does not need to be an all or nothing exercise. Even implementing just some of the principles outlined here will bring about improvements to your processes and outputs [2][3]. Trying to achieve all of these standards in one go may be too daunting a task and so incremental improvements are the suggested way to go.
 
