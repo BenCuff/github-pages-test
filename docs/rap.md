@@ -140,21 +140,32 @@ When thinking about RAP, there is often a sole focus on automation and efficienc
 
 ## References
 
-1.	[Code of Practice for Statistics](https://code.statisticsauthority.gov.uk/the-code/)
-2.	[Reproducible Analytical Pipelines (RAP) strategy](https://analysisfunction.civilservice.gov.uk/policy-store/reproducible-analytical-pipelines-strategy/)
-3.	[Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/)
-4.	[The Duck Book: Quality assurance of code for analysis and research](https://best-practice-and-impact.github.io/qa-of-code-guidance/)
-5.	[Government Functional Standard GovS 010: Analysis](https://www.gov.uk/government/publications/government-analysis-functional-standard--2)
+1.	[UK Statistics Authority: Code of Practice for Statistics](https://code.statisticsauthority.gov.uk/the-code/)
+2.	[Government Analysis Function: Reproducible Analytical Pipelines (RAP) strategy](https://analysisfunction.civilservice.gov.uk/policy-store/reproducible-analytical-pipelines-strategy/)
+3.	[Government Analysis Function: Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/)
+4.	[Office for National Statistics: The Duck Book - Quality assurance of code for analysis and research](https://best-practice-and-impact.github.io/qa-of-code-guidance/)
+5.	[Government Analysis Function: Government Functional Standard GovS 010 Analysis](https://www.gov.uk/government/publications/government-analysis-functional-standard--2)
 6.	[The Aqua Book: guidance on producing quality analysis for government](https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government)
 7.	[The Goldacre Review: Better, broader, safer: using health data for research and analysis](https://www.gov.uk/government/publications/better-broader-safer-using-health-data-for-research-and-analysis)
 8.	[NHS Digital: RAP community of practice](https://github.com/NHSDigital/rap-community-of-practice)
 9.	[NHS National Services Scotland: Reproducible Analytical Pipelines](https://www.isdscotland.org/About-ISD/Methodologies/_docs/Reproducible_Analytical_Pipelines_paper_v1.4.pdf)
 10.	[Coding in Analysis and Research Survey](https://best-practice-and-impact.github.io/CARS-2/)
 11.	[Reproducible Analytical Pipelines: Overcoming barriers to adoption](https://osr.statisticsauthority.gov.uk/publication/reproducible-analytical-pipelines-overcoming-barriers-to-adoption/)
-12.	[Benefits to government from Reproducible Analytical Pipelines](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/benefits-to-government-from-reproducible-analytical-pipelines/)
-13.	[Why take a more sophisticated approach to building your pipeline](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/why-take-a-more-sophisticated-approach-to-building-your-pipeline/)
-14.	[Using Reproducible Analytical Pipelines (RAP) to improve statistics](https://code.statisticsauthority.gov.uk/case-studies/using-reproducible-analytical-pipelines-rap-to-improve-statistics/)
-15.	[Reproducible Analytical Pipelines (RAP) case studies](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/rap-case-studies/)
-16.	[Infrastructure for Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/infrastructure-for-rap/)
-17.	[The Turing Way handbook to reproducible, ethical and collaborative data science: Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
+12.	[Government Analysis Function: Benefits to government from Reproducible Analytical Pipelines](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/benefits-to-government-from-reproducible-analytical-pipelines/)
+13.	[Government Analysis Function: Why take a more sophisticated approach to building your pipeline](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/why-take-a-more-sophisticated-approach-to-building-your-pipeline/)
+14.	[Office for National Statistics: Using Reproducible Analytical Pipelines (RAP) to improve statistics](https://code.statisticsauthority.gov.uk/case-studies/using-reproducible-analytical-pipelines-rap-to-improve-statistics/)
+15.	[Government Analysis Function: Reproducible Analytical Pipelines (RAP) case studies](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/rap-case-studies/)
+16.	[Government Analysis Function: Infrastructure for Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/infrastructure-for-rap/)
+17.	[The Turing Way: Handbook to reproducible, ethical and collaborative data science: Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
 
+## Appendix
+### Our standards versus those produced by the Government Analysis Function
+
+Our guidance draws upon the principles developed by the Analysis Function [1], supported by other sources given in the reference section. However, we have separated them out into 3 standards (bronze, silver and gold) instead of the Analysis Function’s 2 (minimum and further). This is to make it easier for teams to progress through the standards in smaller leaps.
+
+In our silver standard, some principles have come from the Analysis Function’s minimum standard, and others from their further standards. Specifically:
+
+- “minimise manual steps” has been separated out into two principles covering manual steps during analysis and manual steps during the production of spreadsheets and workbooks, with the former remaining in the minimum bronze standard and the latter being moved to our silver standard - this is to recognise the fact that many analysts will develop the more basic programming skills needed for analysis first, before developing other skills around Rmarkdown, for example
+- “validating input data”, “using functions”, and “adhere to a common best practice code style” have all been moved to our silver standard from the further standard because we have found that these are usually easier to implement than the other further standard principles.
+
+Aside from these differences, all other Analysis function “minimum” standard principles are in our bronze standard, and all other Analysis Function “further” standard principles are in our gold standard.
