@@ -34,7 +34,9 @@
   margin: 0 auto 0 auto;
 }
 
-#site-nav, #page-nav{
+
+/*Navigation bars*/
+#site-nav, .page-nav{
   max-width: var(--main-width); 
   margin: 0 auto 35px auto;
   display: flex;
@@ -42,22 +44,27 @@
   padding: 0 10px;
 }
 
-#page-nav{
+.page-nav{
   margin-top: -25px;
   background-color: #F0FDFF;
   border-top: 1pt solid grey;
 }
 
-#site-nav a, #page-nav a{
+.footer-page-nav > .page-nav{
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+
+#site-nav a, .page-nav a{
   text-decoration: none;
   color: unset;
 }
 
-#site-nav a:hover, #page-nav a:hover{
+#site-nav a:hover, .page-nav a:hover{
   text-decoration: underline;
 }
 
-#site-nav p, #page-nav p{
+#site-nav p, .page-nav p{
   margin: 15px 18px 15px 0;
 }
 
