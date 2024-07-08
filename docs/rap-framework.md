@@ -293,3 +293,15 @@ Workflow management packages such as Targets and Orderly can also help manage in
 10. [The Aqua Book: guidance on producing quality analysis for government](https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government)
 11. [UK Statistics Authority: Code of Practice for Statistics](https://code.statisticsauthority.gov.uk/the-code/)
 12. [Office for National Statistics: The Duck Book - Quality assurance of code for analysis and research](https://best-practice-and-impact.github.io/qa-of-code-guidance/)
+
+## Appendix
+### Our standards versus those produced by the Government Analysis Function
+
+Our guidance draws upon the principles developed by the Analysis Function [1], supported by other sources given in the reference section. However, we have separated them out into 3 standards (bronze, silver and gold) instead of the Analysis Function’s 2 (minimum and further). This is to make it easier for teams to progress through the standards in smaller leaps.
+
+In our silver standard, some principles have come from the Analysis Function’s minimum standard, and others from their further standards. Specifically:
+
+- “minimise manual steps” has been separated out into two principles covering manual steps during analysis and manual steps during the production of spreadsheets and workbooks, with the former remaining in the minimum bronze standard and the latter being moved to our silver standard - this is to recognise the fact that many analysts will develop the more basic programming skills needed for analysis first, before developing other skills around Rmarkdown, for example
+- “validating input data”, “using functions”, and “adhere to a common best practice code style” have all been moved to our silver standard from the further standard because we have found that these are usually easier to implement than the other further standard principles.
+
+Aside from these differences, all other Analysis function “minimum” standard principles are in our bronze standard, and all other Analysis Function “further” standard principles are in our gold standard.
