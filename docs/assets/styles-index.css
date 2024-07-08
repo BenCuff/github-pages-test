@@ -71,4 +71,5 @@
 @media only screen and (max-width: 1030px) {
   #box-right{padding-left:0; max-width:500px; max-height:363px; width:100%; height:auto}
   #box{flex-wrap: wrap;}
+  .index-link{margin-top: 10px;}
 }
