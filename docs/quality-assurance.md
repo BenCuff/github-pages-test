@@ -70,7 +70,7 @@ Click on the buttons below to find about more about each of the dimensions.
 
 ## Quality trade-off
 <div class="image-text-container">
-    <img src="assets/img/Quality_trade_off.png" width="460px" height="318px" alt="A pentagon showing the 5 Dimensions of Quality of the European Statistical System (ESS) Code of Practice: Relevance, Accuracy and Reliability, Timeliness and Punctuality, Comparability and Coherence and Accessibility and Clarity">
+    <img src="assets/img/Quality_trade_off.png" width="460px" alt="A pentagon showing the 5 Dimensions of Quality of the European Statistical System (ESS) Code of Practice: Relevance, Accuracy and Reliability, Timeliness and Punctuality, Comparability and Coherence and Accessibility and Clarity">
     <p>
 The 5 dimensions of statistical output quality are not mutually exclusive. There are relationships between them and there are instances where improvements in one dimension would lead to deterioration in another dimension. Statistics should always be produced to a level of quality that meets users’ needs, and quality assurance should be proportionate to the nature of the quality issues and the importance of the statistics in serving the public good.<br>
 Understanding user needs is really important when measuring the quality of your data. Perfect data quality may not always be achievable and therefore focus should be given to ensuring the data is as fit for purpose as it can be.
