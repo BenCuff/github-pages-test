@@ -101,8 +101,29 @@ It is important for statistical producers to be curious about data and not take 
 
 There are 4 key areas of a QA mindset to consider when embarking on an analytical project:
 
-**ADD HERE - need to think about how best to do this section **
+### Governance and planning
 
+Good governance and planning is an essential part of quality assurance. This involves understanding who will be involved in the QA process and who will be benefitting from the analysis.
+
+Find out who your users are and consider who could use your statistics. Check that the work will meet these user needs appropriately.
+
+### Verification and validation
+
+Verification and validation are two important processes aimed at ensuring that outputs will meet requirements and satisfy user needs. To ensure quality, we need to be confident that the methods and processes chosen are appropriate and that they have been implemented correctly.
+
+It is important to be curious about data and not take it at face-value. If there are values that look inaccurate they should be investigated and verified.
+
+### Reproducibility
+
+Reproducible analysis relies on a transparent production process, so that anyone can follow our steps and understand our results. This transparency eases reuse of methods and results. Easy reproducibility helps our colleagues test and validate what we have done.
+
+Reproducibility increases trust in the statistics. Pipelines are easier to quality assure than manual processes, leading to higher quality.
+
+### Communication of outputs
+
+It is our role to explain how any limitations in our outputs feed through into the decisions that users take. Being clear about these issues is absolutely vital. It protects the integrity of the findings and supports the users of our numbers in drawing the correct conclusions to inform the decisions they make.
+
+<br>
 
 These key stages along the data journey, alongside the 5 Dimensions of Quality of the European Statistical System (ESS), form the basis of the [QA review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) and [QA log template](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20log%20template%20v1.2.xlsx?version=1&modificationDate=1716383298406&api=v2).
 
@@ -110,6 +131,49 @@ These key stages along the data journey, alongside the 5 Dimensions of Quality o
 The AQUA Book defines 3 key roles for QA of analysis: the commissioner, the analyst, and the assurer. These roles are used by many teams to delegate responsibility during QA. In addition, the AQUA Book and [Macpherson Review](https://www.gov.uk/government/publications/review-of-quality-assurance-of-government-models) state that analysis which is business critical should have a single senior responsible officer (SRO).
 
 In practice, the exact nature of roles required may differ based on project scope and needs, but these roles provide a useful framework for considering the different ways QA should be built into the life cycle of a project. The roles are summarised below.
+
+
+{% capture expandable_content_6 %}
+The person commissioning analysis  ('the commissioner') is responsible for:
+
+developing the question of interest and communicating this to the analyst and assurer so that they can identify the most appropriate methods for analysis and assurance
+clearly expressing the needs of the project and risks that are entailed so that proportionate levels of QA can be decided upon by the analyst
+People of all levels of seniority commission analysis. The commissioner may be acting on behalf of a government decision-maker or other customer, or they may be a policy lead in the area where work is being commissioned. However, the commissioner assumes accountability for the success of the overall project, so the commissioner should be someone who holds a view on the overall purpose of the statistical release and what users’ needs might be.
+{% endcapture %}
+
+{% capture expandable_content_7 %}
+The person leading the analysis  ('the analyst') is responsible for:
+
+working with the commissioner to help develop the question of interest in a way that allows it to be answered appropriately and meet the needs of the commissioner
+planning how they will conduct QA and demonstrate assured quality to the commissioner, assurer, and end users of their analytical output
+providing final results and records of all work they have done
+communicating to the commissioner the implications of their results, including strengths, limitations, uncertainty, and context
+In practice, there may often be more than one analyst involved in a project. In this case, the roles of 'the analyst' may be delegated and managed among several colleagues by a senior analyst. This person should have a well-developed knowledge of the methodology that will be used, the analytical production process, and how to ensure that best practices for producing analysis are being followed. Often, this entails experience as a project manager for analysis.
+{% endcapture %}
+
+{% capture expandable_content_8 %}
+The person responsible for analytical assurance  ('the assurer') is responsible for:
+
+ensuring that appropriate quality assurance is taking place throughout by requesting evidence of QA activity
+providing intermediate and final sign-offs for the output
+advising the commissioner on whether quality concerns have been sufficiently addressed and the implications of any remaining risks
+This person is not directly involved in conducting QA and does not need to be an analyst. However, QA may benefit from an assurer who understands the analytical methods used in the project so that they can identify issues with the output. Because the assurer signs off on the QA activities, they should have enough seniority to take responsibility for the output. For example, they might be a senior analyst or analytical project manager and may also be the same person as the SRO if the analysis is business critical. For official statistics, this person is often a Senior Statistician or someone with an equivalent of higher grade.
+{% endcapture %}
+
+{% capture expandable_content_9 %}
+Some analysis may require a senior responsible officer  ('the SRO'), who takes responsibility for the project and its outputs throughout every stage of its life cycle, from planning and development to application.  An SRO should be in place for any type of analysis that is business critical. They should be of sufficient seniority to take responsibility for business critical analysis, and should formally sign off that the analysis is fit for purpose prior to its use. If the work is being used for a new purpose, the analytical assurer should obtain confirmation from the SRO that it will be appropriate for the new application. The Data Science QA Team has created a [guidance document to assist SROs](https://confluence.collab.test-and-trace.nhs.uk/pages/viewpage.action?pageId=350688720)
+
+As with the assurer, the SRO may be of any background, but may benefit from a prior understanding of the analytical and/or policy background of the model. Only business critical analysis requires an SRO, who may be the same person as the assurer. However, the AQUA Book notes that it is good practice for all models to ensure that there is one individual with overall accountability throughout all stages of its development and use.
+{% endcapture %}
+
+
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="6" content=expandable_content_1 title="The commissioner" %}
+  {% include expandable-section.html number="7" content=expandable_content_2 title="The analyst" %}
+  {% include expandable-section.html number="8" content=expandable_content_3 title="The assurer" %}
+  {% include expandable-section.html number="9" content=expandable_content_4 title="The senior responsible officer" %}
+{% include expandable-block-end.html %}
+
 
 ## How can I adopt a QA mindset?
  We have created two tools to help teams discuss, plan, record and sign off on quality:
@@ -151,17 +215,7 @@ In the QA log template, suggested criteria is given in order to attain a high le
 The remainder of this guidance will look in more detail at the five main stages of a traditional publication cycle , give guiding questions to consider. Links and resources available to you will also be shown to customise your QA log based on your project and user needs.
 
 
-| Guiding questions                                                  | Specific considerations                                                                                                                                                                                                                                                                                                       | Why do I need to know the answer to this?                                                                                                                                                                                                                                                                                                                                                                                                               | What help is available?                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| What is the need for this analysis or statistical release?         | Does the output contribute something new that cannot be found in existing research or literature?<br><br>Has there been a clear user need for this analysis shown through user consultation?                                                                                                                                  | Understanding why the analysis/statistical release is needed and what it will be used for is critical for understanding whether what you have done is fit for purpose.<br><br>If you are responsible for part of an analytical/statistical process, understanding the end use will help you to make sure that your part does what is needed to meet user needs.                                                                                         | [Guidance: The AQUA Book](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/416478/aqua_book_final_web.pdf)<br><br><br>[Guidance: Analysis Functional Standard](https://www.gov.uk/government/publications/government-analysis-functional-standard--2)                                                                                                                                           |
-| Who uses your analysis or statistical release?                     | Does the work meet user needs appropriately?<br><br>Have you addressed feedback obtained from recent user consultations?<br><br>What are the expectations of my users?<br><br>Are the length and content of the publication appropriate for its users?<br><br>Are terms defined for your less-technical users?                | Understanding who uses your analysis/statistical release will help you to make sure that it meets their needs.<br><br>It also helps you to tailor your outputs to make sure all your users are fully supported in using the outputs effectively.                                                                                                                                                                                                        | [Guidance: User engagement top tips](https://analysisfunction.civilservice.gov.uk/policy-store/user-engagement-top-tips/)                                                                                                                                                                                                                                                                                                                      |
-| What analytical question you are addressing?                       | Are questions suitably explicit and do they clearly reflect the evidence gaps the analysis is intended to fill?<br><br>Will the output align with overarching departmental/programme goals?                                                                                                                                   | Having a clear understanding of the problem your team is trying to solve ensures that the analysis you design is fit for purpose.<br><br>If you do not know how your work is contributing to answering an analytical need, you may be unaware of important requirements or limitations for your part of the work.                                                                                                                                       | [Guidance: The AQUA Book ](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/416478/aqua_book_final_web.pdf)<br><br><br>[Guidance: Analysis Functional Standard](https://www.gov.uk/government/publications/government-analysis-functional-standard--2)<br><br><br>[UKHSA Data Strategy](https://intranet.ukhsa.gov.uk/sites/data-analytics-and-surveillance/SitePageModern/49668/data-strategy) |
-| Is everyone aware of their role and responsibility in the process? | Is a Senior Responsible Officer (SRO) required as the analysis is business critical?<br><br>What is the role of the commissioner in your project? Are there any key changes to the publications that need flagging?<br><br>Does the assurer understand the analytical methods used in the project? Are there any skills gaps? | For effective quality assurance, you need to be clear on roles and responsibilities throughout the chain of production. It is not enough to say that an individual will carry out some QA.<br><br>Assigning the roles set out in the AQUA book provide a useful framework for considering the different ways QA should be built into the life cycle of a project.<br><br>For more information, see Roles and responsibilities section of this guidance. | [Guidance: The AQUA Book](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/416478/aqua_book_final_web.pdf)                                                                                                                                                                                                                                                                                      |
- 
-
-
-
-{% capture expandable_content_6 %}
+{% capture expandable_content_10 %}
 ## Project governance
 
 Project governance is the most preliminary stage of analysis and focuses on deciding the guiding question, scope, and context of the planned analysis. While there will be few outputs at this step to QA, the decisions made will define the level of QA necessary at later stages. It’s important at this stage that everyone knows and understands their responsibilities, and there is a clear reason for the analysis being conducted. For recurring publications, this stage may not be needed for each release, but the topics covered should still remain under regular review to continually ensure that project needs are met. 
@@ -177,7 +231,7 @@ The table below gives some considerations when completing this section of the re
 {% endcapture %}
 
 
-{% capture expandable_content_7 %}
+{% capture expandable_content_11 %}
 ## Project planning
   
 Effective project planning serves as the roadmap that guides any analytical project from conception to completion. It ensures that the correct documentation is available, risks are mitigated, and deadlines are met. There should be a clear, proportionate QA plan and a consistent project structure with version control.
@@ -185,7 +239,7 @@ Effective project planning serves as the roadmap that guides any analytical proj
 The table below gives some considerations when completing this section of the review conversation & QA log.
 {% endcapture %}
 
-{% capture expandable_content_8 %}
+{% capture expandable_content_12 %}
 ## Verification and validation
     
 Whilst verification focuses on confirming that the analysis is being developed correctly according to the specified requirements, validation ensures that the final product meets user needs and answers the defined research question. Both processes are essential for ensuring the quality and reliability of our analytical projects. The key output from the verification process concerns the extent to which the agreed work has been conducted appropriately. The key output from the validation process is a judgment, based on evidence, concerning the extent to which the work is 'fit for purpose'
@@ -193,7 +247,7 @@ Whilst verification focuses on confirming that the analysis is being developed c
 The tables below gives some considerations when completing this section of the review conversation & QA log.
 {% endcapture %}
 
-{% capture expandable_content_9 %}
+{% capture expandable_content_13 %}
 ## Project reproducibility
     
 When we produce analysis or an analytical output, we need to produce it using the most robust method to remove any question around how it was created. The focus is then directed to what the report is showing. [RAP (Reproducible Analytical Pipelines)](https://confluence.collab.test-and-trace.nhs.uk/pages/viewpage.action?pageId=352277347) is a set of principles and working practices that help you create faster, more robust, and more transparent analytical processes. By making our analysis reproducible, we make it easier for others to quality assure, assess, critique and re-use our methods and results, and for colleagues to assure what we have done.
@@ -201,7 +255,7 @@ When we produce analysis or an analytical output, we need to produce it using th
 The tables below gives some considerations when completing this section of the review conversation & QA log.
 {% endcapture %}
 
-{% capture expandable_content_10 %}
+{% capture expandable_content_14 %}
 ## Communication and outputs
   
 In this context, the output is defined broadly as the analysis that is officially published, or one that is used for further research or analysis. Quality at this stage refers to how well your ‘final’ outputs meet your users’ needs. Strengths and limitations of your analysis should be communicated clearly to users so that they can understand the data and use it appropriately. For each statistical output, information on quality and methods should be communicated to users both within the main statistical release and in a Quality and Methodology Information (QMI) report.
@@ -211,11 +265,11 @@ The tables below gives some considerations when completing this section of the r
 
 
 {% include expandable-block-start.html %}
-  {% include expandable-section.html number="6" content=expandable_content_6 title="1. Project governance" %}
-  {% include expandable-section.html number="7" content=expandable_content_7 title="2. Project planning" %}
-  {% include expandable-section.html number="8" content=expandable_content_8 title="3. Verification and validation" %}
-  {% include expandable-section.html number="9" content=expandable_content_9 title="4. Project reproducibility" %}
-  {% include expandable-section.html number="10" content=expandable_content_10 title="5. Communication and outputs" %}
+  {% include expandable-section.html number="6" content=expandable_content_10 title="1. Project governance" %}
+  {% include expandable-section.html number="7" content=expandable_content_11 title="2. Project planning" %}
+  {% include expandable-section.html number="8" content=expandable_content_12 title="3. Verification and validation" %}
+  {% include expandable-section.html number="9" content=expandable_content_13 title="4. Project reproducibility" %}
+  {% include expandable-section.html number="10" content=expandable_content_14 title="5. Communication and outputs" %}
 {% include expandable-block-end.html %}
 
 
@@ -223,17 +277,17 @@ The tables below gives some considerations when completing this section of the r
 ## FAQs
 Our FAQs page is designed to address the most common queries we receive about quality assurance. Please get in touch with us if there's anything missing that you would like to see.
 
-{% capture expandable_content_11 %}
+{% capture expandable_content_15 %}
 {% endcapture %}
 
-{% capture expandable_content_12 %}
+{% capture expandable_content_16 %}
 {% endcapture %}
 
-{% capture expandable_content_13 %}
+{% capture expandable_content_17 %}
 {% endcapture %}
 
 {% include expandable-block-start.html %}
-  {% include expandable-section.html number="11" content=expandable_content_11 title="How often should I be performing QA checks?" %}
-  {% include expandable-section.html number="12"  content=expandable_content_12 title="How do I document that my QA is appropriate and proportionate?" %}
-  {% include expandable-section.html number="13"  content=expandable_content_13 title="What guidance has the government released regarding QA?" %}
+  {% include expandable-section.html number="11" content=expandable_content_15 title="How often should I be performing QA checks?" %}
+  {% include expandable-section.html number="12"  content=expandable_content_16 title="How do I document that my QA is appropriate and proportionate?" %}
+  {% include expandable-section.html number="13"  content=expandable_content_17 title="What guidance has the government released regarding QA?" %}
 {% include expandable-block-end.html %}
