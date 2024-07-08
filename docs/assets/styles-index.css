@@ -69,6 +69,6 @@
 
 /*Small screen declarations*/
 @media only screen and (max-width: 1015px) {
-  img{padding-left:0;}
-  .box{flex-wrap: wrap;}
+  #box-right{padding-left:0; max-width:500px; max-height:363px; width:auto; height:auto}
+  #box{flex-wrap: wrap;}
 }
