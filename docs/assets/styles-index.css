@@ -50,3 +50,26 @@
 .index-tile p{
   margin-bottom: 0;
 }
+
+#box{
+  display:flex; 
+  flex-wrap: wrap; 
+  background-color:#C8E6EE; 
+  padding:0 20px;
+}
+
+#box-left{
+  padding-right:30px; 
+  flex:1; 
+  min-width: 0x; 
+  padding-bottom: 15px;
+}
+
+#box-right{
+  padding:17px;
+}
+
+/*Small screen declarations*/
+@media only screen and (max-width: 1015px) {
+  img{padding-left:0;}
+}
