@@ -25,11 +25,14 @@
     
     <div id="little-banner"></div>
     
-    {% include site-nav.html %}
     
-    {% if page.page1 %}
-      {% include page-nav.html %}
-    {% endif %}
+    <div class="nav-bars">
+      {% include site-nav.html %}
+      
+      {% if page.page1 %}
+        {% include page-nav.html %}
+      {% endif %}
+    </div>
     
     
     <div class="main">
