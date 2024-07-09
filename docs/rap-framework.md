@@ -27,7 +27,7 @@ This page outlines a number of standards to work towards when developing and imp
 
 In our framework, we present bronze, silver and gold standards, offering major benchmarks to work towards, with each subsequent standard reflecting a more transparent, reproducible and robust pipeline. You do not need to aim for gold for every project; instead, the standard you should aim for depends on the needs of the project. 
 
-These standards are largely based upon the “Minimum” and “further” standards of RAP developed by the Government Analysis Function [1]. For an explanation of how our standards differ from theirs, please see the [appendix](#Appendix). Our standards also align with those presented within the [Health RAP playbook](https://nhsengland.github.io/Health-RAP-Playbook-Alpha/). 
+These standards are largely based upon the “Minimum” and “further” standards of RAP developed by the Government Analysis Function [1]. For an explanation of how our standards differ from theirs, please see the [appendix](#appendix). Our standards also align with those presented within the [Health RAP playbook](https://nhsengland.github.io/Health-RAP-Playbook-Alpha/). 
 
 While we would like all analytical pipelines to eventually meet one of these standards, it is important to stress that RAP does not need to be an all or nothing exercise. Even implementing just some of the principles outlined here will bring about improvements to your processes and outputs [2][3]. Trying to achieve all of these standards in one go may be too daunting a task and so incremental improvements are the suggested way to go.
 
@@ -210,3 +210,98 @@ Validating inputs in an automated way at the very start of the pipeline allows y
   {% include expandable-section.html number="10"  content=silver_3 title="Adhere to a common code style" %}
   {% include expandable-section.html number="11"  content=silver_4 title="Have automated input data validation" %}
 {% include expandable-block-end.html %}
+
+
+
+## The Gold standard 🥇
+
+To meet the gold standard for RAP, your project should:
+
+- achieve all of the principles included in the bronze and silver standards
+- have unit testing for functions
+- have error handling for functions
+- include documentation of functions (usually included as part of a package)
+- use packaging
+- log data and analysis checks
+- implement continuous integration
+- implement dependency management
+
+{% capture gold_1 %}
+Unit testing is where functions are tested with controlled inputs, to check that expected outputs are returned. This can be a useful method to raise alarms if changes made to code elsewhere in the project, or some other environment change, adversely affects the function’s operation [2][5][8].
+
+The principle behind unit testing is that where the functionality of the smallest units of the code can be guaranteed, it is more likely that the overall project is running as expected [2]. They also encourage analysts to focus more on quality assurance, and what the purpose of each piece of code is [2]. Unit tests further act as another layer of documentation: it tells users what the intention behind a certain piece of code was and what the expected inputs and outputs are [2].
+
+You should also consider including [assertive programming methods](https://www.milesmcbain.com/posts/assertive-programming-for-pipelines/) into your code, as a way of checking that your functions are operating as expected. 
+{% endcapture %}
+
+
+{% capture gold_2 %}
+Error handling for functions involves stating how the function should behave when it encounters something unexpected, such as a missing or incorrectly formatted parameter passed through the function call. Common actions might include stopping the code with an error message, or printing a warning message but allowing the code to continue.
+{% endcapture %}
+
+{% capture gold_3 %}
+It is sensible to provide documentation for your functions so that others know how to use them. Aspects of functions to document include its purpose, the parameters required in function calls along with any default values, and expected inputs and outputs. The preferred place to include this documentation would be within package help files and vignettes.
+{% endcapture %}
+
+{% capture gold_4 %}
+A package more formally captures all the code and documentation required for a project or collection of functions in one place [8]. It also allows for easier sharing of all the functions needed for a pipeline, or indeed the whole pipeline itself, as well as enhanced version control for the project (via package version numbers). This is particularly useful when you have a set of general functions; converting general functions into a package can facilitate their use across other projects. 
+{% endcapture %}
+
+{% capture gold_5 %}
+Producing logs of data and analysis checks can help analysts, users and quality assurers to understand whether anything is going wrong with the pipeline, and to understand how and where to respond to any issues. These logs might include, for example, the outputs of any input data validation, unit tests, other checks, messages and warnings, as well as more manual checks (for example, via QA logs). Please see our [guidance on quality assurance](quality-assurance) for more information.
+{% endcapture %}
+
+{% capture gold_6 %}
+Continuous Integration (CI) describes the managed process of accepting and integrating changes made by individual analysts into a definitive main version of a project. For example, it includes the management of conflicts and the running of regular (automated) tests to ensure that no bugs have been introduced by recent changes [9]. CI helps project leads to identify and resolve any conflicts and bugs early, and helps keep individual collaborators up to date with developments [9]. 
+
+[Pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) can be used in GitHub as part of this purpose, to require a sign-off step before any new code is accepted into the main pipeline [8]. Branches can also be used to work on changes without the affecting the main pipeline until your are ready, for example to build in a new feature or when fixing a bug [12][9]. GitHub Actions can be used to run automated checks before merging code. 
+{% endcapture %}
+
+{% capture gold_7 %}
+Dependency management is important as your code is ultimately dependent on the specific state of the software used at the time the analysis is run [5][8]. If the environment differs for another analyst, or for the same analyst in the future (for example, following software and package updates), the outputs may differ.
+
+A simple illustration of this kind of issue is provided by the Turing Way Community [9]: A basic division of 1 by 5 can either return 0 or 0.2, depending on which version of Python is being used (Python 2 defaults to integer division; Python 3 does not).
+
+To combat risks such as these, details of the environment can be stored, such as via the [renv package for R](https://cran.r-project.org/web/packages/renv/index.html) or via a [Docker container image](https://www.docker.com/). These tools save a record of the environment in which the analysis was originally performed, allowing others to restore that same environment.
+
+Workflow management packages such as Targets and Orderly can also help manage internal dependencies within the code, handling external data dependencies (data, code, templates, outputs from other modules) and the sequence in which modules of your code need to be run.
+{% endcapture %}
+
+
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="12" content=gold_1 title="Have unit testing for functions" %}
+  {% include expandable-section.html number="13" content=gold_2 title="Have error handling for functions" %}
+  {% include expandable-section.html number="14" content=gold_3 title="Include documentation for functions" %}
+  {% include expandable-section.html number="15" content=gold_4 title="Use packaging" %}
+  {% include expandable-section.html number="16" content=gold_5 title="Log data and analysis checks" %}
+  {% include expandable-section.html number="17" content=gold_6 title="Implement continuous integration" %}
+  {% include expandable-section.html number="18" content=gold_7 title="Implement dependency management" %}
+{% include expandable-block-end.html %}
+
+
+## References
+
+1. [Government Analysis Function: Reproducible Analytical Pipelines (RAP) strategy](https://analysisfunction.civilservice.gov.uk/policy-store/reproducible-analytical-pipelines-strategy/)
+2. [NHS Digital: RAP community of practice](https://github.com/NHSDigital/rap-community-of-practice)
+3. [Office for Statistics Regulation: Reproducible Analytical Pipelines - Overcoming barriers to adoption](https://osr.statisticsauthority.gov.uk/publication/reproducible-analytical-pipelines-overcoming-barriers-to-adoption/)
+4. [Government Analysis Function: Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/)
+5. [The Goldacre Review: Better, broader, safer: using health data for research and analysis](https://www.gov.uk/government/publications/better-broader-safer-using-health-data-for-research-and-analysis)
+6. [NHS National Services Scotland: Reproducible Analytical Pipelines](https://www.isdscotland.org/About-ISD/Methodologies/_docs/Reproducible_Analytical_Pipelines_paper_v1.4.pdf)
+7. [Government Analysis Function: Why take a more sophisticated approach to building your pipeline](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/why-take-a-more-sophisticated-approach-to-building-your-pipeline/)
+8. [UK Government Data Science: RAP Companion](https://ukgovdatascience.github.io/rap_companion/)
+9. [The Turing Way: Handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
+10. [The Aqua Book: guidance on producing quality analysis for government](https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government)
+11. [UK Statistics Authority: Code of Practice for Statistics](https://code.statisticsauthority.gov.uk/the-code/)
+12. [Office for National Statistics: The Duck Book - Quality assurance of code for analysis and research](https://best-practice-and-impact.github.io/qa-of-code-guidance/)
+
+## Appendix
+### Our standards versus those produced by the Government Analysis Function
+
+Our guidance draws upon the principles developed by the Analysis Function [1], supported by other sources given in the reference section. However, we have separated them out into 3 standards (bronze, silver and gold) instead of the Analysis Function’s 2 (minimum and further). This is to make it easier for teams to progress through the standards in smaller leaps.
+
+In our silver standard, some principles have come from the Analysis Function’s minimum standard, and others from their further standards. Specifically:
+
+- “minimise manual steps” has been separated out into two principles covering manual steps during analysis and manual steps during the production of spreadsheets and workbooks, with the former remaining in the minimum bronze standard and the latter being moved to our silver standard - this is to recognise the fact that many analysts will develop the more basic programming skills needed for analysis first, before developing other skills around Rmarkdown, for example
+- “validating input data”, “using functions”, and “adhere to a common best practice code style” have all been moved to our silver standard from the further standard because we have found that these are usually easier to implement than the other further standard principles.
+
+Aside from these differences, all other Analysis function “minimum” standard principles are in our bronze standard, and all other Analysis Function “further” standard principles are in our gold standard.

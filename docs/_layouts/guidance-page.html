@@ -37,6 +37,13 @@
       {{ content }}
     </div>
   
+    {% if page.page1 %}
+      <div class="footer-page-nav">
+        {% include page-nav.html %}
+      </div>
+    {% endif %}
+  
+  
   {% include footer.html %}  
   
   <script>for (var i = 0; i < expandables.length; i++) {expandables[i].addEventListener('click', expand);}</script>

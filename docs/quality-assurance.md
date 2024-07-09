@@ -3,14 +3,14 @@ title: "Ensuring good quality assurance"
 layout: guidance-page
 ---
 
-> ## Main messages
-> - In high quality analysis, quality assurance operates throughout the data journey and isn’t something that can just be added at the end of production
-> - Quality assurance should be planned in advance, with roles, responsibilities, and the extent of assurance activities understood fully by the entire team.
-> - Quality assurance should be appropriate and proportionate to the scope, risks, methodology, and data source of a piece of analysis.
-> - Understanding user needs is important when measuring the quality of your data. Perfect data quality may not always be achievable and therefore focus should be given to ensuring the data is as fit for purpose as it can be.
-> - Teams should make use of the [quality review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) to facilitate discussions around quality and help plan quality assurance, identifying gaps in current procedures.
-> - A quality assurance log is a crucial tool to help teams plan, record, and sign off on quality. It provides an audit trail of everything that was checked and what the outcomes were.
-> - The [quality assurance process](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20log%20template%20v1.2.xlsx?version=1&modificationDate=1716383298406&api=v2) and any outstanding quality concerns should be clearly communicated alongside the final results of the analysis.
+## Main messages
+- In high quality analysis, quality assurance operates throughout the data journey and isn’t something that can just be added at the end of production
+- Quality assurance should be planned in advance, with roles, responsibilities, and the extent of assurance activities understood fully by the entire team.
+- Quality assurance should be appropriate and proportionate to the scope, risks, methodology, and data source of a piece of analysis.
+- Understanding user needs is important when measuring the quality of your data. Perfect data quality may not always be achievable and therefore focus should be given to ensuring the data is as fit for purpose as it can be.
+- Teams should make use of the [quality review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) to facilitate discussions around quality and help plan quality assurance, identifying gaps in current procedures.
+- A quality assurance log is a crucial tool to help teams plan, record, and sign off on quality. It provides an audit trail of everything that was checked and what the outcomes were.
+- The [quality assurance process](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20log%20template%20v1.2.xlsx?version=1&modificationDate=1716383298406&api=v2) and any outstanding quality concerns should be clearly communicated alongside the final results of the analysis.
 
 
 ## What is quality?
@@ -237,6 +237,8 @@ The table below gives some considerations when completing this section of the re
 Effective project planning serves as the roadmap that guides any analytical project from conception to completion. It ensures that the correct documentation is available, risks are mitigated, and deadlines are met. There should be a clear, proportionate QA plan and a consistent project structure with version control.
   
 The table below gives some considerations when completing this section of the review conversation & QA log.
+
+
 {% endcapture %}
 
 {% capture expandable_content_12 %}
