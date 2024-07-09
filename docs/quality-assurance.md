@@ -3,7 +3,7 @@ title: "Ensuring good quality assurance"
 layout: guidance-page
 ---
 
-## Main messages
+>- ## Main messages
 >- In high quality analysis, quality assurance operates throughout the data journey and isn’t something that can just be added at the end of production
 >- Quality assurance should be planned in advance, with roles, responsibilities, and the extent of assurance activities understood fully by the entire team.
 >- Quality assurance should be appropriate and proportionate to the scope, risks, methodology, and data source of a piece of analysis.
@@ -72,6 +72,8 @@ Click on the buttons below to find about more about each of the dimensions.
 <div class="image-text-container">
     <img src="assets/img/Quality_trade_off.png" width="460px" alt="A pentagon showing the 5 Dimensions of Quality of the European Statistical System (ESS) Code of Practice: Relevance, Accuracy and Reliability, Timeliness and Punctuality, Comparability and Coherence and Accessibility and Clarity">
     <p>
+<br>
+<br>
 The 5 dimensions of statistical output quality are not mutually exclusive. There are relationships between them and there are instances where improvements in one dimension would lead to deterioration in another dimension. Statistics should always be produced to a level of quality that meets users’ needs, and quality assurance should be proportionate to the nature of the quality issues and the importance of the statistics in serving the public good.<br>
 Understanding user needs is really important when measuring the quality of your data. Perfect data quality may not always be achievable and therefore focus should be given to ensuring the data is as fit for purpose as it can be.
     </p>
@@ -123,8 +125,6 @@ Reproducibility increases trust in the statistics. Pipelines are easier to quali
 
 It is our role to explain how any limitations in our outputs feed through into the decisions that users take. Being clear about these issues is absolutely vital. It protects the integrity of the findings and supports the users of our numbers in drawing the correct conclusions to inform the decisions they make.
 
-<br>
-
 These key stages along the data journey, alongside the 5 Dimensions of Quality of the European Statistical System (ESS), form the basis of the [QA review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) and [QA log template](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20log%20template%20v1.2.xlsx?version=1&modificationDate=1716383298406&api=v2).
 
 ## Roles and responsibilities
@@ -134,29 +134,33 @@ In practice, the exact nature of roles required may differ based on project scop
 
 
 {% capture expandable_content_6 %}
+
 The person commissioning analysis  ('the commissioner') is responsible for:
 
-developing the question of interest and communicating this to the analyst and assurer so that they can identify the most appropriate methods for analysis and assurance
-clearly expressing the needs of the project and risks that are entailed so that proportionate levels of QA can be decided upon by the analyst
+-developing the question of interest and communicating this to the analyst and assurer so that they can identify the most appropriate methods for analysis and assurance
+-clearly expressing the needs of the project and risks that are entailed so that proportionate levels of QA can be decided upon by the analyst
+
 People of all levels of seniority commission analysis. The commissioner may be acting on behalf of a government decision-maker or other customer, or they may be a policy lead in the area where work is being commissioned. However, the commissioner assumes accountability for the success of the overall project, so the commissioner should be someone who holds a view on the overall purpose of the statistical release and what users’ needs might be.
 {% endcapture %}
 
 {% capture expandable_content_7 %}
 The person leading the analysis  ('the analyst') is responsible for:
 
-working with the commissioner to help develop the question of interest in a way that allows it to be answered appropriately and meet the needs of the commissioner
-planning how they will conduct QA and demonstrate assured quality to the commissioner, assurer, and end users of their analytical output
-providing final results and records of all work they have done
-communicating to the commissioner the implications of their results, including strengths, limitations, uncertainty, and context
+-working with the commissioner to help develop the question of interest in a way that allows it to be answered appropriately and meet the needs of the commissioner
+-planning how they will conduct QA and demonstrate assured quality to the commissioner, assurer, and end users of their analytical output
+-providing final results and records of all work they have done
+- communicating to the commissioner the implications of their results, including strengths, limitations, uncertainty, and context
+
 In practice, there may often be more than one analyst involved in a project. In this case, the roles of 'the analyst' may be delegated and managed among several colleagues by a senior analyst. This person should have a well-developed knowledge of the methodology that will be used, the analytical production process, and how to ensure that best practices for producing analysis are being followed. Often, this entails experience as a project manager for analysis.
 {% endcapture %}
 
 {% capture expandable_content_8 %}
 The person responsible for analytical assurance  ('the assurer') is responsible for:
 
-ensuring that appropriate quality assurance is taking place throughout by requesting evidence of QA activity
-providing intermediate and final sign-offs for the output
-advising the commissioner on whether quality concerns have been sufficiently addressed and the implications of any remaining risks
+-ensuring that appropriate quality assurance is taking place throughout by requesting evidence of QA activity
+-providing intermediate and final sign-offs for the output
+-advising the commissioner on whether quality concerns have been sufficiently addressed and the implications of any remaining risks
+
 This person is not directly involved in conducting QA and does not need to be an analyst. However, QA may benefit from an assurer who understands the analytical methods used in the project so that they can identify issues with the output. Because the assurer signs off on the QA activities, they should have enough seniority to take responsibility for the output. For example, they might be a senior analyst or analytical project manager and may also be the same person as the SRO if the analysis is business critical. For official statistics, this person is often a Senior Statistician or someone with an equivalent of higher grade.
 {% endcapture %}
 
@@ -168,10 +172,10 @@ As with the assurer, the SRO may be of any background, but may benefit from a pr
 
 
 {% include expandable-block-start.html %}
-  {% include expandable-section.html number="6" content=expandable_content_1 title="The commissioner" %}
-  {% include expandable-section.html number="7" content=expandable_content_2 title="The analyst" %}
-  {% include expandable-section.html number="8" content=expandable_content_3 title="The assurer" %}
-  {% include expandable-section.html number="9" content=expandable_content_4 title="The senior responsible officer" %}
+  {% include expandable-section.html number="6" content=expandable_content_6 title="The commissioner" %}
+  {% include expandable-section.html number="7" content=expandable_content_7 title="The analyst" %}
+  {% include expandable-section.html number="8" content=expandable_content_8 title="The assurer" %}
+  {% include expandable-section.html number="9" content=expandable_content_9 title="The senior responsible officer" %}
 {% include expandable-block-end.html %}
 
 
@@ -238,6 +242,13 @@ The table below gives some considerations when completing this section of the re
 Effective project planning serves as the roadmap that guides any analytical project from conception to completion. It ensures that the correct documentation is available, risks are mitigated, and deadlines are met. There should be a clear, proportionate QA plan and a consistent project structure with version control.
   
 The table below gives some considerations when completing this section of the review conversation & QA log.
+
+ Guiding questions                                                      | Specific considerations                                                                                                                                                                                                                                                                                                                 | Why do I need to know the answer to this?                                                                                                                                                                                                                                                                                                                                                                                                                                              | What help is available?                                                                                                                                                    |
+|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Is all of your documentation about the project easy to find?           | Is there a single location (e.g. Confluence or SharePoint) about the project, where all documentation is either stored or linked?<br><br>Have you got a link to your project code repository within the documentation?                                                                                                                  | Your analysis must be well documented so that somebody new can understand it and pick it up. Poor documentation means that other people will not understand why the process is configured as it is, how the process works or how to run the process safely - potentially leading to errors.                                                                                                                                                                                            | [Guidance: The AQUA Book]([The Aqua Book: guidance on producing quality analysis for government (publishing.service.gov.uk)](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/416478/aqua_book_final_web.pdf))<br><br>[Guidance QA of Code for Analysis and Research]([Quality assurance of code for analysis and research — Quality Assurance of Code for Analysis and Research (best-practice-and-impact.github.io)](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html))                                                                                       |
+| Have you got a consistent project structure set up?                    | Does the project structure align with other UKHSA analytical projects?<br><br>Is there a clear system to track version control within your project?                                                                                                                                                                                     | All projects should have appropriate version control including a clear system for version labelling and a version control log.<br><br>It's recommended to use the [UKHSA Project Template]([UKHSA Project Template - Data Science Quality Assurance - Confluence (test-and-trace.nhs.uk)](https://confluence.collab.test-and-trace.nhs.uk/display/QA/UKHSA+Project+Template)) for your project. It provides a consistent project structure and some built-in automated QA.                                                                                                                                                                                              | [UKHSA Project Template]([UKHSA Project Template - Data Science Quality Assurance - Confluence (test-and-trace.nhs.uk)](https://confluence.collab.test-and-trace.nhs.uk/display/QA/UKHSA+Project+Template))<br><br>[Guidance: The basics of Git, Github and GitLab (Statistics Production Division)]([The basics of Git, Github and GitLab - Statistics Production Division - Confluence (test-and-trace.nhs.uk)](https://confluence.collab.test-and-trace.nhs.uk/display/SHT/The+basics+of+Git%2C+Github+and+GitLab))                                                      |
+| Is there a recorded plan for the analysis?                             | Has an appropriate plan been agreed with adequate consideration of time, resource quantity and skills required?<br><br>Will the proposed time frames allow for adequate quality assurance?<br><br>Where are the highest risk points for errors in the process? What measures do you or could you take to mitigate risk at these points? | Analysis will often involve a trade off between time, resource and quality. Discussions about the desired and achievable levels of QA should take place at the very start of a project. The reality is that most analysis will be carried out under time and resource pressure and we will not be able to carry out all the QA activity we would ideally like to.<br><br>In these circumstances, QA activities will need to be prioritised based on the risk of not carrying them out. | [Guidance: The AQUA Book]([The Aqua Book: guidance on producing quality analysis for government (publishing.service.gov.uk)](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/416478/aqua_book_final_web.pdf))<br><br>[The Government Data Quality Framework]([The Government Data Quality Framework - GOV.UK (www.gov.uk)](https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework))<br><br>[Guidance: Tips for urgent quality assurance of data (Government Analysis Function)]([Tips for urgent quality assurance of data – Government Analysis Function (civilservice.gov.uk)](https://analysisfunction.civilservice.gov.uk/policy-store/tips-for-urgent-quality-assurance-of-data/)) |
+| Can you summarise and explain the end-to-end process of your analysis? | How does your work feed in to the bigger analytical picture?                                                                                                                                                                                                                                                                            | Having an overview of the analysis (especially if you only work on part of it) ensures that you and your team understand how your work feeds into the wider product.<br><br>It can help you to identify potential quality risks or issues, both upstream and downstream of your own work as well as how your activity supports and underpins downstream processing.                                                                                                                     | [Generic Statistical Business Process Model (GSBPM)](https://unece.org/statistics/modernstats/gsbpm)
 
 
 {% endcapture %}
