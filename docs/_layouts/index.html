@@ -15,20 +15,21 @@
     <div id="big-banner">
       <div id="big-banner-content">
         <p>UKHSA statistics production hub</p>
-        <a href="{{ site.github }}" style="margin-left:auto; padding:10px">
-          <img src="assets/img/github-mark-white.svg" alt="GitHub" width="30px" height="30px">
+        <a href="{{ site.github }}" id="git-icon">
+          <img src="assets/img/github-mark-white.svg" alt="GitHub" width="30px" height="30px" style="max-width:30px">
         </a>
       </div>
     </div>
     
     <div id="little-banner"></div>
     
-    {% include site-nav.html %}
-    
+    <div class="nav-bars">
+      {% include site-nav.html %}
+    </div>
     
     <div class="main">
-      <div style="display:flex;background-color:#C8E6EE; padding:0 20px">
-        <div style="padding-right:30px;">
+      <div id="box">
+        <div id="box-left">
           <h1>Welcome to the UK Health Security Agency (UKHSA) statistics production hub!</h1>
           
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -39,7 +40,7 @@
           
         </div>
         
-        <img src="assets/img/laptophands.webp" alt="A picture of a person working at a laptop" width="500px" style="padding:17px">
+        <img id="box-right" src="assets/img/laptophands.webp" alt="A picture of a person working at a laptop" width="500px" height="363px">
         
       </div>
       
