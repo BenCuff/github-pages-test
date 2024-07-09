@@ -5,19 +5,21 @@ layout: guidance-page
 
 <style>
 .cards-container{
-  display:flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card{
-  display:block;
+  flex: 1;
+  margin: 10px; 
 }
 
 .card-top{
-  display:block;
+  border: 1pt solid grey;
 }
 
 .card-bottom{
-  display:block;
+  border: 1pt solid grey;
 }
 
 </style>
@@ -25,14 +27,14 @@ layout: guidance-page
 <div class="cards-container">
   <div class="card">
     <div class="card-top">top content</div>
-    <div class="card-bottom">bottom content</div>
+    <div class="card-bottom"><p>bottom content</p></div>
   </div>
   <div class="card">
     <div class="card-top">top content</div>
-    <div class="card-bottom">bottom content</div>
+    <div class="card-bottom"><p>bottom content</p></div>
   </div>
   <div class="card">
     <div class="card-top">top content</div>
-    <div class="card-bottom">bottom content</div>
+    <div class="card-bottom"><p>bottom content</p></div>
   </div>
 </div>
