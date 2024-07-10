@@ -249,3 +249,25 @@ td:first-child {
 @media only screen and (max-width: 350px) {
   .page-nav{display:block;}
 }
+
+
+<style>
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+  flex: 1;
+  margin: 10px; 
+}
+
+.card-top{
+  border: 1pt solid grey;
+}
+
+.card-bottom{
+  border: 1pt solid grey;
+}
+
+</style>
