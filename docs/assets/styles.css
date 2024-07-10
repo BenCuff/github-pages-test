@@ -251,7 +251,6 @@ td:first-child {
 }
 
 
-<style>
 .cards-container{
   display: flex;
   flex-wrap: wrap;
@@ -259,7 +258,8 @@ td:first-child {
 
 .card{
   flex: 1;
-  margin: 10px; 
+  margin: 10px;
+  min-width: 200px;
 }
 
 .card-top{
@@ -274,4 +274,3 @@ td:first-child {
   padding: 2px 16px;
 }
 
-</style>
