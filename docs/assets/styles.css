@@ -212,13 +212,15 @@ code{
   border: 1pt solid black;
   background-color: #007C91;
   color: white;
-  padding: 10px 5px;
 }
 
 .card-bottom{
   border: 1pt solid black;
   flex: 1;
-  padding: 10px 5px;
+}
+
+.card-top h4, card-bottom p{
+  margin: 15px 5px;
 }
 
 .download-button{
