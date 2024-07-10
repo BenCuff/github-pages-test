@@ -188,7 +188,7 @@ As with the assurer, the SRO may be of any background, but may benefit from a pr
 1. QA review conversation tool
 2. QA log template
 
-<div style="display:flex">
+<div style="display:flex; flex-wrap:wrap;">
   <button class="download-button" onclick="location.href='https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Ensuring+good+quality+assurance?preview=%2F353007964%2F357508814%2FQA+review+conversation+tool.xlsx'" type="button">
            Download QA review conversation tool</button>
            
