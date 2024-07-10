@@ -200,12 +200,7 @@ code{
   
 }
   
-.cards-container h4{
-  color: white;
-  margin: 10px 0;
-}
-
-.card{
+.card {
   flex: 1;
   margin: 10px;
   min-width: 200px;
@@ -216,12 +211,14 @@ code{
 .card-top{
   border: 1pt solid black;
   background-color: #007C91;
-  
+  color: white;
+  padding: 10px 5px;
 }
 
 .card-bottom{
   border: 1pt solid black;
   flex: 1;
+  padding: 10px 5px;
 }
 
 .download-button{
