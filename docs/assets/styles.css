@@ -58,14 +58,15 @@
 }
 
 .page-nav{
-  margin-top: -25px;
+  margin-top: -34px;
+  margin-bottom: 45px;
   background-color: #F0FDFF;
   border-top: 1pt solid grey;
 }
 
 .footer-page-nav > .page-nav{
   margin-top: 30px;
-  margin-bottom: -20px;
+  margin-bottom: -25px;
 }
 
 #site-nav a, .page-nav a{
