@@ -105,7 +105,7 @@ There are 4 key areas of a QA mindset to consider when embarking on an analytica
 
 <div class="cards-container">
   <div class="card">
-    <div class="card-top"><43>Governance and planning</h4></div>
+    <div class="card-top"><h4>Governance and planning</h4></div>
     <div class="card-bottom"><p>
 Good governance and planning is an essential part of quality assurance. This involves understanding who will be involved in the QA process and who will be benefitting from the analysis.Find out who your users are and consider who could use your statistics. Check that the work will meet these user needs appropriately.</p></div>
   </div>
