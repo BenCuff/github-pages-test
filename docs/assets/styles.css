@@ -219,7 +219,7 @@ code{
   flex: 1;
 }
 
-.card-top h4, card-bottom p{
+.card-top h4, .card-bottom p{
   margin: 15px 5px;
 }
 
