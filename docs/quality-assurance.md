@@ -188,11 +188,13 @@ As with the assurer, the SRO may be of any background, but may benefit from a pr
 1. QA review conversation tool
 2. QA log template
 
-<button class="download-button" onclick="location.href='https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Ensuring+good+quality+assurance?preview=%2F353007964%2F357508814%2FQA+review+conversation+tool.xlsx'" type="button">
-         Download QA review conversation tool</button>
-         
-<button class="download-button" onclick="location.href='https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Ensuring+good+quality+assurance?preview=%2F353007964%2F357508813%2FQA+log+template+v1.2.xlsx'" type="button">
-         Download QA log template</button>        
+<div style="display:flex">
+  <button class="download-button" onclick="location.href='https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Ensuring+good+quality+assurance?preview=%2F353007964%2F357508814%2FQA+review+conversation+tool.xlsx'" type="button">
+           Download QA review conversation tool</button>
+           
+  <button class="download-button" onclick="location.href='https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Ensuring+good+quality+assurance?preview=%2F353007964%2F357508813%2FQA+log+template+v1.2.xlsx'" type="button">
+           Download QA log template</button>
+</div>
 
 ### What is the QA review conversation tool?
 Our [QA review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) was created to provide a useful starting point for thinking about the QA of statistical outputs in line with the five European Statistical System (ESS) Quality Dimensions. It has been designed to facilitate team discussions about quality at either the start of a new project or at regular intervals for cyclical releases to help teams plan QA, identifying gaps in current procedures. We have compiled discussion questions that teams can use to reflect on the quality of their statistics, identify areas for improvement, and consider how to communicate quality to users. The outcomes of these discussions should inform QA plans and QA logs which teams should be using during QA activities. 

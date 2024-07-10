@@ -94,7 +94,7 @@ body{
   padding: 0 10px;
 }
 
-p, h1, h2, h3, h4, h5, ul, ol{
+p, h1, h2, h3, h4, h5, ul, ol, .download-button{
   font-family: sans-serif;
 }
 
@@ -223,6 +223,14 @@ code{
   border: 1pt solid black;
   flex: 1;
 }
+
+.download-button{
+  background-color: #007c90;
+  color: white;
+  font-size: large;
+  padding: 10px;
+}
+
 
 /*Images and text side-by-side*/
 .image-text-container {
