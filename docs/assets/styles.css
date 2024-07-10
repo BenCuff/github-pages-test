@@ -254,11 +254,11 @@ td:first-child {
 
 .cards-container{
   display: flex;
-  flex-wrap: wrap;}
+  flex-wrap: wrap;
   
-  .cards-container h4{margin: 5px, 0
-                 color: white;}
-
+}
+  
+.cards-container h4{color: white}
 
 .card{
   flex: 1;
