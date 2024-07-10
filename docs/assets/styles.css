@@ -270,4 +270,8 @@ td:first-child {
   border: 1pt solid grey;
 }
 
+.container {
+  padding: 2px 16px;
+}
+
 </style>

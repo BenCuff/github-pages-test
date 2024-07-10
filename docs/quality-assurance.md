@@ -126,7 +126,6 @@ Reproducibility increases trust in the statistics. Pipelines are easier to quali
     <div class="card-top">Communication of outputs </div>
     <div class="card-bottom"><p>It is our role to explain how any limitations in our outputs feed through into the decisions that users take. Being clear about these issues is absolutely vital. It protects the integrity of the findings and supports the users of our numbers in drawing the correct conclusions to inform the decisions they make</p></div>
   </div>
-</div>
 
 These key stages along the data journey, alongside the 5 Dimensions of Quality of the European Statistical System (ESS), form the basis of the [QA review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) and [QA log template](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20log%20template%20v1.2.xlsx?version=1&modificationDate=1716383298406&api=v2).
 
