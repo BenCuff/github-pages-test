@@ -256,6 +256,9 @@ td:first-child {
   flex-wrap: wrap;
   
 }
+.cards-container h3{margin: 5px, 0
+                 color: white;
+}
 
 .card{
   flex: 1;
@@ -265,14 +268,13 @@ td:first-child {
 }
 
 .card-top{
-  border: 1pt solid grey;
-  background-color: blue;
+  border: 1pt solid black;
+  background-color: #007C91;
   
 }
 
 .card-bottom{
-  border: 1pt solid grey;
-  background-color:blue ;
+  border: 1pt solid black;
   .card-bottom = flex: 1;
 }
 

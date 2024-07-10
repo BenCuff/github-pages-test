@@ -105,23 +105,23 @@ There are 4 key areas of a QA mindset to consider when embarking on an analytica
 
 <div class="cards-container">
   <div class="card">
-    <div class="card-top"><h3>Governance and planning</h3></div>
+    <div class="card-top"><43>Governance and planning</h4></div>
     <div class="card-bottom"><p>
 Good governance and planning is an essential part of quality assurance. This involves understanding who will be involved in the QA process and who will be benefitting from the analysis.Find out who your users are and consider who could use your statistics. Check that the work will meet these user needs appropriately.</p></div>
   </div>
   <div class="card">
-    <div class="card-top">Verification and validation</div>
+    <div class="card-top"><h4>Verification and validation</h4></div>
     <div class="card-bottom"><p>Verification and validation are two important processes aimed at ensuring that outputs will meet requirements and satisfy user needs. To ensure quality, we need to be confident that the methods and processes chosen are appropriate and that they have been implemented correctly.
 
 It is important to be curious about data and not take it at face-value. If there are values that look inaccurate they should be investigated and verified.</p></div>
   </div>
   <div class="card">
-    <div class="card-top"> Reproducibility</div>
+    <div class="card-top"><h4>Reproducibility</h4></div>
     <div class="card-bottom"><p>Reproducible analysis relies on a transparent production process, so that anyone can follow our steps and understand our results. This transparency eases reuse of methods and results. Easy reproducibility helps our colleagues test and validate what we have done.
 Reproducibility increases trust in the statistics. Pipelines are easier to quality assure than manual processes, leading to higher quality.</p> </div>
 </div>
  <div class="card">
-    <div class="card-top">Communication of outputs </div>
+    <div class="card-top"><h4>Communication of outputs</h4></div>
     <div class="card-bottom"><p>It is our role to explain how any limitations in our outputs feed through into the decisions that users take. Being clear about these issues is absolutely vital. It protects the integrity of the findings and supports the users of our numbers in drawing the correct conclusions to inform the decisions they make</p></div>
   </div>
   </div>
