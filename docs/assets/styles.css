@@ -194,6 +194,36 @@ code{
   padding: 10px;
 }
 
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+  
+.cards-container h4{
+  color: white;
+  margin: 10px 0;
+}
+
+.card{
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+  display: flex; 
+  flex-direction: column;
+}
+
+.card-top{
+  border: 1pt solid black;
+  background-color: #007C91;
+  
+}
+
+.card-bottom{
+  border: 1pt solid black;
+  flex: 1;
+}
+
 /*Images and text side-by-side*/
 .image-text-container {
   display: flex;
@@ -250,31 +280,3 @@ td:first-child {
 @media only screen and (max-width: 350px) {
   .page-nav{display:block;}
 }
-
-
-.cards-container{
-  display: flex;
-  flex-wrap: wrap;
-  
-}
-  
-.cards-container h4{color: white}
-
-.card{
-  flex: 1;
-  margin: 10px;
-  min-width: 200px;
-  .card = display: flex; flex-direction: column;
-}
-
-.card-top{
-  border: 1pt solid black;
-  background-color: #007C91;
-  
-}
-
-.card-bottom{
-  border: 1pt solid black;
-  .card-bottom = flex: 1;
-}
-
