@@ -1,5 +1,5 @@
 ---
-title: "Accessibility: Spreadsheets"
+title: "Accessibility: Data visualisation"
 layout: guidance-page
 
 page-group-title: "Accessibility"
