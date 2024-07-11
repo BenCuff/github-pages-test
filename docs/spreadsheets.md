@@ -350,11 +350,11 @@ Instead of symbols, letters or short words within square brackets should be used
 
 The Government Analysis Function [10] has suggested the following shorthand for common use cases:
 
-- [c] = confidential (for example, when suppressing values for statistical disclosure control)
-- [e] = estimated
-- [k] = zero when rounded (for example, when rounding down values to zero, to separate these values from true zero)
-- [x] = not available
-- [z] = not applicable
+- \[c\] = confidential (for example, when suppressing values for statistical disclosure control)
+- \[e\] = estimated
+- \[k\] = zero when rounded (for example, when rounding down values to zero, to separate these values from true zero)
+- \[x\] = not available
+- \[z\] = not applicable
 
 Numerals can be added to make more notes of the same type. For example, if 2 cells were estimated for different reasons, you can present “[e1]” and “[e2]”, with the differences explained above the table or on the coversheet [10].
 
