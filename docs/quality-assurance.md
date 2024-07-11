@@ -108,7 +108,7 @@ There are 4 key areas of a QA mindset to consider when embarking on an analytica
 
 
 {% capture card_content_1 %}
-Good governance and planning is an essential part of quality assurance. This involves understanding who will be involved in the QA process and who will be benefiting from the analysis.Find out who your users are and consider who could use your statistics. Check that the work will meet these user needs appropriately.
+Good governance and planning is an essential part of quality assurance. This involves understanding who will be involved in the QA process and who will be benefiting from the analysis. Find out who your users are and consider who could use your statistics. Check that the work will meet these user needs appropriately.
 {% endcapture %}
 
 {% capture card_content_2 %}
