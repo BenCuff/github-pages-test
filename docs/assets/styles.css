@@ -158,6 +158,14 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   background: #dbdbda;
 }
 
+.expandable-header h5{
+  display: inline-block;
+  margin: 0;
+  margin-block-start: 0;
+  font-size: medium;
+  font-weight: normal;
+}
+
 .expandable-header:focus {
   outline: 1px solid;
   outline-offset: 1px;
