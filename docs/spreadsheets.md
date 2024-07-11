@@ -33,9 +33,25 @@ For public bodies, making online content accessible is also now mandated by law.
 
 There are 3 main types of tables that might be produced, each of which lend themselves to different publication formats [6]. You should first consider which of these formats are the most appropriate for what you are trying to achieve through the presentation of your data.
 
-1. Demonstration tables: These are used to help make or reinforce a particular point in a clear and simple way. They are best placed in the body of a report so that users can access the information quickly, and do not need to leave the page to find it.
-2. Reference tables: These are used to provide more detailed data for users to see, at a level that might be too much for including in the body of a report. They should be provided alongside a report in an accessible ODS spreadsheet format.
-3. Machine readable datasets: These are specifically used to allow users to carry out more detailed analyses of their own on the data, or for merging with other datasets. They are best provided in a CSV spreadsheet format that is optimised for machine readability, for example, to load into R or Python.
+{% capture card_content_1 %}
+These are used to help make or reinforce a particular point in a clear and simple way. They are best placed in the body of a report so that users can access the information quickly, and do not need to leave the page to find it.
+{% endcapture %}
+
+{% capture card_content_2 %}
+These are used to provide more detailed data for users to see, at a level that might be too much for including in the body of a report. They should be provided alongside a report in an accessible ODS spreadsheet format.
+{% endcapture %}
+
+{% capture card_content_3 %}
+These are specifically used to allow users to carry out more detailed analyses of their own on the data, or for merging with other datasets. They are best provided in a CSV spreadsheet format that is optimised for machine readability, for example, to load into R or Python.
+{% endcapture %}
+
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_1 title="Demonstration tables" %}
+  {% include card.html content=card_content_2 title="Reference tables" %}
+  {% include card.html content=card_content_3 title="Machine readable datasets" %}
+{% include cards-container-end.html %}
+
 
 It is important to further note the distinction between reference tables and machine readable datasets, and their different accessibility requirements. Specifically:
 
