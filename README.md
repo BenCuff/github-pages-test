@@ -22,6 +22,9 @@ Then use `git commit -m "your commit message"` to commit the change, inserting a
 
 Then use `git push` to push the change to GitHub. In the actions tab, you will see an action running to deploy to [the live page](https://bencuff.github.io/github-pages-test/).
 
+## Building websites with Jekyll and GitHub
+
+[See a useful resource for working with Jekyll in GitHub here](https://carpentries-incubator.github.io/jekyll-pages-novice/). 
 
 ## Folder and file structure
 The root folder can be used to store any non-website content. 
@@ -37,6 +40,7 @@ The `_layouts` folder is used to store larger template files.
 The `assets` folder is used to store .css stylesheets and images. 
 
 The `_config.yml` file can be used to store sitewide values. These are then inserted to other pages via Liquid commands (for example, `{{ site.email }}`). 
+
 
 ## Common markdown commands
 Most of what goes into the .md files will be standard markdown. Some other code can be used as follows.
@@ -57,7 +61,7 @@ Add an arrow (">") to the start of each line. You can use other markdown tags (h
 
 First include the hidden content within a 'capture' block like below. 
 
-Make sure to add a unique number to the end of each block title. 
+Make sure to add a unique number to the end of each block title. Numbers should be unique across all expandable blocks in the whole document. 
 
 ```
 {% capture expandable_content_1 %}
@@ -104,10 +108,12 @@ Then link using the following code, adding the correct filepath and alt-text:
 
 `<img src="assets/img/laptophands.jpg" alt="A picture of a person working at a laptop">`
 
+
 #### Image and text side-by-side
 If you want to have an image next to some text, you can do that using the code below. 
 
 Note that you should specify the image width and height. 
+
 
 ```
 <div class="image-text-container">
@@ -116,3 +122,32 @@ Note that you should specify the image width and height.
 </div>
 ```
 
+### Title+content cards (like the ones found in the QA guidance)
+
+First include the card content within a 'capture' block like below. 
+
+Make sure to add a unique number to the end of each block title. Numbers should be unique across all cards in the whole document. 
+
+```
+{% capture card_content_1 %}
+Content goes here, written in normal markdown.
+{% endcapture %}
+
+{% capture card_content_2 %}
+This is content for a second card.
+{% endcapture %}
+```
+
+Then you can use the following code to include cards with the appropriate titles. 
+
+The 'container-start' and 'container-end' lines are needed for styling. 
+
+The parameter given in 'content' should match the title of the relevant capture block declared above. 
+
+```
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_1 title="This is the first title" %}
+  {% include card.html content=card_content_2 title="This is the second title" %}
+{% include cards-container-end.html %}
+
+```
