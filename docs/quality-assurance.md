@@ -106,28 +106,34 @@ It is important for statistical producers to be curious about data and not take 
 
 There are 4 key areas of a QA mindset to consider when embarking on an analytical project:
 
-<div class="cards-container">
-  <div class="card">
-    <div class="card-top"><h4>Governance and planning</h4></div>
-    <div class="card-bottom"><p>
-Good governance and planning is an essential part of quality assurance. This involves understanding who will be involved in the QA process and who will be benefitting from the analysis.Find out who your users are and consider who could use your statistics. Check that the work will meet these user needs appropriately.</p></div>
-  </div>
-  <div class="card">
-    <div class="card-top"><h4>Verification and validation</h4></div>
-    <div class="card-bottom"><p>Verification and validation are two important processes aimed at ensuring that outputs will meet requirements and satisfy user needs. To ensure quality, we need to be confident that the methods and processes chosen are appropriate and that they have been implemented correctly.
 
-It is important to be curious about data and not take it at face-value. If there are values that look inaccurate they should be investigated and verified.</p></div>
-  </div>
-  <div class="card">
-    <div class="card-top"><h4>Reproducibility</h4></div>
-    <div class="card-bottom"><p>Reproducible analysis relies on a transparent production process, so that anyone can follow our steps and understand our results. This transparency eases reuse of methods and results. Easy reproducibility helps our colleagues test and validate what we have done.
-Reproducibility increases trust in the statistics. Pipelines are easier to quality assure than manual processes, leading to higher quality.</p> </div>
-</div>
- <div class="card">
-    <div class="card-top"><h4>Communication of outputs</h4></div>
-    <div class="card-bottom"><p>It is our role to explain how any limitations in our outputs feed through into the decisions that users take. Being clear about these issues is absolutely vital. It protects the integrity of the findings and supports the users of our numbers in drawing the correct conclusions to inform the decisions they make. </p></div>
-  </div>
-  </div>
+{% capture card_content_1 %}
+Good governance and planning is an essential part of quality assurance. This involves understanding who will be involved in the QA process and who will be benefiting from the analysis.Find out who your users are and consider who could use your statistics. Check that the work will meet these user needs appropriately.
+{% endcapture %}
+
+{% capture card_content_2 %}
+Verification and validation are two important processes aimed at ensuring that outputs will meet requirements and satisfy user needs. To ensure quality, we need to be confident that the methods and processes chosen are appropriate and that they have been implemented correctly. It is important to be curious about data and not take it at face-value. If there are values that look inaccurate they should be investigated and verified.
+{% endcapture %}
+
+{% capture card_content_3 %}
+Reproducible analysis relies on a transparent production process, so that anyone can follow our steps and understand our results. This transparency eases reuse of methods and results. Easy reproducibility helps our colleagues test and validate what we have done.
+Reproducibility increases trust in the statistics. Pipelines are easier to quality assure than manual processes, leading to higher quality.
+{% endcapture %}
+
+{% capture card_content_4 %}
+It is our role to explain how any limitations in our outputs feed through into the decisions that users take. Being clear about these issues is absolutely vital. It protects the integrity of the findings and supports the users of our numbers in drawing the correct conclusions to inform the decisions they make. 
+{% endcapture %}
+
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_1 title="Governance and planning" %}
+  {% include card.html content=card_content_2 title="Verification and validation" %}
+  {% include card.html content=card_content_3 title="Reproducibility" %}
+  {% include card.html content=card_content_4 title="Communication of outputs" %}
+{% include cards-container-end.html %}
+
+
+
 These key stages along the data journey, alongside the 5 Dimensions of Quality of the European Statistical System (ESS), form the basis of the [QA review conversation tool](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20review%20conversation%20tool.xlsx?version=1&modificationDate=1716383304798&api=v2) and [QA log template](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20log%20template%20v1.2.xlsx?version=1&modificationDate=1716383298406&api=v2).
 
 
