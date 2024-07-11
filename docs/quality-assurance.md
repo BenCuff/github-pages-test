@@ -82,16 +82,17 @@ Understanding user needs is really important when measuring the quality of your 
 This may result in trade-offs between different dimensions of data quality, depending on the needs and priorities of your users. You should prioritise the data quality dimensions that align with your user and business needs. For example, if the timeliness of a data set is the most important dimension for the user, this may come at the expense of the data set’s accuracy, and vice versa. It is important to communicate these trade-offs to the users of your data to avoid ambiguity and misuse of the data.
 
 In practice, the nature and extent of quality assurance activities that are carried out for each project should depend on what is considered appropriate and proportionate:
-<ul style="list-style-type:disc;">
-<li><b>Appropriate</b>: fit for purpose for the analysis depending on its complexity, timeframe of delivery, available resources, and other factors</li>
-<li><b>Proportionate</b>: relative to the level of risk entailed by the project</li>
-</ul> 
+
+- Appropriate: fit for purpose for the analysis depending on its complexity, timeframe of delivery, available resources, and other factors
+- Proportionate: relative to the level of risk entailed by the project
+
 
 ## What do we mean by quality assurance?
 Quality assurance (QA) plays an essential part in any analytical project to ensure high quality analysis - it is so much more than just ‘getting the numbers right'. Effective QA ensures that decisions are made with an appropriate understanding of evidence and risks, and helps analysts ensure the integrity of the analytical output. It therefore forms a crucial part of the UKHSA's strategic priority to ["improve action on health security through data and insight"](https://www.gov.uk/government/publications/ukhsa-strategic-plan-2023-to-2026/ukhsa-strategic-plan-2023-to-2026-executive-summary).
 
 <img src="assets/img/high_quality_analysis.png" alt="In high quality analysis: You can transfer knowledge about the data, your calculations are correct, your methods are appropriate, others can test and replicate your analysis and your data and assumptions are fit for purpose. These can be summarised as 5 key areas: documentation and planning, verification, validation, project reproducibility and communication and outputs.">
-<p>&nbsp;</p>
+
+<br>
 
 The Data Science QA team in UKHSA have created an [Analytical QA Framework](https://confluence.collab.test-and-trace.nhs.uk/display/QA/UKHSA+Analytics+QA+Framework) to provide a structured approach to this: ensuring that all our analytical work meets the desired level of quality. It aims to support QA activities for all those who work on analytical projects that support a specific decision making process. You can find out more about the framework, as well as more information on the quality assurance of models on their [Confluence page](https://confluence.collab.test-and-trace.nhs.uk/display/QA/UKHSA+Analytics+QA+Framework). The remainder of this guidance will focus solely on the quality assurance of data and statistical outputs.
 
