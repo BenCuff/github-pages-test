@@ -171,7 +171,7 @@ This section gives some specific recommendations for presenting categorical data
 
 ### Categorical data
 
-> Bar charts work well for comparing different categories
+Bar charts work well for comparing different categories
 
 When making a bar chart, consider whether there is a logical ordering to the bars that groups similar categories together. For example, you could order age groups from lowest to highest or place bars to adjacent geochartical regions next to eachother. If there is no logical ordering, it is often most helpful to present bars in order of size.
 
@@ -181,8 +181,7 @@ It is best practice when making clustered bar charts to leave a small gap betwee
 
 {% capture card_content_1 %}
 Example 1: Percentage of positive tests for three disease strains at five testing centres in England, 2024
-<div class="image-text-container">
-    <img src="assets/img/Example 1.png" width="150px" alt="">
+    <img src="assets/img/Example 1.png" width="400px" alt="">
 {% endcapture %}
 
 {% capture card_content_2 %}
