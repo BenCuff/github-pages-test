@@ -181,11 +181,12 @@ It is best practice when making clustered bar charts to leave a small gap betwee
 
 {% capture card_content_1 %}
 Example 1: Percentage of positive tests for three disease strains at five testing centres in England, 2024
-    <img src="assets/img/Example 1.png" width="500px" alt="">
+    <img src="assets/img/Data viz/Example 1.png" width="500px" alt="">
 {% endcapture %}
 
 {% capture card_content_2 %}
 Example 2: Percentage of positive tests for three disease strains at five testing centres in England, 2024
+   <img src="assets/img/Data viz/Example 2.png" width="500px" alt="">
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -193,3 +194,35 @@ Example 2: Percentage of positive tests for three disease strains at five testin
   {% include card.html content=card_content_2 title="Best practice: applying spacing to clustered bar charts" %}
 {% include cards-container-end.html %}
 
+
+{% capture expandable_content_2 %}
+```
+# Create data frame:
+df <- data.frame(Strain = c(rep("Strain A", 5), rep("Strain B", 5), rep("Strain C", 5)),
+                Centre = c(rep(c("Centre 1", "Centre 2", "Centre 3", "Centre 4", "Centre 5"))),
+                Positivity = c(1, 1.2, 1.3, 1.4, 1.5, 3.1, 3.5, 5, 4.9, 4.4, 4.4, 5.1, 5.2, 5.6, 5.7),
+                check.names = F)
+ 
+# Load ggplot2 package:
+library(ggplot2)
+ 
+# Make chart:
+ggplot(df, aes(x = Centre, y = Positivity, fill = Strain)) +
+  geom_bar(stat = "identity",
+           position = position_dodge(0.8),
+           width = 0.7) +
+  scale_y_continuous(breaks = seq(0, 7, 1),
+                     expand = expansion(mult = c(0, 0.02)),
+                     limits = c(0, 7)) +
+  scale_fill_manual(values = af_colours(type = "categorical", n = 3)) +
+  labs(subtitle = "Per cent positive (%)",
+       x = NULL,
+       y = NULL) +
+  theme_af(font_size = 20,
+            legend.position = "bottom",
+            tick_mark = "x")
+```
+{% endcapture %}
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="2" content=expandable_content_1 title="R code for Example 2" %}
+  {% include expandable-block-end.html %}
