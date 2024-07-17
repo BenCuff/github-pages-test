@@ -653,7 +653,7 @@ ggplot(df, aes(x = year, y = unemployed, colour = gender)) +
 ```
 {% endcapture %}
 {% include expandable-block-start.html %}
-  {% include expandable-section.html number="13" content=expandable_content_14 title="R code for Example 16" %}
+  {% include expandable-section.html number="13" content=expandable_content_13 title="R code for Example 16" %}
   {% include expandable-block-end.html %}
 
 
@@ -705,4 +705,179 @@ df |>
   {% include expandable-section.html number="14" content=expandable_content_14 title="R code for Example 18" %}
   {% include expandable-block-end.html %}
 
+Although the chart on the left does not rely on colour to distinguish categories, the patterned bars add unnecessary clutter and are difficult to discern at small sizes (which would be the case with a greater number of bars).
+
+The chart on the right has been labelled in accordance with best practice standards. The categories have been labelled in the correct order and there is a note stating this.
+
+### Text orientation
+
+If your labels are too long to fit horizontally on the bottom of the chart, you should not tilt them diagonally or vertically to fit as this can be hard to read. For bar charts showing categorical data, a horizontal bar chart is often a good solution as it allows plenty of space for labels. When showing time series data, you do not need to include a label for every time point if there is not space.
+
+
+{% capture card_content_18 %}
+Example 19: Market shares of four largest importers for a product, USA, 2024
+<img src="assets/img/Data viz/Example 19.png" width="450px" alt="">
+{% endcapture %}
+
+{% capture card_content_19 %}
+Example 20: Market shares of four largest importers for a product, USA, 2024
+<img src="assets/img/Data viz/Example 20.png" width="450px" alt="">
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_18 title="To be avoided: vertical text labels" %}
+  {% include card.html content=card_content_19 title="Best practice: rotate chart (categorical data)" %}
+{% include cards-container-end.html %}
+
+{% capture expandable_content_15 %}
+```
+# Load tidyverse meta-package:
+library(tidyverse)
+ 
+# Create data frame:
+df <- tibble(country = c("Italy", "Netherlands", "Switzerland", "United Kingdom"),
+             percent = c(26, 11, 10, 7))
+ 
+# Make plot:
+df |>
+  mutate(country = fct_reorder(country, percent)) |>
+  ggplot(aes(percent, country)) +
+  geom_col(fill = "#12436D") +
+  scale_x_continuous(breaks = seq(0, 30, 10),
+                     expand = expansion(mult = c(0, 0.02)),
+                     limits = c(0, 30)) +
+  labs(subtitle = "Per cent of market (%)",
+       x = NULL,
+       y = NULL) +
+  theme_af(font_size = 20,
+           grid = "x",
+           tick_mark = "y")
+```
+{% endcapture %}
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="15" content=expandable_content_15 title="R code for Example 20" %}
+  {% include expandable-block-end.html %}
   
+{% capture card_content_20 %}
+Example 21: Annual unemployment rate for females, UK, 2008 to 2024
+<img src="assets/img/Data viz/Example 21.png" width="450px" alt="">
+{% endcapture %}
+
+{% capture card_content_21 %}
+Example 22: Annual unemployment rate for females, UK, 2008 to 2024
+<img src="assets/img/Data viz/Example 22.png" width="450px" alt="">
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_20 title="To be avoided: slanted text labels" %}
+  {% include card.html content=card_content_21 title="Best practice: omit some labels and rotate text" %}
+{% include cards-container-end.html %}
+
+NEED TO CHANGE EXAMPLE 21 AND INCLUDE MORE X-AXIS LABELS.
+
+{% capture expandable_content_16 %}
+```
+# Load tidyverse meta-package:
+library(tidyverse)
+ 
+# Make data frame:
+df <- tibble(year = 2008:2024,
+        percent = seq(1, 8, length.out = 17) + abs(rnorm(17, mean = 0, sd = 1)))
+ 
+# We want tick marks for every year and labels for every 4 years:
+year_seq <- 2008:2024
+year_seq[year_seq %% 4 != 0] <- ""
+ 
+#
+ggplot(df, aes(year, percent)) +
+  geom_line(linewidth = 1.2,
+            colour = "#12436D") +
+  scale_x_continuous(breaks = 2008:2024,
+                     labels = year_seq) +
+  scale_y_continuous(breaks = seq(0, 10, 2),
+                     expand = expansion(mult = c(0, 0.02)),
+                     limits = c(0, 10)) +
+  labs(subtitle = "Unemployment rate (%)",
+       x = NULL,
+       y = NULL) +
+  theme_af(font_size = 20,
+           tick_mark = "x"
+```
+{% endcapture %}
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="16" content=expandable_content_16 title="R code for Example 22" %}
+  {% include expandable-block-end.html %}
+  
+## Consistency 
+
+A publication is easier for users to understand when all charts take a consistent approach to data visualisation. Following these steps will allow readers to spend less time trying to understand how to go about interpreting each chart and more time focusing on what the intended message is. Accordingly:
+
+- when variables appear in multiple charts, they should be the same colour in each chart [6]
+- style elements such as line weight and font size should be the same in all charts [7]
+- units, labels, and titles should follow the same format for each chart, where applicable [1]
+- similar types of data should be presented using the same type of data visualisation wherever possible [1]
+
+
+## Clarity
+
+In general, the GOV.UK standard is to use simple language and avoid unnecessary complexity. In fact, it has been shown that even users with a high degree of specialist understanding appreciate simple writing that allows them to process information as quickly as possible [8].
+
+Of course, it is often necessary to write about specialist topics in a way that requires more difficult language. Any technical or specialist elements on your chart should be explained in some way. It is important to consider your users and their understanding of the subject matter to decide how much explanation is needed [8]. 
+
+Even if you believe that a publication will primarily be of interest to specialists, releasing it to the public means that it is available to users from a wide range of backgrounds. Even users who are not experts in the subject matter should still be able to understand the main points of your data visualisations. You should explain things such as:
+
+- representations of uncertainty, such as confidence intervals and p-values
+- technical language and potentially unfamiliar abbreviations and units of measurement
+
+{% capture expandable_content_17 %}
+Confidence intervals are common measures of statistical uncertainty, but some users may not be familiar with what they mean. If you include confidence intervals or other metrics of uncertainty on your chart, you should clearly explain to users what they are and how to interpret them (for example, what it means when a confidence interval is larger or smaller) [12]. 
+{% endcapture %}
+
+{% capture expandable_content_18 %}
+Any unit of measurement, abbreviation, or notation that is not widely understood should be explained or replaced with a more accessible alternative. It is preferable to use a simpler alternative, but there are often instances where this is not feasible. A good way to provide definitions is to include a glossary in your publication that allows users to find word definitions easily without searching the entire text.
+{% endcapture %}
+
+
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="17" content=expandable_content_17 title="Representations of uncertainty" %}
+  {% include expandable-section.html number="18" content=expandable_content_18 title="Technical language, abbreviations and notation" %}
+}
+{% include expandable-block-end.html %}
+
+
+## How to reduce clutter in charts
+
+It can be tempting to try to fit as much information as possible onto one set of axes. However, a very busy chart risks telling the wrong story to your users or confusing them. A helpful rule of thumb is “If you cannot write down the message your chart is giving in a few sentences, you should think again about the chart you have chosen.” [1]
+
+Best practice for avoiding chart clutter includes:
+
+- using only one set of axes on a chart
+- minimising the number of colours and other potential distractions 
+- including a maximum of four categories in line charts, clustered bar charts, and stacked line charts 
+
+### One chart, one set of axes
+
+### Minimising colours and distractions
+
+### Limiting the number of categories
+
+
+## Maps and geography standards
+
+There is currently no UKHSA guidance on best practice around mapping for a statistical context. However, the Analysis Function have produced a ['How To Make A Good Map'](https://onsgeo.github.io/geospatial-training/docs/make_a_good_map) e-learning course which introduces the most common types of maps used to present statistics, and provides guidance on what to think about when making a statistical map.
+
+The Office for National Statistics have also produced guidance to provide the [recommended presentation order for standard geographies](https://geoportal.statistics.gov.uk/datasets/424dfacb33594856a29c4e64f546a219/about). This is so that Official Statistics are geographically comparable, consistent and fit for purpose.
+
+## References
+1.[Government Analysis Function: Data visualisation: charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/)
+2.[Government Analysis Function: Making charts accessible – material, links and answers to questions from DataConnect22 session](https://analysisfunction.civilservice.gov.uk/support/communicating-analysis/making-charts-accessible-dataconnect22/)
+3.[Chart type: Style.ONS](https://style.ons.gov.uk/category/data-visualisation/chart-type/)
+4.[Central Digital and Data Office: Using CSV file format](https://www.gov.uk/guidance/using-csv-file-format)
+5.[Government Analysis Function: Data visualisation: tables](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-tables/)
+6.[Government Analysis Function: Data visualisation: colours](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
+7.[Using colours: Style.ONS](https://style.ons.gov.uk/category/data-visualisation/using-colours/)
+8.[Gov.UK: Content design: planning, writing and managing content](https://www.gov.uk/guidance/content-design/tables)
+9.[Dueling with axis: the problems with dual axis charts](https://digitalblog.ons.gov.uk/2019/07/03/dueling-with-axis-the-problems-with-dual-axis-charts/)
+10.[Chart design: Style.ONS](https://style.ons.gov.uk/category/data-visualisation/chart-design/)
+11.[Government Analysis Function: Data visualisation: colours](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
+12.[Approaches to presenting uncertainty in the statistical system – Office for Statistics Regulation](https://osr.statisticsauthority.gov.uk/publication/approaches-to-presenting-uncertainty-in-the-statistical-system/)
