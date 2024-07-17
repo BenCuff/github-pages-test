@@ -205,7 +205,6 @@ code{
 .cards-container{
   display: flex;
   flex-wrap: wrap;
-  
 }
   
 .card {
