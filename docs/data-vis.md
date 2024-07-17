@@ -450,7 +450,7 @@ It is a legal requirement under UK accessibility legislation that all non-text w
 
 For a chart, you may choose between providing a table or a text description [1] [4]. Think about what would be most beneficial to the user: if they would want to understand a trend, this might be best served via a description in the text. If they would want to read exact values then a table may be better. 
 
-If you choose to use a table, you can provide a link to a downloadable accessible spreadsheet document. Small tables can also be placed directly beneath a chart, displayed as HTML rather than an image (although it is best not to simply repeat information already given in the chart). [5]
+If you choose to use a table, you can provide a link to a downloadable [accessible spreadsheet document](https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Spreadsheet+accessibility). Small tables can also be placed directly beneath a chart, displayed as HTML rather than an image (although it is best not to simply repeat information already given in the chart). [5]
 
 In most cases, it is advised to provide a text description (often in addition to a link to a spreadsheet). This text is best placed directly above or beneath the chart. Text descriptions should clearly indicate which figure they refer to, such as "Figure X shows...", "Description of figure X:...", or similar. Your description should aim to provide users with an understanding of the relationships and patterns that your chart is trying to communicate. It does not need to state every single feature or data point displayed [1].
 
@@ -480,6 +480,10 @@ Both the x and y axes should be given an appropriate title, including units if a
   {% include expandable-section.html number="10" content=expandable_content_10 title="Axis and series labels" %}
 {% include expandable-block-end.html %}
 
+## Ranking
+
+Si currently adding content here
+
 {% capture card_content_11 %}
 Example 11
 {% endcapture %}
@@ -494,7 +498,7 @@ Example 12
 {% include cards-container-end.html %}
 
 
-{% capture expandable_content_10 %}
+{% capture expandable_content_11 %}
 ```
 
 ```
@@ -510,6 +514,195 @@ Example 12
 
 This can be a useful way to compare categories that have very small differences between them. However, it is best practice in bar charts to avoid this for the y-axis. This is because the bars in a bar chart are intended to be proportional representations of the different categories.
 
+{% capture card_content_12 %}
+Example 13: Number of cases, UK, 2014 to 2024
+<img src="assets/img/Data viz/Example 13.png" width="450px" alt="">
+{% endcapture %}
 
+{% capture card_content_13 %}
+Example 14: Number of cases, UK, 2014 to 2024
+<img src="assets/img/Data viz/Example 14.png" width="450px" alt="">
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_12 title="To be avoided: breaking the y-axis when using a bar chart" %}
+  {% include card.html content=card_content_13 title=" Best practice: start the y-axis at zero in bar charts" %}
+{% include cards-container-end.html %}
   
+{% capture expandable_content_12 %}
+```
+# Create data frame:
+df <- data.frame(year = seq(2014, 2024, 1),
+                      cases = rnorm(n = 11, mean = 45, sd = 1))
+ 
+# We want to show tick marks for every year not just the x-axis labels. Make every second x-axis label blank:
+year_seq <- seq(2014, 2024, 1)
+year_seq[seq(2014, 2024, 1) %% 2 != 0] <- ""
+ 
+#
+df |>
+  ggplot(aes(year, cases)) +
+  geom_col(fill = "#12436D") +
+  coord_cartesian(y = c(40, 50)) +
+  scale_x_continuous(breaks = 2014:2024,
+                     labels = year_seq) +
+  scale_y_continuous(breaks = seq(40, 50, 2),
+                     expand = expansion(mult = c(0, 0.02)),
+                     limits = c(0, 50)) +
+  labs(subtitle = "Number of cases",
+       x = NULL,
+       y = NULL) +
+  theme_af(font_size = 20,
+            tick_mark = "x")
+```
+{% endcapture %}
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="12" content=expandable_content_12 title="R code for Example 14" %}
+  {% include expandable-block-end.html %}
+  
+
+Above, the bar chart on the left shows an example of a misleading break in the y-axis. In the bar chart on the right, best practice has been followed for formatting a y-axis that starts at 0.
+
+If you need to break the y-axis, you should use a line chart, dot plot, or other alternative chart and indicate the break clearly on the chart by:
+
+- making the break in the y-axis clear using a [broken axis symbol](https://en.wikipedia.org/wiki/File:Y-axis_break.svg) (two parallel lines striking diagonally through the axis)
+- making the x-axis line the same colour and thickness as the gridlines
+- making the y-axis and the axis break symbol thicker and darker than the gridlines and x-axis [1]
+
+Axis breaks should only be used to show that the y-axis does not start at zero. Where you would like to display data points that contain an outlier, you should never break the axis halfway through.
+  
+  
+## Chart colours and text
+
+The colours and formatting of a chart can make a significant difference in its legibility. To ensure your chart can be read and understood by as many people as possible, it is best practice to:
+
+- use a suitable and accessible colour palette [1] [6]
+- ensure that you do not rely on colour alone to communicate information [1]
+- use white for the background [1] [6]
+- use light grey for gridlines [1] [6]
+- avoid any images, patterns, or shading [1] [6]
+- use black or dark grey text in a sans serif font [1] [6]
+- avoid slanted or vertical text [1]
+- ensure that text is large enough to be read easily [1]
+  
+### Using a suitable and accessible colour palette
+
+It is an accessibility requirement that visual elements such as charts use colours that have a contrast ratio of at least 3:1 with their backgrounds [11]. The WebAim site contains more information on this requirement and has a contrast checker you can use to make sure that your colours are appropriate.
+
+It is best to:
+
+- not rely on colour alone to communicate information (directly label line charts or use a legend in the same order as categories in bar charts)
+- avoid using a palette of more than 4 colours; do not use palettes of more than 6 colours (split charts up instead)
+- for ordinal categories (such as age), use single-hue palettes (for example, different shades of blue) but ensure all colours have a good contrast with a white background
+- not use single-hue palettes for non-ordinal categories (use different colours instead)
+- use the [Analysis Function colour palette](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/).
+
+### Communicating without colour
+
+It is an accessibility requirement that charts do not rely on colour alone to communicate. This means that charts should be just as easy to understand if they are displayed in greyscale as they are in full colour [6]. However, the use of patterns and shading is not always a good way to distinguish between chart categories. Bar charts should not have patterned bars as these can be very difficult to distinguish, especially at small sizes and in the legend wherever the boxes are not large enough to properly show the pattern.
+
+It is possible to use different data marker shapes or textured lines such as dotted or dashed lines to distinguish between variables on a line chart. However, these also increase clutter and caution is advised in using them [1] [6] [2].
+
+{% capture card_content_14 %}
+Example 15: Annual unemployment rates by gender, UK, 2008 to 2024
+<img src="assets/img/Data viz/Example 15.png" width="450px" alt="">
+{% endcapture %}
+
+{% capture card_content_15 %}
+Example 16: Annual unemployment rates by gender, UK, 2008 to 2024
+<img src="assets/img/Data viz/Example 16.png" width="450px" alt="">
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_14 title="To be avoided: relying on colour alone to distinguish categories" %}
+  {% include card.html content=card_content_15 title="Best practice: labelling the categories directly" %}
+{% include cards-container-end.html %}
+
+The chart on the left relies entirely on colour to communicate which line represents which category, presenting an accessibility issue. There is a particular issue here because the legend is not in the same order as the lines on the chart, which could be misleading. The chart on the right instead has each line labelled directly in accordance with best practice accessibility standards. 
+
+{% capture expandable_content_13 %}
+```
+# Here we will use the data frame `df` from Example 4:
+ggplot(df, aes(x = year, y = unemployed, colour = gender)) +
+  geom_line(linewidth = 1.2) +
+  scale_x_continuous(breaks = 2008:2024,
+                     expand = expansion(mult = c(0.02, 0.2)),
+                     labels = year_seq) +
+  scale_y_continuous(breaks = seq(0, 12, 2),
+                     expand = expansion(mult = c(0, 0.02)),
+                     limits = c(0, 12)) +
+  scale_fill_manual(values = af_colours(type = "categorical", n = 3)) +
+  labs(subtitle = "Annual unemployment rate (%)",
+       x = NULL,
+       y = NULL) +
+  theme_af(font_size = 20,
+            legend.position = "none",
+            tick_mark = "x") +
+  coord_cartesian(clip = "off") +
+  geom_text_repel(aes(label = gender, x=year, y = unemployed),
+                  size = 6, # Font size
+                  xlim = max(df_36$year) + 2,  # Limits for where on the x-axis the label can appear
+                  ylim = c(4, 11), # Limits for where on the y-axis the label can appear
+                  force = .1,
+                  point.size = NA,
+                  box.padding = 1,
+                  segment.color = "#D9D9D9",
+                  data = df_36 %>%
+                    group_by(gender) %>%
+                    filter(year == max(year)))
+```
+{% endcapture %}
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="13" content=expandable_content_14 title="R code for Example 16" %}
+  {% include expandable-block-end.html %}
+
+
+You should not use patterns on chart bars to distinguish different categories as these can make charts very hard to read, especially at smaller sizes. Instead, stacked and clustered bar charts can include direct labels, or you can include a legend in the same order as the categories and add a note that you have done so.
+
+{% capture card_content_16 %}
+Example 17: Number of buyers of eight car models by age, UK, 2024
+<img src="assets/img/Data viz/Example 17.png" width="450px" alt="">
+{% endcapture %}
+
+{% capture card_content_17 %}
+Example 18: Number of buyers of eight car models by age, UK, 2024
+<img src="assets/img/Data viz/Example 18.png" width="450px" alt="">
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_16 title="To be avoided: using patterns to distinguish categories on a bar chart" %}
+  {% include card.html content=card_content_17 title="Best practice: using a legend in the same order as the categories" %}
+{% include cards-container-end.html %}
+
+
+{% capture expandable_content_14 %}
+```
+# Load tidyverse meta-package:
+library(tidyverse)
+ 
+# Create data frame:
+df <- crossing(model = LETTERS[1:8],
+                age = c("0 to 24", "25 to 64", "65 to 74", "75 plus")) |>
+        mutate(households = rnorm(32, mean = 5, sd = 2))
+ 
+#
+df |>
+  ggplot(aes(model, households, fill = age)) +
+  geom_col() +
+  scale_fill_manual(values = af_colours("categorical", n = 4)) +
+  scale_y_continuous(breaks = seq(0, 40, 10),
+                     expand = expansion(mult = c(0, 0.02)),
+                     limits = c(0, 40)) +
+  labs(subtitle = "Number of households (thousands)",
+       x = "Car model",
+       y = NULL) +
+  theme_af(font_size = 20,
+            tick_mark = "x",
+            legend.position = "bottom")
+```
+{% endcapture %}
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="14" content=expandable_content_14 title="R code for Example 18" %}
+  {% include expandable-block-end.html %}
+
   
