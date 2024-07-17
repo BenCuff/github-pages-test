@@ -198,7 +198,7 @@ code{
   color: white;
   font-size: larger;
   display: block;
-  width: fit-content;
+  width: auto;
   padding: 10px;
 }
 
