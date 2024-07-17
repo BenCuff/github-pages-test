@@ -181,19 +181,31 @@ It is best practice when making clustered bar charts to leave a small gap betwee
 
 {% capture card_content_1 %}
 Example 1: Percentage of positive tests for three disease strains at five testing centres in England, 2024
+<<<<<<< HEAD
+<div>
+    <img src="assets/img/Data viz/Example 1.png" width="450px" class="center" alt=" style ="display: block; margin: auto;">
+    </div>
+=======
 
     <img src="assets/img/data viz/Example 1.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_2 %}
 Example 2: Percentage of positive tests for three disease strains at five testing centres in England, 2024
+<<<<<<< HEAD
+<div>
+   <img src="assets/img/Data viz/Example 2.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+   </div>
+=======
 
    <img src="assets/img/data viz/Example 2.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_1 title="To be avoided: no space within clusters " %}
-  {% include card.html content=card_content_2 title="Best practice: applying spacing to clustered bar charts" %}
+  {% include card.html content=card_content_1 title="❌To be avoided: no space within clusters " %}
+  {% include card.html content=card_content_2 title="✔️Best practice: applying spacing to clustered bar charts" %}
 {% include cards-container-end.html %}
 
 
@@ -239,19 +251,31 @@ Below, the stacked bar chart on the left makes non-adjacent categories in the sa
 
 {% capture card_content_3 %}
 Example 3: Annual unemployment rates by gender, UK, 2008 to 2024
+<<<<<<< HEAD
+<div>
+    <img src="assets/img/Data viz/Example 3.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
     <img src="assets/img/data viz/Example 3.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_4 %}
 Example 4: Annual unemployment rates for all genders, UK, 2008 to 2024
+<<<<<<< HEAD
+<div>
+   <img src="assets/img/Data viz/Example 4.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+   </div>
+=======
 
    <img src="assets/img/data viz/Example 4.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_3 title="To be avoided: showing multiple categories in time series data with stacked bar charts" %}
-  {% include card.html content=card_content_4 title="Best practice: using bar charts or line charts for time series data only when there is one category" %}
+  {% include card.html content=card_content_3 title="❌To be avoided: showing multiple categories in time series data with stacked bar charts" %}
+  {% include card.html content=card_content_4 title="✔️Best practice: using bar charts or line charts for time series data only when there is one category" %}
 {% include cards-container-end.html %}
 
 {% capture expandable_content_3 %}
@@ -301,17 +325,29 @@ When multiple categories are involved, it is best practice to use a line chart l
 
 {% capture card_content_5 %}
 Example 5: Annual unemployment rates by gender, UK, 2008 to 2024
+<<<<<<< HEAD
+<div>
+    <img src="assets/img/Data viz/Example 5.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
     <img src="assets/img/data viz/Example 5.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_6 %}
 Example 6: Annual unemployment rates by gender, UK, 2008 to 2024
+<<<<<<< HEAD
+<div>
+   <img src="assets/img/Data viz/Example 6.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
    <img src="assets/img/data viz/Example 6.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_5 title="To be avoided: showing multiple categories in time series data with stacked bar charts" %}
-  {% include card.html content=card_content_6 title="Best practice: using bar charts or line charts for time series data only when there is one category" %}
+  {% include card.html content=card_content_5 title="❌ To be avoided: showing multiple categories in time series data with stacked bar charts" %}
+  {% include card.html content=card_content_6 title="✔️ Best practice: using bar charts or line charts for time series data only when there is one category" %}
 {% include cards-container-end.html %}
   
   
@@ -361,19 +397,31 @@ If you are using a bar chart to show quarterly data, you should not colour every
 
 {% capture card_content_7 %}
 Example 7: quarterly survey respondents, England and Wales, 2022 to 2023
+<<<<<<< HEAD
+<div>
+    <img src="assets/img/Data viz/Example 7.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
     <img src="assets/img/data viz/Example 7.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_8 %}
 Example 8: quarterly survey respondents, England and Wales, 2022 to 2023
+<<<<<<< HEAD
+<div>
+   <img src="assets/img/Data viz/Example 8.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
    <img src="assets/img/data viz/Example 8.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_7 title="To be avoided: using colours to indicate quarter number on a bar chart" %}
-  {% include card.html content=card_content_8 title="Best practice: label all quarters directly and use the same colour for each" %}
+  {% include card.html content=card_content_7 title="❌ To be avoided: using colours to indicate quarter number on a bar chart" %}
+  {% include card.html content=card_content_8 title="✔️Best practice: label all quarters directly and use the same colour for each" %}
 {% include cards-container-end.html %}
 
 {% capture expandable_content_5 %}
@@ -418,8 +466,14 @@ When showing weekly data, one option might be to include some calendar dates bel
 
 {% capture card_content_9 %}
 Example 9: weekly test positivity rates, UK, past 52 weeks (no calendar dates)
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 9.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
     <img src="assets/img/data viz/Example 9.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_10 %}
@@ -428,8 +482,8 @@ Example 10: weekly test positivity rates, UK, past 52 weeks (including calendar 
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_9 title="To be avoided: using only week numbers to indicate time" %}
-  {% include card.html content=card_content_10 title="Best practice: including month and year information" %}
+  {% include card.html content=card_content_9 title="❌ To be avoided: using only week numbers to indicate time" %}
+  {% include card.html content=card_content_10 title="✔️Best practice: including month and year information" %}
 {% include cards-container-end.html %}
 
 {% capture expandable_content_6 %}
@@ -501,8 +555,8 @@ Example 12
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_11 title="To be avoided: " %}
-  {% include card.html content=card_content_12 title="Best practice:" %}
+  {% include card.html content=card_content_11 title="❌To be avoided: " %}
+  {% include card.html content=card_content_12 title="✔️Best practice:" %}
 {% include cards-container-end.html %}
 
 
@@ -524,19 +578,31 @@ This can be a useful way to compare categories that have very small differences 
 
 {% capture card_content_12 %}
 Example 13: Number of cases, UK, 2014 to 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 13.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 13.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_13 %}
 Example 14: Number of cases, UK, 2014 to 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 14.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 14.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_12 title="To be avoided: breaking the y-axis when using a bar chart" %}
-  {% include card.html content=card_content_13 title=" Best practice: start the y-axis at zero in bar charts" %}
+  {% include card.html content=card_content_12 title="❌ To be avoided: breaking the y-axis when using a bar chart" %}
+  {% include card.html content=card_content_13 title=" ✔️Best practice: start the y-axis at zero in bar charts" %}
 {% include cards-container-end.html %}
   
 {% capture expandable_content_12 %}
@@ -615,19 +681,31 @@ It is possible to use different data marker shapes or textured lines such as dot
 
 {% capture card_content_14 %}
 Example 15: Annual unemployment rates by gender, UK, 2008 to 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 15.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 15.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_15 %}
 Example 16: Annual unemployment rates by gender, UK, 2008 to 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 16.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 16.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_14 title="To be avoided: relying on colour alone to distinguish categories" %}
-  {% include card.html content=card_content_15 title="Best practice: labelling the categories directly" %}
+  {% include card.html content=card_content_14 title="❌To be avoided: relying on colour alone to distinguish categories" %}
+  {% include card.html content=card_content_15 title="✔️Best practice: labelling the categories directly" %}
 {% include cards-container-end.html %}
 
 The chart on the left relies entirely on colour to communicate which line represents which category, presenting an accessibility issue. There is a particular issue here because the legend is not in the same order as the lines on the chart, which could be misleading. The chart on the right instead has each line labelled directly in accordance with best practice accessibility standards. 
@@ -673,19 +751,31 @@ You should not use patterns on chart bars to distinguish different categories as
 
 {% capture card_content_16 %}
 Example 17: Number of buyers of eight car models by age, UK, 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 17.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 17.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_17 %}
 Example 18: Number of buyers of eight car models by age, UK, 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 18.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 18.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_16 title="To be avoided: using patterns to distinguish categories on a bar chart" %}
-  {% include card.html content=card_content_17 title="Best practice: using a legend in the same order as the categories" %}
+  {% include card.html content=card_content_16 title="❌To be avoided: using patterns to distinguish categories on a bar chart" %}
+  {% include card.html content=card_content_17 title="✔️Best practice: using a legend in the same order as the categories" %}
 {% include cards-container-end.html %}
 
 
@@ -730,19 +820,31 @@ If your labels are too long to fit horizontally on the bottom of the chart, you 
 
 {% capture card_content_18 %}
 Example 19: Market shares of four largest importers for a product, USA, 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 19.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 19.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_19 %}
 Example 20: Market shares of four largest importers for a product, USA, 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 20.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 20.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_18 title="To be avoided: vertical text labels" %}
-  {% include card.html content=card_content_19 title="Best practice: rotate chart (categorical data)" %}
+  {% include card.html content=card_content_18 title="❌To be avoided: vertical text labels" %}
+  {% include card.html content=card_content_19 title="✔️Best practice: rotate chart (categorical data)" %}
 {% include cards-container-end.html %}
 
 {% capture expandable_content_15 %}
@@ -776,17 +878,29 @@ df |>
   
 {% capture card_content_20 %}
 Example 21: Annual unemployment rate for females, UK, 2008 to 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 21.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 <img src="assets/img/data viz/Example 21.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_21 %}
 Example 22: Annual unemployment rate for females, UK, 2008 to 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 22.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 <img src="assets/img/data viz/Example 22.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_20 title="To be avoided: slanted text labels" %}
-  {% include card.html content=card_content_21 title="Best practice: omit some labels and rotate text" %}
+  {% include card.html content=card_content_20 title="❌To be avoided: slanted text labels" %}
+  {% include card.html content=card_content_21 title="✔️Best practice: omit some labels and rotate text" %}
 {% include cards-container-end.html %}
 
 NEED TO CHANGE EXAMPLE 21 AND INCLUDE MORE X-AXIS LABELS.
@@ -876,12 +990,18 @@ Charts should only have one x-axis and one y-axis. Using two different scales of
 
 {% capture card_content_20 %}
 Example 23: Annual unemployment rate and number unemployed, UK, 2008 to 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 23.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 <br>
 <img src="assets/img/data viz/Example 23.png" width="450px" class="center" alt="" >
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_20 title="To be avoided: two sets of axes on a chart" %}
+  {% include card.html content=card_content_20 title="❌To be avoided: two sets of axes on a chart" %}
 {% include cards-container-end.html %}
 
 The Analysis Function provide a helpful infochartic showing any dual y-axes can be manipulated to show almost any relationship between two variables.
@@ -889,14 +1009,26 @@ The Analysis Function provide a helpful infochartic showing any dual y-axes can 
 
 {% capture card_content_21 %}
 Example 24a: Number unemployed in the UK, 2005 to 2021
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 24a.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 24a.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_22 %}
 Example 24b: Annual unemployment rate in the UK, 2005 to 2021
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 24b.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 24b.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -912,18 +1044,30 @@ Shading, borders, textures, and unnecessary embellishments should be avoided. Ba
 
 {% capture card_content_23 %}
 Example 25: Population growth of different towns, South West England, 2000 to 2020
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 25.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 25.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_24 %}
 Example 26: Population growth of different towns, South West England, 2000 to 2020
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 26.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 26.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_23 title="To be avoided: different colours for each bar" %}
+  {% include card.html content=card_content_23 title="❌To be avoided: different colours for each bar" %}
   {% include card.html content=card_content_24 title="✔️Best practice: only use different colours if absolutely necessary" %}
 {% include cards-container-end.html %}
 
@@ -935,18 +1079,30 @@ If multiple variables or categories of a single variable are measured on the sam
 
 {% capture card_content_25 %}
 Example 27: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 27.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 27.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_26 %}
 Example 28: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 28.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 28.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_25 title="To be avoided: crowded line charts with more than four different lines" %}
+  {% include card.html content=card_content_25 title="❌ To be avoided: crowded line charts with more than four different lines" %}
   {% include card.html content=card_content_26 title="✔️Best practice: using a small multiples chart " %}
 {% include cards-container-end.html %}
 
@@ -996,8 +1152,14 @@ Where you would like to call attention to one category, for instance when you ar
 
 {% capture card_content_27 %}
 Example 29: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
+<<<<<<< HEAD
+<div>
+<img src="assets/img/Data viz/Example 29.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+</div>
+=======
 
 <img src="assets/img/data viz/Example 29.png" width="450px" class="center" alt="">
+>>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -1105,6 +1267,3 @@ The Office for National Statistics have also produced guidance to provide the [r
 
 12. [Approaches to presenting uncertainty in the statistical system – Office for Statistics Regulation](https://osr.statisticsauthority.gov.uk/publication/approaches-to-presenting-uncertainty-in-the-statistical-system/)
 
-
-
-✔️
