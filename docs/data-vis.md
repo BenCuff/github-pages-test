@@ -181,7 +181,7 @@ It is best practice when making clustered bar charts to leave a small gap betwee
 
 {% capture card_content_1 %}
 Example 1: Percentage of positive tests for three disease strains at five testing centres in England, 2024
-    <img src="assets/img/Example 1.png" width="400px" alt="">
+    <img src="assets/img/Example 1.png" width="500px" alt="">
 {% endcapture %}
 
 {% capture card_content_2 %}
