@@ -1,14 +1,6 @@
 ---
-title: "Methods: Handling missing data"
+title: "Handling missing data"
 layout: guidance-page
-
-page-group-title: "Methods"
-page1: 
-  url: communicating-uncertainty
-  name: "Communicating uncertainty"
-page2: 
-  url: missing-data
-  name: "<u>Handling missing data</u>"
 ---
 
 

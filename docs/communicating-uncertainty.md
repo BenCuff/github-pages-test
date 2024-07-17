@@ -1,14 +1,6 @@
 ---
-title: "Methods: Communicating uncertainty"
+title: "Communicating uncertainty"
 layout: guidance-page
-
-page-group-title: "Methods"
-page1: 
-  url: communicating-uncertainty
-  name: "<u>Communicating uncertainty</u>"
-page2: 
-  url: missing-data
-  name: "Handling missing data"
 ---
 
 > ## Main messages
