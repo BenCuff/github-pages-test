@@ -900,8 +900,8 @@ Example 24b: Annual unemployment rate in the UK, 2005 to 2021
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_21 title="Best practice: side by side charts" %}
-  {% include card.html content=card_content_22 title="Best practice: side by side charts" %}
+  {% include card.html content=card_content_21 title="✔️Best practice: side by side charts" %}
+  {% include card.html content=card_content_22 title="✔️Best practice: side by side charts" %}
 {% include cards-container-end.html %}
 
 Above, the two charts are now displayed on different axes above which have been placed side by side, making it easy to compare how they change over the same period of time.
@@ -924,7 +924,7 @@ Example 26: Population growth of different towns, South West England, 2000 to 20
 
 {% include cards-container-start.html %}
   {% include card.html content=card_content_23 title="To be avoided: different colours for each bar" %}
-  {% include card.html content=card_content_24 title="Best practice: only use different colours if absolutely necessary" %}
+  {% include card.html content=card_content_24 title="✔️Best practice: only use different colours if absolutely necessary" %}
 {% include cards-container-end.html %}
 
 In the chart on the left, each bar is a different colour. The different colours do not communicate any information that is not already included in the x-axis labels and therefore are not necessary. The chart on the right is less visually busy and does not distract from its main message.
@@ -947,7 +947,7 @@ Example 28: Daily test positivity rates in June for an infectious disease, UK, 2
 
 {% include cards-container-start.html %}
   {% include card.html content=card_content_25 title="To be avoided: crowded line charts with more than four different lines" %}
-  {% include card.html content=card_content_26 title="Best practice: using a small multiples chart " %}
+  {% include card.html content=card_content_26 title="✔️Best practice: using a small multiples chart " %}
 {% include cards-container-end.html %}
 
 
@@ -1001,7 +1001,7 @@ Example 29: Daily test positivity rates in June for an infectious disease, UK, 2
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_27 title="Best practice: using a focus chart to call attention to one category" %}
+  {% include card.html content=card_content_27 title="✔️Best practice: using a focus chart to call attention to one category" %}
 {% include cards-container-end.html %}
 
 
@@ -1065,12 +1065,13 @@ Alternatively, you can combine small multiples and focus charts into one, showin
 
 {% capture card_content_28 %}
 Example 30: Rate of new infections, UK, 2018 to 2024
-
-<img src="assets/img/Data viz/Example 30.png" width="450px" class="center" alt="">
+<div>
+<img src="assets/img/Data viz/Example 30.png" width="450px" class="center" alt="" display: block; margin: auto;>
+</div>
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_28 title="Best practice: combing small multiples and focus charts to call attention to one category" %}
+  {% include card.html content=card_content_28 title="✔️Best practice: combing small multiples and focus charts to call attention to one category" %}
 {% include cards-container-end.html %}
 
 ## Maps and geography standards
@@ -1103,3 +1104,7 @@ The Office for National Statistics have also produced guidance to provide the [r
 11. [Government Analysis Function: Data visualisation: colours](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
 
 12. [Approaches to presenting uncertainty in the statistical system – Office for Statistics Regulation](https://osr.statisticsauthority.gov.uk/publication/approaches-to-presenting-uncertainty-in-the-statistical-system/)
+
+
+
+✔️

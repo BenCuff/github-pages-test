@@ -297,3 +297,7 @@ td:first-child {
 @media only screen and (max-width: 350px) {
   .page-nav{display:block;}
 }
+
+<div>
+.card img{display: block; margin: auto;}
+</div>
