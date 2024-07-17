@@ -181,12 +181,12 @@ It is best practice when making clustered bar charts to leave a small gap betwee
 
 {% capture card_content_1 %}
 Example 1: Percentage of positive tests for three disease strains at five testing centres in England, 2024
-    <img src="assets/img/Data viz/Example 1.png" width="500px" alt="">
+    <img src="assets/img/Data viz/Example 1.png" width="450px" alt="">
 {% endcapture %}
 
 {% capture card_content_2 %}
 Example 2: Percentage of positive tests for three disease strains at five testing centres in England, 2024
-   <img src="assets/img/Data viz/Example 2.png" width="500px" alt="">
+   <img src="assets/img/Data viz/Example 2.png" width="450px" alt="">
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -224,5 +224,123 @@ ggplot(df, aes(x = Centre, y = Positivity, fill = Strain)) +
 ```
 {% endcapture %}
 {% include expandable-block-start.html %}
-  {% include expandable-section.html number="2" content=expandable_content_1 title="R code for Example 2" %}
+  {% include expandable-section.html number="2" content=expandable_content_2 title="R code for Example 2" %}
+  {% include expandable-block-end.html %}
+  
+## Time series data
+
+Line charts are most often used to show time series data. They work well for showing how multiple variables change over a period of time [1] [3].
+
+If you are only showing one time series variable, a bar chart can also be used. However, stacked and clustered bar charts should not be used for displaying multiple time series variables as they make comparisons difficult.
+
+Below, the stacked bar chart on the left makes non-adjacent categories in the same bar difficult to compare: here, the “All” and “Male” categories appear the same size in many of the bars. Furthermore, it is difficult to see how categories other than the bottom one change over time. Changes in the “Male” bar are clearly displayed, but trends in the other two categories are harder to identify at a glance. (Note that stacking totals on top of individual categories is also not good practice here.) Where there is only one category, a bar chart is easy to read, as can be seen on the right.
+
+{% capture card_content_3 %}
+Example 3: Annual unemployment rates by gender, UK, 2008 to 2024
+    <img src="assets/img/Data viz/Example 3.png" width="450px" alt="">
+{% endcapture %}
+
+{% capture card_content_4 %}
+Example 4: Annual unemployment rates for all genders, UK, 2008 to 2024
+   <img src="assets/img/Data viz/Example 4.png" width="450px" alt="">
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_3 title="To be avoided: showing multiple categories in time series data with stacked bar charts" %}
+  {% include card.html content=card_content_4 title="Best practice: using bar charts or line charts for time series data only when there is one category" %}
+{% include cards-container-end.html %}
+
+{% capture expandable_content_3 %}
+```
+# Load dplyr, tidyr (for data manipulation) and ggplot2 (for data visualisation):
+library(tidyverse)
+ 
+# Create data frame:
+df <- data.frame(year = 2008:2024,
+                Male = c(4.1,5.2,6.4,7.5,8.0,9.0,9.5,9.7,9.4,8.2,7.1,6.0,6.2,6.7,7.6,8.0,7.2),
+                Female = c(6.4,7.3,8.7,9.1,8.5,11.2,11.1,11.1,11.7,10.4,9.1,8.0,6.8,9.7,8.4,8.2,8.2),
+                check.names = F) %>%
+  mutate(All = (Male + Female)/2) %>%
+  pivot_longer(cols = 2:4, names_to = "gender", values_to = "unemployed")
+ 
+# We want to show tick marks for every year not just the x-axis labels:
+year_seq <- seq(2008, 2024, 1)
+year_seq[seq(2008, 2024, 1) %% 4 != 0] <- ""
+ 
+# Make chart:
+df |>
+  filter(gender == "All") |>
+  ggplot(aes(x = year, y = unemployed)) +
+  geom_bar(stat = "identity",
+           width = .8,
+           fill = "#12436D") +
+  scale_x_continuous(breaks = 2008:2024,
+                     labels = year_seq) +
+  scale_y_continuous(breaks = seq(0, 12, 2),
+                     expand = expansion(mult = c(0, 0.02)),
+                     limits = c(0, 12)) +
+  labs(subtitle = "Annual unemployment rate (%)",
+       x = NULL,
+       y = NULL) +
+  theme_af(font_size = 20,
+            legend.position = "bottom",
+            tick_mark = "x")
+```
+{% endcapture %}
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="3" content=expandable_content_3 title="R code for Example 4" %}
+  {% include expandable-block-end.html %}
+  
+Below, the clustered bar chart on the left resolves some of the issues with comparability seen in the stacked bar chart above, but is more visually crowded as the bars become thinner and harder to focus on. When multiple categories are involved, it is best practice to use a line chart like the one on the right. In this chart, differences between categories and time points are easy to identify. The overall trends are clearly displayed and can be understood at a glance. Note that the lines have been labelled directly rather than with a legend: this is how line charts should be labelled.
+
+{% capture card_content_5 %}
+Example 5: Annual unemployment rates by gender, UK, 2008 to 2024
+    <img src="assets/img/Data viz/Example 5.png" width="450px" alt="">
+{% endcapture %}
+
+{% capture card_content_6 %}
+Example 6: Annual unemployment rates by gender, UK, 2008 to 2024
+   <img src="assets/img/Data viz/Example 6.png" width="450px" alt="">
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_5 title="To be avoided: showing multiple categories in time series data with stacked bar charts" %}
+  {% include card.html content=card_content_6 title="Best practice: using bar charts or line charts for time series data only when there is one category" %}
+{% include cards-container-end.html %}
+  
+  
+{% capture expandable_content_4 %}
+```
+# Here we will use the data frame `df` from Example 4:
+ggplot(df, aes(x = year, y = unemployed, colour = gender)) +
+  geom_line(linewidth = 1.2) +
+  scale_x_continuous(breaks = 2008:2024,
+                     expand = expansion(mult = c(0.02, 0.2)),
+                     labels = year_seq) +
+  scale_y_continuous(breaks = seq(0, 12, 2),
+                     expand = expansion(mult = c(0, 0.02)),
+                     limits = c(0, 12)) +
+  scale_fill_manual(values = af_colours(type = "categorical", n = 3)) +
+  labs(subtitle = "Annual unemployment rate (%)",
+       x = NULL,
+       y = NULL) +
+  theme_af(font_size = 20,
+            legend.position = "none",
+            tick_mark = "x") +
+  coord_cartesian(clip = "off") +
+  geom_text_repel(aes(label = gender, x=year, y = unemployed),
+                  size = 6, # Font size
+                  xlim = max(df_36$year) + 2,  # Limits for where on the x-axis the label can appear
+                  ylim = c(4, 11), # Limits for where on the y-axis the label can appear
+                  force = .1,
+                  point.size = NA,
+                  box.padding = 1,
+                  segment.color = "#D9D9D9",
+                  data = df_36 %>%
+                    group_by(gender) %>%
+                    filter(year == max(year)))
+```
+{% endcapture %}
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="4" content=expandable_content_4 title="R code for Example 6" %}
   {% include expandable-block-end.html %}
