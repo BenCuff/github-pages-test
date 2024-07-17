@@ -424,6 +424,15 @@ Example 10: weekly test positivity rates, UK, past 52 weeks (including calendar 
   {% include card.html content=card_content_10 title="Best practice: including month and year information" %}
 {% include cards-container-end.html %}
 
+{% capture expandable_content_6 %}
+```
+
+```
+{% endcapture %}
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="6" content=expandable_content_6 title="R code for Example 10" %}
+  {% include expandable-block-end.html %}
+
 The charts above show data on a weekly scale, which is why it is best practice to label the start and end of the series with the month and year, as can be seen on the right. Because the chart shows data from 2021 and 2022, the end of 2021 and the beginning of 2022 have been labelled as well. A lighter grey has been used for the month labels so they do not distract too much from the message of the chart.
 
 ## Guidance for all charts
@@ -435,8 +444,8 @@ All published charts must include the following:
 - an appropriately tagged title (including figure number)
 - axis and series labels
 
-### Accessible alternative
 
+{% capture expandable_content_7 %}
 It is a legal requirement under UK accessibility legislation that all non-text web content published by the Government also be presented in an alternative format that conveys the same information.
 
 For a chart, you may choose between providing a table or a text description [1] [4]. Think about what would be most beneficial to the user: if they would want to understand a trend, this might be best served via a description in the text. If they would want to read exact values then a table may be better. 
@@ -445,17 +454,62 @@ If you choose to use a table, you can provide a link to a downloadable accessibl
 
 In most cases, it is advised to provide a text description (often in addition to a link to a spreadsheet). This text is best placed directly above or beneath the chart. Text descriptions should clearly indicate which figure they refer to, such as "Figure X shows...", "Description of figure X:...", or similar. Your description should aim to provide users with an understanding of the relationships and patterns that your chart is trying to communicate. It does not need to state every single feature or data point displayed [1].
 
-GOV.UK and other platforms that support HTML allow you to add a hidden "alt text" attribute in the image metadata, but you should not put your text description there. Placing it near the image instead makes the text easier to find and share to all users. 
+GOV.UK and other platforms that support HTML allow you to add a hidden "alt text" attribute in the image metadata, but you should not put your text description there. Placing it near the image instead makes the text easier to find and share to all users.
+{% endcapture %}
 
-### Data source
+{% capture expandable_content_8 %}
 Be clear about the source of your data and whether the data is available to download and make this information as easy to find as possible. In most cases, a link to an underlying dataset will suffice. For external sources, try to provide the name of the publication or data set which you are referencing, being as specific as possible and providing a direct link if one is available. If your publication uses multiple external data sources, you should provide a link under each chart [1].
+{% endcapture %}
 
-
-### Title
+{% capture expandable_content_9 %}
 The title should communicate the geocharty, time period, and variables that are displayed and is also a good place for including the figure number of the chart [1].
 
 Titles should be provided in the body of the publication text rather than generated within the chart image. If you are publishing on GOV.UK or another platform in an HTML format, this allows them to be tagged correctly as headings using HTML [1].
 
+{% endcapture %}
 
-### Axis and series labels
-Both the x and y axes should be given an appropriate title, including units if applicable. An x-axis title is not necessary when the name of the variable it shows can be easily determined based on the axis labels. For instance, a line chart whose x-axis shows years does not need to be labelled "Year", and a bar chart with a bar for each region of England does not need a label saying "Region": this information is evident from the labels and plot title. Axes that show day or week numbers should still be titled. 
+{% capture expandable_content_10 %}
+Both the x and y axes should be given an appropriate title, including units if applicable. An x-axis title is not necessary when the name of the variable it shows can be easily determined based on the axis labels. For instance, a line chart whose x-axis shows years does not need to be labelled "Year", and a bar chart with a bar for each region of England does not need a label saying "Region": this information is evident from the labels and plot title. Axes that show day or week numbers should still be titled.
+{% endcapture %}
+
+
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="7" content=expandable_content_7 title="Accessible alternative" %}
+  {% include expandable-section.html number="8" content=expandable_content_8 title="Data source" %}
+  {% include expandable-section.html number="9" content=expandable_content_9 title="Title" %}
+  {% include expandable-section.html number="10" content=expandable_content_10 title="Axis and series labels" %}
+{% include expandable-block-end.html %}
+
+{% capture card_content_11 %}
+Example 11
+{% endcapture %}
+
+{% capture card_content_12 %}
+Example 12
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_11 title="To be avoided: " %}
+  {% include card.html content=card_content_12 title="Best practice:" %}
+{% include cards-container-end.html %}
+
+
+{% capture expandable_content_10 %}
+```
+
+```
+{% endcapture %}
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="11" content=expandable_content_11 title="R code for Example 12" %}
+  {% include expandable-block-end.html %}
+  
+
+## Breaking the axis
+
+“Breaking” an axis occurs when part of a continuous axis is left out. Rather than starting at 0, the axis may begin at a higher value, or it may begin at 0 but exclude a range of values that contain no data points.
+
+This can be a useful way to compare categories that have very small differences between them. However, it is best practice in bar charts to avoid this for the y-axis. This is because the bars in a bar chart are intended to be proportional representations of the different categories.
+
+
+  
+  
