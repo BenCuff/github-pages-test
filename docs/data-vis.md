@@ -181,11 +181,13 @@ It is best practice when making clustered bar charts to leave a small gap betwee
 
 {% capture card_content_1 %}
 Example 1: Percentage of positive tests for three disease strains at five testing centres in England, 2024
+
     <img src="assets/img/Data viz/Example 1.png" width="450px" alt="">
 {% endcapture %}
 
 {% capture card_content_2 %}
 Example 2: Percentage of positive tests for three disease strains at five testing centres in England, 2024
+
    <img src="assets/img/Data viz/Example 2.png" width="450px" alt="">
 {% endcapture %}
 
@@ -237,11 +239,13 @@ Below, the stacked bar chart on the left makes non-adjacent categories in the sa
 
 {% capture card_content_3 %}
 Example 3: Annual unemployment rates by gender, UK, 2008 to 2024
+
     <img src="assets/img/Data viz/Example 3.png" width="450px" alt="">
 {% endcapture %}
 
 {% capture card_content_4 %}
 Example 4: Annual unemployment rates for all genders, UK, 2008 to 2024
+
    <img src="assets/img/Data viz/Example 4.png" width="450px" alt="">
 {% endcapture %}
 
@@ -357,11 +361,13 @@ If you are using a bar chart to show quarterly data, you should not colour every
 
 {% capture card_content_7 %}
 Example 7: quarterly survey respondents, England and Wales, 2022 to 2023
+
     <img src="assets/img/Data viz/Example 7.png" width="450px" alt="">
 {% endcapture %}
 
 {% capture card_content_8 %}
 Example 8: quarterly survey respondents, England and Wales, 2022 to 2023
+
    <img src="assets/img/Data viz/Example 8.png" width="450px" alt="">
 {% endcapture %}
 
@@ -412,11 +418,13 @@ When showing weekly data, one option might be to include some calendar dates bel
 
 {% capture card_content_9 %}
 Example 9: weekly test positivity rates, UK, past 52 weeks (no calendar dates)
+
     <img src="assets/img/Data viz/Example 9.png" width="450px" alt="">
 {% endcapture %}
 
 {% capture card_content_10 %}
 Example 10: weekly test positivity rates, UK, past 52 weeks (including calendar dates)
+
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -516,11 +524,13 @@ This can be a useful way to compare categories that have very small differences 
 
 {% capture card_content_12 %}
 Example 13: Number of cases, UK, 2014 to 2024
+
 <img src="assets/img/Data viz/Example 13.png" width="450px" alt="">
 {% endcapture %}
 
 {% capture card_content_13 %}
 Example 14: Number of cases, UK, 2014 to 2024
+
 <img src="assets/img/Data viz/Example 14.png" width="450px" alt="">
 {% endcapture %}
 
@@ -605,11 +615,13 @@ It is possible to use different data marker shapes or textured lines such as dot
 
 {% capture card_content_14 %}
 Example 15: Annual unemployment rates by gender, UK, 2008 to 2024
+
 <img src="assets/img/Data viz/Example 15.png" width="450px" alt="">
 {% endcapture %}
 
 {% capture card_content_15 %}
 Example 16: Annual unemployment rates by gender, UK, 2008 to 2024
+
 <img src="assets/img/Data viz/Example 16.png" width="450px" alt="">
 {% endcapture %}
 
@@ -661,11 +673,13 @@ You should not use patterns on chart bars to distinguish different categories as
 
 {% capture card_content_16 %}
 Example 17: Number of buyers of eight car models by age, UK, 2024
+
 <img src="assets/img/Data viz/Example 17.png" width="450px" alt="">
 {% endcapture %}
 
 {% capture card_content_17 %}
 Example 18: Number of buyers of eight car models by age, UK, 2024
+
 <img src="assets/img/Data viz/Example 18.png" width="450px" alt="">
 {% endcapture %}
 
@@ -716,11 +730,13 @@ If your labels are too long to fit horizontally on the bottom of the chart, you 
 
 {% capture card_content_18 %}
 Example 19: Market shares of four largest importers for a product, USA, 2024
+
 <img src="assets/img/Data viz/Example 19.png" width="450px" alt="">
 {% endcapture %}
 
 {% capture card_content_19 %}
 Example 20: Market shares of four largest importers for a product, USA, 2024
+
 <img src="assets/img/Data viz/Example 20.png" width="450px" alt="">
 {% endcapture %}
 
@@ -860,6 +876,7 @@ Charts should only have one x-axis and one y-axis. Using two different scales of
 
 {% capture card_content_20 %}
 Example 23: Annual unemployment rate and number unemployed, UK, 2008 to 2024
+
 <img src="assets/img/Data viz/Example 23.png" width="450px" alt="">
 {% endcapture %}
 
@@ -872,11 +889,13 @@ The Analysis Function provide a helpful infochartic showing any dual y-axes can 
 
 {% capture card_content_21 %}
 Example 24a: Number unemployed in the UK, 2005 to 2021
+
 <img src="assets/img/Data viz/Example 24a.png" width="450px" alt="">
 {% endcapture %}
 
 {% capture card_content_22 %}
 Example 24b: Annual unemployment rate in the UK, 2005 to 2021
+
 <img src="assets/img/Data viz/Example 24b.png" width="450px" alt="">
 {% endcapture %}
 
@@ -893,11 +912,13 @@ Shading, borders, textures, and unnecessary embellishments should be avoided. Ba
 
 {% capture card_content_23 %}
 Example 25: Population growth of different towns, South West England, 2000 to 2020
+
 <img src="assets/img/Data viz/Example 25.png" width="450px" alt="">
 {% endcapture %}
 
 {% capture card_content_24 %}
 Example 26: Population growth of different towns, South West England, 2000 to 2020
+
 <img src="assets/img/Data viz/Example 26.png" width="450px" alt="">
 {% endcapture %}
 
@@ -914,11 +935,13 @@ If multiple variables or categories of a single variable are measured on the sam
 
 {% capture card_content_25 %}
 Example 27: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
+
 <img src="assets/img/Data viz/Example 27.png" width="450px" alt="">
 {% endcapture %}
 
 {% capture card_content_26 %}
 Example 28: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
+
 <img src="assets/img/Data viz/Example 28.png" width="450px" alt="">
 {% endcapture %}
 
@@ -964,11 +987,91 @@ ggplot(df, aes(day, x, colour = year)) +
 ```
 {% endcapture %}
 {% include expandable-block-start.html %}
-  {% include expandable-section.html number="16" content=expandable_content_19 title="R code for Example 28" %}
+  {% include expandable-section.html number="19" content=expandable_content_19 title="R code for Example 28" %}
   {% include expandable-block-end.html %}
 
-Where you would like to call attention to one category, for instance when you are comparing data from the current year to data from previous years, you can use a “focus chart” where one line is a different colour to the rest. In this case, you can include more than four lines on your chart, but they should be noticeably lighter than the “focus” line, for instance a light grey, and still should be labelled [1][10].
+### Focus charts
 
+Where you would like to call attention to one category, for instance when you are comparing data from the current year to data from previous years, you can use a “focus chart” where one line is a different colour to the rest. In this case, you can include more than four lines on your chart, but they should be noticeably lighter than the “focus” line, for instance a light grey, and still should be labelled [1] [10].
+
+{% capture card_content_27 %}
+Example 29: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
+
+<img src="assets/img/Data viz/Example 29.png" width="450px" alt="">
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_27 title="Best practice: using a focus chart to call attention to one category" %}
+{% include cards-container-end.html %}
+
+
+{% capture expandable_content_20 %}
+```
+# Load tidyverse meta-package:
+library(tidyverse)
+ 
+# Make data frame:
+df <- crossing(day = 1:30,
+                    year = 2019:2024) |>
+  mutate(x = rnorm(180, mean = 10, sd = 3)) |>
+  mutate(is_latest = year == max(year),
+         year = factor(year))
+ 
+# Create vector from 1 to 30 with blanks for all numbers except 1, 10, 20 and 30:
+day_seq <- seq(0, 30, 1)
+day_seq[day_seq %% 10 != 0] <- ""
+day_seq <- c("1", day_seq[-c(1, 2)])
+ 
+# Make plot:
+df |>
+  mutate(year = as.numeric(as.character(year)),
+         label = if_else(day == max(day) & year == max(year), as.character(year), NA_character_)) %>%
+  ggplot(aes(day, x, colour = is_latest, group = year)) +
+  geom_line(linewidth = 1.2) +
+  scale_x_continuous(breaks = seq(1, 30, 1),
+                     labels = day_seq,
+                     expand = expansion(mult = c(0.04, 0.2))) +
+  scale_y_continuous(breaks = seq(0, 20, 5),
+                     expand = expansion(mult = c(0, 0.02)),
+                     limits = c(0, 20)) +
+  scale_colour_manual(values = c("#BFBFBF", "#12436D")) +
+  coord_cartesian(clip = "off") +
+  labs(subtitle = "Per cent positive (%)",
+       x = "Day",
+       y = NULL) +
+  theme_af(font_size = 20,
+           tick_mark = "x",
+           legend.position = "none")  +
+  geom_label_repel(aes(label = label),
+                   color = "black",
+                   label.size = NA,
+                   size = 7,
+                   xlim = 31,  # Limits for where on the x-axis the label can appear
+                   #ylim = 9.5, # Limits for where on the y-axis the label can appear
+                  e = .1,
+                   point.size = NA,
+                   box.padding = 0,
+                   segment.color = "#D9D9D9",
+                   na.rm = TRUE)
+```
+{% endcapture %}
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="20" content=expandable_content_20 title="R code for Example 29" %}
+  {% include expandable-block-end.html %} forc
+  
+The chart above shows a good way to highlight the most recent year in a multi-year time series. However, with an increasing number of lines, there will be more overlap and so it will become harder to distinguish the individual lines in grey. There is no fixed maximum number of lines in a focus chart, but you should make sure that the main message of the chart is still easily communicated.
+
+Alternatively, you can combine small multiples and focus charts into one, showing the focal category in one colour and the other categories in light grey.
+
+{% capture card_content_28 %}
+Example 30: Rate of new infections, UK, 2018 to 2024
+
+<img src="assets/img/Data viz/Example 30.png" width="450px" alt="">
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_28 title="Best practice: combing small multiples and focus charts to call attention to one category" %}
+{% include cards-container-end.html %}
 
 ## Maps and geography standards
 
