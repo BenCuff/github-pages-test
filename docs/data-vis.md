@@ -841,7 +841,6 @@ Any unit of measurement, abbreviation, or notation that is not widely understood
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="17" content=expandable_content_17 title="Representations of uncertainty" %}
   {% include expandable-section.html number="18" content=expandable_content_18 title="Technical language, abbreviations and notation" %}
-}
 {% include expandable-block-end.html %}
 
 
@@ -857,9 +856,118 @@ Best practice for avoiding chart clutter includes:
 
 ### One chart, one set of axes
 
+Charts should only have one x-axis and one y-axis. Using two different scales of measurement on one chart can easily over-emphasise or mask the relationship between variables and can risk making your chart cluttered. Similarly, it is usually best to use only one type of chart on each set of axes. If you wish to show how two variables with different scales or units of measurement change in tandem with each other, a good option is simply to put them on two side-by-side or stacked charts. [1] [9] [10] 
+
+{% capture card_content_20 %}
+Example 23: Annual unemployment rate and number unemployed, UK, 2008 to 2024
+<img src="assets/img/Data viz/Example 23.png" width="450px" alt="">
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_20 title="To be avoided: two sets of axes on a chart" %}
+{% include cards-container-end.html %}
+
+The Analysis Function provide a helpful infochartic showing any dual y-axes can be manipulated to show almost any relationship between two variables.
+
+
+{% capture card_content_21 %}
+Example 24a: Number unemployed in the UK, 2005 to 2021
+<img src="assets/img/Data viz/Example 24a.png" width="450px" alt="">
+{% endcapture %}
+
+{% capture card_content_22 %}
+Example 24b: Annual unemployment rate in the UK, 2005 to 2021
+<img src="assets/img/Data viz/Example 24b.png" width="450px" alt="">
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_21 title="Best practice: side by side charts" %}
+  {% include card.html content=card_content_22 title="Best practice: side by side charts" %}
+{% include cards-container-end.html %}
+
+Above, the two charts are now displayed on different axes above which have been placed side by side, making it easy to compare how they change over the same period of time.
+
 ### Minimising colours and distractions
 
+Shading, borders, textures, and unnecessary embellishments should be avoided. Bar charts do not need to have borders around each bar and patterns should not be used to distinguish between bars. Bar charts which are not stacked or clustered should not have bars in different colours as this does not aid in chart interpretation [6] [7] .
+
+{% capture card_content_23 %}
+Example 25: Population growth of different towns, South West England, 2000 to 2020
+<img src="assets/img/Data viz/Example 25.png" width="450px" alt="">
+{% endcapture %}
+
+{% capture card_content_24 %}
+Example 26: Population growth of different towns, South West England, 2000 to 2020
+<img src="assets/img/Data viz/Example 26.png" width="450px" alt="">
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_23 title="To be avoided: different colours for each bar" %}
+  {% include card.html content=card_content_24 title="Best practice: only use different colours if absolutely necessary" %}
+{% include cards-container-end.html %}
+
+In the chart on the left, each bar is a different colour. The different colours do not communicate any information that is not already included in the x-axis labels and therefore are not necessary. The chart on the right is less visually busy and does not distract from its main message.
+
 ### Limiting the number of categories
+
+If multiple variables or categories of a single variable are measured on the same scale, a chart can be a useful way of comparing between them. However, as the number of variables on a single chart increases, charts can easily become cluttered and hard to read. Presenting more than four lines on a line chart can be done, but it often results in the chart becoming too cluttered [1], so we advise that charts should not contain more than four categories unless there is a clear statistical justification. This is best practice for all types of charts, including line charts, stacked bar charts, and clustered bar charts [1].
+
+{% capture card_content_25 %}
+Example 27: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
+<img src="assets/img/Data viz/Example 27.png" width="450px" alt="">
+{% endcapture %}
+
+{% capture card_content_26 %}
+Example 28: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
+<img src="assets/img/Data viz/Example 28.png" width="450px" alt="">
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_25 title="To be avoided: crowded line charts with more than four different lines" %}
+  {% include card.html content=card_content_26 title="Best practice: using a small multiples chart " %}
+{% include cards-container-end.html %}
+
+
+{% capture expandable_content_19 %}
+```
+# Load tidyverse meta-package:
+library(tidyverse)
+ 
+# Make data frame:
+df <- crossing(day = 1:30,
+                    year = 2019:2024) |>
+  mutate(x = rnorm(180, mean = 10, sd = 3)) |>
+  mutate(is_latest = year == max(year),
+         year = factor(year))
+ 
+# Create vector from 1 to 30 with blanks for all numbers except 1, 10, 20 and 30:
+day_seq <- seq(0, 30, 1)
+day_seq[day_seq %% 10 != 0] <- ""
+day_seq <- c("1", day_seq[-c(1, 2)])
+ 
+# Make plot:
+ggplot(df, aes(day, x, colour = year)) +
+  geom_line(linewidth = 1.2,
+            colour = "#12436D") +
+  scale_x_continuous(breaks = seq(1, 30, 1),
+                     labels = day_seq) +
+  scale_y_continuous(breaks = seq(0, 20, 10),
+                     expand = expansion(mult = c(0, 0.02)),
+                     limits = c(0, 20)) +
+  labs(subtitle = "Per cent positive (%)",
+       x = "Day",
+       y = NULL) +
+  theme_af(font_size = 20,
+           tick_mark = "x",
+           legend.position = "none") +
+  facet_wrap(vars(year))
+```
+{% endcapture %}
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="16" content=expandable_content_19 title="R code for Example 28" %}
+  {% include expandable-block-end.html %}
+
+Where you would like to call attention to one category, for instance when you are comparing data from the current year to data from previous years, you can use a “focus chart” where one line is a different colour to the rest. In this case, you can include more than four lines on your chart, but they should be noticeably lighter than the “focus” line, for instance a light grey, and still should be labelled [1][10].
 
 
 ## Maps and geography standards
@@ -869,15 +977,26 @@ There is currently no UKHSA guidance on best practice around mapping for a stati
 The Office for National Statistics have also produced guidance to provide the [recommended presentation order for standard geographies](https://geoportal.statistics.gov.uk/datasets/424dfacb33594856a29c4e64f546a219/about). This is so that Official Statistics are geographically comparable, consistent and fit for purpose.
 
 ## References
-1.[Government Analysis Function: Data visualisation: charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/)
-2.[Government Analysis Function: Making charts accessible – material, links and answers to questions from DataConnect22 session](https://analysisfunction.civilservice.gov.uk/support/communicating-analysis/making-charts-accessible-dataconnect22/)
-3.[Chart type: Style.ONS](https://style.ons.gov.uk/category/data-visualisation/chart-type/)
-4.[Central Digital and Data Office: Using CSV file format](https://www.gov.uk/guidance/using-csv-file-format)
-5.[Government Analysis Function: Data visualisation: tables](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-tables/)
-6.[Government Analysis Function: Data visualisation: colours](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
-7.[Using colours: Style.ONS](https://style.ons.gov.uk/category/data-visualisation/using-colours/)
-8.[Gov.UK: Content design: planning, writing and managing content](https://www.gov.uk/guidance/content-design/tables)
-9.[Dueling with axis: the problems with dual axis charts](https://digitalblog.ons.gov.uk/2019/07/03/dueling-with-axis-the-problems-with-dual-axis-charts/)
-10.[Chart design: Style.ONS](https://style.ons.gov.uk/category/data-visualisation/chart-design/)
-11.[Government Analysis Function: Data visualisation: colours](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
-12.[Approaches to presenting uncertainty in the statistical system – Office for Statistics Regulation](https://osr.statisticsauthority.gov.uk/publication/approaches-to-presenting-uncertainty-in-the-statistical-system/)
+1. [Government Analysis Function: Data visualisation: charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/)
+
+2. [Government Analysis Function: Making charts accessible – material, links and answers to questions from DataConnect22 session](https://analysisfunction.civilservice.gov.uk/support/communicating-analysis/making-charts-accessible-dataconnect22/)
+
+3. [Chart type: Style.ONS](https://style.ons.gov.uk/category/data-visualisation/chart-type/)
+
+4. [Central Digital and Data Office: Using CSV file format](https://www.gov.uk/guidance/using-csv-file-format)
+
+5. [Government Analysis Function: Data visualisation: tables](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-tables/)
+
+6. [Government Analysis Function: Data visualisation: colours](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
+
+7. [Using colours: Style.ONS](https://style.ons.gov.uk/category/data-visualisation/using-colours/)
+
+8. [Gov.UK: Content design: planning, writing and managing content](https://www.gov.uk/guidance/content-design/tables)
+
+9. [Dueling with axis: the problems with dual axis charts](https://digitalblog.ons.gov.uk/2019/07/03/dueling-with-axis-the-problems-with-dual-axis-charts/)
+
+10. [Chart design: Style.ONS](https://style.ons.gov.uk/category/data-visualisation/chart-design/)
+
+11. [Government Analysis Function: Data visualisation: colours](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
+
+12. [Approaches to presenting uncertainty in the statistical system – Office for Statistics Regulation](https://osr.statisticsauthority.gov.uk/publication/approaches-to-presenting-uncertainty-in-the-statistical-system/)
