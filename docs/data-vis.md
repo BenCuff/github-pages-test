@@ -1066,8 +1066,7 @@ Alternatively, you can combine small multiples and focus charts into one, showin
 {% capture card_content_28 %}
 Example 30: Rate of new infections, UK, 2018 to 2024
 <div>
-display: block; margin: auto;
-<img src="assets/img/Data viz/Example 30.png" width="450px" class="center" alt="">
+<img src="assets/img/Data viz/Example 30.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
