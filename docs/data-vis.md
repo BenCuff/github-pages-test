@@ -185,10 +185,6 @@ Example 1: Percentage of positive tests for three disease strains at five testin
 <div>
     <img src="assets/img/Data viz/Example 1.png" width="450px" class="center" alt=" style ="display: block; margin: auto;">
     </div>
-=======
-
-    <img src="assets/img/data viz/Example 1.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_2 %}
@@ -197,10 +193,6 @@ Example 2: Percentage of positive tests for three disease strains at five testin
 <div>
    <img src="assets/img/Data viz/Example 2.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
    </div>
-=======
-
-   <img src="assets/img/data viz/Example 2.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -255,10 +247,6 @@ Example 3: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
     <img src="assets/img/Data viz/Example 3.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-    <img src="assets/img/data viz/Example 3.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_4 %}
@@ -267,10 +255,6 @@ Example 4: Annual unemployment rates for all genders, UK, 2008 to 2024
 <div>
    <img src="assets/img/Data viz/Example 4.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
    </div>
-=======
-
-   <img src="assets/img/data viz/Example 4.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -329,9 +313,6 @@ Example 5: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
     <img src="assets/img/Data viz/Example 5.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-    <img src="assets/img/data viz/Example 5.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_6 %}
@@ -340,9 +321,6 @@ Example 6: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
    <img src="assets/img/Data viz/Example 6.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-   <img src="assets/img/data viz/Example 6.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -401,10 +379,6 @@ Example 7: quarterly survey respondents, England and Wales, 2022 to 2023
 <div>
     <img src="assets/img/Data viz/Example 7.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-    <img src="assets/img/data viz/Example 7.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_8 %}
@@ -413,10 +387,6 @@ Example 8: quarterly survey respondents, England and Wales, 2022 to 2023
 <div>
    <img src="assets/img/Data viz/Example 8.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-   <img src="assets/img/data viz/Example 8.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -470,10 +440,6 @@ Example 9: weekly test positivity rates, UK, past 52 weeks (no calendar dates)
 <div>
 <img src="assets/img/Data viz/Example 9.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-    <img src="assets/img/data viz/Example 9.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_10 %}
@@ -582,10 +548,6 @@ Example 13: Number of cases, UK, 2014 to 2024
 <div>
 <img src="assets/img/Data viz/Example 13.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 13.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_13 %}
@@ -594,10 +556,6 @@ Example 14: Number of cases, UK, 2014 to 2024
 <div>
 <img src="assets/img/Data viz/Example 14.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 14.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -685,10 +643,6 @@ Example 15: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
 <img src="assets/img/Data viz/Example 15.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 15.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_15 %}
@@ -697,10 +651,6 @@ Example 16: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
 <img src="assets/img/Data viz/Example 16.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 16.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -755,10 +705,6 @@ Example 17: Number of buyers of eight car models by age, UK, 2024
 <div>
 <img src="assets/img/Data viz/Example 17.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 17.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_17 %}
@@ -767,10 +713,6 @@ Example 18: Number of buyers of eight car models by age, UK, 2024
 <div>
 <img src="assets/img/Data viz/Example 18.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 18.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -824,10 +766,6 @@ Example 19: Market shares of four largest importers for a product, USA, 2024
 <div>
 <img src="assets/img/Data viz/Example 19.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 19.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_19 %}
@@ -836,10 +774,6 @@ Example 20: Market shares of four largest importers for a product, USA, 2024
 <div>
 <img src="assets/img/Data viz/Example 20.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 20.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -882,9 +816,6 @@ Example 21: Annual unemployment rate for females, UK, 2008 to 2024
 <div>
 <img src="assets/img/Data viz/Example 21.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-<img src="assets/img/data viz/Example 21.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_21 %}
@@ -893,9 +824,6 @@ Example 22: Annual unemployment rate for females, UK, 2008 to 2024
 <div>
 <img src="assets/img/Data viz/Example 22.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-<img src="assets/img/data viz/Example 22.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -994,10 +922,6 @@ Example 23: Annual unemployment rate and number unemployed, UK, 2008 to 2024
 <div>
 <img src="assets/img/Data viz/Example 23.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-<br>
-<img src="assets/img/data viz/Example 23.png" width="450px" class="center" alt="" >
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -1013,10 +937,6 @@ Example 24a: Number unemployed in the UK, 2005 to 2021
 <div>
 <img src="assets/img/Data viz/Example 24a.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 24a.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_22 %}
@@ -1025,10 +945,6 @@ Example 24b: Annual unemployment rate in the UK, 2005 to 2021
 <div>
 <img src="assets/img/Data viz/Example 24b.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 24b.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -1048,10 +964,6 @@ Example 25: Population growth of different towns, South West England, 2000 to 20
 <div>
 <img src="assets/img/Data viz/Example 25.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 25.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_24 %}
@@ -1060,10 +972,6 @@ Example 26: Population growth of different towns, South West England, 2000 to 20
 <div>
 <img src="assets/img/Data viz/Example 26.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 26.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -1083,10 +991,6 @@ Example 27: Daily test positivity rates in June for an infectious disease, UK, 2
 <div>
 <img src="assets/img/Data viz/Example 27.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 27.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% capture card_content_26 %}
@@ -1095,10 +999,6 @@ Example 28: Daily test positivity rates in June for an infectious disease, UK, 2
 <div>
 <img src="assets/img/Data viz/Example 28.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 28.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
@@ -1156,10 +1056,6 @@ Example 29: Daily test positivity rates in June for an infectious disease, UK, 2
 <div>
 <img src="assets/img/Data viz/Example 29.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
 </div>
-=======
-
-<img src="assets/img/data viz/Example 29.png" width="450px" class="center" alt="">
->>>>>>> c855711326d750ae3029c3f00084d3cbdc6efd7a
 {% endcapture %}
 
 {% include cards-container-start.html %}
