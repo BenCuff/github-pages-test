@@ -1,7 +1,20 @@
 <div id="site-nav">
     <a href="/github-pages-test/"><p>Home</p></a>
-    <a href="rap"><p>Reproducible analytical pipelines (RAP)</p></a>
-    <a href="quality-assurance"><p>Quality assurance</p></a>
-    <a href="communicating-uncertainty"><p>Methods</p></a>
-    <a href="data-vis"><p>Accessibility</p></a>
+    
+    {% if page-group-title %}
+    <p style="font-weight:bold">{{ page.page-group-title}} pages:</p>
+    {% endif %}
+    
+    {% if page.page1 %}
+    <a href="{{ page.page1.url }}"><p>{{ page.page1.name }}</p></a>
+    {% endif %}
+    
+    {% if page.page2 %}
+      <a href="{{ page.page2.url }}"><p>{{ page.page2.name }}</p></a>
+    {% endif %}
+    
+    {% if page.page3 %}
+      <a href="{{ page.page3.url }}"><p>{{ page.page3.name }}</p></a>
+    {% endif %}
+    
 </div>
