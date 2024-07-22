@@ -280,7 +280,7 @@ th, td {
   padding: 8px;
 }
 
-td{ /*these will add a scroll bar for small screens*/
+th, td{ /*these will add a scroll bar for small screens*/
   display: block;
   width: max-content;
   max-width: 100%;
