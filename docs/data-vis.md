@@ -182,7 +182,7 @@ Example 1: Percentage of positive tests for three disease strains at five testin
 {% capture card_content_2 %}
 Example 2: Percentage of positive tests for three disease strains at five testing centres in England, 2024
 <div>
-   <img src="assets/img/data viz/Example 2.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+   <img src="assets/img/data viz/Example 2.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
    </div>
 {% endcapture %}
 
@@ -235,14 +235,14 @@ Below, the stacked bar chart on the left makes non-adjacent categories in the sa
 {% capture card_content_3 %}
 Example 3: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
-    <img src="assets/img/data viz/Example 3.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+    <img src="assets/img/data viz/Example 3.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_4 %}
 Example 4: Annual unemployment rates for all genders, UK, 2008 to 2024
 <div>
-   <img src="assets/img/data viz/Example 4.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+   <img src="assets/img/data viz/Example 4.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
    </div>
 {% endcapture %}
 
@@ -299,14 +299,14 @@ When multiple categories are involved, it is best practice to use a line chart l
 {% capture card_content_5 %}
 Example 5: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
-    <img src="assets/img/data viz/Example 5.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+    <img src="assets/img/data viz/Example 5.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_6 %}
 Example 6: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
-   <img src="assets/img/data viz/Example 6.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+   <img src="assets/img/data viz/Example 6.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -363,14 +363,14 @@ If you are using a bar chart to show quarterly data, you should not colour every
 {% capture card_content_7 %}
 Example 7: quarterly survey respondents, England and Wales, 2022 to 2023
 <div>
-    <img src="assets/img/data viz/Example 7.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+    <img src="assets/img/data viz/Example 7.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_8 %}
 Example 8: quarterly survey respondents, England and Wales, 2022 to 2023
 <div>
-   <img src="assets/img/data viz/Example 8.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+   <img src="assets/img/data viz/Example 8.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -422,14 +422,14 @@ When showing weekly data, one option might be to include some calendar dates bel
 {% capture card_content_9 %}
 Example 9: weekly test positivity rates, UK, past 52 weeks (no calendar dates)
 <div>
-<img src="assets/img/data viz/Example 9.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 9.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_10 %}
 Example 10: weekly test positivity rates, UK, past 52 weeks (including calendar dates)
 <div>
-<img src="assets/img/data viz/Example 10.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 10.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -531,14 +531,14 @@ This can be a useful way to compare categories that have very small differences 
 {% capture card_content_12 %}
 Example 13: Number of cases, UK, 2014 to 2024
 <div>
-<img src="assets/img/data viz/Example 13.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 13.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_13 %}
 Example 14: Number of cases, UK, 2014 to 2024
 <div>
-<img src="assets/img/data viz/Example 14.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 14.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -624,14 +624,14 @@ It is possible to use different data marker shapes or textured lines such as dot
 {% capture card_content_14 %}
 Example 15: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
-<img src="assets/img/data viz/Example 15.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 15.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_15 %}
 Example 16: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
-<img src="assets/img/data viz/Example 16.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 16.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -684,14 +684,14 @@ You should not use patterns on chart bars to distinguish different categories as
 {% capture card_content_16 %}
 Example 17: Number of buyers of eight car models by age, UK, 2024
 <div>
-<img src="assets/img/data viz/Example 17.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 17.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_17 %}
 Example 18: Number of buyers of eight car models by age, UK, 2024
 <div>
-<img src="assets/img/data viz/Example 18.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 18.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -743,14 +743,14 @@ If your labels are too long to fit horizontally on the bottom of the chart, you 
 {% capture card_content_18 %}
 Example 19: Market shares of four largest importers for a product, USA, 2024
 <div>
-<img src="assets/img/data viz/Example 19.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 19.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_19 %}
 Example 20: Market shares of four largest importers for a product, USA, 2024
 <div>
-<img src="assets/img/data viz/Example 20.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 20.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -791,14 +791,14 @@ df |>
 {% capture card_content_20 %}
 Example 21: Annual unemployment rate for females, UK, 2008 to 2024
 <div>
-<img src="assets/img/data viz/Example 21.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 21.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_21 %}
 Example 22: Annual unemployment rate for females, UK, 2008 to 2024
 <div>
-<img src="assets/img/data viz/Example 22.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 22.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -895,7 +895,7 @@ Charts should only have one x-axis and one y-axis. Using two different scales of
 {% capture card_content_20 %}
 Example 23: Annual unemployment rate and number unemployed, UK, 2008 to 2024
 <div>
-<img src="assets/img/data viz/Example 23.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 23.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -909,14 +909,14 @@ The Analysis Function provide a helpful infochartic showing any dual y-axes can 
 {% capture card_content_21 %}
 Example 24a: Number unemployed in the UK, 2005 to 2021
 <div>
-<img src="assets/img/data viz/Example 24a.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 24a.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_22 %}
 Example 24b: Annual unemployment rate in the UK, 2005 to 2021
 <div>
-<img src="assets/img/data viz/Example 24b.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 24b.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -934,14 +934,14 @@ Shading, borders, textures, and unnecessary embellishments should be avoided. Ba
 {% capture card_content_23 %}
 Example 25: Population growth of different towns, South West England, 2000 to 2020
 <div>
-<img src="assets/img/data viz/Example 25.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 25.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_24 %}
 Example 26: Population growth of different towns, South West England, 2000 to 2020
 <div>
-<img src="assets/img/data viz/Example 26.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 26.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -959,14 +959,14 @@ If multiple variables or categories of a single variable are measured on the sam
 {% capture card_content_25 %}
 Example 27: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
 <div>
-<img src="assets/img/data viz/Example 27.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 27.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_26 %}
 Example 28: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
 <div>
-<img src="assets/img/data viz/Example 28.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 28.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -1021,7 +1021,7 @@ Where you would like to call attention to one category, for instance when you ar
 
 {% capture card_content_27 %}
 Example 29: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024<div>
-<img src="assets/img/data viz/Example 29.png" width="450px" class="center" alt="" style ="display: block; margin: auto;>
+<img src="assets/img/data viz/Example 29.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
