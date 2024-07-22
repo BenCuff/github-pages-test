@@ -274,14 +274,24 @@ table {
   border-collapse: collapse;
   font-family: sans-serif;
 }
+
 th, td {
   border: 1px solid #dee2e6;
   padding: 8px;
 }
+
+td{ /*these will add a scroll bar for small screens*/
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+}
+
 th {
   background-color: #007c91;
   color: #fff;
 }
+
 td:first-child {
   background-color: #f8f9fa;
 }
