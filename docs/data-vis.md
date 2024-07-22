@@ -1,15 +1,8 @@
 ---
 title: "Accessibility: Data visualisation"
 layout: guidance-page
-
-page-group-title: "Accessibility"
-page1: 
-  url: data-vis
-  name: "<u>data visualisations</u>"
-page2: 
-  url: spreadsheets
-  name: "Spreadsheets"
 ---
+
 > ## Main messages
 >- data visualisations must be compliant with current accessibility legislation.
 >- You should choose an appropriate and consistent way to visualise different types of data.

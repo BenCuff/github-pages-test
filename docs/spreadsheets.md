@@ -1,14 +1,6 @@
 ---
 title: "Accessibility: Spreadsheets"
 layout: guidance-page
-
-page-group-title: "Accessibility"
-page1: 
-  url: data-vis
-  name: "Data visualisations"
-page2: 
-  url: spreadsheets
-  name: "<u>Spreadsheets</u>"
 ---
 
 
