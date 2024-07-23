@@ -1,1 +1,1 @@
-This page has been based upon a range of sources from across government and beyond. For a reading list, please see the [sources](#sources) section towards the bottom of this page. 
+This page is based upon a range of sources from across government and beyond. For a reading list, please see the [sources](#sources) section towards the bottom of this page.
