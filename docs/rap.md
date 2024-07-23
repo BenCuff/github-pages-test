@@ -18,7 +18,7 @@ page2:
 
 UKHSA colleagues are encouraged to join our internal RAP network to seek support and share knowledge. To do so, or for any other queries related to RAP, please contact <UKHSA.RAP@ukhsa.gov.uk>.
 
-{% include sources-text.js %}
+{% include sources-text.md %}
 
 
 ## The principles of RAP
