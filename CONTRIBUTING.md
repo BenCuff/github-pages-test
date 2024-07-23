@@ -1,6 +1,6 @@
 ## Contributing instructions
 
-We welcome contributions to our guidance or other resources. If you would like to suggest a change, please either [raise an issue]([/issues](https://github.com/BenCuff/github-pages-test/issues)), [email us](mailto:ukhsa_hopstats@ukhsa.gov.uk) or raise a pull request. 
+We welcome contributions to our guidance or other resources. If you would like to suggest a change, please either [raise an issue](https://github.com/BenCuff/github-pages-test/issues), [email us](mailto:ukhsa_hopstats@ukhsa.gov.uk) or raise a pull request. 
 
 The sections below describe the setup of this repository and how to reproduce some of the markdown features used within the guidance pages. 
 
