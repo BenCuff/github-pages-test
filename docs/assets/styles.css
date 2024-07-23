@@ -275,16 +275,16 @@ table {
   font-family: sans-serif;
 }
 
-th, td {
-  border: 1px solid #dee2e6;
-  padding: 8px;
-}
-
-th, td{ /*these will add a scroll bar for small screens*/
+table{ /*these will add a scroll bar for small screens*/
   display: block;
   width: max-content;
   max-width: 100%;
   overflow: auto;
+}
+
+th, td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
 }
 
 th {
