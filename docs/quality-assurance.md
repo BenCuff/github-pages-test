@@ -13,6 +13,9 @@ layout: guidance-page
 >- The [quality assurance process](https://confluence.collab.test-and-trace.nhs.uk/download/attachments/353007964/QA%20log%20template%20v1.2.xlsx?version=1&modificationDate=1716383298406&api=v2) and any outstanding quality concerns should be clearly communicated alongside the final results of the analysis.
 
 
+{% include sources-text.md %}
+
+
 ## What is quality?
 
 
@@ -376,7 +379,7 @@ Below is a summary of five key documents as they relate to QA. This is not a com
   {% include expandable-section.html number="17"  content=expandable_content_17 title="What guidance has the government released regarding QA?" %}
 {% include expandable-block-end.html %}
 
-## References
+## Sources
 
 1. [UK Statistics Authority: Code of Practice for Statistics](https://code.statisticsauthority.gov.uk/the-code/)
 

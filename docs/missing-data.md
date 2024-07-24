@@ -10,4 +10,4 @@ layout: guidance-page
 > - Decide how to deal with missing data: update, discard or replace it.
 > - Tell your users about the prevalence and treatment of missing data.
 
-Throughout this document, citations are given as numbers in square brackets. They link to a full reference list which can be found at the end of this document.
+{% include sources-text.md %}

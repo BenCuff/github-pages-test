@@ -9,9 +9,8 @@ layout: guidance-page
 >- Colours, text, and formatting should be carefully applied in order to aid interpretation of data visualisations.
 >- data visualisations should be easy to understand for users of all backgrounds.
 
-Throughout this document, citations are given as numbers in square brackets. They link to a full reference list which can be found at the end of this document.
+{% include sources-text.md %}
 
-We are currently developing some accessible UKHSA branded colour palettes. For now, you may wish to use the Analysis Function palettes.
 
 ## Introduction
 
@@ -1105,7 +1104,7 @@ There is currently no UKHSA guidance on best practice around mapping for a stati
 
 The Office for National Statistics have also produced guidance to provide the [recommended presentation order for standard geographies](https://geoportal.statistics.gov.uk/datasets/424dfacb33594856a29c4e64f546a219/about). This is so that Official Statistics are geographically comparable, consistent and fit for purpose.
 
-## References
+## Sources
 1. [Government Analysis Function: data visualisation: charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/)
 
 2. [Government Analysis Function: Making charts accessible – material, links and answers to questions from dataConnect22 session](https://analysisfunction.civilservice.gov.uk/support/communicating-analysis/making-charts-accessible-dataconnect22/)

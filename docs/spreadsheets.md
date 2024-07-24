@@ -9,7 +9,8 @@ layout: guidance-page
 > - Where users will want to open, view and read the contents of a spreadsheet in a manual fashion (rather than only wanting to read the data into analytical software), that data should be presented in an accessible ODS spreadsheet file.
 > - The accessibility of a spreadsheet should be considered at each level, from the overall workbook down to individual cells where special formatting might be needed. Specific guidance and checklists relating to each of these levels are provided throughout Part 2 of this document.
 
-Throughout this document, citations are given as numbers in square brackets. They link to a full reference list which can be found at the end of this document.
+{% include sources-text.md %}
+
 
 
 ## Introduction to accessibility and different publication formats
@@ -400,7 +401,7 @@ Preceding decimals with a 0 makes it clear that these are decimal values [1]. Ot
 
 
 
-## References
+## Sources
 
 1. [Government Analysis Function: Releasing statistics in spreadsheets](https://analysisfunction.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/)
 1. [Equality Act 2010](https://www.legislation.gov.uk/ukpga/2010/15/contents)
