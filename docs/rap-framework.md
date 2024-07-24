@@ -26,7 +26,9 @@ page2:
 
 {% include sources-text.md %}
 
-For an introduction on what RAP is, and what benefits it can bring, please see the [introduction to RAP page](rap)”.
+For an introduction on what RAP is, and what benefits it can bring, please see the [introduction to RAP page](rap).
+
+### How to use this framework
 
 The framework outlined on this page includes a number of standards to work towards when developing and improving upon a Reproducible Analytical Pipeline (RAP). We present bronze, silver and gold standards, offering major benchmarks to work towards, with each subsequent standard reflecting a more transparent, reproducible and robust pipeline. You do not need to aim for gold for every project; instead, the standard you should aim for depends on the needs of the project. 
 
