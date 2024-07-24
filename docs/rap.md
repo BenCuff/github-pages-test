@@ -20,6 +20,8 @@ UKHSA colleagues are encouraged to join our internal RAP network to seek support
 
 {% include sources-text.md %}
 
+For a more detailed description of the skills and techniques involved in RAP, please see the [bronze-silver-gold framework page](rap-framework).
+
 
 ## The principles of RAP
 
