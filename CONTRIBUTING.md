@@ -49,8 +49,10 @@ The `assets` folder is used to store .css stylesheets and images.
 The `_config.yml` file can be used to store sitewide values. These are then inserted to other pages via Liquid commands (for example, `{{ site.email }}`). 
 
 
-### Common markdown commands
-Most of what goes into the .md files will be standard markdown. Some other code can be used as follows.
+### Markdown commands used in this site
+Most of what goes into the .md files will be standard markdown. Some other code is custom built for this site, relying on scripts found within the `_includes` folder.
+
+The features used within this site can be replicated as follows.
 
 #### Block quotes
 
