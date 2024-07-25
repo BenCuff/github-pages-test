@@ -560,8 +560,8 @@ Example 12: top 10 average recorded wingspan of British birds, ranked
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_11 title="""}
-  {% include card.html content=card_content_12 title="✔️Best practice: show bars ranked in ascending or descending order" %}
+{% include card.html content=card_content_11 title="To be avoided: showing un-ranked bars in a bar" %}
+{% include card.html content=card_content_12 title="✔️Best practice: show bars ranked in ascending or descending order" %}
 {% include cards-container-end.html %}
 
 Example 12 shows that the UK bird with the largest wingspan is the common crane, with an average recorded wingspan of 233 cm according to The Birder's View. Next biggest are the mute swan, whooper swan and white-tailed (sea) eagle, with averages of 220 cm or greater. Last on the list are the Canada goose, grey heron and cormorant, with average wingspans of 100 cm and below.
