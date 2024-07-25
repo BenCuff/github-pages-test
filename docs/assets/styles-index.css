@@ -6,7 +6,7 @@
   background-color: #007C91;
   color: white;
   padding: 1px 10px;
-  margin-top: 40px;
+  margin-top: 14px;
   margin-right: 10px;
   width: fit-content;
 }
@@ -36,6 +36,8 @@
 
 .index-tile-a{
   flex: 1;
+  flex-basis: 32%;
+  min-height: 110px;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -74,3 +76,6 @@
   #box{flex-wrap: wrap;}
   .index-link{margin-top: 10px;}
 }
+
+@media only screen and (max-width: 500px) {
+  #box-left{text-align: center;}

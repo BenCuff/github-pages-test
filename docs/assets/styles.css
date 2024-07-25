@@ -131,7 +131,10 @@ ul, ol{
 
 /*Fancy elements*/
 blockquote{
+<<<<<<< HEAD
   width: 100%;
+=======
+>>>>>>> 9aa3f0106604134994d718de925c001e4bf108ae
   margin: 1em 0 2em 0;
   padding: 10px;
   border: 1pt solid grey;
@@ -274,14 +277,24 @@ table {
   border-collapse: collapse;
   font-family: sans-serif;
 }
+
+table{ /*these will add a scroll bar for small screens*/
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+}
+
 th, td {
   border: 1px solid #dee2e6;
   padding: 8px;
 }
+
 th {
   background-color: #007c91;
   color: #fff;
 }
+
 td:first-child {
   background-color: #f8f9fa;
 }

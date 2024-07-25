@@ -12,4 +12,4 @@ layout: guidance-page
 > - Visualise uncertainty: Show uncertainty in your data visualisations and explain to readers what the uncertainty represents.
 
 
-Throughout this document, citations are given as numbers in square brackets. They link to a full reference list which can be found at the end of this document.
+{% include sources-text.md %}
