@@ -14,13 +14,13 @@ layout: guidance-page
 
 {% include sources-text.md %}
 
-##what do we mean by uncertainty?
+## What do we mean by uncertainty?
 
 The method by which we gather information about the world is characterised by assumptions and limitations. These assumptions and limitations introduce imprecision into our understanding and mean that any estimate we make to describe real-world phenomena or conclusion we draw is unlikely to be the "true value" – even when based on sound data and appropriate methods. The difference between our estimate and the “true value” is what we mean by uncertainty.
 
 Uncertainty can arise from multiple sources including sampling variation, measurement error, systematic biases and assumptions made in statistical models.
 
-The [Winton Centre for Risk and Evidence Communication](https://wintoncentre.maths.cam.ac.uk/) at the University of Cambridge distinguishes between two levels of uncertainty: direct and indirect [2]. Both direct and indirect uncertainty are crucial to consider when communicating uncertainty in statistics and data.
+The [Winton Centre for Risk and Evidence Communication](https://wintoncentre.maths.cam.ac.uk/) at the University of Cambridge distinguishes between two levels of uncertainty: direct and indirect. Both direct and indirect uncertainty are crucial to consider when communicating uncertainty in statistics and data.
 
 ### Direct uncertainty
 
@@ -89,7 +89,6 @@ Variance is useful when you want a measure of dispersion and are not concerned a
   {% include expandable-section.html number="4" content=expandable_content_4 title="What is it?" %}
   {% include expandable-section.html number="5" content=expandable_content_5 title="When is it useful?" %}
 {% include expandable-block-end.html %}
-
 ### Standard deviation
 {% capture expandable_content_6 %}
 Standard deviation measures the dispersion or spread of individual data points within a data set. It is calculated as the square root of the variance and is expressed in the same units as the original data.
@@ -103,7 +102,6 @@ Standard deviation is useful when you want a measure of dispersion in the origin
   {% include expandable-section.html number="6" content=expandable_content_6 title="What is it?" %}
   {% include expandable-section.html number="7" content=expandable_content_7 title="When is it useful?" %}
 {% include expandable-block-end.html %}
-
 ### Standard error
 {% capture expandable_content_8 %}
 Standard error measures how accurately a sample statistic (such as a mean or proportion) differs from the population parameter. It is calculated as the standard deviation divided by the square root of the sample size and is expressed in the same units as the original data.
@@ -117,7 +115,6 @@ Standard error is particularly useful in inferential statistics. It is commonly 
   {% include expandable-section.html number="8" content=expandable_content_8 title="What is it?" %}
   {% include expandable-section.html number="9" content=expandable_content_9 title="When is it useful?" %}
 {% include expandable-block-end.html %}
-
 ### Confidence intervals
 {% capture expandable_content_10 %}
 A confidence interval (CI) is a range of values, defined by a lower and upper bound, that indicates the uncertainty of an estimate. CIs provide an estimate of the range within which the true population parameter is likely to lie. For example, if we drew 20 random samples and calculated a 95% confidence interval for each sample using the data in that sample, we would expect that, on average, 19 out of the 20 (95%) resulting confidence intervals would contain the true population value and 1 in 20 (5%) would not. Increasing the confidence level to 99% would result in wider intervals (greater uncertainty).
@@ -133,7 +130,6 @@ Confidence intervals (and variance, standard deviation and standard error) are u
   {% include expandable-section.html number="10" content=expandable_content_10 title="What is it?" %}
   {% include expandable-section.html number="11" content=expandable_content_11 title="When is it useful?" %}
 {% include expandable-block-end.html %}
-
 ### Credible intervals
 {% capture expandable_content_12 %}
 A credible interval (CrI) is used in Bayesian statistics. In Bayesian analysis, instead of providing a range of values based on a hypothetical sampling distribution, a credible interval gives a range of values in which the true parameter is likely to lie based on the posterior distribution of the parameter. The posterior distribution is derived from our prior belief and the observed data. The term "credible" reflects the credibility or believability of the interval based on Bayesian probability.
@@ -149,7 +145,6 @@ In Bayesian statistics, probability is all about our degree of belief and not th
   {% include expandable-section.html number="12" content=expandable_content_12 title="What is it?" %}
   {% include expandable-section.html number="13" content=expandable_content_13 title="When is it useful?" %}
 {% include expandable-block-end.html %}
-
 ### Statistical significance
 {% capture expandable_content_14 %}
 Statistical significance is a concept in statistics used to determine whether the results of an experiment or study are likely to be meaningful. When a result is described as statistically significant it suggests that the there is strong evidence that the result is not likely due to random chance alone.
@@ -193,6 +188,32 @@ The typical effect of any revision should be quantified in absolute terms in a [
 
 This section provides standard wording for statistics producers on definitions of common measures of uncertainty. You can copy and paste these into your report, for example into a glossary section.
 
+{% capture expandable_content_16 %}
+{% endcapture %}
+
+{% capture expandable_content_17 %}
+{% endcapture %}
+
+{% capture expandable_content_18 %}
+{% endcapture %}
+
+{% capture expandable_content_19 %}
+{% endcapture %}
+
+{% capture expandable_content_20 %}
+{% endcapture %}
+
+{% capture expandable_content_21 %}
+{% endcapture %}
+
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="16" content=expandable_content_16 title="Variance" %}
+  {% include expandable-section.html number="17" content=expandable_content_17 title="Standard deviation" %}
+  {% include expandable-section.html number="18" content=expandable_content_18 title="Standard error" %}
+  {% include expandable-section.html number="19" content=expandable_content_19 title="Confidence intervals" %}
+  {% include expandable-section.html number="20" content=expandable_content_20 title="Credible intervals" %}
+  {% include expandable-section.html number="21" content=expandable_content_21 title="Statistical significance" %}
+{% include expandable-block-end.html %}
 
 
 
