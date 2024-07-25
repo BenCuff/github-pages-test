@@ -560,7 +560,7 @@ Example 12: top 10 average recorded wingspan of British birds, ranked
 {% endcapture %}
 
 {% include cards-container-start.html %}
-{% include card.html content=card_content_11 title="To be avoided: showing un-ranked bars in a bar" %}
+{% include card.html content=card_content_11 title="❌To be avoided: showing un-ranked bars in a bar" %}
 {% include card.html content=card_content_12 title="✔️Best practice: show bars ranked in ascending or descending order" %}
 {% include cards-container-end.html %}
 
