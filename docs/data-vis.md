@@ -11,8 +11,6 @@ layout: guidance-page
 
 Throughout this document, citations are given as numbers in square brackets. They link to a full reference list which can be found at the end of this document.
 
-We are currently developing some accessible UKHSA branded colour palettes. For now, you may wish to use the Analysis Function palettes.
-
 ## Introduction
 
 This guidance is intended as a practical handbook for creating charts and charts. It condenses the most relevant Government resources on data visualisation together with the Statistics Production Division's own experience producing official statistics and working with statistics producers. While the information on this page is by no means comprehensive, we hope that it provides a useful overview of best practices and how to implement them.
@@ -164,7 +162,7 @@ This section gives some specific recommendations for presenting categorical data
 
 ### Categorical data
 
-Bar charts work well for comparing different categories
+Bar charts work well for comparing different categories.
 
 When making a bar chart, consider whether there is a logical ordering to the bars that groups similar categories together. For example, you could order age groups from lowest to highest or place bars to adjacent geochartical regions next to eachother. If there is no logical ordering, it is often most helpful to present bars in order of size.
 
@@ -361,14 +359,14 @@ Some types of time series data, especially health data, are often gathered and i
 If you are using a bar chart to show quarterly data, you should not colour every bar according to quarter as this can be difficult to read. One of the benefits of using week or quarter numbers is that it allows the same point in time to be compared across multiple years: for instance, comparing data from the most recent quarter with data from the same quarter last year. If you would like users to compare specific values in this way, this may be better achieved with plain text or a table than a chart. Analysis function guidance notes that “a well structured table can often be as powerful as a chart” in these situations, and that another option is to include both.
 
 {% capture card_content_7 %}
-Example 7: quarterly survey respondents, England and Wales, 2022 to 2023
+Example 7: Quarterly survey respondents, England and Wales, 2022 to 2023
 <div>
     <img src="assets/img/data viz/Example 7.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_8 %}
-Example 8: quarterly survey respondents, England and Wales, 2022 to 2023
+Example 8: Quarterly survey respondents, England and Wales, 2022 to 2023
 <div>
    <img src="assets/img/data viz/Example 8.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
 </div>
@@ -489,7 +487,7 @@ Both the x and y axes should be given an appropriate title, including units if a
 
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="7" content=expandable_content_7 title="Accessible alternative" %}
-  {% include expandable-section.html number="8" content=expandable_content_8 title="data source" %}
+  {% include expandable-section.html number="8" content=expandable_content_8 title="Data source" %}
   {% include expandable-section.html number="9" content=expandable_content_9 title="Title" %}
   {% include expandable-section.html number="10" content=expandable_content_10 title="Axis and series labels" %}
 {% include expandable-block-end.html %}
@@ -1082,7 +1080,7 @@ df |>
 {% endcapture %}
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="20" content=expandable_content_20 title="R code for Example 29" %}
-  {% include expandable-block-end.html %} forc
+  {% include expandable-block-end.html %}
   
 The chart above shows a good way to highlight the most recent year in a multi-year time series. However, with an increasing number of lines, there will be more overlap and so it will become harder to distinguish the individual lines in grey. There is no fixed maximum number of lines in a focus chart, but you should make sure that the main message of the chart is still easily communicated.
 
