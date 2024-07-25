@@ -11,10 +11,6 @@ layout: guidance-page
 
 {% include sources-text.md %}
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 9aa3f0106604134994d718de925c001e4bf108ae
 ## Introduction
 
 This guidance is intended as a practical handbook for creating charts and charts. It condenses the most relevant Government resources on data visualisation together with the Statistics Production Division's own experience producing official statistics and working with statistics producers. While the information on this page is by no means comprehensive, we hope that it provides a useful overview of best practices and how to implement them.
@@ -447,7 +443,49 @@ Example 10: weekly test positivity rates, UK, past 52 weeks (including calendar 
 
 {% capture expandable_content_6 %}
 ```
-
+set.seed(123)
+# Create data set for Figure 9 and 10:
+df_910 <- tibble(year = c(rep(2023, 27), rep(2024, 26)),
+                 week = factor(as.numeric(c(27:53, 1:26))),
+                 percent = rnorm(53, mean = 40, sd = 5)) %>%
+  mutate(week = factor(week, levels = week))
+ 
+week_seq <- df_910$week
+week_seq <- as.character(week_seq)
+index <- seq(1, 53, 2)
+week_seq[-seq(1, 53, 5)] <- ""
+ 
+# Re-format date:
+df_910 <- df_910 |>
+  mutate(week = if_else(nchar(as.character(week)) == 1, paste("0", week, sep = ""), week),
+         yearweek = paste(year, week, "0", sep = ""),
+         week_ending = as.Date(yearweek, format = "%Y%U%w"))
+ 
+xtick_910 <- df_910 |>
+  mutate(week_ending = format(week_ending, "%e %b %y"),
+         week_ending = trimws(week_ending)) |>
+  pull(week_ending)
+ 
+xlabels_910 <- xtick_910
+xlabels_910[c(2:17, 19:35, 37:52)] <- ""
+ 
+# Make plot:
+fig10 <- df_910 |>
+  ggplot(aes(week_ending, percent)) +
+  geom_line(colour = af_palette(1),
+            linewidth = 1.5) +
+  scale_x_date(breaks = df_910$week_ending,
+               labels = xlabels_910) +
+  scale_y_continuous(breaks = seq(0, 60, 10),
+                     expand = expansion(mult = c(0, 0.02)),
+                     limits = c(0, 60)) +
+  labs(subtitle = "Positivity rate (%)",
+       x = "Week ending",
+       y = NULL) +
+  theme_af(font_size = 20,
+           legend.position = "bottom",
+           tick_mark = "x",
+           plot.margin = unit(c(6, 24, 6, 6), "pt"))
 ```
 {% endcapture %}
 
@@ -504,25 +542,54 @@ Both the x and y axes should be given an appropriate title, including units if a
 
 ## Ranking
 
-**SI CURRENTLY ADDING CONTENT HERE**
+Bar charts are a good option to show data ranked in ascending or descending order. Always rank bars by value, unless there is a natural order, for example, age or time.
+
 
 {% capture card_content_11 %}
-Example 11
+Example 11: top 10 average recorded wingspan of British birds
+<div>
+<img src="assets/img/data viz/Example 11.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+</div>
 {% endcapture %}
 
 {% capture card_content_12 %}
-Example 12
+Example 12: top 10 average recorded wingspan of British birds, ranked
+<div>
+<img src="assets/img/data viz/Example 12.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+</div>
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_11 title="❌To be avoided: " %}
-  {% include card.html content=card_content_12 title="✔️Best practice:" %}
+  {% include card.html content=card_content_11 title="❌To be avoided:  showing un-ranked bars in a bar chart %}
+  {% include card.html content=card_content_12 title="✔️Best practice: show bars ranked in ascending or descending order" %}
 {% include cards-container-end.html %}
 
+Example 12 shows that the UK bird with the largest wingspan is the common crane, with an average recorded wingspan of 233 cm according to The Birder's View. Next biggest are the mute swan, whooper swan and white-tailed (sea) eagle, with averages of 220 cm or greater. Last on the list are the Canada goose, grey heron and cormorant, with average wingspans of 100 cm and below.
 
 {% capture expandable_content_11 %}
 ```
-
+# Create data frame:
+# Source: https://thebirdersview.co.uk/the-10-largest-birds-in-the-uk/
+wingspan_df <- data.frame(bird = c("Grey heron", "Cormorant", "Gannet", "Canada goose", "Capercaillie", "Golden eagle", "White-tailed eagle", "Common crane", "Whooper swan", "Mute swan"),
+                          wingspan = c(94, 90, 163, 100, 105, 212, 220, 233, 220, 223))
+ 
+# Load the tidyverse meta-package:
+library(tidyverse)
+ 
+# Make plot:
+wingspan_df |>
+  mutate(bird = fct_reorder(bird, wingspan)) |>
+  ggplot(aes(wingspan, bird)) +
+  geom_col(fill = "#12436D") +
+  scale_x_continuous(breaks = seq(0, 250, 50),
+                     expand = expansion(mult = c(0, 0.08)),
+                     limits = c(0, 250)) +
+  labs(x = "Average recorded wingspan (cm)",
+       y = NULL) +
+  theme_af(font_size = 20,
+            legend.position = "bottom",
+            grid = "x",
+            tick_mark = "y")
 ```
 {% endcapture %}
 
@@ -820,7 +887,6 @@ Example 22: Annual unemployment rate for females, UK, 2008 to 2024
   {% include card.html content=card_content_21 title="✔️Best practice: omit some labels and rotate text" %}
 {% include cards-container-end.html %}
 
-**NEED TO CHANGE EXAMPLE 21 Y AXIS LABEL AND INCLUDE MORE X-AXIS LABELS.**
 
 {% capture expandable_content_16 %}
 ```
@@ -1098,15 +1164,12 @@ df |>
 
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="20" content=expandable_content_20 title="R code for Example 29" %}
-<<<<<<< HEAD
   {% include expandable-block-end.html %}
-=======
-{% include expandable-block-end.html %} forc
->>>>>>> 9aa3f0106604134994d718de925c001e4bf108ae
+
   
 The chart above shows a good way to highlight the most recent year in a multi-year time series. However, with an increasing number of lines, there will be more overlap and so it will become harder to distinguish the individual lines in grey. There is no fixed maximum number of lines in a focus chart, but you should make sure that the main message of the chart is still easily communicated.
 
-Alternatively, you can combine small multiples and focus charts into one, showing the focal category in one colour and the other categories in light grey.
+Alternatively, you can combine small multiples and focus charts into one, showing the focal category in one colour and the other categories in a different colour.
 
 {% capture card_content_28 %}
 Example 30: Rate of new infections, UK, 2018 to 2024
@@ -1118,6 +1181,39 @@ Example 30: Rate of new infections, UK, 2018 to 2024
 {% include cards-container-start.html %}
   {% include card.html content=card_content_28 title="✔️Best practice: combing small multiples and focus charts to call attention to one category" %}
 {% include cards-container-end.html %}
+
+{% capture expandable_content_21 %}
+```
+# Load the necessary pkgs:
+library(gghighlight)
+library(tidyverse)
+library(gghighlight)
+ 
+fig28c <- df_2728 |>
+  ggplot(aes(x = day, y = x, color = year)) +
+  geom_line(colour = "#12436D",
+            linewidth = 1.5,
+            show.legend = FALSE) +
+  gghighlight(use_direct_label = FALSE,
+              unhighlighted_params = list(colour = alpha("#BFBFBF", 1))) +
+  scale_x_continuous(breaks = seq(1, 30, 1),
+                     labels = day_seq) +
+  scale_y_continuous(breaks = seq(0, 20, 10),
+                     expand = expansion(mult = c(0, 0.02)),
+                     limits = c(0, 20)) +
+  facet_wrap(vars(year), scales = "free_x") +
+  ggaf::theme_af(font_size = 18,
+                 tick_mark = "x") +
+  theme(panel.spacing.x = unit(2, "lines")) +
+  labs(x = "Day",
+       y = NULL,
+       subtitle = "Rate of new infections (%)")
+```
+{% endcapture %}
+
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="21" content=expandable_content_21 title="R code for Example 30" %}
+  {% include expandable-block-end.html %}
 
 ## Maps and geography standards
 
