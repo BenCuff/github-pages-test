@@ -151,13 +151,14 @@ theme_af <- function(font_size = 12, font_family = NULL, grid = "y", tick_mark =
 }
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="1" content=expandable_content_1 title="Analysis Function ggplot2 theme" %}
-  {% include expandable-block-end.html %}
+{% include expandable-block-end.html %}
 
 ## Choosing the right chart
 
-Charts are particularly effective when used to highlight key points in a publication [1]. You should choose the type of chart based on the type of data and the trend you are trying to show. 
+Charts are particularly effective when used to highlight key points in a publication. You should choose the type of chart based on the type of data and the trend you are trying to show. 
 
 This section gives some specific recommendations for presenting categorical data or time series data in an accessible way. 
 
@@ -165,11 +166,11 @@ This section gives some specific recommendations for presenting categorical data
 
 Bar charts work well for comparing different categories
 
-When making a bar chart, consider whether there is a logical ordering to the bars that groups similar categories together. For example, you could order age groups from lowest to highest or place bars to adjacent geochartical regions next to eachother. If there is no logical ordering, it is often most helpful to present bars in order of size.
+When making a bar chart, consider whether there is a logical ordering to the bars that groups similar categories together. For example, you could order age groups from lowest to highest or place bars to adjacent geochartical regions next to each other. If there is no logical ordering, it is often most helpful to present bars in order of size.
 
-Stacked or clustered bar charts can be used to display two different categorical variables in one chart. However, each individual stack or cluster should usually contain no more than four categories as a rule of thumb, to avoid clutter. This is especially the case for stacked bar charts, as a larger number of categories makes comparisons between bars much more difficult. If you have a large number of categories, it is usually best to split your data into several bar charts. The section "Avoiding cluttered charts" contains examples of ways to break down charts that contain too many categories, including reformatting them as small multiples charts.
+Stacked or clustered bar charts can be used to display two different categorical variables in one chart. However, each individual stack or cluster should usually contain no more than four categories as a rule of thumb, to avoid clutter. This is especially the case for stacked bar charts, as a larger number of categories makes comparisons between bars much more difficult. If you have a large number of categories, it is usually best to split your data into several bar charts. The section "[how to reduce clutter in charts](#how-to-reduce-clutter-in-charts)" contains examples of ways to break down charts that contain too many categories, including reformatting them as small multiples charts.
 
-It is best practice when making clustered bar charts to leave a small gap between each bar in a cluster to help users distinguish more easily between bars. A wider gap should be left between clusters, again to help users easily distinguish different clusters [1].
+It is best practice when making clustered bar charts to leave a small gap between each bar in a cluster to help users distinguish more easily between bars. A wider gap should be left between clusters, again to help users easily distinguish different clusters.
 
 {% capture card_content_1 %}
 Example 1: Percentage of positive tests for three disease strains at five testing centres in England, 2024
@@ -215,17 +216,18 @@ ggplot(df, aes(x = Centre, y = Positivity, fill = Strain)) +
        x = NULL,
        y = NULL) +
   theme_af(font_size = 20,
-            legend.position = "bottom",
-            tick_mark = "x")
+           legend.position = "bottom",
+           tick_mark = "x")
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="2" content=expandable_content_2 title="R code for Example 2" %}
   {% include expandable-block-end.html %}
   
 ### Time series data
 
-Line charts are most often used to show time series data. They work well for showing how multiple variables change over a period of time [1] [3].
+Line charts are most often used to show time series data. They work well for showing how multiple variables change over a period of time.
 
 If you are only showing one time series variable, a bar chart can also be used. However, stacked and clustered bar charts should not be used for displaying multiple time series variables as they make comparisons difficult.
 
@@ -283,13 +285,14 @@ df |>
        x = NULL,
        y = NULL) +
   theme_af(font_size = 20,
-            legend.position = "bottom",
-            tick_mark = "x")
+           legend.position = "bottom",
+           tick_mark = "x")
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="3" content=expandable_content_3 title="R code for Example 4" %}
-  {% include expandable-block-end.html %}
+{% include expandable-block-end.html %}
   
 Below, the clustered bar chart on the left resolves some of the issues with comparability seen in the stacked bar chart above, but is more visually crowded as the bars become thinner and harder to focus on. Stacked and clustered bar charts are also not a good choice when you wish to display the total of all categories alongside the individual groups. The inclusion of a separate bar for "All" in the two bar charts above can incorrectly imply to users that this is a third, distinct category.
 
@@ -331,8 +334,8 @@ ggplot(df, aes(x = year, y = unemployed, colour = gender)) +
        x = NULL,
        y = NULL) +
   theme_af(font_size = 20,
-            legend.position = "none",
-            tick_mark = "x") +
+           legend.position = "none",
+           tick_mark = "x") +
   coord_cartesian(clip = "off") +
   geom_text_repel(aes(label = gender, x=year, y = unemployed),
                   size = 6, # Font size
@@ -347,9 +350,10 @@ ggplot(df, aes(x = year, y = unemployed, colour = gender)) +
                     filter(year == max(year)))
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="4" content=expandable_content_4 title="R code for Example 6" %}
-  {% include expandable-block-end.html %}
+{% include expandable-block-end.html %}
   
 See the "communicating without colour" section below for more information on how to format a chart like this, including how to directly label lines.
 
@@ -403,13 +407,14 @@ df |>
        x = NULL,
        y = NULL) +
   theme_af(font_size = 20,
-            legend.position = "bottom",
-            tick_mark = "x")
+           legend.position = "bottom",
+           tick_mark = "x")
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="5" content=expandable_content_5 title="R code for Example 8" %}
-  {% include expandable-block-end.html %}
+{% include expandable-block-end.html %}
   
 ISO weeks are a useful standardisation that allows data to be compared easily with previous years. However, many users may not be familiar with how to interpret week numbers, especially when data starts midway through a calendar year and/or covers multiple years. Therefore when displaying weekly data, it may be helpful to give a brief explanation of this measurement system, or replace the labels on your x-axis with calendar dates that correspond to the start of each week.
 
@@ -442,9 +447,10 @@ Example 10: weekly test positivity rates, UK, past 52 weeks (including calendar 
 
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="6" content=expandable_content_6 title="R code for Example 10" %}
-  {% include expandable-block-end.html %}
+{% include expandable-block-end.html %}
 
 The charts above show data on a weekly scale, which is why it is best practice to label the start and end of the series with the month and year, as can be seen on the right. Because the chart shows data from 2021 and 2022, the end of 2021 and the beginning of 2022 have been labelled as well. A lighter grey has been used for the month labels so they do not distract too much from the message of the chart.
 
@@ -461,23 +467,23 @@ All published charts must include the following:
 {% capture expandable_content_7 %}
 It is a legal requirement under UK accessibility legislation that all non-text web content published by the Government also be presented in an alternative format that conveys the same information.
 
-For a chart, you may choose between providing a table or a text description [1] [4]. Think about what would be most beneficial to the user: if they would want to understand a trend, this might be best served via a description in the text. If they would want to read exact values then a table may be better. 
+For a chart, you may choose between providing a table or a text description. Think about what would be most beneficial to the user: if they would want to understand a trend, this might be best served via a description in the text. If they would want to read exact values then a table may be better. 
 
-If you choose to use a table, you can provide a link to a downloadable [accessible spreadsheet document](https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Spreadsheet+accessibility). Small tables can also be placed directly beneath a chart, displayed as HTML rather than an image (although it is best not to simply repeat information already given in the chart). [5]
+If you choose to use a table, you can provide a link to a downloadable [accessible spreadsheet document](spreadsheets). Small tables can also be placed directly beneath a chart, displayed as HTML rather than an image (although it is best not to simply repeat information already given in the chart).
 
-In most cases, it is advised to provide a text description (often in addition to a link to a spreadsheet). This text is best placed directly above or beneath the chart. Text descriptions should clearly indicate which figure they refer to, such as "Figure X shows...", "Description of figure X:...", or similar. Your description should aim to provide users with an understanding of the relationships and patterns that your chart is trying to communicate. It does not need to state every single feature or data point displayed [1].
+In most cases, it is advised to provide a text description (often in addition to a link to a spreadsheet). This text is best placed directly above or beneath the chart. Text descriptions should clearly indicate which figure they refer to, such as "Figure X shows...", "Description of figure X:...", or similar. Your description should aim to provide users with an understanding of the relationships and patterns that your chart is trying to communicate. It does not need to state every single feature or data point displayed.
 
 GOV.UK and other platforms that support HTML allow you to add a hidden "alt text" attribute in the image metadata, but you should not put your text description there. Placing it near the image instead makes the text easier to find and share to all users.
 {% endcapture %}
 
 {% capture expandable_content_8 %}
-Be clear about the source of your data and whether the data is available to download and make this information as easy to find as possible. In most cases, a link to an underlying dataset will suffice. For external sources, try to provide the name of the publication or data set which you are referencing, being as specific as possible and providing a direct link if one is available. If your publication uses multiple external data sources, you should provide a link under each chart [1].
+Be clear about the source of your data and whether the data is available to download and make this information as easy to find as possible. In most cases, a link to an underlying dataset will suffice. For external sources, try to provide the name of the publication or data set which you are referencing, being as specific as possible and providing a direct link if one is available. If your publication uses multiple external data sources, you should provide a link under each chart.
 {% endcapture %}
 
 {% capture expandable_content_9 %}
 The title should communicate the geocharty, time period, and variables that are displayed and is also a good place for including the figure number of the chart [1].
 
-Titles should be provided in the body of the publication text rather than generated within the chart image. If you are publishing on GOV.UK or another platform in an HTML format, this allows them to be tagged correctly as headings using HTML [1].
+Titles should be provided in the body of the publication text rather than generated within the chart image. If you are publishing on GOV.UK or another platform in an HTML format, this allows them to be tagged correctly as headings using HTML.
 
 {% endcapture %}
 
@@ -495,7 +501,7 @@ Both the x and y axes should be given an appropriate title, including units if a
 
 ## Ranking
 
-Si currently adding content here
+**SI CURRENTLY ADDING CONTENT HERE**
 
 {% capture card_content_11 %}
 Example 11
@@ -516,9 +522,10 @@ Example 12
 
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="11" content=expandable_content_11 title="R code for Example 12" %}
-  {% include expandable-block-end.html %}
+{% include expandable-block-end.html %}
   
 
 ## Breaking the axis
@@ -570,12 +577,13 @@ df |>
        x = NULL,
        y = NULL) +
   theme_af(font_size = 20,
-            tick_mark = "x")
+           tick_mark = "x")
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="12" content=expandable_content_12 title="R code for Example 14" %}
-  {% include expandable-block-end.html %}
+{% include expandable-block-end.html %}
   
 
 Above, the bar chart on the left shows an example of a misleading break in the y-axis. In the bar chart on the right, best practice has been followed for formatting a y-axis that starts at 0.
@@ -584,7 +592,7 @@ If you need to break the y-axis, you should use a line chart, dot plot, or other
 
 - making the break in the y-axis clear using a [broken axis symbol](https://en.wikipedia.org/wiki/File:Y-axis_break.svg) (two parallel lines striking diagonally through the axis)
 - making the x-axis line the same colour and thickness as the gridlines
-- making the y-axis and the axis break symbol thicker and darker than the gridlines and x-axis [1]
+- making the y-axis and the axis break symbol thicker and darker than the gridlines and x-axis
 
 Axis breaks should only be used to show that the y-axis does not start at zero. Where you would like to display data points that contain an outlier, you should never break the axis halfway through.
   
@@ -593,18 +601,18 @@ Axis breaks should only be used to show that the y-axis does not start at zero. 
 
 The colours and formatting of a chart can make a significant difference in its legibility. To ensure your chart can be read and understood by as many people as possible, it is best practice to:
 
-- use a suitable and accessible colour palette [1] [6]
-- ensure that you do not rely on colour alone to communicate information [1]
-- use white for the background [1] [6]
-- use light grey for gridlines [1] [6]
-- avoid any images, patterns, or shading [1] [6]
-- use black or dark grey text in a sans serif font [1] [6]
-- avoid slanted or vertical text [1]
-- ensure that text is large enough to be read easily [1]
+- use a suitable and accessible colour palette
+- ensure that you do not rely on colour alone to communicate information
+- use white for the background
+- use light grey for gridlines
+- avoid any images, patterns, or shading
+- use black or dark grey text in a sans serif font
+- avoid slanted or vertical text
+- ensure that text is large enough to be read easily
   
 ### Using a suitable and accessible colour palette
 
-It is an accessibility requirement that visual elements such as charts use colours that have a contrast ratio of at least 3:1 with their backgrounds [11]. The WebAim site contains more information on this requirement and has a contrast checker you can use to make sure that your colours are appropriate.
+It is an accessibility requirement that visual elements such as charts use colours that have a contrast ratio of at least 3:1 with their backgrounds. The [WebAim site](https://webaim.org/resources/contrastchecker/) contains more information on this requirement and has a contrast checker you can use to make sure that your colours are appropriate.
 
 It is best to:
 
@@ -616,9 +624,9 @@ It is best to:
 
 ### Communicating without colour
 
-It is an accessibility requirement that charts do not rely on colour alone to communicate. This means that charts should be just as easy to understand if they are displayed in greyscale as they are in full colour [6]. However, the use of patterns and shading is not always a good way to distinguish between chart categories. Bar charts should not have patterned bars as these can be very difficult to distinguish, especially at small sizes and in the legend wherever the boxes are not large enough to properly show the pattern.
+It is an accessibility requirement that charts do not rely on colour alone to communicate. This means that charts should be just as easy to understand if they are displayed in greyscale as they are in full colour. However, the use of patterns and shading is not always a good way to distinguish between chart categories. Bar charts should not have patterned bars as these can be very difficult to distinguish, especially at small sizes and in the legend wherever the boxes are not large enough to properly show the pattern.
 
-It is possible to use different data marker shapes or textured lines such as dotted or dashed lines to distinguish between variables on a line chart. However, these also increase clutter and caution is advised in using them [1] [6] [2].
+It is possible to use different data marker shapes or textured lines such as dotted or dashed lines to distinguish between variables on a line chart. However, these also increase clutter and caution is advised in using them.
 
 {% capture card_content_14 %}
 Example 15: Annual unemployment rates by gender, UK, 2008 to 2024
@@ -673,9 +681,10 @@ ggplot(df, aes(x = year, y = unemployed, colour = gender)) +
                     filter(year == max(year)))
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="13" content=expandable_content_13 title="R code for Example 16" %}
-  {% include expandable-block-end.html %}
+{% include expandable-block-end.html %}
 
 
 You should not use patterns on chart bars to distinguish different categories as these can make charts very hard to read, especially at smaller sizes. Instead, stacked and clustered bar charts can include direct labels, or you can include a legend in the same order as the categories and add a note that you have done so.
@@ -726,9 +735,10 @@ df |>
             legend.position = "bottom")
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="14" content=expandable_content_14 title="R code for Example 18" %}
-  {% include expandable-block-end.html %}
+{% include expandable-block-end.html %}
 
 Although the chart on the left does not rely on colour to distinguish categories, the patterned bars add unnecessary clutter and are difficult to discern at small sizes (which would be the case with a greater number of bars).
 
@@ -783,9 +793,10 @@ df |>
            tick_mark = "y")
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="15" content=expandable_content_15 title="R code for Example 20" %}
-  {% include expandable-block-end.html %}
+{% include expandable-block-end.html %}
   
 {% capture card_content_20 %}
 Example 21: Annual unemployment rate for females, UK, 2008 to 2024
@@ -837,25 +848,26 @@ ggplot(df, aes(year, percent)) +
            tick_mark = "x"
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="16" content=expandable_content_16 title="R code for Example 22" %}
-  {% include expandable-block-end.html %}
+{% include expandable-block-end.html %}
   
 ## Consistency 
 
 A publication is easier for users to understand when all charts take a consistent approach to data visualisation. Following these steps will allow readers to spend less time trying to understand how to go about interpreting each chart and more time focusing on what the intended message is. Accordingly:
 
-- when variables appear in multiple charts, they should be the same colour in each chart [6]
-- style elements such as line weight and font size should be the same in all charts [7]
-- units, labels, and titles should follow the same format for each chart, where applicable [1]
-- similar types of data should be presented using the same type of data visualisation wherever possible [1]
+- when variables appear in multiple charts, they should be the same colour in each chart
+- style elements such as line weight and font size should be the same in all charts
+- units, labels, and titles should follow the same format for each chart, where applicable
+- similar types of data should be presented using the same type of data visualisation wherever possible
 
 
 ## Clarity
 
-In general, the GOV.UK standard is to use simple language and avoid unnecessary complexity. In fact, it has been shown that even users with a high degree of specialist understanding appreciate simple writing that allows them to process information as quickly as possible [8].
+In general, the GOV.UK standard is to use simple language and avoid unnecessary complexity. In fact, it has been shown that even users with a high degree of specialist understanding appreciate simple writing that allows them to process information as quickly as possible (see the [writing for GOV.UK guidance](https://www.gov.uk/guidance/content-design/writing-for-gov-uk)).
 
-Of course, it is often necessary to write about specialist topics in a way that requires more difficult language. Any technical or specialist elements on your chart should be explained in some way. It is important to consider your users and their understanding of the subject matter to decide how much explanation is needed [8]. 
+Of course, it is often necessary to write about specialist topics in a way that requires more difficult language. Any technical or specialist elements on your chart should be explained in some way. It is important to consider your users and their understanding of the subject matter to decide how much explanation is needed. 
 
 Even if you believe that a publication will primarily be of interest to specialists, releasing it to the public means that it is available to users from a wide range of backgrounds. Even users who are not experts in the subject matter should still be able to understand the main points of your data visualisations. You should explain things such as:
 
@@ -863,7 +875,7 @@ Even if you believe that a publication will primarily be of interest to speciali
 - technical language and potentially unfamiliar abbreviations and units of measurement
 
 {% capture expandable_content_17 %}
-Confidence intervals are common measures of statistical uncertainty, but some users may not be familiar with what they mean. If you include confidence intervals or other metrics of uncertainty on your chart, you should clearly explain to users what they are and how to interpret them (for example, what it means when a confidence interval is larger or smaller) [12]. 
+Confidence intervals are common measures of statistical uncertainty, but some users may not be familiar with what they mean. If you include confidence intervals or other metrics of uncertainty on your chart, you should clearly explain to users what they are and how to interpret them (for example, what it means when a confidence interval is larger or smaller). 
 {% endcapture %}
 
 {% capture expandable_content_18 %}
@@ -879,7 +891,7 @@ Any unit of measurement, abbreviation, or notation that is not widely understood
 
 ## How to reduce clutter in charts
 
-It can be tempting to try to fit as much information as possible onto one set of axes. However, a very busy chart risks telling the wrong story to your users or confusing them. A helpful rule of thumb is “If you cannot write down the message your chart is giving in a few sentences, you should think again about the chart you have chosen.” [1]
+It can be tempting to try to fit as much information as possible onto one set of axes. However, a very busy chart risks telling the wrong story to your users or confusing them. A helpful rule of thumb is “If you cannot write down the message your chart is giving in a few sentences, you should think again about the chart you have chosen.”
 
 Best practice for avoiding chart clutter includes:
 
@@ -889,7 +901,7 @@ Best practice for avoiding chart clutter includes:
 
 ### One chart, one set of axes
 
-Charts should only have one x-axis and one y-axis. Using two different scales of measurement on one chart can easily over-emphasise or mask the relationship between variables and can risk making your chart cluttered. Similarly, it is usually best to use only one type of chart on each set of axes. If you wish to show how two variables with different scales or units of measurement change in tandem with each other, a good option is simply to put them on two side-by-side or stacked charts. [1] [9] [10] 
+Charts should only have one x-axis and one y-axis. Using two different scales of measurement on one chart can easily over-emphasise or mask the relationship between variables and can risk making your chart cluttered. Similarly, it is usually best to use only one type of chart on each set of axes. If you wish to show how two variables with different scales or units of measurement change in tandem with each other, a good option is simply to put them on two side-by-side or stacked charts. 
 
 {% capture card_content_20 %}
 Example 23: Annual unemployment rate and number unemployed, UK, 2008 to 2024
@@ -928,7 +940,7 @@ Above, the two charts are now displayed on different axes above which have been 
 
 ### Minimising colours and distractions
 
-Shading, borders, textures, and unnecessary embellishments should be avoided. Bar charts do not need to have borders around each bar and patterns should not be used to distinguish between bars. Bar charts which are not stacked or clustered should not have bars in different colours as this does not aid in chart interpretation [6] [7] .
+Shading, borders, textures, and unnecessary embellishments should be avoided. Bar charts do not need to have borders around each bar and patterns should not be used to distinguish between bars. Bar charts which are not stacked or clustered should not have bars in different colours as this does not aid in chart interpretation.
 
 {% capture card_content_23 %}
 Example 25: Population growth of different towns, South West England, 2000 to 2020
@@ -953,7 +965,7 @@ In the chart on the left, each bar is a different colour. The different colours 
 
 ### Limiting the number of categories
 
-If multiple variables or categories of a single variable are measured on the same scale, a chart can be a useful way of comparing between them. However, as the number of variables on a single chart increases, charts can easily become cluttered and hard to read. Presenting more than four lines on a line chart can be done, but it often results in the chart becoming too cluttered [1], so we advise that charts should not contain more than four categories unless there is a clear statistical justification. This is best practice for all types of charts, including line charts, stacked bar charts, and clustered bar charts [1].
+If multiple variables or categories of a single variable are measured on the same scale, a chart can be a useful way of comparing between them. However, as the number of variables on a single chart increases, charts can easily become cluttered and hard to read. Presenting more than four lines on a line chart can be done, but it often results in the chart becoming too cluttered, so we advise that charts should not contain more than four categories unless there is a clear statistical justification. This is best practice for all types of charts, including line charts, stacked bar charts, and clustered bar charts.
 
 {% capture card_content_25 %}
 Example 27: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
@@ -1010,13 +1022,14 @@ ggplot(df, aes(day, x, colour = year)) +
   facet_wrap(vars(year))
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="19" content=expandable_content_19 title="R code for Example 28" %}
-  {% include expandable-block-end.html %}
+{% include expandable-block-end.html %}
 
 ### Focus charts
 
-Where you would like to call attention to one category, for instance when you are comparing data from the current year to data from previous years, you can use a “focus chart” where one line is a different colour to the rest. In this case, you can include more than four lines on your chart, but they should be noticeably lighter than the “focus” line, for instance a light grey, and still should be labelled [1] [10].
+Where you would like to call attention to one category, for instance when you are comparing data from the current year to data from previous years, you can use a “focus chart” where one line is a different colour to the rest. In this case, you can include more than four lines on your chart, but they should be noticeably lighter than the “focus” line, for instance a light grey, and still should be labelled.
 
 {% capture card_content_27 %}
 Example 29: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024<div>
@@ -1079,9 +1092,10 @@ df |>
                    na.rm = TRUE)
 ```
 {% endcapture %}
+
 {% include expandable-block-start.html %}
   {% include expandable-section.html number="20" content=expandable_content_20 title="R code for Example 29" %}
-  {% include expandable-block-end.html %} forc
+{% include expandable-block-end.html %} forc
   
 The chart above shows a good way to highlight the most recent year in a multi-year time series. However, with an increasing number of lines, there will be more overlap and so it will become harder to distinguish the individual lines in grey. There is no fixed maximum number of lines in a focus chart, but you should make sure that the main message of the chart is still easily communicated.
 
@@ -1100,32 +1114,16 @@ Example 30: Rate of new infections, UK, 2018 to 2024
 
 ## Maps and geography standards
 
-There is currently no UKHSA guidance on best practice around mapping for a statistical context. However, the Analysis Function have produced a ['How To Make A Good Map'](https://onsgeo.github.io/geospatial-training/docs/make_a_good_map) e-learning course which introduces the most common types of maps used to present statistics, and provides guidance on what to think about when making a statistical map.
+The Analysis Function have produced a ['How To Make A Good Map'](https://onsgeo.github.io/geospatial-training/docs/make_a_good_map) e-learning course which introduces the most common types of maps used to present statistics, and provides guidance on what to think about when making a statistical map.
 
 The Office for National Statistics have also produced guidance to provide the [recommended presentation order for standard geographies](https://geoportal.statistics.gov.uk/datasets/424dfacb33594856a29c4e64f546a219/about). This is so that Official Statistics are geographically comparable, consistent and fit for purpose.
 
 ## Sources
+
 1. [Government Analysis Function: data visualisation: charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/)
-
-2. [Government Analysis Function: Making charts accessible – material, links and answers to questions from dataConnect22 session](https://analysisfunction.civilservice.gov.uk/support/communicating-analysis/making-charts-accessible-dataconnect22/)
-
-3. [Chart type: Style.ONS](https://style.ons.gov.uk/category/data-visualisation/chart-type/)
-
-4. [Central Digital and data Office: Using CSV file format](https://www.gov.uk/guidance/using-csv-file-format)
-
-5. [Government Analysis Function: data visualisation: tables](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-tables/)
-
-6. [Government Analysis Function: data visualisation: colours](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
-
-7. [Using colours: Style.ONS](https://style.ons.gov.uk/category/data-visualisation/using-colours/)
-
-8. [Gov.UK: Content design: planning, writing and managing content](https://www.gov.uk/guidance/content-design/tables)
-
-9. [Dueling with axis: the problems with dual axis charts](https://digitalblog.ons.gov.uk/2019/07/03/dueling-with-axis-the-problems-with-dual-axis-charts/)
-
-10. [Chart design: Style.ONS](https://style.ons.gov.uk/category/data-visualisation/chart-design/)
-
-11. [Government Analysis Function: data visualisation: colours](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
-
-12. [Approaches to presenting uncertainty in the statistical system – Office for Statistics Regulation](https://osr.statisticsauthority.gov.uk/publication/approaches-to-presenting-uncertainty-in-the-statistical-system/)
-
+1. [Government Analysis Function: data visualisation: tables](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-tables/)
+1. [Government Analysis Function: data visualisation: colours](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/)
+1. [Government Analysis Function: Making charts accessible – material, links and answers to questions from dataConnect22 session](https://analysisfunction.civilservice.gov.uk/support/communicating-analysis-old/making-charts-accessible-dataconnect22/)
+1. [Government Digital Service: Content design: planning, writing and managing content](https://www.gov.uk/guidance/content-design)
+1. [The Office for National Statistics: Service Manual: Data visualisation](https://service-manual.ons.gov.uk/data-visualisation)
+1. [The Office for Statistics Regulation: Approaches to presenting uncertainty in the statistical system](https://osr.statisticsauthority.gov.uk/publication/approaches-to-presenting-uncertainty-in-the-statistical-system/)

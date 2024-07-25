@@ -131,7 +131,6 @@ ul, ol{
 
 /*Fancy elements*/
 blockquote{
-  width: fit-content;
   margin: 1em 0 2em 0;
   padding: 10px;
   border: 1pt solid grey;
