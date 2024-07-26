@@ -1,13 +1,11 @@
 ---
 name: Standard issue template
 about: For requesting changes or new features
-title: ''
+title: 'Issue report template (Replace with a description of your issue)'
 labels: ''
 assignees: ''
 
 ---
-
-# Issue report template (Replace with a description of your issue)
 
 ## What type of issue is this?
 
