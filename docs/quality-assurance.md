@@ -383,16 +383,14 @@ Below is a summary of five key documents as they relate to QA. This is not a com
 
 1. [UK Statistics Authority: Code of Practice for Statistics](https://code.statisticsauthority.gov.uk/the-code/)
 
-2. [Office for Statistics Regulation: Regulatory guidance - thinking about quality when producing statistics](https://osr.statisticsauthority.gov.uk/publication/regulatory-guidance-thinking-about-quality-when-producing-statistics/pages/2/)
+1. [Office for Statistics Regulation: Regulatory guidance - thinking about quality when producing statistics](https://osr.statisticsauthority.gov.uk/publication/regulatory-guidance-thinking-about-quality-when-producing-statistics/pages/2/)
 
-3. [Department for Education: Quality Assurance Framework](https://www.gov.uk/government/organisations/department-for-education/about/research#quality-assurance-framework)
+1. [Department for Education: Quality Assurance Framework](https://www.gov.uk/government/organisations/department-for-education/about/research#quality-assurance-framework)
 
-4. [UKHSA Analytics QA Framework](https://www.gov.uk/government/organisations/department-for-education/about/research#quality-assurance-framework)
+1. [Government Analysis Function: Government Statistical Service (GSS) Quality Strategy](https://analysisfunction.civilservice.gov.uk/policy-store/government-statistical-service-gss-quality-strategy/)
 
-5. [Government Analysis Function: Government Statistical Service (GSS) Quality Strategy](https://analysisfunction.civilservice.gov.uk/policy-store/government-statistical-service-gss-quality-strategy/)
+1. [The AQUA Book: guidance on producing quality analysis for government](https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government)
 
-6. [The AQUA Book: guidance on producing quality analysis for government](https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government)
+1. [Government Analysis Function: Quality statistics in government](https://analysisfunction.civilservice.gov.uk/policy-store/quality-statistics-in-government/)
 
-7. [Government Analysis Function: Quality statistics in government](https://analysisfunction.civilservice.gov.uk/policy-store/quality-statistics-in-government/)
-
-8. [Government Analysis Function: Communicating quality, uncertainty and change](https://analysisfunction.civilservice.gov.uk/policy-store/communicating-quality-uncertainty-and-change/)
+1. [Government Analysis Function: Communicating quality, uncertainty and change](https://analysisfunction.civilservice.gov.uk/policy-store/communicating-quality-uncertainty-and-change/)
