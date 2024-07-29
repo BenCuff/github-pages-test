@@ -131,10 +131,6 @@ ul, ol{
 
 /*Fancy elements*/
 blockquote{
-<<<<<<< HEAD
-  width: 100%;
-=======
->>>>>>> 9aa3f0106604134994d718de925c001e4bf108ae
   margin: 1em 0 2em 0;
   padding: 10px;
   border: 1pt solid grey;
@@ -235,6 +231,10 @@ code{
 
 .card ul{
   padding-right: 10px;
+}
+
+.card table{
+  padding-left: 10px;
 }
 
 .download-button{
