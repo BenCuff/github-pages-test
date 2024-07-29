@@ -197,13 +197,13 @@ For example, "unemployment is estimated at 3.9%" should be written "unemployment
 {% capture card_content_4 %}
 Statistical commentary should describe general trends clearly and succintly, and put any uncertainty in context.
 
-Use the Professional Head of Intelligence Assessment (PHIA) [Probability Yardstick](https://assets.publishing.service.gov.uk/media/6421b6a43d885d000fdadb70/2019-01_PHIA_PDF_First_Edition_Electronic_Distribution_v1.1__1_.pdf) when making probability judgements. The Yardstick relates numerical probabilties (e.g., 60%) to terms such as 'unlikely', 'probable' and 'highly likely'. This avoids numerical probabilities being interpretted as overly precise.
+Use the Professional Head of Intelligence Assessment (PHIA) [Probability Yardstick]() when making probability judgements. The Yardstick relates numerical probabilties (e.g., 60%) to terms such as 'unlikely', 'probable' and 'highly likely'. This avoids numerical probabilities being interpreted as overly precise.
 
 Contextual information should be used to provide an indication of:
 
--the quality of the statistics
--the level of uncertainty in the statistics and data
--how the level of uncertainty impacts their interpretation, comparability and appropriate use
+- the quality of the statistics
+- the level of uncertainty in the statistics and data
+- how the level of uncertainty impacts their interpretation, comparability and appropriate use
 
 If health or statistical jargon is necessary, explain it in the most appropriate place for the reader (for example, in the main body, an appendix, glossary or a linked QMI report.
 
@@ -223,9 +223,9 @@ Provide definitions and explanations of terms that may be unfamiliar to your aud
 
 Data visualisations should include aids such as shaded ribbons or error bars to represent uncertainty [1]. This is a simple yet impactful way of communicating uncertainty in statistics or data. The choice of visualisation method depends on:
 
--the nature of your data
--the level of detail you want to convey
--the familiarity of your audience with different chart types
+- the nature of your data
+- the level of detail you want to convey
+- the familiarity of your audience with different chart types
 
 When visualising uncertainty, you should consider all three.
 
@@ -283,7 +283,7 @@ ggplot(df, aes(year, x_bar)) +
   {% include expandable-section.html number="16" content=expandable_content_16 title="R code for Example 1" %}
 {% include expandable-block-end.html %}
 
-The Analysis Function {ggplot2} theme_af()is available from our data visualisation guidance.
+The Analysis Function {ggplot2} theme_af() is available from our data visualisation guidance.
 
 ### Ribbon charts
 
@@ -333,6 +333,7 @@ Example 3 shows an example of a fan chart. The blue line shows the central estim
 
 #### Example 3: Hypothetical variable, England, 2010 to 2020
 <img src="assets/img/communicating uncertainty/Example 3.png" alt="" img width="800px">
+
 Note: the light and dark grey shading represent 95% and 50% confidence intervals, respectively.
 
 [Chart 5.1 on page 35 of the Bank of England’s inflation report from November 2017](https://www.bankofengland.co.uk/inflation-report/2017/november-2017) shows a good example of a fan chart with three levels of uncertainty. Prior to 2017, the shaded ribbons reflect revisions to historical data while after 2017 the shaded ribbons reflect uncertainty in the future projection.
@@ -375,6 +376,7 @@ Example 4a shows a time-series with year on the x-axis and a hypothetical variab
 
 #### Example 4a: Hypothetical variable, England, 2010 to 2020 
 <img src="assets/img/communicating uncertainty/Example 4.png" alt="" img width="900px">
+
 Note: the error bars represent 95% confidence intervals.
 
 {% capture expandable_content_19 %}
@@ -411,6 +413,7 @@ Example 4b shows an example with categorical data and horizontal bars. A hypothe
 
 #### Example 4b: Hypothetical variable by category, England, 2024
 <img src="assets/img/communicating uncertainty/Example 5.png" alt="" img width="900px">
+
 Note: the error bars represent 95% confidence intervals.
 
 {% capture expandable_content_20 %}
