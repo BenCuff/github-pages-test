@@ -233,6 +233,10 @@ code{
   margin: 15px 5px;
 }
 
+.card ul{
+  padding-right: 10px;
+}
+
 .download-button{
   background-color: #007c90;
   color: white;
