@@ -302,7 +302,7 @@ Care should be taken when plotting multiple lines on a single chart to ensure th
 {% capture expandable_content_17 %}
 
 ```
-# The data frame `df` is created above, in the Figure 1 code chunk:
+# The data frame `df` is created above, in the code chunk for Example 1:
 # Make Figure 2 (ribbon chart):
 ggplot(df, aes(year, x_bar)) +
   geom_ribbon(aes(ymin = x_low, ymax = x_high), alpha = 0.2, fill = "#BFBFBF") +
