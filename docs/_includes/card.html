@@ -1,4 +1,4 @@
 <div class="card">
   <div class="card-top"><h4>{{ include.title }}</h4></div>
-  <div class="card-bottom"><p>{{ include.content }}</p></div>
+  <div class="card-bottom"><p>{{ include.content | markdownify }}</p></div>
 </div>

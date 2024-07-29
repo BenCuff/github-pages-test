@@ -195,7 +195,7 @@ For example, "unemployment is estimated at 3.9%" should be written "unemployment
 {% endcapture %}
 
 {% capture card_content_4 %}
-Statistical commentary should describe general trends clearly and succintly, and put any uncertainty in context.
+Statistical commentary should describe general trends clearly and succinctly, and put any uncertainty in context.
 
 Use the Professional Head of Intelligence Assessment (PHIA) [Probability Yardstick]() when making probability judgements. The Yardstick relates numerical probabilties (e.g., 60%) to terms such as 'unlikely', 'probable' and 'highly likely'. This avoids numerical probabilities being interpreted as overly precise.
 
