@@ -188,9 +188,9 @@ Words like “estimated” or “around” alone do not accurately describe the 
 
 When reporting a figure include:
 
--the range of uncertainty after the main value
--the measure of uncertainty: e.g., are you presenting standard error or a confidence or credible interval?
--the level of uncertainty: e.g., are you presenting a 50% or 95% confidence interval?
+- the range of uncertainty after the main value
+- the measure of uncertainty: e.g., are you presenting standard error or a confidence or credible interval?
+- the level of uncertainty: e.g., are you presenting a 50% or 95% confidence interval?
 For example, "unemployment is estimated at 3.9%" should be written "unemployment is estimated at 3.9% (95% confidence interval [CI]: 3.7% to 4.1%)". This will ensure that the user has all the relevant information needed to accurately understand and interpret your statistics.
 {% endcapture %}
 
