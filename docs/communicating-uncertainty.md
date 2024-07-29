@@ -188,14 +188,14 @@ Words like “estimated” or “around” alone do not accurately describe the 
 
 When reporting a figure include:
 
--the range of uncertainty after the main value
--the measure of uncertainty: e.g., are you presenting standard error or a confidence or credible interval?
--the level of uncertainty: e.g., are you presenting a 50% or 95% confidence interval?
+- the range of uncertainty after the main value
+- the measure of uncertainty: e.g., are you presenting standard error or a confidence or credible interval?
+- the level of uncertainty: e.g., are you presenting a 50% or 95% confidence interval?
 For example, "unemployment is estimated at 3.9%" should be written "unemployment is estimated at 3.9% (95% confidence interval [CI]: 3.7% to 4.1%)". This will ensure that the user has all the relevant information needed to accurately understand and interpret your statistics.
 {% endcapture %}
 
 {% capture card_content_4 %}
-Statistical commentary should describe general trends clearly and succintly, and put any uncertainty in context.
+Statistical commentary should describe general trends clearly and succinctly, and put any uncertainty in context.
 
 Use the Professional Head of Intelligence Assessment (PHIA) [Probability Yardstick]() when making probability judgements. The Yardstick relates numerical probabilties to terms such as 'unlikely', 'probable' and 'highly likely'. 
 
@@ -213,7 +213,8 @@ Provide definitions and explanations of terms that may be unfamiliar to your aud
   {% include card.html content=card_content_1 title="Be transparent" %}
   {% include card.html content=card_content_2 title="Be specific" %}
   {% include card.html content=card_content_3 title="Use numeric ranges" %}
-  {% include card.html content=card_content_4 title="Use plain and accessible language" %}
+  {% include card.html content=card_content_4 title="Use plain and accessible language" %}{#plain-language}
+  <style>#plain-language{flex:1.5}</style>
 {% include cards-container-end.html %}
 
 
