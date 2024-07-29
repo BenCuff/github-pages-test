@@ -73,7 +73,7 @@ Click on the buttons below to find about more about each of the dimensions.
 
 ## Quality trade-off
 <div class="image-text-container">
-    <img src="assets/img/Quality_trade_off.png" width="460px" alt="A pentagon showing the 5 Dimensions of Quality of the European Statistical System (ESS) Code of Practice: Relevance, Accuracy and Reliability, Timeliness and Punctuality, Comparability and Coherence and Accessibility and Clarity">
+    <img src="assets/img/quality assurance/Quality_trade_off.png" width="460px" alt="A pentagon showing the 5 Dimensions of Quality of the European Statistical System (ESS) Code of Practice: Relevance, Accuracy and Reliability, Timeliness and Punctuality, Comparability and Coherence and Accessibility and Clarity">
     <p>
 <br>
 <br>
@@ -93,7 +93,7 @@ In practice, the nature and extent of quality assurance activities that are carr
 ## What do we mean by quality assurance?
 Quality assurance (QA) plays an essential part in any analytical project to ensure high quality analysis - it is so much more than just ‘getting the numbers right'. Effective QA ensures that decisions are made with an appropriate understanding of evidence and risks, and helps analysts ensure the integrity of the analytical output. It therefore forms a crucial part of the UKHSA's strategic priority to ["improve action on health security through data and insight"](https://www.gov.uk/government/publications/ukhsa-strategic-plan-2023-to-2026/ukhsa-strategic-plan-2023-to-2026-executive-summary).
 
-<img src="assets/img/high_quality_analysis.png" alt="In high quality analysis: You can transfer knowledge about the data, your calculations are correct, your methods are appropriate, others can test and replicate your analysis and your data and assumptions are fit for purpose. These can be summarised as 5 key areas: documentation and planning, verification, validation, project reproducibility and communication and outputs.">
+<img src="assets/img/quality assurance/high_quality_analysis.png" alt="In high quality analysis: You can transfer knowledge about the data, your calculations are correct, your methods are appropriate, others can test and replicate your analysis and your data and assumptions are fit for purpose. These can be summarised as 5 key areas: documentation and planning, verification, validation, project reproducibility and communication and outputs.">
 
 <br>
 
