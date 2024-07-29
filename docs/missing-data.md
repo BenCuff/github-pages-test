@@ -284,7 +284,7 @@ df <- data.frame(year = seq(2018, 2023, 1),
 library(ggplot2) # load data viz package
  
 # Make plot:
-# Note: `theme_af()` is available from the [data visualisation guidance page](data-vis)
+# Note: `theme_af()` is available from the data visualisation guidance page
 df |>
   ggplot(aes(year, value)) +
   geom_vline(xintercept = c(2019, 2021),
