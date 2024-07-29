@@ -119,7 +119,7 @@ There are no set "requirements" for what documentation you should have in place 
 
 
 {% capture bronze_5 %}
-It is a good idea to make code available to others because this means that the pipeline can be reproduced should the usual analyst go on annual or sick leave, or leave the organisation. It should be stored in a place that is accessible to others (in other words, not on a local drive). Keeping code in a repository such as GitHub can also make it easier to find and also provides a back up in case of accidental deletion (noting that anything sensitive such as datasets and database connection details should not be uploaded to GitHub). 
+It is a good idea to make code available to others because this means that the pipeline can be reproduced should the usual analyst go on annual or sick leave, or leave the organisation. It should be stored in a place that is accessible to others (in other words, not just on a local drive that nobody else can access). Keeping code in a repository such as GitHub can also make it easier to find and also provides a back up in case of accidental deletion (noting that anything sensitive such as datasets and database connection details should not be uploaded to GitHub). 
 
 Ideally, the code should be made publicly available for transparency, but this may not always be appropriate. Please adhere to any organisational policy on this.
 
