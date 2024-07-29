@@ -499,20 +499,14 @@ This section provides standard wording for statistics producers on definitions o
 
 
 ## Sources
-1. [Full Fact](https://fullfact.org/media/uploads/en-communicating-uncertainty.pdf)
+1. [Full Fact: How to communicate uncertainty](https://fullfact.org/media/uploads/en-communicating-uncertainty.pdf)
 
-2. [The effects of communicating uncertainty on public trust in facts and numbers](https://www.pnas.org/doi/full/10.1073/pnas.1913678117)
+1. [Government Analysis Function: Communicating quality, uncertainty and change](https://analysisfunction.civilservice.gov.uk/policy-store/communicating-quality-uncertainty-and-change/)
 
-3. [Approaches to presenting uncertainty in the statistical system](https://osr.statisticsauthority.gov.uk/publication/approaches-to-presenting-uncertainty-in-the-statistical-system/)
+1. [Office for Statistics Regulation: Approaches to presenting uncertainty in the statistical system](https://osr.statisticsauthority.gov.uk/publication/approaches-to-presenting-uncertainty-in-the-statistical-system/)
 
-4. [What is GRADE?](https://bestpractice.bmj.com/info/toolkit/learn-ebm/what-is-grade/)
+1. [Office for Statistics Regulation: Regulatory guidance on intelligent transparency](https://osr.statisticsauthority.gov.uk/publication/regulatory-guidance-on-intelligent-transparency/)
 
-5. [Margins of Error: public understanding of statistics in an era of big data](https://www.slideshare.net/slideshow/margins-of-error-public-understanding-of-statistics-in-an-era-of-big-data/21203553)
+1. [Uncertainty Toolkit for Analysts in Government](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/index.html)
 
-6. [Communicating quality, uncertainty and change - Analysis Function](https://analysisfunction.civilservice.gov.uk/policy-store/communicating-quality-uncertainty-and-change/)
-
-7. [Regulatory guidance on intelligent transparency](https://osr.statisticsauthority.gov.uk/publication/regulatory-guidance-on-intelligent-transparency/)
-
-8. [Uncertainty Toolkit for Analysts in Government](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/index.html)
-
-9. [Professional Development Framework for all-source intelligence assessment](https://assets.publishing.service.gov.uk/media/6421b6a43d885d000fdadb70/2019-01_PHIA_PDF_First_Edition_Electronic_Distribution_v1.1__1_.pdf)
+1. [van der Bles, A. M., van der Linden, S., Freeman, A. L. J., & Spiegelhalter, D. J. (2020). The effects of communicating uncertainty on public trust in facts and numbers. Proceedings of the National Academy of Sciences of the United States of America, 117(14), 7672–7683.](https://doi.org/10.1073/pnas.1913678117)
