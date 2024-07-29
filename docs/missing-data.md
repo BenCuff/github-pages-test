@@ -269,7 +269,7 @@ This figure shows a line chart with a discontinuity. It leaves a gap in the line
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_8 title="❌ To be avoided: lignoring missing data in a line chart by joining the next nearest available data points." %}
+  {% include card.html content=card_content_8 title="❌ To be avoided: ignoring missing data in a line chart by joining the next nearest available data points." %}
   {% include card.html content=card_content_9 title="✔️ Best practice: leave a gap in a line chart where there is missing data and highlight it with dashed lines and a text explanation." %}
 {% include cards-container-end.html %}
 
