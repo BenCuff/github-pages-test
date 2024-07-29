@@ -166,15 +166,294 @@ While p-values are not direct measures of uncertainty, they are commonly used to
   {% include expandable-section.html number="14" content=expandable_content_14 title="What is it?" %}
   {% include expandable-section.html number="15" content=expandable_content_15 title="Example" %}
 {% include expandable-block-end.html %}
-
 ## Communicating uncertainty
 
-TO DO 
+For any analytical outputs that communicate standard deviation, standard error, confidence intervals, credible intervals, and statistical significance (p-values), analysts and authors should:
+
+
+{% capture card_content_1 %}
+Transparency and clarity support public confidence in statistics and minimises the risk of misinterpretation.
+
+Draw attention to any uncertainty throughout your reports (text, charts, tables) and accompanying spreadsheets.
+{% endcapture %}
+
+{% capture card_content_2 %}
+Explain why there is uncertainty in an estimate and how the uncertainty has been quantified.
+
+Be specific about the limitations of the data and any assumptions made in the analysis.
+{% endcapture %}
+
+{% capture card_content_3 %}
+Words like “estimated” or “around” alone do not accurately describe the degree of uncertainty in an estimate.
+
+When reporting a figure include:
+
+-the range of uncertainty after the main value
+-the measure of uncertainty: e.g., are you presenting standard error or a confidence or credible interval?
+-the level of uncertainty: e.g., are you presenting a 50% or 95% confidence interval?
+For example, "unemployment is estimated at 3.9%" should be written "unemployment is estimated at 3.9% (95% confidence interval [CI]: 3.7% to 4.1%)". This will ensure that the user has all the relevant information needed to accurately understand and interpret your statistics.
+{% endcapture %}
+
+{% capture card_content_4 %}
+Statistical commentary should describe general trends clearly and succintly, and put any uncertainty in context.
+
+Use the Professional Head of Intelligence Assessment (PHIA) [Probability Yardstick](https://assets.publishing.service.gov.uk/media/6421b6a43d885d000fdadb70/2019-01_PHIA_PDF_First_Edition_Electronic_Distribution_v1.1__1_.pdf) when making probability judgements. The Yardstick relates numerical probabilties (e.g., 60%) to terms such as 'unlikely', 'probable' and 'highly likely'. This avoids numerical probabilities being interpretted as overly precise.
+
+Contextual information should be used to provide an indication of:
+
+-the quality of the statistics
+-the level of uncertainty in the statistics and data
+-how the level of uncertainty impacts their interpretation, comparability and appropriate use
+
+If health or statistical jargon is necessary, explain it in the most appropriate place for the reader (for example, in the main body, an appendix, glossary or a linked QMI report.
+
+Provide definitions and explanations of terms that may be unfamiliar to your audience. Definitions of standard deviation, standard error, credible and confidence intervals, and statistical significance (i.e., p-values) can be found at the end of this guidance.
+{% endcapture %}
+
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_1 title="Be transparent" %}
+  {% include card.html content=card_content_2 title="Be specific" %}
+  {% include card.html content=card_content_3 title="Use numeric ranges" %}
+  {% include card.html content=card_content_4 title="Use plain and accessible language" %}
+{% include cards-container-end.html %}
 
 
 ### Visualising uncertainty examples
 
-TO DO
+Data visualisations should include aids such as shaded ribbons or error bars to represent uncertainty [1]. This is a simple yet impactful way of communicating uncertainty in statistics or data. The choice of visualisation method depends on:
+
+-the nature of your data
+-the level of detail you want to convey
+-the familiarity of your audience with different chart types
+
+When visualising uncertainty, you should consider all three.
+
+The meaning of the error bars or shaded ribbons should be clearly explained below the chart, with any additional information for the user at the end of the report or in a separate QMI report.
+
+The guidance below presents three different ways of visualising uncertainty in a chart (ribbon chart, fan chart and error bar chart) and highlights typical use cases and their advantages and disadvantages.
+
+Please also see our guidance on data visualisations for how to format charts accessibly.
+
+### No uncercertainty - not recommended
+
+Example 1 shows an illustration of a chart showing no uncertainty. Year is on the x-axis and some hypothetical variable on the y-axis. Only the central line (representing the average) is shown and there is no indication of any uncertainty in the data. Presenting the statistics in this way could mislead users by inflating their confidence in the accuracy of the data.
+
+#### Example 1: Hypothetical variable, England, 2010 to 2020
+<img src="assets/img/communicating uncertainty/Example 1.png" alt="" img width="800px">
+
+{% capture expandable_content_16 %}
+
+```
+# Load the tidyverse meta-package:
+library(tidyverse)
+ 
+# For generating pseudo-random numbers:
+# This ensures that when we use `rnorm()` to generate random numbers below we get the same numbers each time.
+set.seed(3)
+ 
+# Create data frame:
+df <- tibble(year = 2010:2020,
+             x_bar = 6:16 + rnorm(11),
+             ci = abs(rnorm(11, mean = 2, sd = 1)),
+             x_low = x_bar - ci,
+             x_high = x_bar + ci)
+ 
+# Create vector of years for x-axis. Years that we don't want to show are replaced with blanks (""):
+x_seq <- seq(2010, 2020, 1)
+x_seq[x_seq %% 2 == 1] <- ""
+ 
+# Make Figure 1 (no uncertainty):
+ggplot(df, aes(year, x_bar)) +
+  geom_line(col = "#12436D",
+            linewidth = 4) +
+  scale_x_continuous(breaks = seq(2010, 2020, 1),
+                     labels = x_seq) +
+  scale_y_continuous(limits = c(0, 20),
+                     expand = expansion(mult = c(0, 0.02))) +
+  theme_af(tick_mark = "x",
+            font_size = 32) +
+  labs(x = NULL,
+       y = NULL,
+       subtitle = "Hypothetical variable")
+```
+{% endcapture %}
+
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="16" content=expandable_content_16 title="R code for Example 1" %}
+{% include expandable-block-end.html %}
+
+The Analysis Function {ggplot2} theme_af()is available from our data visualisation guidance.
+
+### Ribbon charts
+
+Displaying a line plot with a shaded ribbon around it can effectively communicate uncertainty without being too distracting. The line shows the central estimate while the ribbon represents the uncertainty.
+
+We recommend that statistics producers use ribbon charts to visualise uncertainty on line charts, and include a note underneath each chart to explain what the ribbon/shading represents.
+
+In Example 2, the blue line represents the central estimate while the grey ribbon represents the 95% confidence interval. The wider the ribbon the greater the uncertainty.
+
+#### Example 2: Hypothetical variable, England, 2010 to 2020
+<img src="assets/img/communicating uncertainty/Example 2.png" alt="" img width="800px">
+
+Note: the grey shading represents 95% confidence intervals.
+
+Care should be taken when plotting multiple lines on a single chart to ensure that there is sufficient contrast between colours. Small multiple charts may be more appropriate and avoid clutter.
+
+{% capture expandable_content_17 %}
+
+```
+# The data frame `df` is created above, in the Figure 1 code chunk:
+# Make Figure 2 (ribbon chart):
+ggplot(df, aes(year, x_bar)) +
+  geom_ribbon(aes(ymin = x_low, ymax = x_high), alpha = 0.2, fill = "#BFBFBF") +
+  geom_line(col = "#12436D",
+            linewidth = 4) +
+  scale_x_continuous(breaks = seq(2010, 2020, 1),
+                     labels = x_seq) +
+  scale_y_continuous(limits = c(0, 20),
+                     expand = expansion(mult = c(0, 0.02))) +
+  theme_af(tick_mark = "x",
+           font_size = 32) +
+  labs(x = NULL,
+       y = NULL,
+       subtitle = "Hypothetical variable")
+```
+{% endcapture %}
+
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="17" content=expandable_content_17 title="R code for Example 2" %}
+{% include expandable-block-end.html %}
+
+### Fan charts
+
+Fan charts are commonly used to show forecasted data but are also useful if you wish to convey more detail. A fan chart displays a central line and shaded ribbons representing two or more levels of uncertainty. The wider the ribbons the larger the uncertainty.
+
+Example 3 shows an example of a fan chart. The blue line shows the central estimate while the shaded ribbons show 50% and 95% confidence intervals in dark grey and light grey, respectively.
+
+#### Example 3: Hypothetical variable, England, 2010 to 2020
+<img src="assets/img/communicating uncertainty/Example 3.png" alt="" img width="800px">
+Note: the light and dark grey shading represent 95% and 50% confidence intervals, respectively.
+
+[Chart 5.1 on page 35 of the Bank of England’s inflation report from November 2017](https://www.bankofengland.co.uk/inflation-report/2017/november-2017) shows a good example of a fan chart with three levels of uncertainty. Prior to 2017, the shaded ribbons reflect revisions to historical data while after 2017 the shaded ribbons reflect uncertainty in the future projection.
+
+With a fan chart consider if your audience would benefit from more than one confidence interval or whether one level (typically 95%) is sufficient.
+
+{% capture expandable_content_18 %}
+
+```
+# Make Figure 3 (fan chart):
+ggplot(df, aes(year, x_bar)) +
+  geom_ribbon(aes(ymin = x_low, ymax = x_high), alpha = 0.2, fill = "#BFBFBF") +
+  geom_ribbon(aes(ymin = x_bar - (ci * 0.4), ymax = x_bar + (ci * 0.4)), alpha = 0.2, fill = "#5f5f5f") +
+  geom_line(col = "#12436D",
+            linewidth = 4) +
+  scale_x_continuous(breaks = seq(2010, 2020, 1),
+                     labels = x_seq) +
+  scale_y_continuous(limits = c(0, 20),
+                     expand = expansion(mult = c(0, 0.02))) +
+  theme_af(tick_mark = "x",
+           font_size = 32) +
+  labs(x = NULL,
+       y = NULL,
+       subtitle = "Hypothetical variable")
+```
+
+{% endcapture %}
+
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="18" content=expandable_content_18 title="R code for Example 3" %}
+{% include expandable-block-end.html %}
+
+### Error bars
+
+Error bars are a classic method for representing uncertainty that can be used in multiple chart types. They can be used to indicate the minimum and maximum values (range), interquartile range, standard deviation, standard error, or confidence intervals.
+
+We recommend that statistics producers use error bars to visualise uncertainty on bar charts. To ensure that there is sufficient contrast between the bars and the error bars we recommend adding a white buffer around each error bar (see Example 4a).
+
+Example 4a shows a time-series with year on the x-axis and a hypothetical variable on the x-axis. Black error bars are included to show the uncertainty (expressed as 95% confidence intervals) in the estimate for each year. The wider the error bar the larger the uncertainty.
+
+#### Example 4a: Hypothetical variable, England, 2010 to 2020 
+<img src="assets/img/communicating uncertainty/Example 4.png" alt="" img width="900px">
+Note: the error bars represent 95% confidence intervals.
+
+{% capture expandable_content_19 %}
+
+```
+# Make Figure 4a (bar chart):
+ggplot(df, aes(year, x_bar)) +
+  geom_col(fill = "#12436D") +
+  geom_errorbar(aes(ymin = x_low, ymax = x_high),
+                width = 0.25,
+                linewidth = 3,
+                colour = "white") +
+  geom_errorbar(aes(ymin = x_low, ymax = x_high),
+                width = 0.2,
+                linewidth = 2) +
+  scale_x_continuous(breaks = seq(2010, 2020, 1),
+                     labels = x_seq) +
+  scale_y_continuous(limits = c(0, 20),
+                     expand = expansion(mult = c(0, 0.02))) +
+  theme_af(tick_mark = "x",
+           font_size = 32) +
+  labs(x = NULL,
+       y = NULL,
+       subtitle = "Hypothetical variable")
+```
+{% endcapture %}
+
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="19" content=expandable_content_19 title="R code for Example 4a" %}
+{% include expandable-block-end.html %}
+
+
+Example 4b shows an example with categorical data and horizontal bars. A hypothetical variable is shown on the x-axis and a categorical variable on the y-axis. Horizontal error bars are included to show the uncertainty in the estimate for each category. The wider the error bar the larger the uncertainty.
+
+#### Example 4b: Hypothetical variable by category, England, 2024
+<img src="assets/img/communicating uncertainty/Example 5.png" alt="" img width="900px">
+Note: the error bars represent 95% confidence intervals.
+
+{% capture expandable_content_20 %}
+
+```
+# Load the tidyverse meta-package:
+library(tidyverse)
+ 
+# Create data frame:
+df <- tibble(x = 10:14 + rnorm(5),
+             y = LETTERS[1:5]) |>
+      mutate(ci = abs(rnorm(5, mean = 2, sd = 1)),
+             x_low = x - ci,
+             x_high = x + ci) |>
+      mutate(y = fct_reorder(y, x)) |> 
+ 
+# Make Figure 4b (horizontal bar chart):
+ggplot(df, aes(x, y)) +
+  geom_col(fill = "#12436D") +
+  geom_errorbarh(aes(xmin = x_low, xmax = x_high),
+                 height = 0.25,
+                 linewidth = 3,
+                 colour = "white") +
+  geom_errorbarh(aes(xmin = x_low, xmax = x_high),
+                 height = 0.2,
+                 linewidth = 2) +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.02)),
+                     limits = c(0, 20)) +
+  scale_y_discrete(expand = expansion(mult = c(0.15, 0.15))) +
+  theme_af(grid = "x",
+           tick_mark = "y",
+           font_size = 32) +
+  labs(y = NULL,
+       x = "Hypothetical variable")
+```
+{% endcapture %}
+
+{% include expandable-block-start.html %}
+  {% include expandable-section.html number="20" content=expandable_content_20 title="R code for Example 4b" %}
+{% include expandable-block-end.html %}
+
+
+Experimenting with multiple visualisation techniques can help you find the most effective way to communicate uncertainty in your specific context.
 
 ## Revisions
 Revisions are common in many analytical outputs that are published weekly or monthly. Revisions can occur for a variety of reasons: for example, to incorporate new data that was unavailable at the time of first release; to include improved data that is more accurate; or, to correct errors.
