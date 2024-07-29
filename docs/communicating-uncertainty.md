@@ -215,7 +215,8 @@ Provide definitions and explanations of terms that may be unfamiliar to your aud
   {% include card.html content=card_content_1 title="Be transparent" %}
   {% include card.html content=card_content_2 title="Be specific" %}
   {% include card.html content=card_content_3 title="Use numeric ranges" %}
-  {% include card.html content=card_content_4 title="Use plain and accessible language" %}
+  {% include card.html content=card_content_4 title="Use plain and accessible language" %}{#plain-language}
+  <style>#plain-language{flex:1.5}</style>
 {% include cards-container-end.html %}
 
 
