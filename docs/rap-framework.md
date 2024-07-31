@@ -342,11 +342,11 @@ Workflow management packages such as [Targets](https://books.ropensci.org/target
 ## Appendix
 ### Our standards versus those produced by the Government Analysis Function
 
-Our guidance draws upon the principles developed by the [Government Analysis Function in their RAP strategy](https://analysisfunction.civilservice.gov.uk/policy-store/reproducible-analytical-pipelines-strategy/), supported by other sources given in the section above. However, we have separated them out into 3 standards ("bronze", "silver" and "gold") instead of the Analysis Function’s 2 ("minimum"" and "further"). This is to make it easier for teams to progress through the standards in smaller leaps.
+Our guidance draws upon the principles developed by the [Government Analysis Function in their RAP strategy](https://analysisfunction.civilservice.gov.uk/policy-store/reproducible-analytical-pipelines-strategy/) (supported by other sources listed above). However, we have separated them out into 3 standards ("bronze", "silver" and "gold") instead of the Analysis Function’s 2 ("minimum" and "further"). This is to make it easier for teams to progress through the standards in smaller leaps.
 
 In our silver standard, some principles have come from the Analysis Function’s minimum standard, and others from their further standards. Specifically:
 
-- “minimise manual steps” has been separated out into two principles covering manual steps during analysis and manual steps during the production of spreadsheets and workbooks, with the former remaining in the minimum bronze standard and the latter being moved to our silver standard; this is to recognise the fact that many analysts will develop the more basic programming skills needed for analysis first, before developing other skills around Rmarkdown, for example
+- “minimise manual steps” has been separated out into two principles covering manual steps during analysis and manual steps during the production of outputs, with the former remaining in the minimum bronze standard and the latter being moved to our silver standard; this is to recognise the fact that many analysts will develop the more basic programming skills needed for analysis first, before developing other skills around Rmarkdown, for example
 - “validating input data”, “using functions”, and “adhere to a common best practice code style” have all been moved to our silver standard from the further standard because we have found that these are usually easier to implement than the other further standard principles
 
 Aside from these differences, all other Analysis function “minimum” standard principles are in our bronze standard, and all other Analysis Function “further” standard principles are in our gold standard.
