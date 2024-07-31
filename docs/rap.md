@@ -96,9 +96,9 @@ RAP also does require more time at the start of an analytical project to write t
 #### Figure 3: Reproducible practices makes analysis faster
 
 
-<div class="image-text-container" style="margin-bottom:40px>
+<div class="image-text-container" style="margin-bottom:40px">
     <img width="800px" src="assets/img/rap/rap_efficiency.svg" alt="An diagram showing that although RAP might take more time than more manual approaches initially, it can save time in the long run, particularly when the pipeline needs to be repeated several times.">
-    <p style="margin-top:auto; margin-bottom:auto;">Note: Figure taken from the <a href="https://analysisfunction.civilservice.gov.uk/policy-store/reproducible-analytical-pipelines-strategy/">Government Analysis Function Reproducible Analytical Pipelines (RAP) strategy]</a></p>
+    <p style="margin-top:auto; margin-bottom:auto;">Note: Figure taken from the <a href="https://analysisfunction.civilservice.gov.uk/policy-store/reproducible-analytical-pipelines-strategy/">Government Analysis Function Reproducible Analytical Pipelines (RAP) strategy</a></p>
 </div>
 
 
