@@ -7,7 +7,7 @@ layout: guidance-page
 > When publishing statistics with associated uncertainty, you should:
 > - Be transparent: Draw attention to any uncertainty in your reports and accompanying spreadsheets to avoid misinterpretation and misuse.
 > - Be specific about what exactly is uncertain: Explain why there is uncertainty in an estimate, how the uncertainty has been quantified, the limitations of the data and any assumptions made in the analysis.
-> - Indicate uncertainty using numerical ranges in parentheses after the main value: Quote numerical uncertainty in parentheses after the main value. Do this every time you give a numeric value with associated uncertainty.
+> - Indicate uncertainty using numerical ranges in parentheses after each value with associated uncertainty.
 > - Use plain and accessible language: Make sure that when you write about uncertainty it can be understood by all.
 > - Visualise uncertainty: Show uncertainty in your data visualisations and explain to readers what the uncertainty represents.
 
@@ -16,23 +16,31 @@ layout: guidance-page
 
 ## What do we mean by uncertainty?
 
-The method by which we gather information about the world is characterised by assumptions and limitations. These assumptions and limitations introduce imprecision into our understanding and mean that any estimate we make to describe real-world phenomena or conclusion we draw is unlikely to be the "true value" – even when based on sound data and appropriate methods. The difference between our estimate and the “true value” is what we mean by uncertainty.
+The method by which we gather information about the world is characterised by assumptions and limitations. These assumptions and limitations introduce imprecision into our understanding and mean that any estimate we make to describe real-world phenomena or conclusion we draw is unlikely to be the "true value", even when based on sound data and appropriate methods. The difference between our estimate and the “true value” is what we mean by uncertainty.
 
 Uncertainty can arise from multiple sources including sampling variation, measurement error, systematic biases and assumptions made in statistical models.
 
 The [Winton Centre for Risk and Evidence Communication](https://wintoncentre.maths.cam.ac.uk/) at the University of Cambridge distinguishes between two levels of uncertainty: direct and indirect. Both direct and indirect uncertainty are crucial to consider when communicating uncertainty in statistics and data.
 
-### Direct uncertainty
 
+{% capture card_content_1 %}
 Direct uncertainty refers to uncertainty about an estimate (or fact) that can be communicated in absolute terms (such as a standard error, confidence intervals, credible intervals and statistical significance). Direct uncertainty is uncertainty that is explicitly measured or quantified during data collection or as part of data analysis.
 
 For example, taking the estimate of disease X positivity in the UK, the direct uncertainty would be summarised by including a range within which the true value is expected to lie. We would write this as "disease X positivity was estimated to be 2.3% (95% confidence interval: 1.9% to 2.7%)."
+{% endcapture %}
 
-### Indirect uncertainty
+{% capture card_content_2 %}
+In contrast to direct uncertainty, indirect uncertainty refers to uncertainty about the underlying quality of evidence that forms the basis for any claims about the estimate (or fact). It is not directly measured or quantified but is inferred from uncertainties associated with the analysis. This will often be communicated as a list of caveats about the underlying statistics or data, or it can be summarised into a qualitative or ordered categorical scale (such as the [GRADE scale](https://bestpractice.bmj.com/info/toolkit/learn-ebm/what-is-grade/) for communicating the quality of underlying evidence about the effects of medical interventions).
 
-In contrast to direct uncertainty, indirect uncertainty refers to uncertainty about the underlying quality of evidence that forms the basis for any claims about the estimate (or fact). It is not directly measured or quantified but is inferred or propagated from uncertainties associated with the analysis. This will often be communicated as a list of caveats about the underlying statistics or data, or it can be summarised into a qualitative or ordered categorical scale (such as the [GRADE scale](https://bestpractice.bmj.com/info/toolkit/learn-ebm/what-is-grade/) for communicating the quality of underlying evidence about the effects of medical interventions).
+The indirect uncertainty would cover how the data had been collected and analysed, measurement error, historical revisions due to missing data or under-reporting of a group or region. Typically, this added context can be found in the main body of a publication and/or in a quality and methodology information (QMI) report.
 
-The indirect uncertainty would cover how the data had been collected and analysed, measurement error, historical revisions due to missing data or under-reporting of a group or region. Typically, this added context can be found in the main body of a publication and/or in a [quality and methodology information (QMI) report](https://confluence.collab.test-and-trace.nhs.uk/display/SHT/Quality+and+methodology+information+reports).
+{% endcapture %}
+
+{% include cards-container-start.html %}
+  {% include card.html content=card_content_1 title="Direct uncertainty" %}
+  {% include card.html content=card_content_2 title="Indirect uncertainty" %}
+{% include cards-container-end.html %}
+
 
 ## Why uncertainty matters
 
@@ -40,22 +48,22 @@ Uncertainty is an inherent part of statistics and data, but it can directly infl
 
 For the public, uncertainty in numbers and what it means for their use can be difficult to grasp, and this can affect public trust in statistics and the organisations that communicate them. For statistics producers, being honest, open and up front about uncertainty can help to minimise misinterpretation, maintain confidence, and protect the integrity of the data, the analysis, and the communicator.
 
-The [Code of Practice for Statistics](https://code.statisticsauthority.gov.uk/) commits UKHSA to the highest standards of quality in statistics. The Quality pillar of the Code contains practices for communicating uncertainty that all producers should be mindful of.
+The [Code of Practice for Statistics](https://code.statisticsauthority.gov.uk/) commits statistics producers to the highest standards of quality in statistics. The Quality pillar of the Code contains practices for communicating uncertainty that all producers should be mindful of. See inside the expandable sections below for more detail on these principles. 
 
 
 {% capture expandable_content_1 %}
 [Suitable data sources](https://code.statisticsauthority.gov.uk/the-code/quality/q1-suitable-data-sources/):
-The nature of data sources, and how and why they were selected, should be explained. Potential bias, uncertainty and possible distortive effects in the source data should be identified and the extent of any impact on the statistics should be clearly reported.
+"The nature of data sources, and how and why they were selected, should be explained. Potential bias, uncertainty and possible distortive effects in the source data should be identified and the extent of any impact on the statistics should be clearly reported.""
 {% endcapture %}
 
 {% capture expandable_content_2 %}
 [Sound methods](https://code.statisticsauthority.gov.uk/the-code/quality/q2-sound-methods/):
-Relevant limitations arising from the methods and their application, including bias and uncertainty, should be identified and explained to users. An indication of their likely scale and the steps taken to reduce their impact on the statistics should be included in the explanation.
+"Relevant limitations arising from the methods and their application, including bias and uncertainty, should be identified and explained to users. An indication of their likely scale and the steps taken to reduce their impact on the statistics should be included in the explanation."
 {% endcapture %}
 
 {% capture expandable_content_3 %}
 [Assured quality](https://code.statisticsauthority.gov.uk/the-code/quality/q3-assured-quality/):
-The extent and nature of any uncertainty in the estimates should be clearly explained.
+"The extent and nature of any uncertainty in the estimates should be clearly explained."
 {% endcapture %}
 
 
@@ -66,9 +74,8 @@ The extent and nature of any uncertainty in the estimates should be clearly expl
 {% include expandable-block-end.html %}
 
 
-[UKHSA follows the Code of Practice for Statistics](https://www.gov.uk/government/organisations/uk-health-security-agency/about/statistics#our-official-statistics-compliance-documents) and is duty-bound to ensure compliance in relation to the communication and presentation of uncertainty in statistics and data.
 
-Ensuring that uncertainty in statistics and data is clearly explained is a key pillar of the Office for Statistics Regulation’s [regulatory guidance on intelligence transparency](https://osr.statisticsauthority.gov.uk/publication/regulatory-guidance-on-intelligent-transparency/). For more information on why uncertainty matters, see the [Uncertainty Toolkit for Analysts in Government](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/index.html).
+In addition to the Code of Practice for Statistics, ensuring that uncertainty in statistics and data is clearly explained is a key pillar of the Office for Statistics Regulation’s [regulatory guidance on intelligence transparency](https://osr.statisticsauthority.gov.uk/publication/regulatory-guidance-on-intelligent-transparency/). For more information on why uncertainty matters, also see the [Uncertainty Toolkit for Analysts in Government](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/index.html).
 
 ## Common measures of direct uncertainty in statistics
 
@@ -168,36 +175,37 @@ While p-values are not direct measures of uncertainty, they are commonly used to
 {% include expandable-block-end.html %}
 ## Communicating uncertainty
 
-For any analytical outputs that communicate standard deviation, standard error, confidence intervals, credible intervals, and statistical significance (p-values), analysts and authors should:
+
+For any analytical outputs that communicate variance, standard deviation, standard error, confidence intervals, credible intervals, and statistical significance (p-values), analysts and authors should be transparent, be specific, use numeric ranges, and use plain and accessible language. 
 
 
-{% capture card_content_1 %}
+{% capture card_content_3 %}
 Transparency and clarity support public confidence in statistics and minimises the risk of misinterpretation.
 
 Draw attention to any uncertainty throughout your reports (text, charts, tables) and accompanying spreadsheets.
-{% endcapture %}
 
-{% capture card_content_2 %}
 Explain why there is uncertainty in an estimate and how the uncertainty has been quantified.
 
 Be specific about the limitations of the data and any assumptions made in the analysis.
 {% endcapture %}
 
-{% capture card_content_3 %}
+
+{% capture card_content_4 %}
 Words like “estimated” or “around” alone do not accurately describe the degree of uncertainty in an estimate.
 
 When reporting a figure include:
 
 - the range of uncertainty after the main value
-- the measure of uncertainty: e.g., are you presenting standard error or a confidence or credible interval?
-- the level of uncertainty: e.g., are you presenting a 50% or 95% confidence interval?
-For example, "unemployment is estimated at 3.9%" should be written "unemployment is estimated at 3.9% (95% confidence interval [CI]: 3.7% to 4.1%)". This will ensure that the user has all the relevant information needed to accurately understand and interpret your statistics.
+- the measure of uncertainty: for example, are you presenting standard error or a confidence or credible interval?
+- the level of uncertainty: for example, are you presenting a 50% or 95% confidence interval?
+
+To give an example, "unemployment is estimated at 3.9%" should be written "unemployment is estimated at 3.9% (95% confidence interval [CI]: 3.7% to 4.1%)". This will ensure that the user has all the relevant information needed to accurately understand and interpret your statistics.
 {% endcapture %}
 
-{% capture card_content_4 %}
+{% capture card_content_5 %}
 Statistical commentary should describe general trends clearly and succinctly, and put any uncertainty in context.
 
-Use the Professional Head of Intelligence Assessment (PHIA) [Probability Yardstick](https://assets.publishing.service.gov.uk/media/6421b6a43d885d000fdadb70/2019-01_PHIA_PDF_First_Edition_Electronic_Distribution_v1.1__1_.pdf) when making probability judgements. The Yardstick relates numerical probabilties to terms such as 'unlikely', 'probable' and 'highly likely'. 
+You can use the Professional Head of Intelligence Assessment (PHIA) [Probability Yardstick](https://assets.publishing.service.gov.uk/media/6421b6a43d885d000fdadb70/2019-01_PHIA_PDF_First_Edition_Electronic_Distribution_v1.1__1_.pdf) when making probability judgements. The Yardstick relates numerical probabilties to terms such as 'unlikely', 'probable' and 'highly likely'. 
 
 Contextual information should be used to provide an indication of:
 
@@ -210,11 +218,9 @@ Provide definitions and explanations of terms that may be unfamiliar to your aud
 
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_1 title="Be transparent" %}
-  {% include card.html content=card_content_2 title="Be specific" %}
-  {% include card.html content=card_content_3 title="Use numeric ranges" %}
-  {% include card.html content=card_content_4 title="Use plain and accessible language" id="plain-language" %}
-  <style>#plain-language{flex:1.5}</style>
+  {% include card.html content=card_content_3 title="Be transparent and specific" %}
+  {% include card.html content=card_content_4 title="Use numeric ranges" %}
+  {% include card.html content=card_content_5 title="Use plain and accessible language" %}
 {% include cards-container-end.html %}
 
 
