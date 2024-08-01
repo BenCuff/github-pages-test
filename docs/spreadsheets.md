@@ -1,5 +1,5 @@
 ---
-title: "Accessibility: Spreadsheets"
+title: "Creating clear and accessible spreadsheets"
 layout: guidance-page
 ---
 

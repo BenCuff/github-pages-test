@@ -1,5 +1,5 @@
 ---
-title: "Accessibility: Data visualisation"
+title: "Creating clear and accessible data visualisations"
 layout: guidance-page
 ---
 
