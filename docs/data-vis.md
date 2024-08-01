@@ -4,20 +4,20 @@ layout: guidance-page
 ---
 
 > ## Main messages
->- data visualisations must be compliant with current accessibility legislation.
+>- Data visualisations such as graphs and charts must be compliant with current accessibility legislation.
 >- You should choose an appropriate and consistent way to visualise different types of data.
 >- Colours, text, and formatting should be carefully applied in order to aid interpretation of data visualisations.
->- data visualisations should be easy to understand for users of all backgrounds.
+>- Data visualisations should be easy to understand for users of all backgrounds.
 
 {% include sources-text.md %}
 
 ## Introduction
 
-This guidance is intended as a practical handbook for creating charts and charts. It condenses the most relevant Government resources on data visualisation together with the Statistics Production Division's own experience producing official statistics and working with statistics producers. While the information on this page is by no means comprehensive, we hope that it provides a useful overview of best practices and how to implement them.
+Good accessibility brings benefits to all users, improving the quality and value of our statistics, and the trust users have in us.
 
-Good accessibility brings benefits to all users, improving the quality and value of our statistics, and the trust users have in us as an organisation. It is particularly important for people with disabilities, remembering that [20% of the working-age population report having a disability](https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2021/the-employment-of-disabled-people-2021#:~:text=1%20in%205%20of%20the%20working%2Dage%20population%20are%20classed%20as%20disabled,-Figure%203a%3A%20Proportion&text=Source%3A%20Annual%20Population%20Survey%20%E2%80%93%20data,to%20question%201%20(see%20below)). We welcome any contributions from colleagues who may wish to share their own knowledge, charts, or code to incorporate into this document.
+This guidance is intended as a practical handbook for creating charts and charts. It condenses the most relevant government resources on data visualisation together with our own experience of producing analytical outputs. While the information on this page is by no means comprehensive, we hope that it provides a useful overview of best practices and how to implement them.
 
-R code to produce a minimal reproducible example is available under each chart. They were made using a standard ggplot2 theme which can be found below. If you have any questions about our R resources or need any assistance using them, don't hesitate to email the Statistics Production Division at [UKHSA_HOPSTATS@ukhsa.gov.uk](mailto:UKHSA_HOPSTATS@ukhsa.gov.uk) and we'll be happy to help in any way that we can!
+R code to produce a minimal reproducible example is available under each chart. They were made using a standard ggplot2 theme which can be found inside the expandable section below. If you have any questions about our R resources or need any assistance using them, don't hesitate to email us at <UKHSA_HOPSTATS@ukhsa.gov.uk> and we'll be happy to help in any way that we can!
 
 
 
@@ -295,7 +295,7 @@ df |>
   
 Below, the clustered bar chart on the left resolves some of the issues with comparability seen in the stacked bar chart above, but is more visually crowded as the bars become thinner and harder to focus on. Stacked and clustered bar charts are also not a good choice when you wish to display the total of all categories alongside the individual groups. The inclusion of a separate bar for "All" in the two bar charts above can incorrectly imply to users that this is a third, distinct category.
 
-When multiple categories are involved, it is best practice to use a line chart like the one on the right. In this chart, differences between categories and time points are easy to identify. The overall trends are clearly displayed and can be understood at a glance. Note that the lines have been labelled directly rather than with a legend: this is how line charts should be labelled.
+When multiple categories are involved, it is best practice to use a line chart like the one on the right. In this chart, differences between categories and time points are easy to identify. The overall trends are clearly displayed and can be understood at a glance. Note that the lines have been labelled directly rather than with a legend: this is how line charts should be labelled (see [communicating without colour](#communicating-without-colour) for more information).
 
 {% capture card_content_5 %}
 Example 5: Annual unemployment rates by gender, UK, 2008 to 2024
@@ -354,7 +354,6 @@ ggplot(df, aes(x = year, y = unemployed, colour = gender)) +
   {% include expandable-section.html number="4" content=expandable_content_4 title="R code for Example 6" %}
 {% include expandable-block-end.html %}
   
-See the "communicating without colour" section below for more information on how to format a chart like this, including how to directly label lines.
 
 ### Weekly and quarterly time series data
 
