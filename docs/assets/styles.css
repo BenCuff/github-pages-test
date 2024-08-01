@@ -248,6 +248,13 @@ code{
   margin-bottom: 10px;
 }
 
+.download-button:hover{
+  cursor: pointer;
+}
+
+.download-button:focus{
+  border: 2pt solid black;
+}
 
 /*Images and text side-by-side*/
 .image-text-container {
