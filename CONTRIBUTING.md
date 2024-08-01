@@ -48,6 +48,13 @@ The `assets` folder is used to store .css stylesheets and images.
 
 The `_config.yml` file can be used to store sitewide values. These are then inserted to other pages via Liquid commands (for example, `{{ site.email }}`). 
 
+### Creating direct download links for files
+Direct download links are used for files such as the QA review conversation tool. 
+
+To get a link:
+1. Navigate to the file in the assets/downloads folder in GitHub (click on the actual file).
+2. Right-click "Raw", and "Copy link address".
+3. Paste that URL into your markdown file, formatting as with any other link. 
 
 ### Markdown commands used in this site
 Most of what goes into the .md files will be standard markdown. Some other code is custom built for this site, relying on scripts found within the `_includes` folder.
