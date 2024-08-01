@@ -480,21 +480,33 @@ Where it is common for revisions to be made over a period of several weeks or mo
 The expandable sections below include standard wording that authors can use to explain common measures of uncertainty to the users of their reports, for example in a glossary section.
 
 {% capture expandable_content_16 %}
+Variance measures the dispersion or spread of individual data points within a data set. It is calculated as the average squared difference of each data point from the mean (average) of the data set. It is expressed in squared units of the original data.
+
+A larger variance indicates greater uncertainty.
 {% endcapture %}
 
 {% capture expandable_content_17 %}
+Standard deviation measures the dispersion or spread of individual data points within a data set. It is calculated as the square root of the variance and is expressed in the same units as the original data.
+
+A larger standard deviation indicates greater uncertainty.
 {% endcapture %}
 
 {% capture expandable_content_18 %}
+Standard error measures how accurately a sample statistic (such as a mean or proportion) differs from the population parameter. It is calculated as the standard deviation divided by the square root of the sample size and is expressed in the same units as the original data.
 {% endcapture %}
 
 {% capture expandable_content_19 %}
+A confidence interval is a measure of the degree of uncertainty in an estimate based on a sample distribution. 95% confidence intervals indicates that if we repeated the study many times, 95% of the confidence intervals would contain the true population value. Wider confidence intervals indicate more uncertainty in the estimate. Overlapping confidence intervals indicate that there may not be a true difference between estimates.
 {% endcapture %}
 
 {% capture expandable_content_20 %}
+A credible interval is a measure of the degree of uncertainty in an estimate based on both prior belief and the observed data. 95% credible intervals are calculated such that there is a 95% probability of the true value lying within the interval. Wider credible intervals indicate more uncertainty in the estimate.
 {% endcapture %}
 
 {% capture expandable_content_21 %}
+Statistical significance is a measure used in null hypothesis significance testing to assess the likelihood that an observed result is not merely due to random chance. A null hypothesis is a statement that there is no real effect, no real difference or no relationship in the population being studied.
+
+Assessing statistical significance involves comparing the p-value, indicating the probability of obtaining the observed data if the null hypothesis is true, to a predetermined significance level (commonly 5% or 0.05). If the p-value is below this threshold, the results are considered statistically significant, suggesting there is substantial evidence to reject the null hypothesis. If the p-value is above this threshold, the evidence does not convincingly support rejecting the null hypothesis. It doesn't necessarily prove the null hypothesis, but it doesn't provide strong support for rejecting it either.
 {% endcapture %}
 
 {% include expandable-block-start.html %}
