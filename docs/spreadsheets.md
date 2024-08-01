@@ -75,7 +75,7 @@ Many of the same principles presented here will also apply to demonstration tabl
 For an example of what an accessible reference table workbook might look like, click the download button below. ([The Government Analysis Function have also provided examples of their own](https://analysisfunction.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/#section-10).)
 
 
-<button class="download-button" onclick="location.href='https://github.com/BenCuff/github-pages-test/blob/main/docs/assets/downloads/Accessible%20workbook%20example.ods'" type="button">Download example accessible workbook</button>
+<button class="download-button" onclick="location.href='https://github.com/BenCuff/github-pages-test/raw/main/docs/assets/downloads/Accessible%20workbook%20example.ods'" type="button">Download example accessible workbook</button>
 
 
 In the sections to follow, we give detailed guidance on what you need to do to make a spreadsheet accessible. In each sub-section, a checklist of key points is provided first. More detailed information is then given beneath each checklist to explain each point.
