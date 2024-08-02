@@ -149,23 +149,15 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
 }
 
 .expandable-header{
+  -webkit-appearance: none;
+  appearance: none;
   margin: 1em 0 0 0;
   width: 100%;
   text-align: left;
   padding: 15px 10px;
-  color: black;
   border: 1pt solid grey;
   border-radius: 10px;
-  font-size: medium;
   background: #dbdbda;
-}
-
-.expandable-header h5{
-  display: inline-block;
-  margin: 0;
-  margin-block-start: 0;
-  font-size: medium;
-  font-weight: normal;
 }
 
 .expandable-header:focus {
@@ -173,10 +165,21 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   outline-offset: 1px;
 }
 
+.expandable-header h5{
+  display: inline-block;
+  margin: 0;
+  margin-block-start: 0;
+  color: black;
+  font-size: medium;
+  font-weight: normal;
+}
+
 .expandable-header[aria-expanded="false"]::before{
   content: "\f067";
   font-family: FontAwesome;
   font-weight: 400;
+  color: black;
+  font-size: medium;
 }
 
 .expandable-header[aria-expanded="true"]::before{
@@ -272,6 +275,10 @@ code{
 .image-text-container p {
   flex: 1;
   min-width: 300px;
+}
+
+.image-text-container img {
+  object-fit: contain;
 }
 
 /* Table styling*/
