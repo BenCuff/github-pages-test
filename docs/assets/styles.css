@@ -130,6 +130,7 @@ ul, ol{
   color: white;
 }
 
+
 /*Fancy elements*/
 blockquote{
   margin: 1em 0 2em 0;
@@ -152,6 +153,7 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   width: 100%;
   text-align: left;
   padding: 15px 10px;
+  color: black;
   border: 1pt solid grey;
   border-radius: 10px;
   font-size: medium;
@@ -239,6 +241,11 @@ code{
   padding-left: 10px;
 }
 
+.card img{
+  display: block; 
+  margin: auto;
+}
+
 .download-button{
   background-color: #007c90;
   color: white;
@@ -256,7 +263,6 @@ code{
   border: 2pt solid black;
 }
 
-/*Images and text side-by-side*/
 .image-text-container {
   display: flex;
   flex-wrap: wrap;
@@ -267,23 +273,6 @@ code{
   flex: 1;
   min-width: 300px;
 }
-
-/*Clickable buttons*/
-/*
-.button {
-  border: none;
-  background-color: #007c91;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: sans-serif;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-*/
 
 /* Table styling*/
 table {
@@ -322,7 +311,3 @@ td:first-child {
 @media only screen and (max-width: 350px) {
   .page-nav{display:block;}
 }
-
-<div>
-.card img{display: block; margin: auto;}
-</div>
