@@ -180,12 +180,16 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   font-weight: 400;
   color: black;
   font-size: medium;
+  margin-right: 5px;
 }
 
 .expandable-header[aria-expanded="true"]::before{
   content: "\f068";
   font-family: FontAwesome;
   font-weight: 400;
+  color: black;
+  font-size: medium;
+  margin-right: 5px;
 }
 
 .expandable-contents{
