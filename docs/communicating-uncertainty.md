@@ -245,7 +245,7 @@ Please also see our [guidance on data visualisations](data-vis) for how to forma
 Example 1 shows an illustration of a chart showing no uncertainty. Year is on the x-axis and some hypothetical variable on the y-axis. Only the central line (representing the average) is shown and there is no indication of any uncertainty in the data. Presenting the statistics in this way could mislead users by inflating their confidence in the accuracy of the data.
 
 ##### Example 1: Hypothetical variable, England, 2010 to 2020
-<img src="assets/img/communicating uncertainty/Example 1.png" alt="" width="600px">
+<img src="assets/img/communicating uncertainty/Example 1.png" alt="A line chart with no uncertainty displayed" width="600px">
 
 {% capture expandable_content_16 %}
 
@@ -299,7 +299,7 @@ We recommend that ribbon charts are used to visualise uncertainty on line charts
 In Example 2, the blue line represents the central estimate while the grey ribbon represents the 95% confidence interval. The wider the ribbon, the greater the uncertainty.
 
 ##### Example 2: Hypothetical variable, England, 2010 to 2020
-<img src="assets/img/communicating uncertainty/Example 2.png" alt="" width="600px">
+<img src="assets/img/communicating uncertainty/Example 2.png" alt="A line chart with a shaded ribbon representing 95% confidence intervals" width="600px">
 
 Note: the grey shading represents 95% confidence intervals.
 
@@ -338,7 +338,7 @@ Fan charts are commonly used to show forecasted data but are also useful if you 
 Example 3 shows an example of a fan chart. The blue line shows the central estimate while the shaded ribbons show 50% and 95% confidence intervals in dark grey and light grey, respectively.
 
 ##### Example 3: Hypothetical variable, England, 2010 to 2020
-<img src="assets/img/communicating uncertainty/Example 3.png" alt="" width="600px">
+<img src="assets/img/communicating uncertainty/Example 3.png" alt="A line chart with a shaded ribbon representing 95% and 50% confidence intervals" width="600px">
 
 Note: the light and dark grey shading represent 95% and 50% confidence intervals, respectively.
 
@@ -382,7 +382,7 @@ We recommend that error bars are used to visualise uncertainty on bar charts. To
 Example 4a shows a time-series with year on the x-axis and a hypothetical variable on the x-axis. Black error bars are included to show the uncertainty (expressed as 95% confidence intervals) in the estimate for each year. The taller the error bar, the larger the uncertainty.
 
 ##### Example 4a: Hypothetical variable, England, 2010 to 2020 
-<img src="assets/img/communicating uncertainty/Example 4.png" alt="" width="600px">
+<img src="assets/img/communicating uncertainty/Example 4.png" alt="A bar chart with error bars representing 95% confidence intervals" width="600px">
 
 Note: the error bars represent 95% confidence intervals.
 
@@ -420,7 +420,7 @@ ggplot(df, aes(year, x_bar)) +
 Example 4b shows an example with categorical data and horizontal bars. A hypothetical variable is shown on the x-axis and a categorical variable on the y-axis. Horizontal error bars are included to show the uncertainty in the estimate for each category. The wider the error bar the larger the uncertainty.
 
 ##### Example 4b: Hypothetical variable by category, England, 2024
-<img src="assets/img/communicating uncertainty/Example 5.png" alt="" width="600px">
+<img src="assets/img/communicating uncertainty/Example 5.png" alt="A horizontal bar chart with error bars representing 95% confidence intervals" width="600px">
 
 Note: the error bars represent 95% confidence intervals.
 

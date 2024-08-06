@@ -174,14 +174,14 @@ It is best practice when making clustered bar charts to leave a small gap betwee
 {% capture card_content_1 %}
 Example 1: Percentage of positive tests for three disease strains at five testing centres in England, 2024
 <div>
-    <img src="assets/img/data viz/Example 1.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+    <img src="assets/img/data viz/Example 1.png" width="450px" class="center" alt="A clustered bar chart with no gap between the bars within a cluster" style ="display: block; margin: auto;">
     </div>
 {% endcapture %}
 
 {% capture card_content_2 %}
 Example 2: Percentage of positive tests for three disease strains at five testing centres in England, 2024
 <div>
-   <img src="assets/img/data viz/Example 2.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+   <img src="assets/img/data viz/Example 2.png" width="450px" class="center" alt="A clustered bar chart that contains a small gap between bars within a cluster, and a bigger gap between clusters" style ="display: block; margin: auto;">
    </div>
 {% endcapture %}
 
@@ -235,14 +235,14 @@ Below, the stacked bar chart on the left makes non-adjacent categories in the sa
 {% capture card_content_3 %}
 Example 3: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
-    <img src="assets/img/data viz/Example 3.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+    <img src="assets/img/data viz/Example 3.png" width="450px" class="center" alt="A stacked bar chart being used to show trends over time" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_4 %}
 Example 4: Annual unemployment rates for all genders, UK, 2008 to 2024
 <div>
-   <img src="assets/img/data viz/Example 4.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+   <img src="assets/img/data viz/Example 4.png" width="450px" class="center" alt="A single-category being used to show a trend over time" style ="display: block; margin: auto;">
    </div>
 {% endcapture %}
 
@@ -300,20 +300,20 @@ When multiple categories are involved, it is best practice to use a line chart l
 {% capture card_content_5 %}
 Example 5: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
-    <img src="assets/img/data viz/Example 5.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+    <img src="assets/img/data viz/Example 5.png" width="450px" class="center" alt="A clustered bar chart with many bars, making individual lines thin and difficult to read" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_6 %}
 Example 6: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
-   <img src="assets/img/data viz/Example 6.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+   <img src="assets/img/data viz/Example 6.png" width="450px" class="center" alt="A line chart with 3 lines, clearly showing trends over time for each line" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_5 title="❌ To be avoided: showing multiple categories in time series data with stacked bar charts" %}
-  {% include card.html content=card_content_6 title="✔️ Best practice: using bar charts or line charts for time series data only when there is one category" %}
+  {% include card.html content=card_content_5 title="❌ To be avoided: using a clustered bar chart when there are many lines to display %}
+  {% include card.html content=card_content_6 title="✔️ Best practice: using a line chart to clearly show trends over time for multiple groups" %}
 {% include cards-container-end.html %}
   
   
@@ -366,14 +366,14 @@ One of the benefits of using week or quarter numbers is that it allows the same 
 {% capture card_content_7 %}
 Example 7: Quarterly survey respondents, England and Wales, 2022 to 2023
 <div>
-    <img src="assets/img/data viz/Example 7.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+    <img src="assets/img/data viz/Example 7.png" width="450px" class="center" alt="A single-category bar chart where a different colour is used for each bar" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_8 %}
 Example 8: Quarterly survey respondents, England and Wales, 2022 to 2023
 <div>
-   <img src="assets/img/data viz/Example 8.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+   <img src="assets/img/data viz/Example 8.png" width="450px" class="center" alt="A single-category bar chart where each bar is the same colour" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -423,14 +423,14 @@ When showing weekly data, one option might be to include some calendar dates bel
 {% capture card_content_9 %}
 Example 9: weekly test positivity rates, UK, past 52 weeks (no calendar dates)
 <div>
-<img src="assets/img/data viz/Example 9.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 9.png" width="450px" class="center" alt="A line chart with ISO week numbers on the x-axis" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_10 %}
 Example 10: weekly test positivity rates, UK, past 52 weeks (including calendar dates)
 <div>
-<img src="assets/img/data viz/Example 10.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 10.png" width="450px" class="center" alt="A line chart with dates on the x-axis" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -546,14 +546,14 @@ Bar charts are a good option to show data ranked in ascending or descending orde
 {% capture card_content_11 %}
 Example 11: top 10 average recorded wingspan of British birds
 <div>
-<img src="assets/img/data viz/Example 11.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 11.png" width="450px" class="center" alt="A bar chart where bars are not in a sensible order" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_12 %}
 Example 12: top 10 average recorded wingspan of British birds, ranked
 <div>
-<img src="assets/img/data viz/Example 12.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 12.png" width="450px" class="center" alt="A bar chart where bars are ordered according to their value" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -604,14 +604,14 @@ This can be a useful way to compare categories that have very small differences 
 {% capture card_content_12 %}
 Example 13: Number of cases, UK, 2014 to 2024
 <div>
-<img src="assets/img/data viz/Example 13.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 13.png" width="450px" class="center" alt="A bar chart where the y-axis does not start at zero" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_13 %}
 Example 14: Number of cases, UK, 2014 to 2024
 <div>
-<img src="assets/img/data viz/Example 14.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 14.png" width="450px" class="center" alt="A bar chart where the y-axis starts at zero" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -700,14 +700,14 @@ It is possible to use different data marker shapes or textured lines such as dot
 {% capture card_content_14 %}
 Example 15: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
-<img src="assets/img/data viz/Example 15.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 15.png" width="450px" class="center" alt="A line chart where each line is identified through the use of a coloured legend" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_15 %}
 Example 16: Annual unemployment rates by gender, UK, 2008 to 2024
 <div>
-<img src="assets/img/data viz/Example 16.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 16.png" width="450px" class="center" alt="A line chart where each line is directly labelled" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -761,14 +761,14 @@ You should not use patterns on chart bars to distinguish different categories as
 {% capture card_content_16 %}
 Example 17: Number of buyers of eight car models by age, UK, 2024
 <div>
-<img src="assets/img/data viz/Example 17.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 17.png" width="450px" class="center" alt="A bar chart where patterns have been applied to the bars" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_17 %}
 Example 18: Number of buyers of eight car models by age, UK, 2024
 <div>
-<img src="assets/img/data viz/Example 18.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 18.png" width="450px" class="center" alt="A bar chart where simple block colours have been applied to the bars" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -818,14 +818,14 @@ If your labels are too long to fit horizontally on the bottom of the chart, you 
 {% capture card_content_18 %}
 Example 19: Market shares of four largest importers for a product, USA, 2024
 <div>
-<img src="assets/img/data viz/Example 19.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 19.png" width="450px" class="center" alt="A bar chart labelled using slanted text" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_19 %}
 Example 20: Market shares of four largest importers for a product, USA, 2024
 <div>
-<img src="assets/img/data viz/Example 20.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 20.png" width="450px" class="center" alt="A bar chart labelled using horizontal text" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -872,14 +872,14 @@ Slanted text can pose a particular accessibility barrier for some users with vis
 {% capture card_content_20 %}
 Example 21: Annual unemployment rate for females, UK, 2008 to 2024
 <div>
-<img src="assets/img/data viz/Example 21.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 21.png" width="450px" class="center" alt="A line chart with slanted x-axis labels" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_21 %}
 Example 22: Annual unemployment rate for females, UK, 2008 to 2024
 <div>
-<img src="assets/img/data viz/Example 22.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 22.png" width="450px" class="center" alt="A line chart with horiztonal x-axis labels" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -984,7 +984,7 @@ Similarly, it is usually best to use only one type of chart on each set of axes.
 {% capture card_content_20 %}
 Example 23: Annual unemployment rate and number unemployed, UK, 2008 to 2024
 <div>
-<img src="assets/img/data viz/Example 23.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 23.png" width="450px" class="center" alt="A chart with 2 y-axes, showing both a bar chart and a line chart on the same image" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -997,14 +997,14 @@ Example 23: Annual unemployment rate and number unemployed, UK, 2008 to 2024
 {% capture card_content_21 %}
 Example 24a: Number unemployed in the UK, 2005 to 2021
 <div>
-<img src="assets/img/data viz/Example 24a.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 24a.png" width="450px" class="center" alt="A side by side chart: this image shows a bar chart, the next shows a line chart" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_22 %}
 Example 24b: Annual unemployment rate in the UK, 2005 to 2021
 <div>
-<img src="assets/img/data viz/Example 24b.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 24b.png" width="450px" class="center" alt="A side by side chart: this image shows a line chart, the previous shows a bar chart" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -1022,14 +1022,14 @@ Shading, borders, textures, and unnecessary embellishments should be avoided. Ba
 {% capture card_content_23 %}
 Example 25: Population growth of different towns, South West England, 2000 to 2020
 <div>
-<img src="assets/img/data viz/Example 25.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 25.png" width="450px" class="center" alt="A single-category bar chart where each bar is a different colour" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_24 %}
 Example 26: Population growth of different towns, South West England, 2000 to 2020
 <div>
-<img src="assets/img/data viz/Example 26.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 26.png" width="450px" class="center" alt="A single-category bar chart where each bar is the same colour" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -1047,14 +1047,14 @@ Presenting more than four lines on a line chart can be done, but it often result
 {% capture card_content_25 %}
 Example 27: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
 <div>
-<img src="assets/img/data viz/Example 27.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 27.png" width="450px" class="center" alt="A line chart with 6 different overlapping lines" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
 {% capture card_content_26 %}
 Example 28: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
 <div>
-<img src="assets/img/data viz/Example 28.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 28.png" width="450px" class="center" alt="A small multiples plot, showing each line on a separate panel" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -1111,7 +1111,7 @@ Where you would like to call attention to one category, for instance when you ar
 {% capture card_content_27 %}
 Example 29: Daily test positivity rates in June for an infectious disease, UK, 2019 to 2024
 <div>
-<img src="assets/img/data viz/Example 29.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 29.png" width="450px" class="center" alt="A focus chart where one line is in bold and the other lines are in a lighter grey colour in the background" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
@@ -1183,7 +1183,7 @@ Alternatively, you can combine small multiples and focus charts into one, showin
 {% capture card_content_28 %}
 Example 30: Rate of new infections, UK, 2018 to 2024
 <div>
-<img src="assets/img/data viz/Example 30.png" width="450px" class="center" alt="" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 30.png" width="450px" class="center" alt="A series of focus charts where one line is in bold and the other lines are in a lighter grey colour in the background. Each panel is used to highlight a different line. " style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 

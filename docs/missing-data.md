@@ -254,7 +254,7 @@ You should also highlight discontinuities in time series data when presenting ch
 {% capture card_content_8 %}
 Example 5: line chart of fictional annual values, England, 2018 to 2023.
 
-<img src="assets/img/missing data/missing-data_bad-chart-example.png" alt="">
+<img src="assets/img/missing data/missing-data_bad-chart-example.png" alt="A line chart which does not clearly show that there is a missing value">
 
 This figure shows a line chart with a discontinuity. It joins two data points in 2019 and 2021, despite a missing data point in 2020.
 
@@ -263,7 +263,7 @@ This figure shows a line chart with a discontinuity. It joins two data points in
 {% capture card_content_9 %}
 Example 6: line chart of fictional annual values, England, 2018 to 2023.
 
-<img src="assets/img/missing data/missing-data_good-chart-example.png" alt="">
+<img src="assets/img/missing data/missing-data_good-chart-example.png" alt="A line chart which clearly shows a missing value by leaving a gap in the line, marking out the gap with dashed lines and an annotation">
 
 This figure shows a line chart with a discontinuity. It leaves a gap in the line and marks out the gap with two vertical dashed lines and annotation stating the data was not collected in 2020 due to the coronavirus (COVID-19) pandemic.
 {% endcapture %}
