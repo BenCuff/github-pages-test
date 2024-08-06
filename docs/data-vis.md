@@ -312,7 +312,7 @@ Example 6: Annual unemployment rates by gender, UK, 2008 to 2024
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_5 title="❌ To be avoided: using a clustered bar chart when there are many lines to display %}
+  {% include card.html content=card_content_5 title="❌ To be avoided: using a clustered bar chart when there are many lines to display" %}
   {% include card.html content=card_content_6 title="✔️ Best practice: using a line chart to clearly show trends over time for multiple groups" %}
 {% include cards-container-end.html %}
   
