@@ -13,7 +13,7 @@ layout: guidance-page
 
 
 
-## Introduction to accessibility and different publication formats
+## Accessibility and different publication formats
 
 ### Why is accessibility important?
 

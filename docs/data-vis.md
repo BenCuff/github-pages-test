@@ -11,7 +11,7 @@ layout: guidance-page
 
 {% include sources-text.md %}
 
-## Introduction
+## How to use this guidance
 
 Good accessibility brings benefits to all users, improving the quality and value of our statistics, and the trust users have in us.
 
