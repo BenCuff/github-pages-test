@@ -818,7 +818,7 @@ If your labels are too long to fit horizontally on the bottom of the chart, you 
 {% capture card_content_18 %}
 Example 19: Market shares of four largest importers for a product, USA, 2024
 <div>
-<img src="assets/img/data viz/Example 19.png" width="450px" class="center" alt="A bar chart labelled using slanted text" style ="display: block; margin: auto;">
+<img src="assets/img/data viz/Example 19.png" width="450px" class="center" alt="A bar chart labelled using vertical text" style ="display: block; margin: auto;">
 </div>
 {% endcapture %}
 
