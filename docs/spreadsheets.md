@@ -1,5 +1,5 @@
 ---
-title: "Accessibility: Spreadsheets"
+title: "Creating clear and accessible spreadsheets"
 layout: guidance-page
 ---
 
@@ -7,7 +7,7 @@ layout: guidance-page
 > ## Main messages
 > - Before publishing a spreadsheet of data (including as a supplementary table to a written report), consider why you are publishing it and what the best format for it might be.
 > - Where users will want to open, view and read the contents of a spreadsheet in a manual fashion (rather than only wanting to read the data into analytical software), that data should be presented in an accessible ODS spreadsheet file.
-> - The accessibility of a spreadsheet should be considered at each level, from the overall workbook down to individual cells where special formatting might be needed. Specific guidance and checklists relating to each of these levels are provided throughout Part 2 of this document.
+> - The accessibility of a spreadsheet should be considered at each level, from the overall workbook down to individual cells where special formatting might be needed. 
 
 {% include sources-text.md %}
 
@@ -24,7 +24,7 @@ For public bodies, making online content accessible is also now mandated by law.
 
 ### Publication formats
 
-There are 3 main types of tables that might be produced, each of which lend themselves to different publication formats [6]. You should first consider which of these formats are the most appropriate for what you are trying to achieve through the presentation of your data.
+There are 3 main types of tables that might be produced, each of which lend themselves to different publication formats. You should first consider which of these formats are the most appropriate for what you are trying to achieve through the presentation of your data.
 
 {% capture card_content_1 %}
 These are used to help make or reinforce a particular point in a clear and simple way. They are best placed in the body of a report so that users can access the information quickly, and do not need to leave the page to find it.
@@ -48,7 +48,7 @@ These are specifically used to allow users to carry out more detailed analyses o
 
 It is important to further note the distinction between reference tables and machine readable datasets, and their different accessibility requirements. Specifically:
 
-* wherever you might expect users to want to open, view and read the contents of a spreadsheet in a manual fashion, you must provide that spreadsheet in an accessible ODS format (open formats such as ODS do not rely on users having access to specific software such as Excel)
+* wherever you might expect users to want to open, view and read the contents of a spreadsheet in a manual fashion, you should provide that spreadsheet in an accessible ODS format (open formats such as ODS do not rely on users having access to specific software such as Excel)
 * where you would only expect users to want to load your spreadsheet into analytical software for more detailed analysis, or to combine it with other datasets, accessibility legislation does not apply; in those cases, CSV files can be used, accompanied by a JSON metadata file for information about the data
 * in some cases, you may need to provide both file formats (ODS and CSV), to offer one version that is accessible for users to view the contents, and one version that is optimised for machine readability; we would advise, however, that this approach should be taken only when a CSV file is a key user need as it can cause version control issues and complicate the user journey when the same information is presented in two different formats
 
@@ -68,14 +68,14 @@ The guidance in this section is derived from multiple sources which contain more
 - [the Office for National Statistics guidance on accessibility](https://style.ons.gov.uk/category/accessibility/)
 - [the Central Digital and Data Office guidance on creating and sharing spreadsheets](https://www.gov.uk/guidance/creating-and-sharing-spreadsheets)
 
-Note that we will only focus on the more common issues we tend to observe and the citations provided may help you find more exhaustive advice. UKHSA colleagues can contact us via <UKHSA_HOPSTATS@ukhsa.gov.uk> if you have any specific questions not answered here.
+Note that we will only focus on the more common issues we tend to observe and the citations provided may help you find more exhaustive advice. UKHSA colleagues can contact us via <UKHSA_HOPSTATS@ukhsa.gov.uk> for any specific questions not answered here.
 
 Many of the same principles presented here will also apply to demonstration tables found within reports and to machine-readable datasets. UKHSA colleagues can again contact us for advice on these if needed. 
 
-For an example of what an accessible reference table workbook might look like, click the download button below. [The Government Analysis Function have also provided examples](https://analysisfunction.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/#section-10).
+For an example of what an accessible reference table workbook might look like, click the download button below. ([The Government Analysis Function have also provided examples of their own](https://analysisfunction.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/#section-10).)
 
 
-<button class="download-button" onclick="location.href='#'" type="button">Download example accessible workbook</button>
+<button class="download-button" onclick="location.href='https://github.com/BenCuff/github-pages-test/raw/main/docs/assets/downloads/Accessible%20workbook%20example.ods'" type="button">Download example accessible workbook</button>
 
 
 In the sections to follow, we give detailed guidance on what you need to do to make a spreadsheet accessible. In each sub-section, a checklist of key points is provided first. More detailed information is then given beneath each checklist to explain each point.
@@ -83,7 +83,7 @@ In the sections to follow, we give detailed guidance on what you need to do to m
 
 ### Tools for automating accessibility
 
-Some tools have been developed that can help automate the production of accessible reference tables, such as the ‘[a11ytables](https://co-analysis.github.io/a11ytables/)’ (accessibility tables) package for R, and the ‘[gptables](https://github.com/best-practice-and-impact/gptables)’ (good practice tables) package for Python. Both have been produced by the Government Analysis Function. These are not intended to produce perfectly accessible tables, so do still require human input and review, but they may help automate many of the required features.
+Some tools have been developed that can help automate the production of accessible reference tables, such as the ‘[a11ytables](https://co-analysis.github.io/a11ytables/)’ (accessibility tables) package for R, and the ‘[gptables](https://github.com/best-practice-and-impact/gptables)’ (good practice tables) package for Python. Both have been produced by the Government Analysis Function. These are not intended to produce perfectly accessible tables, so do still require human input and review, but they may help automate many of the required features, in line with the principles of [Reproducible Analytical Pipelines (RAP)](rap).
 
 For UKHSA colleagues wanting support on implementing these packages, please contact <UKHSA_HOPSTATS@ukhsa.gov.uk>.
 
@@ -103,7 +103,7 @@ A workbook is a file that contains multiple worksheets (tabs). Every workbook sh
 
 
 {% capture expandable_content_1 %}
-As explained above, reference tables should be presented in an ODS file. This is so that specific software is not needed to open them, which can be a barrier to some users.
+Reference tables, particularly those for publication on GOV.UK should be presented in an ODS file. This is so that specific software is not needed to open them, which can be a barrier to some users.
 
 You can produce an ODS file from Excel via “File” and “Save As”, then choose “OpenDocument Spreadsheet (*.ods)“.
 {% endcapture %}
@@ -121,9 +121,9 @@ Under “Summary”, you should add:
 {% endcapture %}
 
 {% capture expandable_content_3 %}
-You must provide a cover sheet to convey information about the data to users.
+A cover sheet is important as it helps convey information about the data to users.
 
-All cover sheet information should be kept in Column A, not in a floating text box or in other columns, for good accessibility.
+All cover sheet content should be kept in Column A, not in a floating text box or in other columns, for good accessibility.
 
 Cover sheets should include:
 
@@ -176,27 +176,27 @@ Tabs should be named to give some indication of their content for easier navigat
 {% endcapture %}
 
 {% capture expandable_content_7 %}
-Having a descriptive title and subtitle also helps the user quickly understand the content.
+Having a descriptive title and subtitle helps the user quickly understand the content.
 
-Screen readers usually navigate down Column A first so everything a user needs to know should be in Column A. Cell A1 should therefore be the table title; Cell A2 should content the subtitle where needed.
+Screen readers usually navigate down Column A first so everything a user needs to know should be in Column A. Cell A1 should therefore be the table title; Cell A2 should contain the subtitle where needed.
 {% endcapture %}
 
 {% capture expandable_content_8 %}
 Notes can be used to give more information about the data. Shorthand might also need to be explained, including what the shorthand looks like and where to find it in the table.
 
-It is important that this information is presented in Column A only, and notes should always be above the table to ensure that they are not missed. Each subsequent note should be on a new row.
+It is important that this information is presented in Column A only, and notes should always be above the table to ensure that they are not missed (which can easily happen if they are presented beneath a table, particularly a long one). Each subsequent note should be on a new row.
 
-Where the same notes apply to multiple tabs, you may decide to explain those notes either on the cover sheet or a separate notes tab instead of above each individual table. If you do this, you should still explain above each table where explanations of notes can be found. For example: "Some cells refer to notes. An explanation of these notes can be found on the separate notes tab." It is best not to add hyperlinks for notes as these can get annoying for the user when those hyperlinks are accidentally triggered, especially when your workbook contains multiple tabs. 
+Where the same notes apply to multiple tabs, you may decide to explain those notes either on the cover sheet or a separate notes tab instead of above each individual table. If you do this, you should still explain above each table where explanations of notes can be found. For example: "Some cells refer to notes. An explanation of these can be found on the separate notes tab." It is best not to add hyperlinks when doing this as it can get annoying for the user when those hyperlinks are accidentally triggered, especially when your workbook contains multiple tabs. 
 {% endcapture %}
 
 {% capture expandable_content_9 %}
 Ideally, each worksheet should only have one table as this makes the content very clear for users (additional tables might be missed) and having a single table per tab is also better for machine readability.
 
-However, there may be cases where multiple tables per worksheet might be needed, such as when tables are strongly grouped or where there would otherwise be a large number of tabs in the workbook. In those cases, you should give a worksheet title describing the tables contained within the sheet, with “This worksheet contains 3 tables” (for example) in Column A, immediately beneath the title and subtitle. Each table should then be given a separate title of “Table 1a”, “Table 1b”, and so on [1].
+However, there may be cases where multiple tables per worksheet might be needed, such as when tables are strongly grouped or where there would otherwise be a large number of tabs in the workbook. In those cases, you should give a worksheet title describing the tables contained within the sheet, with “This worksheet contains 3 tables” (for example) in Column A, immediately beneath the title and subtitle. Each table should then be given a separate table number of “Table 1a”, “Table 1b”, and so on (noting that a descriptive title should also be given for each).
 {% endcapture %}
 
 {% capture expandable_content_10 %}
-Remove all blank rows or columns as they can make a spreadsheet difficult to navigate. If you want to create separation between elements, instead adjust the row height or column width, and then re-align the text as necessary to achieve the desired separation.
+Remove all blank rows or columns as they can make a spreadsheet difficult to navigate. If you want to create separation between elements, instead adjust the row height or column width, and then re-align the text as necessary to achieve the desired visual separation.
 {% endcapture %}
 
 {% capture expandable_content_11 %}
@@ -262,11 +262,13 @@ To mark up a table in Excel:
 {% capture expandable_content_14 %}
 Giving a meaningful name here can help with navigation, particularly for users of assistive technologies.
 
-In Excel, you can name a table by clicking on a table cell and then “Table Design” in the ribbon - you will then see a “Table Name” property.
+In Excel, you can name a table by clicking on a table cell and then “Table Design” in the ribbon (after marking up the table; see the section above). You will then see a “Table Name” property.
+
+Note that words need to be separated by an underscore here, as spaces are not allowed. For example: "Table_1_Infections_by_age".
 {% endcapture %}
 
 {% capture expandable_content_15 %}
-Because the above navigation features only work on a single header row, it is important not to have any secondary header rows, which also cause complications for machine readability.
+Because the above navigation features only work on a single header row, it is important not to have any secondary header rows. These also cause complications for machine readability.
 
 Where needed, multiple pieces of header information can be combined into a single row through the use of colons. For example, “Heading level 1: Heading level 2”.
 
@@ -276,7 +278,7 @@ Ensuring that every column has a heading is important for accessibility and usab
 {% capture expandable_content_16 %}
 Having blank rows or columns, or split or merged cells in a table is bad for accessibility as it makes the content harder to navigate, particularly for users of assistive technologies but also for other users as well (for example, those wishing to load your data into analytical software).
 
-If you wish to apply some separation between rows or columns, you should instead adjust the row height or column width, changing the text alignment as appropriate.
+If you wish to apply some visual separation between rows or columns, you should instead adjust the row height or column width, changing the text alignment as appropriate.
 
 For similar reasons, you should also avoid hidden rows or columns as these can cause confusion for all users.
 {% endcapture %}
@@ -294,7 +296,9 @@ Right aligning numerical columns helps users more quickly identify different siz
 {% endcapture %}
 
 {% capture expandable_content_20 %}
-Macros in spreadsheets might be difficult to access for certain users, such as those relying on assistive technologies and those that only use a keyboard. Macros can also be confusing for any user when it is not clear how they work. It is therefore best to avoid these, providing static tables instead, or an online interactive dashboard if the interactivity is important.
+Macros in spreadsheets might be difficult to access for certain users, such as those relying on assistive technologies and those that only use a keyboard. Macros can also be confusing for any user when it is not clear how they work. It is therefore best to avoid these, providing static tables instead. 
+
+An online interactive dashboard can be used if the interactivity is important.
 {% endcapture %}
 
 {% capture expandable_content_21 %}
@@ -302,13 +306,13 @@ Columns and rows should be presented in a logical order, for example alphabetica
 {% endcapture %}
 
 {% capture expandable_content_22 %}
-Performing calculations such as totals, averages and percentage changes for the user prevents them from having to do it, potentially making errors in the process.
+Performing calculations such as totals, averages and percentage changes for the user prevents them from having to do it (and potentially making errors in the process).
 {% endcapture %}
 
 {% capture expandable_content_23 %}
 The use of colour to communicate information can be difficult or impossible to access for some users with visual impairments, so should be avoided. 
 
-Colour can be used for emphasis (for example, to highlight cells affected by notes), so long as the colour contrast is good and users do not need to rely on colour alone to access the information being conveyed by the colour. For example, when presenting a heatmap, numerical values should also be presented within each cell. 
+Colour can be used for emphasis (for example, to highlight cells affected by notes), so long as the colour contrast is good and users do not need to rely on colour alone to access the information being conveyed by the colour. For example, when presenting a coloured heatmap, numerical values should also be presented within each cell. 
 {% endcapture %}
 
 {% capture expandable_content_24 %}
@@ -316,7 +320,7 @@ Enabling filter dropdown options can obscure content in the header row. It is th
 {% endcapture %}
 
 {% capture expandable_content_25 %}
-Total rows should not be found in the middle of the table. This is because they can be easily passed over by the user and might be accidentally included when calculating column totals, for example.
+Total rows should not be presented in the middle of a table. This is because they can be easily passed over by the user and might be accidentally included when calculating column totals, for example.
 {% endcapture %}
 
 
@@ -355,19 +359,23 @@ Some formatting requirements may apply to individual cell contents. Cells should
 {% capture expandable_content_26 %}
 Ensuring that numerical columns do not contain non-numeric characters helps ensure that the data is machine readable and that any calculations performed on that column are done so correctly.
 
-Where a cell contains any characters or symbols (for example, an asterisk), that cell will usually be omitted when a user tries to sum that column, or calculate an average, leading to incorrect results. Any notes relating to specific cells should instead be provided above the table, or in a separate “notes” column, alongside but separate to the numerical data column.
+Where a cell contains any characters or symbols (for example, a number with an asterisk), that cell will usually be omitted when a user tries to sum that column, or calculate an average, leading to incorrect results. Any notes relating to specific cells should instead be provided above the table, or in a separate “notes” column, alongside but separate to the numerical data column.
 
-The reason why shorthand used to denote an omission is acceptable within numerical columns is because you would not want to include those cells in any calculations.
+Shorthand used to denote an omission (for example, due to [missing data](missing-data), or because a value has been suppressed to protect confidentiality) is acceptable within numerical columns. This is because those cells would not need to be included in any calculations. 
 {% endcapture %}
 
 {% capture expandable_content_27 %}
-If you are presenting multiple numbers, such as a value followed by its upper and lower confidence limits, it is best to place these in separate columns. This helps to avoid any confusion as to what the numbers mean but more importantly it enables better machine-readability, removing the need for the user to try and separate out the different numbers through code.
+If you are presenting multiple numbers, such as a value followed by its upper and lower confidence interval limits, it is best to place each of these numbers in separate columns. This helps to avoid any confusion as to what the numbers mean but more importantly it enables better machine-readability, removing the need for the user to try and separate out the different numbers through code.
+
+(See our separate guidance on [communicating uncertainty](communicating-uncertainty).)
 {% endcapture %}
 
 {% capture expandable_content_28 %}
-Symbols, such as asterisks, and superscript text, often go against accessibility requirements. This is because they can be confusing for some users when their meaning is not clear, and symbols are often skipped over by assistive technologies such as screen-reader software. Asterisks and superscript text can also be difficult to see for people with visual impairments.
+Symbols, such as asterisks, and superscript text, often go against accessibility requirements. This is because symbols are often skipped over by assistive technologies such as screen-reader software, and asterisks and superscript text can be difficult to see for people with visual impairments. Symbols can also be confusing for all users when their meaning is not made clear. 
 
-Instead of symbols, letters or short words within square brackets should be used, such as “[x]” or “[note 1]”. Where multiple notes need to be referenced, they should be presented in their own brackets as “[note 1][note 2]”, rather than “[note 1,2]”, as this is better for machine readability and it is less likely that users may skim over the fact that 2 notes have been given. Widely recognised unit markers such ‘%’ and ‘£’ may be acceptable for accessibility as they are recognised by most assistive technologies. However, it may be better to present unit information within the column header rather than against each value, so as to not affect the machine readability of numerical columns.
+Instead of symbols, letters or short words within square brackets should be used, such as “[x]” or “[note 1]”. Where multiple notes need to be referenced, they should be presented in their own brackets as “[note 1][note 2]”, rather than “[note 1,2]”, as this is better for machine readability and it is less likely that users may skim over the fact that 2 notes have been given. 
+
+Widely recognised unit markers such ‘%’ and ‘£’ may be acceptable for accessibility as they are recognised by most assistive technologies. However, it may be better to present unit information within the column header rather than against each value, so as to not affect the machine readability of numerical columns.
 
 [The Government Analysis Function has suggested the following shorthand for common use cases](https://analysisfunction.civilservice.gov.uk/policy-store/symbols-in-tables-definitions-and-help/):
 

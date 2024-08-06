@@ -8,8 +8,8 @@ layout: guidance-page
 >- Quality assurance should be planned in advance, with roles, responsibilities, and the extent of assurance activities understood fully by the entire team.
 >- Quality assurance should be appropriate and proportionate to the scope, risks, methodology, and data source of a piece of analysis.
 >- Understanding user needs is important when measuring the quality of your data. Perfect data quality may not always be achievable and therefore focus should be given to ensuring the data is as fit for purpose as it can be.
->- Teams should hold discussions to review quality and plan quality assurance on a semi-regular basis, identifying gaps in current procedures (our [quality review conversation tool](https://github.com/BenCuff/github-pages-test/blob/main/docs/assets/downloads/QA%20review%20conversation%20tool.xlsx) can help facilitate this).
->- A quality assurance log should be created and maintained (see our [QA log template](https://github.com/BenCuff/github-pages-test/blob/main/docs/assets/downloads/QA%20log%20template.xlsx)). This is a crucial tool to help teams plan, record, and sign off on quality; it provides an audit trail of everything that was checked and what the outcomes were.
+>- Teams should hold discussions to review quality and plan quality assurance on a semi-regular basis, identifying gaps in current procedures (our [quality review conversation tool](https://github.com/BenCuff/github-pages-test/raw/main/docs/assets/downloads/QA%20review%20conversation%20tool.xlsx) can help facilitate this).
+>- A quality assurance log should be created and maintained (see our [QA log template](https://github.com/BenCuff/github-pages-test/raw/main/docs/assets/downloads/QA%20log%20template.xlsx)). This is a crucial tool to help teams plan, record, and sign off on quality; it provides an audit trail of everything that was checked and what the outcomes were.
 >- The quality assurance process and any outstanding quality concerns should be clearly communicated alongside the final results of the analysis.
 
 
@@ -27,7 +27,7 @@ The quality of an analytical output may be thought of in simple terms as its “
 4. Comparability and Coherence
 5. Accessibility and Clarity
 
-All quality assessments of official statistics should be conducted in line with these dimensions and both our [QA review conversation tool](https://github.com/BenCuff/github-pages-test/blob/main/docs/assets/downloads/QA%20review%20conversation%20tool.xlsx) and [QA log template](https://github.com/BenCuff/github-pages-test/blob/main/docs/assets/downloads/QA%20log%20template.xlsx) sets out these dimensions for you to consider.
+All quality assessments of official statistics should be conducted in line with these dimensions and both our [QA review conversation tool](https://github.com/BenCuff/github-pages-test/raw/main/docs/assets/downloads/QA%20review%20conversation%20tool.xlsx) and [QA log template](https://github.com/BenCuff/github-pages-test/raw/main/docs/assets/downloads/QA%20log%20template.xlsx) sets out these dimensions for you to consider.
 
 See inside the expandable sections below for example questions you might consider as part of each dimension.
 
@@ -136,7 +136,7 @@ It is our role as analysts to explain how any limitations in our outputs might i
 
 
 
-These key stages along the data journey, alongside the 5 Dimensions of Quality of the European Statistical System (ESS), form the basis of our [QA review conversation tool](https://github.com/BenCuff/github-pages-test/blob/main/docs/assets/downloads/QA%20review%20conversation%20tool.xlsx) and [QA log template](https://github.com/BenCuff/github-pages-test/blob/main/docs/assets/downloads/QA%20log%20template.xlsx).
+These key stages along the data journey, alongside the 5 Dimensions of Quality of the European Statistical System (ESS), form the basis of our [QA review conversation tool](https://github.com/BenCuff/github-pages-test/raw/main/docs/assets/downloads/QA%20review%20conversation%20tool.xlsx) and [QA log template](https://github.com/BenCuff/github-pages-test/raw/main/docs/assets/downloads/QA%20log%20template.xlsx).
 
 
 ## Roles and responsibilities
@@ -204,18 +204,18 @@ If the work is being used for a new purpose, the analytical assurer should obtai
 2. QA log template
 
 <div style="display:flex; flex-wrap:wrap;">
-  <button class="download-button" onclick="location.href='https://github.com/BenCuff/github-pages-test/blob/main/docs/assets/downloads/QA%20review%20conversation%20tool.xlsx'" type="button">
+  <button class="download-button" onclick="location.href='https://github.com/BenCuff/github-pages-test/raw/main/docs/assets/downloads/QA%20review%20conversation%20tool.xlsx'" type="button">
            Download QA review conversation tool</button>
            
-  <button class="download-button" onclick="location.href='https://github.com/BenCuff/github-pages-test/blob/main/docs/assets/downloads/QA%20log%20template.xlsx'" type="button">
+  <button class="download-button" onclick="location.href='https://github.com/BenCuff/github-pages-test/raw/main/docs/assets/downloads/QA%20log%20template.xlsx'" type="button">
            Download QA log template</button>
 </div>
 
 ### What is the QA review conversation tool?
-Our [QA review conversation tool](https://github.com/BenCuff/github-pages-test/blob/main/docs/assets/downloads/QA%20review%20conversation%20tool.xlsx) was created to provide a useful starting point for thinking about the QA of statistical outputs in line with the five European Statistical System (ESS) Quality Dimensions. It has been designed to facilitate team discussions about quality at either the start of a new project or at regular intervals for cyclical releases to help teams plan QA, identifying gaps in current procedures. We have compiled discussion questions that teams can use to reflect on the quality of their analysis, identify areas for improvement, and consider how to communicate quality to users. The outcomes of these discussions should inform QA plans and QA logs which teams should be using during QA activities. 
+Our [QA review conversation tool](https://github.com/BenCuff/github-pages-test/raw/main/docs/assets/downloads/QA%20review%20conversation%20tool.xlsx) was created to provide a useful starting point for thinking about the QA of statistical outputs in line with the five European Statistical System (ESS) Quality Dimensions. It has been designed to facilitate team discussions about quality at either the start of a new project or at regular intervals for cyclical releases to help teams plan QA, identifying gaps in current procedures. We have compiled discussion questions that teams can use to reflect on the quality of their analysis, identify areas for improvement, and consider how to communicate quality to users. The outcomes of these discussions should inform QA plans and QA logs which teams should be using during QA activities. 
 
 ### What is the QA log template?
-To help teams record and sign off on quality, we have also created a [QA log template](https://github.com/BenCuff/github-pages-test/blob/main/docs/assets/downloads/QA%20log%20template.xlsx). This approach is standard practice across government statistics and should ensure that a QA mindset is present when conducting analytical projects. A QA log should be used every time you are producing a publication.
+To help teams record and sign off on quality, we have also created a [QA log template](https://github.com/BenCuff/github-pages-test/raw/main/docs/assets/downloads/QA%20log%20template.xlsx). This approach is standard practice across government statistics and should ensure that a QA mindset is present when conducting analytical projects. A QA log should be used every time you are producing a publication.
 
 A QA log will:
 
@@ -234,7 +234,7 @@ In both templates, there are sheets relating to the different stages of the QA p
 
 In the review conversation tool, each sheet contains space for the analyst to comment on how well requirements are being met and to note any outstanding issues or actions to improve quality or how they communicate quality to users. There is also space for the assurer to provide their sign off that they’re satisfied with the QA process at each stage.
 
-In the QA log template, suggested criteria are given in order to attain a high level of quality. Each criterion is given one row, with space for an assurer to describe whether the criterion has been met, the steps they have taken to assess the project against that criterion, and any outstanding work that may need to be completed. This template was created with the intention that teams can adapt and customise it dependent on their needs to create a comprehensive overview. While it is not a complete list of QA concerns, the template provides a starting point for thinking about the assurance process.
+In the QA log template, suggested criteria are given in order to attain a high level of quality. Each criterion is given one row, with space for an assurer to describe whether the criterion has been met, the steps that have taken to assess the project against that criterion, and any outstanding work that may need to be completed. This template was created with the intention that teams can adapt and customise it dependent on their needs to create a comprehensive overview. While it is not a complete list of QA concerns, the template provides a starting point for thinking about the assurance process.
 
 The expandable sections below cover in more detail the five main stages of a traditional publication cycle, giving guiding questions to consider and links to further resources, to help you customise your QA logs based on your project and user needs.
 

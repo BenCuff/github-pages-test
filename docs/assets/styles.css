@@ -130,6 +130,7 @@ ul, ol{
   color: white;
 }
 
+
 /*Fancy elements*/
 blockquote{
   margin: 1em 0 2em 0;
@@ -148,22 +149,15 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
 }
 
 .expandable-header{
+  -webkit-appearance: none;
+  appearance: none;
   margin: 1em 0 0 0;
   width: 100%;
   text-align: left;
   padding: 15px 10px;
   border: 1pt solid grey;
   border-radius: 10px;
-  font-size: medium;
   background: #dbdbda;
-}
-
-.expandable-header h5{
-  display: inline-block;
-  margin: 0;
-  margin-block-start: 0;
-  font-size: medium;
-  font-weight: normal;
 }
 
 .expandable-header:focus {
@@ -171,16 +165,31 @@ blockquote>h2:first-of-type, blockquote>h3:first-of-type, blockquote>h4:first-of
   outline-offset: 1px;
 }
 
+.expandable-header h5{
+  display: inline-block;
+  margin: 0;
+  margin-block-start: 0;
+  color: black;
+  font-size: medium;
+  font-weight: normal;
+}
+
 .expandable-header[aria-expanded="false"]::before{
   content: "\f067";
   font-family: FontAwesome;
   font-weight: 400;
+  color: black;
+  font-size: medium;
+  margin-right: 5px;
 }
 
 .expandable-header[aria-expanded="true"]::before{
   content: "\f068";
   font-family: FontAwesome;
   font-weight: 400;
+  color: black;
+  font-size: medium;
+  margin-right: 5px;
 }
 
 .expandable-contents{
@@ -239,6 +248,11 @@ code{
   padding-left: 10px;
 }
 
+.card img{
+  display: block; 
+  margin: auto;
+}
+
 .download-button{
   background-color: #007c90;
   color: white;
@@ -248,8 +262,14 @@ code{
   margin-bottom: 10px;
 }
 
+.download-button:hover{
+  cursor: pointer;
+}
 
-/*Images and text side-by-side*/
+.download-button:focus{
+  border: 2pt solid black;
+}
+
 .image-text-container {
   display: flex;
   flex-wrap: wrap;
@@ -261,22 +281,9 @@ code{
   min-width: 300px;
 }
 
-/*Clickable buttons*/
-/*
-.button {
-  border: none;
-  background-color: #007c91;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: sans-serif;
-  margin: 4px 2px;
-  cursor: pointer;
+.image-text-container img {
+  object-fit: contain;
 }
-*/
 
 /* Table styling*/
 table {
@@ -315,7 +322,3 @@ td:first-child {
 @media only screen and (max-width: 350px) {
   .page-nav{display:block;}
 }
-
-<div>
-.card img{display: block; margin: auto;}
-</div>
