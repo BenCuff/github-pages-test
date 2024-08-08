@@ -240,7 +240,7 @@ The guidance below presents three different ways of visualising uncertainty in a
 
 Please also see our [guidance on data visualisations](data-vis) for how to format charts accessibly.
 
-#### ❌ No uncercertainty: not recommended
+#### ❌ No uncertainty: not recommended
 
 Example 1 shows an illustration of a chart showing no uncertainty. Year is on the x-axis and some hypothetical variable on the y-axis. Only the central line (representing the average) is shown and there is no indication of any uncertainty in the data. Presenting the statistics in this way could mislead users by inflating their confidence in the accuracy of the data.
 
