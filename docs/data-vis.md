@@ -186,8 +186,8 @@ Example 2: Percentage of positive tests for three disease strains at five testin
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_1 title="❌To be avoided: no space within clusters " %}
-  {% include card.html content=card_content_2 title="✔️Best practice: applying spacing to clustered bar charts" %}
+  {% include card.html content=card_content_1 title="❌ To be avoided: no space within clusters " %}
+  {% include card.html content=card_content_2 title="✔️ Best practice: applying spacing to clustered bar charts" %}
 {% include cards-container-end.html %}
 
 
@@ -247,8 +247,8 @@ Example 4: Annual unemployment rates for all genders, UK, 2008 to 2024
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_3 title="❌To be avoided: showing multiple categories in time series data with stacked bar charts" %}
-  {% include card.html content=card_content_4 title="✔️Best practice: using bar charts or line charts for time series data only when there is one category" %}
+  {% include card.html content=card_content_3 title="❌ To be avoided: showing multiple categories in time series data with stacked bar charts" %}
+  {% include card.html content=card_content_4 title="✔️ Best practice: using bar charts or line charts for time series data only when there is one category" %}
 {% include cards-container-end.html %}
 
 {% capture expandable_content_3 %}
@@ -379,7 +379,7 @@ Example 8: Quarterly survey respondents, England and Wales, 2022 to 2023
 
 {% include cards-container-start.html %}
   {% include card.html content=card_content_7 title="❌ To be avoided: using colours to indicate quarter number on a bar chart" %}
-  {% include card.html content=card_content_8 title="✔️Best practice: label all quarters directly and use the same colour for each" %}
+  {% include card.html content=card_content_8 title="✔️ Best practice: label all quarters directly and use the same colour for each" %}
 {% include cards-container-end.html %}
 
 {% capture expandable_content_5 %}
@@ -436,7 +436,7 @@ Example 10: weekly test positivity rates, UK, past 52 weeks (including calendar 
 
 {% include cards-container-start.html %}
   {% include card.html content=card_content_9 title="❌ To be avoided: using only week numbers to indicate time" %}
-  {% include card.html content=card_content_10 title="✔️Best practice: including month and year information" %}
+  {% include card.html content=card_content_10 title="✔️ Best practice: including month and year information" %}
 {% include cards-container-end.html %}
 
 {% capture expandable_content_6 %}
@@ -558,8 +558,8 @@ Example 12: top 10 average recorded wingspan of British birds, ranked
 {% endcapture %}
 
 {% include cards-container-start.html %}
-{% include card.html content=card_content_11 title="❌To be avoided: showing un-ranked bars in a bar" %}
-{% include card.html content=card_content_12 title="✔️Best practice: show bars ranked in ascending or descending order" %}
+{% include card.html content=card_content_11 title="❌ To be avoided: showing un-ranked bars in a bar" %}
+{% include card.html content=card_content_12 title="✔️ Best practice: show bars ranked in ascending or descending order" %}
 {% include cards-container-end.html %}
 
 
@@ -617,7 +617,7 @@ Example 14: Number of cases, UK, 2014 to 2024
 
 {% include cards-container-start.html %}
   {% include card.html content=card_content_12 title="❌ To be avoided: breaking the y-axis when using a bar chart" %}
-  {% include card.html content=card_content_13 title=" ✔️Best practice: start the y-axis at zero in bar charts" %}
+  {% include card.html content=card_content_13 title="✔️ Best practice: start the y-axis at zero in bar charts" %}
 {% include cards-container-end.html %}
   
 {% capture expandable_content_12 %}
@@ -712,8 +712,8 @@ Example 16: Annual unemployment rates by gender, UK, 2008 to 2024
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_14 title="❌To be avoided: relying on colour alone to distinguish categories" %}
-  {% include card.html content=card_content_15 title="✔️Best practice: labelling the categories directly" %}
+  {% include card.html content=card_content_14 title="❌ To be avoided: relying on colour alone to distinguish categories" %}
+  {% include card.html content=card_content_15 title="✔️ Best practice: labelling the categories directly" %}
 {% include cards-container-end.html %}
 
 
@@ -773,8 +773,8 @@ Example 18: Number of buyers of eight car models by age, UK, 2024
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_16 title="❌To be avoided: using patterns to distinguish categories on a bar chart" %}
-  {% include card.html content=card_content_17 title="✔️Best practice: using a legend in the same order as the categories" %}
+  {% include card.html content=card_content_16 title="❌ To be avoided: using patterns to distinguish categories on a bar chart" %}
+  {% include card.html content=card_content_17 title="✔️ Best practice: using a legend in the same order as the categories" %}
 {% include cards-container-end.html %}
 
 
@@ -830,8 +830,8 @@ Example 20: Market shares of four largest importers for a product, USA, 2024
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_18 title="❌To be avoided: vertical text labels" %}
-  {% include card.html content=card_content_19 title="✔️Best practice: rotate chart (categorical data)" %}
+  {% include card.html content=card_content_18 title="❌ To be avoided: vertical text labels" %}
+  {% include card.html content=card_content_19 title="✔️ Best practice: rotate chart (categorical data)" %}
 {% include cards-container-end.html %}
 
 {% capture expandable_content_15 %}
@@ -884,8 +884,8 @@ Example 22: Annual unemployment rate for females, UK, 2008 to 2024
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_20 title="❌To be avoided: slanted text labels" %}
-  {% include card.html content=card_content_21 title="✔️Best practice: omit some labels and rotate text" %}
+  {% include card.html content=card_content_20 title="❌ To be avoided: slanted text labels" %}
+  {% include card.html content=card_content_21 title="✔️ Best practice: omit some labels and rotate text" %}
 {% include cards-container-end.html %}
 
 
@@ -989,7 +989,7 @@ Example 23: Annual unemployment rate and number unemployed, UK, 2008 to 2024
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_20 title="❌To be avoided: two sets of axes on a chart" %}
+  {% include card.html content=card_content_20 title="❌ To be avoided: two sets of axes on a chart" %}
 {% include cards-container-end.html %}
 
 
@@ -1009,8 +1009,8 @@ Example 24b: Annual unemployment rate in the UK, 2005 to 2021
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_21 title="✔️Best practice: side by side charts" %}
-  {% include card.html content=card_content_22 title="✔️Best practice: side by side charts" %}
+  {% include card.html content=card_content_21 title="✔️ Best practice: side by side charts" %}
+  {% include card.html content=card_content_22 title="✔️ Best practice: side by side charts" %}
 {% include cards-container-end.html %}
 
 
@@ -1034,8 +1034,8 @@ Example 26: Population growth of different towns, South West England, 2000 to 20
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_23 title="❌To be avoided: different colours for each bar" %}
-  {% include card.html content=card_content_24 title="✔️Best practice: only use different colours if absolutely necessary" %}
+  {% include card.html content=card_content_23 title="❌ To be avoided: different colours for each bar" %}
+  {% include card.html content=card_content_24 title="✔️ Best practice: only use different colours if absolutely necessary" %}
 {% include cards-container-end.html %}
 
 
@@ -1060,7 +1060,7 @@ Example 28: Daily test positivity rates in June for an infectious disease, UK, 2
 
 {% include cards-container-start.html %}
   {% include card.html content=card_content_25 title="❌ To be avoided: crowded line charts with more than four different lines" %}
-  {% include card.html content=card_content_26 title="✔️Best practice: using a small multiples chart " %}
+  {% include card.html content=card_content_26 title="✔️ Best practice: using a small multiples chart " %}
 {% include cards-container-end.html %}
 
 
@@ -1116,7 +1116,7 @@ Example 29: Daily test positivity rates in June for an infectious disease, UK, 2
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_27 title="✔️Best practice: using a focus chart to call attention to one category" %}
+  {% include card.html content=card_content_27 title="✔️ Best practice: using a focus chart to call attention to one category" %}
 {% include cards-container-end.html %}
 
 
@@ -1188,7 +1188,7 @@ Example 30: Rate of new infections, UK, 2018 to 2024
 {% endcapture %}
 
 {% include cards-container-start.html %}
-  {% include card.html content=card_content_28 title="✔️Best practice: combing small multiples and focus charts to call attention to one category" %}
+  {% include card.html content=card_content_28 title="✔️ Best practice: combing small multiples and focus charts to call attention to one category" %}
 {% include cards-container-end.html %}
 
 {% capture expandable_content_21 %}
